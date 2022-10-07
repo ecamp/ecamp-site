@@ -6,7 +6,6 @@ import GoogleAnalytics from "~/components/core/GoogleAnalytics.astro";
 import defaultImageSrc from "~/assets/images/default.png";
 
 import { SITE } from "~/config.mjs";
-import Fonts from "../atoms/Fonts.astro";
 import ExtraMetaTags from "../atoms/ExtraMetaTags.astro";
 
 const { src: defaultImage } = await getImage({
@@ -60,8 +59,6 @@ const image =
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 {image && <meta name="twitter:image" content={image} />}
-
-<Fonts />
 
 <!-- Google Site Verification -->
 {SITE.googleSiteVerificationId && <meta name="google-site-verification" content={SITE.googleSiteVerificationId} />}

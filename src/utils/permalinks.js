@@ -11,11 +11,17 @@ const trim = (str, ch) => {
 };
 
 const trimSlash = (s) => trim(trim(s, "/"));
-const createPath = (...params) => "/" + params.filter((el) => !!el).join("/");
+export const createPath = (...params) =>
+  "/" +
+  params
+    .filter((el) => !!el)
+    .map((el) => el.replace(/^\/|\/$/g, ""))
+    .join("/");
 
-const basePathname = trimSlash(SITE.basePathname);
+export const BASE_PATHNAME = trimSlash(SITE.basePathname);
 
-export const cleanSlug = (text) => slugify(trimSlash(text));
+export const cleanSlug = (text) => text;
+//export const cleanSlug = (text) => slugify(trimSlash(text));
 
 export const BLOG_BASE = cleanSlug(BLOG.slug);
 export const CATEGORY_BASE = cleanSlug(BLOG?.category?.slug);
@@ -25,22 +31,27 @@ export const TAG_BASE = cleanSlug(BLOG?.tag?.slug);
 export const getCanonical = (path = "") => new URL(path, SITE.origin);
 
 /** */
-export const getPermalink = (slug = "", type = "page") => {
+export const getPermalink = (slug = "", type = "page", locale = "de") => {
   const _slug = cleanSlug(slug);
 
   switch (type) {
     case "category":
-      return createPath(basePathname, CATEGORY_BASE, _slug);
+      return createPath(BASE_PATHNAME, locale, CATEGORY_BASE, _slug);
 
     case "tag":
-      return createPath(basePathname, TAG_BASE, _slug);
+      return createPath(BASE_PATHNAME, locale, TAG_BASE, _slug);
 
     case "post":
-      return createPath(basePathname, BLOG.postsWithoutBlogSlug ? "" : BLOG_BASE, _slug);
+      return createPath(
+        BASE_PATHNAME,
+        locale,
+        BLOG.postsWithoutBlogSlug ? "" : BLOG_BASE,
+        _slug
+      );
 
     case "page":
     default:
-      return createPath(basePathname, _slug);
+      return createPath(BASE_PATHNAME, locale, _slug);
   }
 };
 

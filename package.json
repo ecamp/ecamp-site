@@ -1,24 +1,29 @@
 {
-  "name": "@onwidget/astrowind",
-  "description": "A template to make your website using Astro + Tailwind CSS.",
-  "version": "0.2.3",
+  "name": "ecamp-site",
+  "description": "Landingpage",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build && subfont -ir --no-fallbacks --silent --root dist",
+    "inspect:dev": "node --inspect ./node_modules/astro/astro.js dev",
+    "inspect:build": "node --inspect ./node_modules/astro/astro.js build",
     "preview": "astro preview"
   },
   "devDependencies": {
     "@astrojs/image": "^0.3.3",
+    "@astrojs/mdx": "^0.11.1",
     "@astrojs/partytown": "^1.0.0",
     "@astrojs/rss": "^1.0.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^1.0.0",
+    "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.4",
     "astro": "^1.0.0",
-    "astro-icon": "^0.7.3",
+    "astro-iconify": "^1.0.0",
     "limax": "^v2.1.0",
+    "prettier": "^2.7.1",
     "reading-time": "^1.5.0",
     "subfont": "^6.9.0"
   },

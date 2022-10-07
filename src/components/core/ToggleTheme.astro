@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-iconify";
 
 const {
   label = "Toggle between Dark and Light mode",
@@ -11,5 +11,6 @@ const {
 ---
 
 <button type="button" class={className} aria-label={label} data-aw-toggle-color-scheme>
-  <Icon name={iconName} class={iconClass} />
+  <Icon name="tabler:sun" class={"hidden dark:block " + iconClass} />
+  <Icon name="tabler:moon" class={"dark:hidden " + iconClass} />
 </button>

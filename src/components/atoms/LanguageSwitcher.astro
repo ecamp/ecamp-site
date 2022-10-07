@@ -1,0 +1,26 @@
+type Props = {
+  /** The current locale */
+  lang: string;
+  /** The English slug for the current page */
+  slug: string;
+};
+
+const LanguageSelect = ({ lang, slug }: Props) => {
+  return (
+    <select
+      value={lang}
+      onChange={(e) => {
+        const newLang = e.target.value;
+        window.location.pathname = `/${newLang}/${slug}`;
+      }}
+    >
+      {Object.keys(KNOWN_LANGUAGES).map((key) => {
+        return (
+          <option key={key} value={KNOWN_LANGUAGES[key]}>
+            {key}
+          </option>
+        );
+      })}
+    </select>
+  );
+};

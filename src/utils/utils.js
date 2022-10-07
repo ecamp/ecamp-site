@@ -1,9 +1,9 @@
 /** */
-export const getFormattedDate = (date) =>
+export const getFormattedDate = (date, locale = 'de') =>
   date
-    ? new Date(date).toLocaleDateString("en-us", {
+    ? new Date(date).toLocaleDateString(locale, {
         year: "numeric",
-        month: "short",
+        month: "long",
         day: "numeric",
       })
     : "";

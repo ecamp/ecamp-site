@@ -3,11 +3,11 @@ import Layout from "~/layouts/BaseLayout.astro";
 import Header from "~/components/widgets/Header.astro";
 import Footer from "~/components/widgets/Footer.astro";
 
-const { meta } = Astro.props;
+const { meta, i18nLinks } = Astro.props;
 ---
 
 <Layout meta={meta}>
-  <Header />
+  <Header i18nLinks={i18nLinks} />
   <main>
     <slot />
   </main>

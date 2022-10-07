@@ -1,7 +1,7 @@
 import rss from "@astrojs/rss";
 
 import { SITE, BLOG } from "~/config.mjs";
-import { fetchPosts } from "~/utils/posts";
+import { fetchPosts } from "~/utils/content";
 import { getPermalink } from "~/utils/permalinks";
 
 export const get = async () => {
