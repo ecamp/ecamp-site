@@ -1,0 +1,74 @@
+---
+const {name, email, subject, message, submit, success} = Astro.props;
+---
+
+<div class="feedback-form">
+  <form
+    netlify
+    netlify-honeypot
+    name="feedback"
+    method="POST"
+    action={success}
+  >
+    <div class="mb-5">
+      <label for="name" class="mb-2 block text-base font-medium text-primary-900 dark:text-slate-200">
+        {name}
+      </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="w-full rounded-md border border-primary-100 dark:border-slate-700 bg-white dark:bg-slate-800 py-3 px-6 text-base font-medium text-primary-900 dark:text-slate-200 outline-none focus:border-primary-300 focus:shadow-md"
+      />
+    </div>
+    <div class="mb-5">
+      <label
+        for="email"
+        class="mb-2 block text-base font-medium text-primary-900 dark:text-slate-200"
+      >
+        {email}
+      </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="w-full rounded-md border border-primary-100 dark:border-slate-700 bg-white dark:bg-slate-800 py-3 px-6 text-base font-medium text-primary-900 dark:text-slate-200 outline-none focus:border-primary-300 focus:shadow-md"
+      />
+    </div>
+    <div class="mb-5">
+      <label
+        for="subject"
+        class="mb-2 block text-base font-medium text-primary-900 dark:text-slate-200"
+      >
+        {subject}
+      </label>
+      <input
+        type="text"
+        name="subject"
+        id="subject"
+        class="w-full rounded-md border border-primary-100 dark:border-slate-700 bg-white dark:bg-slate-800 py-3 px-6 text-base font-medium text-primary-900 dark:text-slate-200 outline-none focus:border-primary-300 focus:shadow-md"
+      />
+    </div>
+    <div class="mb-5">
+      <label
+        for="message"
+        class="mb-2 block text-base font-medium text-primary-900 dark:text-slate-200"
+      >
+        {message}
+      </label>
+      <textarea
+        rows="4"
+        name="message"
+        id="message"
+        class="w-full rounded-md border border-primary-100 dark:border-slate-700 bg-white dark:bg-slate-800 py-3 px-6 text-base font-medium text-primary-900 dark:text-slate-200 outline-none focus:border-primary-300 focus:shadow-md"
+      ></textarea>
+    </div>
+    <div>
+      <button
+        class="hover:shadow-form rounded-md bg-primary-600 py-3 px-8 text-base font-semibold text-white outline-none"
+      >
+        {submit}
+      </button>
+    </div>
+  </form>
+</div>

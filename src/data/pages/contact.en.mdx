@@ -1,0 +1,25 @@
+---
+title: Willkommen auf der Projektseite von eCamp v3
+slug: contact
+tags:
+  - astro
+  - tailwind css
+  - front-end
+---
+
+import ContactForm from "../../components/widgets/Form.astro";
+import ProseSection from "../../components/widgets/ProseSection.astro";
+import { getLink } from "../../utils/content.js"
+
+<div class="px-8 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-3xl">
+  <ProseSection title="Contact">
+    <ContactForm
+      name="Name"
+      email="Email"
+      subject="Subject"
+      message="Message"
+      submit="Submit"
+      success={getLink('contact-success', 'en')}
+    />
+  </ProseSection>
+</div>

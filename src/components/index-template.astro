@@ -1,0 +1,127 @@
+---
+import { SITE } from "~/config.mjs";
+import { getCanonical, getHomePermalink } from "~/utils/permalinks";
+
+import Hero from "~/components/widgets/Hero.astro";
+import HeroBanner from "~/components/widgets/HeroBanner.astro";
+import FeatureCards from "~/components/widgets/FeatureCards.astro";
+import Features2 from "~/components/widgets/Features2.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import HighlightedPosts from "~/components/blog/highlights/HighlightedPosts.astro";
+import Stats from "~/components/widgets/Stats.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  canonical: getCanonical(getHomePermalink()),
+};
+
+const stepItems = [
+  {
+    variant: "todo",
+    version: "3.α",
+    title: "Alpha",
+    body: `Alle Features sind vorhanden (feature-complete). Diese Version wird als Testversion dienen und damit auch noch einige Bugs enthalten.`,
+  },
+  {
+    variant: "todo",
+    version: "3.β",
+    title: "Beta",
+    body: `Diese Version hat noch vereinzelte Bugs. Ab dieser Version werden aber die erhalten und die Datenbank nicht mehr zurückgesetzt. Kann für echte aber nicht zeitkritische Lagerplanung verwendet werden. Die beschränkte Anzahl Betatestenden müssen mit Wartungsunterbrüchen rechnen.`,
+  },
+  { variant: "todo", version: "3.0", title: "MVP", body: "Test" },
+  { variant: "todo", version: "3.1", title: "Kursplanung", body: "Test" },
+  { variant: "todo", version: "3.X", title: "Zukunft", body: "Test" },
+];
+
+const featureCardItems = [
+  {
+    title: "Headers",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:home",
+  },
+  {
+    title: "Footers",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:faq",
+  },
+  {
+    title: "Features",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:video-projector",
+  },
+  {
+    title: "Call-to-Action",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:video-projector",
+  },
+  {
+    title: "Pricing",
+    description: "Gratis!!!",
+    icon: "flat-color-icons:calculator",
+  },
+  {
+    title: "Testimonial",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:voice-presentation",
+  },
+];
+
+const faqItems = [
+  {
+    question: "Wann released ihr?",
+    answer: `Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds.
+
+    Many say exploration is part of our destiny, but it’s actually our duty to future generations.`,
+  },
+  {
+    question: "Wie kann ich euch helfen?",
+    answer: `Well, the way they make shows is, they make one show. That show's called a pilot.
+
+    Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. `,
+  },
+  {
+    question: "What's something that you completely don't understand?",
+    answer: `A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.`,
+  },
+  {
+    question: "What's an example of when you changed your mind?",
+    answer: `Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.`,
+  },
+  {
+    question: "What is something that you would really like to try again?",
+    answer: `A business big enough that it could be listed on the NASDAQ goes belly up. Disappears!
+
+      It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.`,
+  },
+  {
+    question:
+      "If you could only ask one question to each person you meet, what would that question be?",
+    answer: `This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.`,
+  },
+];
+
+const statsItems = [
+  { stat: "5 Jahre", description: "Entwicklung" },
+  { stat: "6", description: "Members" },
+  { stat: "20", description: "Core Meetings" },
+  { stat: "100k", description: "Zeilen Code" },
+];
+---
+
+<HeroBanner />
+<Hero />
+<FeatureCards items={featureCardItems} />
+<Steps steps={stepItems} />
+<Features2 />
+<Features3 />
+<HighlightedPosts />
+<Stats items={statsItems} />
+<CallToAction />

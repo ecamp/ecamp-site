@@ -1,0 +1,35 @@
+---
+import Picture from "~/components/core/Picture.astro";
+
+import { getContent, getI18nPermalink } from "~/utils/content";
+import { findImage } from "~/utils/images";
+
+const { frontmatter, i18nLinks } = Astro.props;
+
+const image = await findImage(frontmatter.image);
+---
+
+<article class="mb-6 transition">
+  {
+    image && (
+      <Picture
+        src={image}
+        class="object-cover w-full h-64 mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+        widths={[400]}
+        alt="Post 2 Image"
+        aspectRatio="16:9"
+      />
+    )
+  }
+  <h3 class="mb-2 text-xl font-bold leading-snug sm:text-2xl font-heading">
+    <a
+      href={getI18nPermalink(i18nLinks, Astro.params.locale)}
+      class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
+    >
+      {frontmatter.title}
+    </a>
+  </h3>
+  <p class="text-gray-700 dark:text-gray-400">
+    {frontmatter.excerpt || frontmatter.description}
+  </p>
+</article>

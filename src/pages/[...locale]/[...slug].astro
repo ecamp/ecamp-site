@@ -1,0 +1,36 @@
+---
+import { SITE } from "~/config.mjs";
+
+import Layout from "~/layouts/PageLayout.astro";
+import SinglePost from "~/components/blog/SinglePost.astro";
+
+import { getContent } from "~/utils/content";
+import { findImage } from "~/utils/images";
+import HighlightedPosts from "~/components/blog/highlights/HighlightedPosts.astro";
+
+export async function getStaticPaths() {
+  return await getContent("pages");
+}
+
+const { contents, i18nLinks, type } = Astro.props;
+
+const meta = {
+  title: `${contents.frontmatter.title} — ${SITE.name}`,
+  description: contents.frontmatter.description,
+  image: await findImage(contents.frontmatter.image),
+};
+---
+
+<Layout meta={meta} i18nLinks={i18nLinks}>
+  {
+    contents.frontmatter.variant == "page" || type == "pages" ? (
+      contents.isMdx ? (
+        <contents.body />
+      ) : (
+        <SinglePost content={contents} image={meta.image} />
+      )
+    ) : (
+      <SinglePost content={contents} image={meta.image} />
+    )
+  }
+</Layout>

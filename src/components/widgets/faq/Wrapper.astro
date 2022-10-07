@@ -1,0 +1,20 @@
+---
+const { title } = Astro.props;
+---
+
+<div class="px-4 py-16 mx-auto max-w-6xl lg:py-20">
+  <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <h2
+        class="max-w-lg mb-4 text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto font-heading"
+      >
+        {title}
+      </h2>
+    </div>
+  </div>
+  <div class="max-w-screen-xl sm:mx-auto">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:gap-x-16 md:grid-cols-2">
+      <slot />
+    </div>
+  </div>
+</div>
