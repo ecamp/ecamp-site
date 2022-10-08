@@ -4,7 +4,7 @@ import Picture from "~/components/core/Picture.astro";
 import { getLink } from "~/utils/content";
 import { findImage } from "~/utils/images";
 
-const { id, frontmatter, i18nLinks } = Astro.props;
+const { id, frontmatter } = Astro.props;
 
 const image = await findImage(frontmatter.image);
 ---
@@ -12,18 +12,23 @@ const image = await findImage(frontmatter.image);
 <article class="mb-6 transition">
   {
     image && (
-      <Picture
-        src={image}
-        class="object-cover w-full h-64 mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
-        widths={[400]}
-        alt="Post 2 Image"
-        aspectRatio="16:9"
-      />
+      <a
+        href={getLink("blog/" + id, Astro.params.locale)}
+        class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
+      >
+        <Picture
+          src={image}
+          class="object-cover w-full h-64 mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+          widths={[400]}
+          alt="Post 2 Image"
+          aspectRatio="16:9"
+        />
+      </a>
     )
   }
   <h3 class="mb-2 text-xl font-bold leading-snug sm:text-2xl font-heading">
     <a
-      href={getLink('blog/' + id, Astro.params.locale)}
+      href={getLink("blog/" + id, Astro.params.locale)}
       class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
     >
       {frontmatter.title}
