@@ -1,8 +1,7 @@
 import rss from "@astrojs/rss";
 
 import { SITE, BLOG } from "~/config.mjs";
-import { fetchPosts } from "~/utils/content";
-import { getPermalink } from "~/utils/permalinks";
+import { getContent, getLink } from "~/utils/content";
 
 export const get = async () => {
   if (BLOG.disabled) {
@@ -12,18 +11,18 @@ export const get = async () => {
     });
   }
 
-  const posts = await fetchPosts();
+  const posts = await getContent('posts');
 
   return rss({
     title: `${SITE.name}’s Blog`,
     description: SITE.description,
     site: import.meta.env.SITE,
 
-    items: posts.map((post) => ({
-      link: getPermalink(post.slug, "post"),
-      title: post.title,
-      description: post.description,
-      pubDate: post.pubDate,
+    items: posts.map(({params, props}) => ({
+      link: getLink(props.id, params.locale),
+      title: props.contents.frontmatter.title,
+      description: props.contents.frontmatter.description,
+      pubDate: props.contents.frontmatter.pubDate,
     })),
   });
 }
