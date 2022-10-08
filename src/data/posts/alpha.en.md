@@ -2,7 +2,7 @@
 title: Alpha Version
 slug: alpha-version
 pubDate: 2022-10-08
-description: The first version to try out. What can you expect from our alpha version?
+description: The first version to try out is here. What can you expect from our alpha version?
 image: '~/assets/images/alpha-thumbnail.jpg'
 ---
 
