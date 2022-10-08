@@ -1,9 +1,8 @@
-# 🚀 AstroWind
+# eCamp Site
 
-<img src="lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+This repo is used for the landingpage on https://www.ecamp3.ch/. 
 
-**AstroWind** is a free and open-source template to make your website using **Astro + Tailwind CSS**. Ready to start a new project and designed taking into account best practices.
+Based on **[AstroWind](https://github.com/onwidget/astrowind)**, a free and open-source template to make your website using **Astro + Tailwind CSS**.
 
 ## Features
 
@@ -16,11 +15,6 @@
 - ✅ **Fonts optimization** at build time ([subfont](https://www.npmjs.com/package/subfont)).
 - ✅ **Production-ready** scores in [Lighthouse](https://web.dev/measure/) and [PageSpeed Insights](https://pagespeed.web.dev/) reports
 
-<br>
-
-<img src="./screenshot.png" alt="AstroWind Theme Screenshot">
-
-<br>
 
 <details open="open">
 <summary>Table of Contents</summary>
@@ -39,14 +33,8 @@
 
 </details>
 
-<br>
-
 ## Demo
-
-[👉 ecamp-site.netlify.app](https://ecamp-site.netlify.app/) 
-
-<br>
-
+[👉 ecamp-site.netlify.app](https://ecamp-site.netlify.app/)
 
 ## Getting started
 
@@ -54,7 +42,7 @@
 
 Inside AstroWind template, you'll see the following folders and files:
 
-```
+```directory
 /
 ├── public/
 │   ├── robots.txt
@@ -65,6 +53,9 @@ Inside AstroWind template, you'll see the following folders and files:
 |   |   └── styles/
 |   |       └── base.css
 │   ├── data/
+│   │   ├── pages/
+|   |       ├── page-slug.md
+|   |       └── ...
 |   |   └── posts/
 |   |       ├── post-slug-1.md
 |   |       └── ...
@@ -83,14 +74,13 @@ Inside AstroWind template, you'll see the following folders and files:
 │   |   ├── [...blog]/
 |   |   |   ├── [...page].astro
 |   |   |   └── [slug].astro
-│   |   ├── [...categories]/
-|   |   |   └── [category]/
+│   |   ├── [...locale]/
+|   |   |   ├── [...slug].astro
+|   |   |   └── [blog]/
+|   |   |       ├── [slug].astro
 |   |   |       └── [...page].astro
-│   |   ├── [...tags]/
-|   |   |   └── [tag]/
-|   |   |       └── [...page].astro
-│   |   ├── index.astro
 |   |   ├── 404.astro
+|   |   ├── _redirects.js
 |   |   └-- rss.xml.js
 │   ├── utils/
 │   └── config.mjs
@@ -98,15 +88,11 @@ Inside AstroWind template, you'll see the following folders and files:
 └── ...
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The eCamp Landingpage looks for `.md` or `.mdx` files in the `src/data/pages/` and `src/data/posts/` directory. Each page is exposed as a route based on its file name.
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
 Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
-
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 <br>
 
@@ -114,54 +100,12 @@ Any static assets, like images, can be placed in the `public/` directory if they
 
 All commands are run from the root of the project, from a terminal:
 
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-<br>
-
-### Configuration
-
-Basic configuration file: `./src/config.mjs`
-
-```javascript
-export const SITE = {
-  name: "Example",
-
-  origin: "https://example.com",
-  basePathname: "/", // Change this if you need to deploy to Github Pages, for example
-
-  title: "Example - This is the homepage title of Example",
-  description: "This is the homepage description of Example",
-
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: false // or some value,
-};
-
-export const BLOG = {
-  disabled: false,
-  slug: "blog", // you can change this to "articles" (/articles)
-
-  postsWithoutBlogSlug: true, // true (/some-slug), false (/blog/some-slug), 
-  postsPerPage: 6,
-
-  category: {
-    disabled: false,
-    slug: "category", // set empty to change from /category/some-slug to /some-slug
-  },
-
-  tag: {
-    disabled: false,
-    slug: "tag",
-  },
-};
-
-```
-
-<br>
+| Command        | Action                                                                     |
+|:---------------|:---------------------------------------------------------------------------|
+| `yarn`         | Installs dependencies                                                      |
+| `yarn dev`     | Starts local dev server at [`localhost:3004/en`](http://localhost:3004/en) |
+| `yarn build`   | Build your production site to `./dist/`                                    |
+| `yarn preview` | Preview your build locally, before deploying                               |
 
 ### Deploy
 
@@ -177,57 +121,9 @@ Now, your website is ready to be deployed. All generated files are located at
 `dist` folder, which you can deploy the folder to any hosting service you
 prefer.
 
-#### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
-
-#### Deploy to Vercel
-
-Clone this repository on own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
-
-<br>
-
-## Roadmap
-
-- *Project*:
-  - **(DONE)** Reduce the complexity in the components folder and simplify the other folders to make it very easy to use.
-  - Create simple and clear strategy to get template updates
-  - Move specific configurations to a specialized file
-  - Fix some bugs with prettier
-  - Make the use of images clean and intuitive
-- *SEO*:
-  - **(DONE)** Add support to easily manage SEO meta-tags (title, description, canonical, social sharing, ...)
-- *Blog*:
-  - **(DONE)** Support to Fast and SEO friendly blog
-  - **(DONE)** Add support for categories and tags.
-  - Improve blog design
-  - Create component or utilities for latest posts
-  - Create component or utilities for related posts
-  - Add more *shortcodes* or *embed* functions to posts in Markdown: (eg video, tweet...)
-- *More widgets*:
-  - ~~Add more Tailwind components useful for most scenarios (Features, Contact, Call to Actions, Content, FAQs ...)~~
-  - Create external library or place with useful Tailwind components
-- *More Examples*: Add commonly used example pages (Ex: About, Terms, Services...)
-- *Documentation*: Create detailed documentation with best practices and redesign tips
-
-<br>
-
-## Frequently Asked Questions
-
-- 
-- 
--
-
-
-<br>
-
 ## Contributing
-
-If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request. 
+[Code of conduct](https://www.ecamp3.ch/coc)
+If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request on the AstroWind repository. 
 That would be very useful for all of us and we would be happy to listen and take action.
 
 ## Acknowledgements

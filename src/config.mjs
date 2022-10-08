@@ -1,14 +1,14 @@
 export const SITE = {
   name: "eCamp",
 
-  origin: "https://astrowind.vercel.app",
+  origin: "https://www.ecamp3.ch",
   basePathname: "/",
 
-  title: "AstroWind — Your website with Astro + Tailwind CSS",
-  description: "🚀 AstroWind is a free and ready to start template to make your website using Astro and Tailwind CSS.",
+  title: "eCamp v3",
+  description: "⛺Web-based app for camp and course planning. The application is specialised for camps and courses of youth associations and for Y+S offers in the sport of camp sports/trekking.",
 
   googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: "orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M",
+  googleSiteVerificationId: "jPf2WRTi0mTa3OrM_YlBsATcXYDiaGh0NmOODPSwdZ4",
   locales: ['en', 'de'],
 };
 
