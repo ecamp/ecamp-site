@@ -1,12 +1,12 @@
 ---
 import PostTags from "~/components/atoms/Tags.astro";
 
-import { getI18nPermalink } from "~/utils/content";
+import { getI18nPermalink, getLink } from "~/utils/content";
 import { findImage } from "~/utils/images";
 import { getFormattedDate } from "~/utils/utils";
 import Picture from "../core/Picture.astro";
 
-const { contents, i18nLinks } = Astro.props;
+const { contents, id } = Astro.props;
 
 const image = await findImage(contents.frontmatter.image);
 ---
@@ -14,7 +14,7 @@ const image = await findImage(contents.frontmatter.image);
 <article
   class="max-w-md mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8"
 >
-  <a class="relative block group" href="#0">
+  <a class="relative block group" href={getLink(id, Astro.params.locale)}>
     <div
       class="relative h-0 pb-[56.25%] md:pb-[75%] overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg"
     >
@@ -32,8 +32,8 @@ const image = await findImage(contents.frontmatter.image);
     <header>
       <h2 class="text-3xl sm:text-4xl font-bold leading-snug mb-2 font-heading">
         <a
-          class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
-          href={getI18nPermalink(i18nLinks,Astro.params.locale)}
+          class="hover:text-primary-600 hover:underline underline-offset-4 decoration-1 transition ease-in duration-200"
+          href={getLink(id,Astro.params.locale)}
         >
           {contents.frontmatter.title}
         </a>

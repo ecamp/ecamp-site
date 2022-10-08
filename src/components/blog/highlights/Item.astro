@@ -13,7 +13,7 @@ const image = await findImage(frontmatter.image);
   {
     image && (
       <a
-        href={getLink("blog/" + id, Astro.params.locale)}
+        href={getLink(id, Astro.params.locale)}
         class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
       >
         <Picture
@@ -28,8 +28,8 @@ const image = await findImage(frontmatter.image);
   }
   <h3 class="mb-2 text-xl font-bold leading-snug sm:text-2xl font-heading">
     <a
-      href={getLink("blog/" + id, Astro.params.locale)}
-      class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
+      href={getLink(id, Astro.params.locale)}
+      class="hover:text-primary-600 hover:underline underline-offset-4 decoration-1 transition ease-in duration-200"
     >
       {frontmatter.title}
     </a>

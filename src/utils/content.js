@@ -278,7 +278,7 @@ const loadContent = async function () {
         const pathMeta = key.match(regex);
         const {
           type,
-          slug: id,
+          slug: pathSlug,
           locale,
           mdx,
         } = {
@@ -289,10 +289,12 @@ const loadContent = async function () {
           ...pathMeta.groups,
         };
         const rawPost = await promisedContent;
-        const customSlug = getCustomSlug(rawPost.frontmatter?.slug, id);
+        const customSlug = getCustomSlug(rawPost.frontmatter?.slug, pathSlug);
         const slugParam = customSlug == "index" ? undefined : customSlug;
 
-        generateI18nLinks(`${type == 'posts' ? 'blog/' : ''}${id}`, locale, getSlugForType(slugParam, type));
+        const id = `${type == 'posts' ? 'blog/' : ''}${pathSlug}`;
+
+        generateI18nLinks(id, locale, getSlugForType(slugParam, type));
 
         return {
           params: {
