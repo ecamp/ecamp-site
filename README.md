@@ -122,7 +122,8 @@ Now, your website is ready to be deployed. All generated files are located at
 prefer.
 
 ## Contributing
-[Code of conduct](https://www.ecamp3.ch/coc)
+See our [Code of conduct](https://www.ecamp3.ch/coc) for the whole eCamp organisation.
+
 If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request on the AstroWind repository. 
 That would be very useful for all of us and we would be happy to listen and take action.
 
