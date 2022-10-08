@@ -1,11 +1,6 @@
 ---
-title: Welcome
+title: About
 slug: about
-tags:
-  - astro
-  - tailwind css
-  - front-end
-  - gugs
 ---
 
 Describe purpose of this site.

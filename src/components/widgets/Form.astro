@@ -1,12 +1,12 @@
 ---
-const {name, email, subject, message, submit, success} = Astro.props;
+const {name, email, subject, message, submit, success, id} = Astro.props;
 ---
 
 <div class="feedback-form">
   <form
     netlify
     netlify-honeypot
-    name="feedback"
+    name={id}
     method="POST"
     action={success}
   >
