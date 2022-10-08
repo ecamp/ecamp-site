@@ -19,6 +19,11 @@ const footer = {
   },
 };
 
+const poweredbynetlify = {
+  de: "Diese Website läuft auf Netlify",
+  en: "This site is powered by Netlify"
+}
+
 const socials = [
   // { label: "Twitter", icon: "tabler:brand-twitter", link: "#" },
   // { label: "Facebook", icon: "tabler:brand-facebook", link: "#" },
@@ -76,8 +81,7 @@ const socials = [
           class="text-blue-400 hover:underline dark:text-gray-200"
           href="https://onwidget.com/"
         >
-          onWidget</a
-        >
+          onWidget</a> · <a href="https://www.netlify.com/">{poweredbynetlify[Astro.params.locale]}</a>
       </div>
     </div>
   </div>
