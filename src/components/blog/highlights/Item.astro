@@ -1,10 +1,10 @@
 ---
 import Picture from "~/components/core/Picture.astro";
 
-import { getContent, getI18nPermalink } from "~/utils/content";
+import { getLink } from "~/utils/content";
 import { findImage } from "~/utils/images";
 
-const { frontmatter, i18nLinks } = Astro.props;
+const { id, frontmatter, i18nLinks } = Astro.props;
 
 const image = await findImage(frontmatter.image);
 ---
@@ -23,7 +23,7 @@ const image = await findImage(frontmatter.image);
   }
   <h3 class="mb-2 text-xl font-bold leading-snug sm:text-2xl font-heading">
     <a
-      href={getI18nPermalink(i18nLinks, Astro.params.locale)}
+      href={getLink('blog/' + id, Astro.params.locale)}
       class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
     >
       {frontmatter.title}

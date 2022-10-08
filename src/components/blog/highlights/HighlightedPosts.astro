@@ -29,6 +29,6 @@ const posts = (await getContent("posts")).filter(
   <div
     class="flex flex-wrap gap-6 row-gap-5 -mb-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center"
   >
-    {posts.map(({ props }) => <HighlightsItem {...props.contents} />)}
+    {posts.map(({ props }) => <HighlightsItem {...props.contents} id={props.id} />)}
   </div>
 </section>

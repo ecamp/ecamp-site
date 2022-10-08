@@ -10,7 +10,7 @@ const trim = (str, ch) => {
   return start > 0 || end < str.length ? str.substring(start, end) : str;
 };
 
-const trimSlash = (s) => trim(trim(s, "/"));
+export const trimSlash = (s) => trim(trim(s, "/"));
 export const createPath = (...params) =>
   "/" +
   params

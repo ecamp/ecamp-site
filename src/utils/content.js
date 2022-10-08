@@ -292,7 +292,7 @@ const loadContent = async function () {
         const customSlug = getCustomSlug(rawPost.frontmatter?.slug, id);
         const slugParam = customSlug == "index" ? undefined : customSlug;
 
-        generateI18nLinks(id, locale, getSlugForType(slugParam, type));
+        generateI18nLinks(`${type == 'posts' ? 'blog/' : ''}${id}`, locale, getSlugForType(slugParam, type));
 
         return {
           params: {
