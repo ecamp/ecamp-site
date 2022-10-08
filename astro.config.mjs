@@ -16,6 +16,17 @@ export default defineConfig({
   base: SITE.basePathname,
   output: "static",
   integrations: [
+    {
+      name: "netlify-redirects",
+      hooks: {
+        "astro:config:setup": ({ injectRoute }) => {
+          injectRoute({
+            pattern: "/_redirects",
+            entryPoint: "./src/pages/_redirects.js",
+          });
+        },
+      },
+    },
     mdx(),
     tailwind({
       config: {
