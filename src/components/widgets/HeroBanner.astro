@@ -14,23 +14,23 @@ const {title, description,primary,secondary} = Astro.props;
 </style>
 
 <section
-  class="relative herobanner grid md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_2fr] xl:grid-cols-2 2xl:grid-cols-[2fr_3fr] 3xl:grid-cols-[1fr_2fr]"
+  class="relative herobanner grid md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_2fr] xl:grid-cols-2"
 >
   <div
-    class="herobanner--text text-white p-12 md:p-20 lg:p-24"
+    class="herobanner--text text-white p-12 md:p-20 lg:p-24 max-w-3xl"
   >
     <h1
       class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading"
     >
       {title}
     </h1>
-    <p class="text-2xl font-light mb-8 leading-relaxed">
+    <p class="text-xl xs:text-2xl font-light mb-8 leading-relaxed">
       {description}
     </p>
-    <div class="max-w-none flex">
+    <div class="max-w-none flex flex-wrap gap-4">
       <div>
         <a
-          class="btn text-white bg-[#f36f2d] hover:bg-[#b7450d] mb-4 sm:mb-0 font-semibold text-lg"
+          class="btn text-white bg-[#f36f2d] hover:bg-[#b7450d] sm:mb-0 font-semibold text-lg"
           href="https://dev.ecamp3.ch"
           target="_blank"
           rel="noopener">{primary}</a
@@ -38,7 +38,7 @@ const {title, description,primary,secondary} = Astro.props;
       </div>
       <div>
         <a
-          class="btn text-white bg-primary-600 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 ml-4 font-semibold text-lg"
+          class="btn text-white bg-primary-600 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 font-semibold text-lg"
           href="#features">{secondary}</a
         >
       </div>

@@ -1,22 +1,22 @@
 ---
 import { Icon } from "astro-iconify";
 import Logo from "~/components/atoms/Logo.astro";
-import ToggleTheme from "../core/ToggleTheme.astro";
 import ToggleMenu from "../core/ToggleMenu.astro";
 
-import { SITE } from "~/config.mjs";
-import { getI18nPermalink, getLink } from "~/utils/content";
+import { getLink } from "~/utils/content";
+import { trimSlash } from "~/utils/permalinks";
+import LanguageSwitcher from "../atoms/LanguageSwitcher.astro";
 
 const { i18nLinks } = Astro.props;
 const { locale: currentLocale } = Astro.params;
 
-const otherI18nLinks = i18nLinks && Object.fromEntries(Object.entries(i18nLinks).filter(([locale]) => locale !== currentLocale))
+const menuitems = [
+  { label: "Team", id: "team", onlymobile: false },
+  { label: "Blog", id: "blog", onlymobile: false },
+  { label: "Github", link: "github", onlymobile: true },
+  { label: "Contact", id: "contact", onlymobile: true },
+];
 
-const otherLocale = SITE.locales.filter(
-  (lang) => lang !== currentLocale
-)[0]
-
-const localeSwitcher = getI18nPermalink(otherI18nLinks, otherLocale)
 ---
 
 <header
@@ -26,14 +26,11 @@ const localeSwitcher = getI18nPermalink(otherI18nLinks, otherLocale)
     class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4"
   >
     <div class="flex justify-between">
-      <a
-        class="flex items-center"
-        href={getLink('index', currentLocale)}
-      >
+      <a class="flex items-center" href={getLink("index", currentLocale)}>
         <Logo />
       </a>
-      <div class="flex items-center md:hidden">
-        <ToggleTheme />
+      <div class="flex items-center md:hidden gap-1.5">
+        <LanguageSwitcher i18nLinks={i18nLinks} />
         <ToggleMenu />
       </div>
     </div>
@@ -45,29 +42,25 @@ const localeSwitcher = getI18nPermalink(otherI18nLinks, otherLocale)
       <ul
         class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center collapse w-full md:w-auto collapsed text-xl md:text-base"
       >
-      <li>
-        <a
-          class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-          href={getLink("team", currentLocale)}
-          >Team
-        </a>
-      </li>
-        <li>
-          <a
-            class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href={getLink("blog", currentLocale)}
-            >Blog
-          </a>
-        </li>
-        <li class="md:hidden">
-          <a
-            class="font-bold hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="https://github.com/ecamp/ecamp3"
-            >Github
-          </a>
-        </li>
+        {
+          menuitems.map(({ label, id, link, onlymobile }) => (
+            <li class={onlymobile && "md:hidden"}>
+              <a
+                class:list={[
+                  "hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out",
+                  trimSlash(Astro.url.pathname) == (link ?? trimSlash(getLink(id, currentLocale)))
+                    ? "font-bold"
+                    : "font-medium",
+                ]}
+                href={link ?? getLink(id, currentLocale)}
+              >
+                {label}
+              </a>
+            </li>
+          ))
+        }
       </ul>
-      <div class="md:self-center flex items-center mb-4 md:mb-0 ml-2">
+      <div class="md:self-center hidden md:flex items-center mb-4 md:mb-0 ml-2">
         <div class="hidden items-center md:flex">
           <a
             href={getLink("contact", currentLocale)}
@@ -83,12 +76,7 @@ const localeSwitcher = getI18nPermalink(otherI18nLinks, otherLocale)
           >
             <Icon name="tabler:brand-github" class="w-5 h-5" />
           </a>
-          <a
-            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-base p-2.5 inline-flex items-center"
-            href={localeSwitcher}
-          >
-            {otherLocale.toUpperCase()}
-          </a>
+          <LanguageSwitcher i18nLinks={i18nLinks} />
         </div>
       </div>
     </nav>

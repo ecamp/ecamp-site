@@ -1,26 +1,30 @@
+---
+import { SITE } from '~/config.mjs';
+import { getI18nPermalink } from '~/utils/content';
+
 type Props = {
-  /** The current locale */
-  lang: string;
-  /** The English slug for the current page */
-  slug: string;
+  i18nLinks: {
+    [key:string]: string
+  };
 };
 
-const LanguageSelect = ({ lang, slug }: Props) => {
-  return (
-    <select
-      value={lang}
-      onChange={(e) => {
-        const newLang = e.target.value;
-        window.location.pathname = `/${newLang}/${slug}`;
-      }}
-    >
-      {Object.keys(KNOWN_LANGUAGES).map((key) => {
-        return (
-          <option key={key} value={KNOWN_LANGUAGES[key]}>
-            {key}
-          </option>
-        );
-      })}
-    </select>
+const { i18nLinks } = Astro.props;
+const { locale: currentLocale } = Astro.params;
+
+const otherI18nLinks =
+  i18nLinks &&
+  Object.fromEntries(
+    Object.entries(i18nLinks).filter(([locale]) => locale !== currentLocale)
   );
-};
+
+const otherLocale = SITE.locales.filter((lang) => lang !== currentLocale)[0];
+
+const localeSwitcher = getI18nPermalink(otherI18nLinks, otherLocale);
+---
+
+<a
+  class="leading-[1.25rem] text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-base p-2.5 inline-flex items-center"
+  href={localeSwitcher}
+>
+  {otherLocale.toUpperCase()}
+</a>

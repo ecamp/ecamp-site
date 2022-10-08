@@ -26,6 +26,9 @@ module.exports = {
       fontFamily: {
         sans: ["'Inter'", ...defaultTheme.fontFamily.sans],
       },
+      screen: {
+        "3xl": "1600px",
+      },
     },
   },
   variants: {
