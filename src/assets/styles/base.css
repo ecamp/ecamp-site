@@ -14,6 +14,14 @@
   .btn {
     @apply inline-flex items-center justify-center rounded border border-transparent font-medium text-center text-base leading-snug transition py-[0.5625rem] sm:py-3 px-5 sm:px-6 shadow-lg ease-in duration-200 focus:ring-blue-500 focus:ring-offset-blue-200 focus:ring-2 focus:ring-offset-2;
   }
+
+  .btn.primary {
+    @apply text-white bg-[#f36f2d] hover:bg-[#b7450d];
+  }
+
+  .btn.secondary {
+    @apply text-white bg-primary-600 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 font-semibold;
+  }
 }
 
 [astro-icon] > * {
