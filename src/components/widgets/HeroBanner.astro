@@ -1,4 +1,6 @@
 ---
+import { getLink } from "~/utils/content";
+
 const {title, description,primary,secondary} = Astro.props;
 ---
 
@@ -39,7 +41,7 @@ const {title, description,primary,secondary} = Astro.props;
       <div>
         <a
           class="btn secondary text-lg"
-          href="https://github.com/ecamp/ecamp3/blob/devel/README.md">{secondary}</a
+          href={getLink('contribution', Astro.params.locale)}>{secondary}</a
         >
       </div>
     </div>
