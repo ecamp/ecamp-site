@@ -25,6 +25,6 @@ Thanks for helping! There are a few ways to get started.
   - [Installation with Docker on Windows + WSL 2](https://github.com/ecamp/ecamp3/wiki/installation-development-windows)
   - [Set up VS Code as your code editor](https://github.com/ecamp/ecamp3/wiki/installation-development-windows#setting-up-the-ide)
 - If you run into problems during setup or need help, don't worry. Check the [discussions](https://github.com/ecamp/ecamp3/discussions) whether someone already had and solved your problem, and add a [new discussion](https://github.com/ecamp/ecamp3/discussions/new) otherwise.
-- Before you can start coding, read our [contributing guidelines](https://raw.githubusercontent.com/ecamp/ecamp3/devel/CONTRIBUTING.md)
+- Before you can start coding, read our [contributing guidelines](https://github.com/ecamp/ecamp3/blob/devel/README.md)
 - Study the [documentation in the wiki](https://github.com/ecamp/ecamp3/wiki)
 - Choose an [issue labeled "good first issue"](https://github.com/ecamp/ecamp3/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) and try to solve it
