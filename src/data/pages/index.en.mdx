@@ -112,19 +112,19 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
 
 <Steps
   title="Roadmap"
+  description="You can see the <a class='underline' href='https://github.com/ecamp/ecamp3/milestone/7'>current status</a> on GitHub."
   steps={[
     {
       title: "Development",
       version: "3._",
-      variant: "inprogress",
-      body: `Currently we are still in the development phase. You can see the <a class="underline" href="https://github.com/ecamp/ecamp3/milestone/7">current status</a> on GitHub.`,
+      variant: "check",
+      body: `The initial development phase is done. All features for the <b>MVP: Camp</b> are available (feature-complete).`,
     },
     {
       title: "Alpha",
       version: "3.α",
-      variant: "todo",
-      body: `All features for the <b>MVP: Camp</b> are available (feature-complete).
-      This version will serve as a temporary test version, so it will also contain some bugs and will be deleted later.`,
+      variant: "inprogress",
+      body: `This version serves as a temporary test version, so it still contains some bugs and complicated user interfaces. The data entered on this version will be deleted after this phase.`,
     },
     {
       title: "Beta",

@@ -10,23 +10,31 @@ interface Props {
     body: string;
   }[];
   title?: string;
+  description?: string;
 }
 
-const { steps, title } = Astro.props as Props;
+const { steps, title, description } = Astro.props as Props;
 ---
 
 <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl">
   {
     title && (
-      <h2 class="mb-8 text-4xl lg:text-5xl font-bold font-heading">
-        {title}
-      </h2>
+      <h2 class="mb-8 text-4xl lg:text-5xl font-bold font-heading">{title}</h2>
     )
   }
-  <div class="grid gap-6 row-gap-10 md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_2fr] xl:grid-cols-2">
+  {
+    description && (
+      <p class="mb-8">
+        <Fragment set:html={description} />
+      </p>
+    )
+  }
+  <div
+    class="grid gap-6 row-gap-10 md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_2fr] xl:grid-cols-2"
+  >
     <div class="md:pr-16">
       {
-        steps.map((step,index) => (
+        steps.map((step, index) => (
           <div class="flex gap-x-4">
             <div class="flex flex-col items-center">
               <div>
@@ -40,8 +48,8 @@ const { steps, title } = Astro.props as Props;
                     <Icon
                       name="tabler:check"
                       class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold"
-                      />
-                      ) : (
+                    />
+                  ) : (
                     <Icon
                       name="line-md:coffee-twotone-loop"
                       optimize={false}
@@ -50,7 +58,9 @@ const { steps, title } = Astro.props as Props;
                   )}
                 </div>
               </div>
-              {index < steps.length -1 && <div class="w-px h-full bg-gray-300 dark:bg-slate-500" />}
+              {index < steps.length - 1 && (
+                <div class="w-px h-full bg-gray-300 dark:bg-slate-500" />
+              )}
             </div>
             <div class="pt-1 pb-8">
               <p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300 tabular-nums">
@@ -61,7 +71,9 @@ const { steps, title } = Astro.props as Props;
               <p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">
                 <Fragment set:html={step.title} />
               </p>
-              <p><Fragment set:html={step.body} /></p>
+              <p>
+                <Fragment set:html={step.body} />
+              </p>
             </div>
           </div>
         ))
