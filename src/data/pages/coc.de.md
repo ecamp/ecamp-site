@@ -67,7 +67,7 @@ Offline-Veranstaltung.
 ## Durchsetzung
 
 Fälle von missbräuchlichem, belästigendem oder anderweitig inakzeptablem
-Verhalten können unter [ecamp3core@gmail.com](mailto:ecamp3core@gmail.com) der für die Durchsetzung
+Verhalten können via das [Kontaktformular](/de/kontakt) der für die Durchsetzung
 zuständigen Gemeinschaftsleitung gemeldet werden. Alle Beschwerden werden fair geprüft und ermittelt.
 
 Die gesamte Gemeinschaftsleitung ist verpflichtet, die Privatsphäre und die
