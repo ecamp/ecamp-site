@@ -11,9 +11,9 @@ Durch den Zugriff auf diese Applikation sowie deren Nutzung erklärst du dich mi
 ## Begriffe
 ### _ecamp3_, _eCamp_ und &ldquo;die Applikation&rdquo;
 Bei _ecamp3_ handelt es sich um Open Source Software (siehe Begriff unten) welche die Planung von J+S-Lagern, J+S-Kursen und anderen Lagern vereinfachen soll.
-Der Programmcode der Software _ecamp3_ ist öffentlich auf GitHub unter <a href="https://github.com/ecamp/ecamp3" target="_blank">https://github.com/ecamp/ecamp3</a> verfügbar und unterliegt der &ldquo;GNU Affero General Public License v3.0&rdquo; Lizenz, siehe Begriff unten.
+Der Programmcode der Software _ecamp3_ ist öffentlich auf GitHub unter [https://github.com/ecamp/ecamp3](https://github.com/ecamp/ecamp3){target=_blank} verfügbar und unterliegt der &ldquo;GNU Affero General Public License v3.0&rdquo; Lizenz, siehe Begriff unten.
 
-_eCamp_ ist der Name der öffentlichen Instanz von _ecamp3_ welche wir betreiben, und wird im folgenden auch &ldquo;die Applikation&rdquo; genannt. Erreichbar ist die Applikation unter der URL <a href="https://ecamp3.ch/" target="_blank">https://ecamp3.ch</a>.
+_eCamp_ ist der Name der öffentlichen Instanz von _ecamp3_ welche wir betreiben, und wird im folgenden auch &ldquo;die Applikation&rdquo; genannt. Erreichbar ist die Applikation unter der URL [https://ecamp3.ch](https://ecamp3.ch/){target=_blank}.
 
 ### Nutzende
 Nutzende sind natürliche Personen wie du, welche die Planungsfeatures von _eCamp_ nutzen und Inhalte auf _eCamp_ führen möchten. Wer _eCamp_ nutzen und Inhalte erfassen möchte, benötigt hierzu zwingend ein Nutzenden-Konto.
@@ -28,25 +28,25 @@ Nutzende erfassen bei der Lagerplanung Inhalte auf _eCamp_. Der Nutzendeninhalt 
 Die Initiative zum Softwareprojekt _ecamp3_ und zur Applikation _eCamp_ stammt vom _eCamp Core Team_, einem Team von ehrenamtlichen Entwicklern. Im Austausch mit u.a. Lagerleitenden der Pfadibewegung Schweiz wurden Anforderungen erhoben und die Applikation _eCamp_ lanciert. Das _eCamp Core Team_ sieht sich als Teil einer offenen Community von Jugendverbänden und anderen Nutzendenorganisationen. Als Träger und Applikations-Betreibende trägt das _eCamp Core Team_ die Verantwortung für den sicheren Gebrauch und Betrieb der Applikation _eCamp_.
 
 ### DigitalOcean
-Die Applikation _eCamp_ wird auf einer managed Kubernetes-Cloud der Firma DigitalOcean betrieben. Die Nutzendeninhalte werden auf Servern in Frankfurt (DE) gespeichert und verarbeitet. Details siehe <a href="https://www.digitalocean.com/blog/introducing-our-new-european-region-frankfurt" target="_blank">https://www.digitalocean.com/blog/introducing-our-new-european-region-frankfurt</a>.
+Die Applikation _eCamp_ wird auf einer managed Kubernetes-Cloud der Firma DigitalOcean betrieben. Die Nutzendeninhalte werden auf Servern in Frankfurt (DE) gespeichert und verarbeitet. Details siehe [https://www.digitalocean.com/blog/introducing-our-new-european-region-frankfurt](https://www.digitalocean.com/blog/introducing-our-new-european-region-frankfurt){target=_blank}.
 
 ### Cloudflare
-Wenn dein Browser auf _eCamp_ zugreift, dann läuft die Kommunikation via Server von der US-amerikanischen Firma <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>. Diese Server verhindern unter anderem grossflächige Hackerangriffe gegen _eCamp_.
+Wenn dein Browser auf _eCamp_ zugreift, dann läuft die Kommunikation via Server von der US-amerikanischen Firma [Cloudflare](https://www.cloudflare.com/){target=_blank}. Diese Server verhindern unter anderem grossflächige Hackerangriffe gegen _eCamp_.
 
 ### SendGrid
-Ausgehende E-Mails aus _eCamp_ werden via die US-amerikanische Firma <a href="https://sendgrid.com/" target="_blank">SendGrid</a> versendet.
+Ausgehende E-Mails aus _eCamp_ werden via die US-amerikanische Firma [SendGrid](https://sendgrid.com/){target=_blank} versendet.
 
 ### ImprovMX
-Eingehende E-Mails an @ecamp3.ch-Mailadressen werden via den Service <a href="https://improvmx.com/" target="_blank">ImprovMX</a> der französischen Firma Reflectiv SAS sowie via den Service <a href="https://mail.google.com/" target="_blank">GMail</a> von Google empfangen.
+Eingehende E-Mails an @ecamp3.ch-Mailadressen werden via den Service [ImprovMX](https://improvmx.com/){target=_blank} der französischen Firma Reflectiv SAS sowie via den Service [GMail](https://mail.google.com/){target=_blank} von Google empfangen.
 
 ### hitobito / MiData / cevi.db
-_eCamp_ bietet die Möglichkeit zur vereinfachten Registrierung bzw. Login via die OAuth-Schnittstellen von verschiedenen externen Services an. Darunter sind die Mitgliederverwaltungslösungen der Pfadibewegung Schweiz (MiData) und der Cevi Schweiz (cevi.db). Diese Mitgliederverwaltungslösungen basieren beide auf der Open Source Software <a href="https://hitobito.com/" target="_blank">hitobito</a> und werden von der schweizer Firma <a href="https://puzzle.ch/" target="_blank">Puzzle ITC</a> betrieben.
+_eCamp_ bietet die Möglichkeit zur vereinfachten Registrierung bzw. Login via die OAuth-Schnittstellen von verschiedenen externen Services an. Darunter sind die Mitgliederverwaltungslösungen der Pfadibewegung Schweiz (MiData) und der Cevi Schweiz (cevi.db). Diese Mitgliederverwaltungslösungen basieren beide auf der Open Source Software [hitobito](https://hitobito.com/){target=_blank} und werden von der schweizer Firma [Puzzle ITC](https://puzzle.ch/){target=_blank} betrieben.
 
 ### reCAPTCHA
-Zur Verhinderung von Spam wird für gewisse Operationen, darunter die Registrierung von Nutzendenkonten, der Service <a href="https://www.google.com/recaptcha/about/" target="_blank">reCAPTCHA</a> von Google verwendet.
+Zur Verhinderung von Spam wird für gewisse Operationen, darunter die Registrierung von Nutzendenkonten, der Service [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} von Google verwendet.
 
 ### Sentry
-Allfällig auftretende Fehler in der Applikation werden zur Analyse und Behebung durch das _eCamp Core Team_ automatisch an den Service <a href="https://sentry.io/" target="_blank">Sentry.io</a> der US-amerikanischen Firma Sentry gesendet. Das _eCamp Core Team_ kann diese Informationen dann an einem Ort gesammelt ansehen und zur Fehlerbehebung verwenden.
+Allfällig auftretende Fehler in der Applikation werden zur Analyse und Behebung durch das _eCamp Core Team_ automatisch an den Service [Sentry.io](https://sentry.io/){target=_blank} der US-amerikanischen Firma Sentry gesendet. Das _eCamp Core Team_ kann diese Informationen dann an einem Ort gesammelt ansehen und zur Fehlerbehebung verwenden.
 
 ### Open Source Software
 Open Source Software bezeichnet Software, deren Programmcode unter einer Open Source Lizenz steht, infolgedessen veröffentlicht wird und frei weiterbearbeitbar und -verteilbar ist. Dahinter steckt der Community-Gedanke: Open Source Software kann Menschen auf der ganzen Welt helfen, und umgekehrt können Menschen auf der ganzen Welt zur Verbesserung von Open Source Software beitragen und daran mitarbeiten.
@@ -54,7 +54,7 @@ Open Source Software bezeichnet Software, deren Programmcode unter einer Open So
 Es existieren diverse Open Source Lizenzen mit unterschiedlichen Ausprägungen und Regelungen zu Themen wie (kommerzielle) Weiterverwendbarkeit, Betrieb, dem Recht zur Bearbeitung und zur Erstellung von abgeleiteten Werken, sowie Pflichten in Bezug auf den Open Source Status und die Lizenz dieser abgeleiteten Werke.
 
 ### GNU Affero General Public License v3.0
-Der Programmcode (auch Source Code oder Quellcode genannt) von _ecamp3_ ist unter einer Lizenz namens <a href="https://choosealicense.com/licenses/agpl-3.0/" target="_blank">&ldquo;GNU Affero General Public License v3.0&rdquo;</a> veröffentlicht und geschützt. Die Lizenz definiert die Rechte und Pflichten im Umgang mit der Software. Dies bezieht sich jedoch nur auf den Programmcode: Die Nutzendeninhalte auf _eCamp_ stehen nicht unter dieser Lizenz.
+Der Programmcode (auch Source Code oder Quellcode genannt) von _ecamp3_ ist unter einer Lizenz namens [&ldquo;GNU Affero General Public License v3.0&rdquo;](https://choosealicense.com/licenses/agpl-3.0/){target=_blank} veröffentlicht und geschützt. Die Lizenz definiert die Rechte und Pflichten im Umgang mit der Software. Dies bezieht sich jedoch nur auf den Programmcode: Die Nutzendeninhalte auf _eCamp_ stehen nicht unter dieser Lizenz.
 
 ## Nutzungsbedingungen
 ### Grundregeln
@@ -82,7 +82,7 @@ Dies gilt insbesondere und ohne Einschränkung in den folgenden Fällen:
 Durch die Nutzung dieser Applikation bestätigst du, dass du über die erforderlichen (Urheber*innen-)Rechte an allen Inhalten verfügst, welche du auf der Applikation erfasst. Insbesondere dürfen keine Inhalte erfasst werden, welche eingetragene Markenzeichen oder Patente verletzen.
 
 #### Geistiges Eigentum
-Durch die Nutzung dieser Applikation stimmst du zu, alle von dir erstellten oder erfassten Inhalte (abzüglich der persönlichen Daten in deinem Profil) unter einer <a href="https://creativecommons.org/share-your-work/public-domain/cc0/" target="_blank">CC0 &ldquo;No rights reserved&rdquo;</a> Lizenz freizugeben. Diese erlaubt es allen die mit dir in Lagern zusammenarbeiten, deine Inhalte frei weiterzuverwenden, zu kopieren, anzupassen und zu veröffentlichen, ohne eine Quelle anzugeben. Grund dafür ist die übliche Praxis, altes Lagerprogramm in neuen Lagern in angepasster Form wiederzuverwenden. Diese Lizenz befreit deine Inhalte nicht von Rechten, welche andere möglicherweise an deinen Inhalten haben, insbesondere <a href="https://de.wikipedia.org/wiki/Pers%C3%B6nlichkeitsrecht_(Schweiz)" target="_blank">Persönlichkeitsrechte</a>. Du bist also weiterhin verantwortlich dafür, dass deine Inhalte niemanden verletzen und dass der [Verhaltenskodex](/de/verhaltenskodex) eingehalten wird.
+Durch die Nutzung dieser Applikation stimmst du zu, alle von dir erstellten oder erfassten Inhalte (abzüglich der persönlichen Daten in deinem Profil) unter einer [CC0 &ldquo;No rights reserved&rdquo;](ttps://creativecommons.org/share-your-work/public-domain/cc0/){target=_blank} Lizenz freizugeben. Diese erlaubt es allen die mit dir in Lagern zusammenarbeiten, deine Inhalte frei weiterzuverwenden, zu kopieren, anzupassen und zu veröffentlichen, ohne eine Quelle anzugeben. Grund dafür ist die übliche Praxis, altes Lagerprogramm in neuen Lagern in angepasster Form wiederzuverwenden. Diese Lizenz befreit deine Inhalte nicht von Rechten, welche andere möglicherweise an deinen Inhalten haben, insbesondere [Persönlichkeitsrechte](https://de.wikipedia.org/wiki/Pers%C3%B6nlichkeitsrecht_(Schweiz)){target=_blank} Du bist also weiterhin verantwortlich dafür, dass deine Inhalte niemanden verletzen und dass der [Verhaltenskodex](/de/verhaltenskodex) eingehalten wird.
 
 #### Korrektur- oder Löschungsverfahren
 Jede Person kann das Korrigieren oder Verbergen von Inhalten beantragen, die nicht den vorliegenden Nutzungsbedingungen entsprechen. Der betreffende Inhalt kann via das [Kontaktformular](/de/kontakt) gemeldet werden. Das _eCamp Core Team_ oder von ihm berechtigte Inhalts-Verantwortliche werden den Antrag bearbeiten und behalten sich das Recht vor, die benötigten Überprüfungen oder Abklärungen vor dem Korrigieren oder Verbergen eines Inhalts durchzuführen.
@@ -105,7 +105,7 @@ Wir bitten dich, Fehler und Verbesserungsvorschläge dem _eCamp Core Team_ zu me
 
 ### Kostenlose Nutzung der Applikation
 
-Die Nutzung von _eCamp_ wird kostenlos vom _eCamp Core Team_ angeboten, mit freundlicher Unterstützung der <a href="https://pfadi.swiss/" target="_blank">Pfadibewegung Schweiz</a> sowie <a href="https://lokalise.com/" target="_blank">lokalise</a>.
+Die Nutzung von _eCamp_ wird kostenlos vom _eCamp Core Team_ angeboten, mit freundlicher Unterstützung der [Pfadibewegung Schweiz](https://pfadi.swiss/){target=_blank} sowie [lokalise](https://lokalise.com/){target=_blank}.
 
 ### Haftungsausschluss
 Sämtliche dem jeweiligen Nutzenden auf dieser Applikation bereitgestellten und zur Verfügung gestellten Informationen inkl. Medien als auch die zugrundeliegende Software werden „wie dargestellt“ und „nach Verfügbarkeit“ bereitgestellt. Das _eCamp Core Team_ lehnt hiermit jegliche Mängelhaftung, Gewährleistung oder Zusicherungen soweit ab, als dies gesetzlich zulässig ist. Dies gilt im Speziellen für die Zusicherung der allgemeinen Gebrauchstauglichkeit, der Eignung für einen bestimmten Zweck oder der Nichtverletzung von Rechten Dritter. Das _eCamp Core Team_ gewährleistet nicht, dass _eCamp_ deinen Anforderungen entspricht und unterbrechungsfrei, sicher, fehlerfrei oder vollständig ist; selbstverständlich geben wir unser Bestes, die Applikation sicher und zuverlässig zu betreiben.
@@ -212,7 +212,7 @@ Wir speichern deine Daten nur solange, wie dies zur Erledigung deiner Anfrage no
 Wir weisen dich darauf hin, dass E-Mails auf dem Übertragungsweg unbefugt und unbemerkt mitgelesen oder verändert werden können. Durch den Spam-Filter können E-Mails abgewiesen werden, wenn diese durch bestimmte Merkmale als Spam identifiziert wurden.
 
 ## Abschliessende Bestimmungen
-#### Rechtswahl und Gerichtsstand
+### Rechtswahl und Gerichtsstand
 
 Die vorliegenden Nutzungsbestimmungen sowie deren Auslegung unterliegen vollumfänglich schweizerischem Recht. Ausschliesslicher Gerichtsstand ist Zürich.
 
