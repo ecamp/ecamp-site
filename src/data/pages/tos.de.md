@@ -13,7 +13,7 @@ Durch den Zugriff auf diese Applikation sowie deren Nutzung erklärst du dich mi
 Bei _ecamp3_ handelt es sich um Open Source Software (siehe Begriff unten) welche die Planung von J+S-Lagern, J+S-Kursen und anderen Lagern vereinfachen soll.
 Der Programmcode der Software _ecamp3_ ist öffentlich auf GitHub unter [https://github.com/ecamp/ecamp3](https://github.com/ecamp/ecamp3){target=_blank} verfügbar und unterliegt der &ldquo;GNU Affero General Public License v3.0&rdquo; Lizenz, siehe Begriff unten.
 
-_eCamp_ ist der Name der öffentlichen Instanz von _ecamp3_ welche wir betreiben, und wird im folgenden auch &ldquo;die Applikation&rdquo; genannt. Erreichbar ist die Applikation unter der URL [https://ecamp3.ch](https://ecamp3.ch/){target=_blank}.
+_eCamp_ ist der Name der öffentlichen Instanz von _ecamp3_, welche wir betreiben und wird im Folgenden auch &ldquo;die Applikation&rdquo; genannt. Erreichbar ist die Applikation unter der URL [https://ecamp3.ch](https://ecamp3.ch/){target=_blank}.
 
 ### Nutzende
 Nutzende sind natürliche Personen wie du, welche die Planungsfeatures von _eCamp_ nutzen und Inhalte auf _eCamp_ führen möchten. Wer _eCamp_ nutzen und Inhalte erfassen möchte, benötigt hierzu zwingend ein Nutzenden-Konto.
@@ -40,7 +40,7 @@ Ausgehende E-Mails aus _eCamp_ werden via die US-amerikanische Firma [SendGrid](
 Eingehende E-Mails an @ecamp3.ch-Mailadressen werden via den Service [ImprovMX](https://improvmx.com/){target=_blank} der französischen Firma Reflectiv SAS sowie via den Service [GMail](https://mail.google.com/){target=_blank} von Google empfangen.
 
 ### hitobito / MiData / cevi.db
-_eCamp_ bietet die Möglichkeit zur vereinfachten Registrierung bzw. Login via die OAuth-Schnittstellen von verschiedenen externen Services an. Darunter sind die Mitgliederverwaltungslösungen der Pfadibewegung Schweiz (MiData) und der Cevi Schweiz (cevi.db). Diese Mitgliederverwaltungslösungen basieren beide auf der Open Source Software [hitobito](https://hitobito.com/){target=_blank} und werden von der schweizer Firma [Puzzle ITC](https://puzzle.ch/){target=_blank} betrieben.
+_eCamp_ bietet die Möglichkeit zur vereinfachten Registrierung bzw. Login via die OAuth-Schnittstellen von verschiedenen externen Services an. Darunter sind die Mitgliederverwaltungslösungen der Pfadibewegung Schweiz (MiData) und der Cevi Schweiz (cevi.db). Diese Mitgliederverwaltungslösungen basieren beide auf der Open Source Software [hitobito](https://hitobito.com/){target=_blank} und werden von der Schweizer Firma [Puzzle ITC](https://puzzle.ch/){target=_blank} betrieben.
 
 ### reCAPTCHA
 Zur Verhinderung von Spam wird für gewisse Operationen, darunter die Registrierung von Nutzendenkonten, der Service [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} von Google verwendet.
@@ -58,13 +58,13 @@ Der Programmcode (auch Source Code oder Quellcode genannt) von _ecamp3_ ist unte
 
 ## Nutzungsbedingungen
 ### Grundregeln
-Bei der Applikation _eCamp_ handelt es sich um eine Webapplikation welche die Zusammenarbeit in der Planung von Lagern und Kursen erleichtern soll. Die Inhalte auf dieser Applikation stammen von den Nutzenden selber. Als Nutzende*r bist du verpflichtet, dich gewissenhaft und in Übereinstimmung mit diesem Ziel zu verhalten.
+Bei der Applikation _eCamp_ handelt es sich um eine Webapplikation, welche die Zusammenarbeit in der Planung von Lagern und Kursen erleichtern soll. Die Inhalte auf dieser Applikation stammen von den Nutzenden selber. Als Nutzende*r bist du verpflichtet, dich gewissenhaft und in Übereinstimmung mit diesem Ziel zu verhalten.
 
 Alle Nutzenden sind für die korrekte Nutzung der Applikation sowie für die Rechtmässigkeit der Inhalte verantwortlich.
 
 Auf der ganzen Applikation gilt unser [Verhaltenskodex](/de/verhaltenskodex).
 
-Das _eCamp Core Team_ behält sich das Recht vor, Inhalte die den Nutzungsbedingungen oder dem Verhaltenskodex widersprechen von der Applikation zu entfernen. Dies geschieht jedoch nur mit der Absicht, das grundlegende Ziel der Applikation _eCamp_ zu erhalten. Das _eCamp Core Team_ behält sich ebenfalls das Recht vor, die Aktivitäten eines Nutzenden der Applikation vorübergehend auszusetzen, indem:
+Das _eCamp Core Team_ behält sich das Recht vor, Inhalte, die den Nutzungsbedingungen oder dem Verhaltenskodex widersprechen, von der Applikation zu entfernen. Dies geschieht jedoch nur mit der Absicht, das grundlegende Ziel der Applikation _eCamp_ zu erhalten. Das _eCamp Core Team_ behält sich ebenfalls das Recht vor, die Aktivitäten eines Nutzenden der Applikation vorübergehend auszusetzen, indem:
 
 * der Nutzendeninhalt unsichtbar gemacht wird, 
 * das Nutzenden-Konto deaktiviert wird,
@@ -82,7 +82,7 @@ Dies gilt insbesondere und ohne Einschränkung in den folgenden Fällen:
 Durch die Nutzung dieser Applikation bestätigst du, dass du über die erforderlichen (Urheber*innen-)Rechte an allen Inhalten verfügst, welche du auf der Applikation erfasst. Insbesondere dürfen keine Inhalte erfasst werden, welche eingetragene Markenzeichen oder Patente verletzen.
 
 #### Geistiges Eigentum
-Durch die Nutzung dieser Applikation stimmst du zu, alle von dir erstellten oder erfassten Inhalte (abzüglich der persönlichen Daten in deinem Profil) unter einer [CC0 &ldquo;No rights reserved&rdquo;](ttps://creativecommons.org/share-your-work/public-domain/cc0/){target=_blank} Lizenz freizugeben. Diese erlaubt es allen die mit dir in Lagern zusammenarbeiten, deine Inhalte frei weiterzuverwenden, zu kopieren, anzupassen und zu veröffentlichen, ohne eine Quelle anzugeben. Grund dafür ist die übliche Praxis, altes Lagerprogramm in neuen Lagern in angepasster Form wiederzuverwenden. Diese Lizenz befreit deine Inhalte nicht von Rechten, welche andere möglicherweise an deinen Inhalten haben, insbesondere [Persönlichkeitsrechte](https://de.wikipedia.org/wiki/Pers%C3%B6nlichkeitsrecht_(Schweiz)){target=_blank} Du bist also weiterhin verantwortlich dafür, dass deine Inhalte niemanden verletzen und dass der [Verhaltenskodex](/de/verhaltenskodex) eingehalten wird.
+Durch die Nutzung dieser Applikation stimmst du zu, alle von dir erstellten oder erfassten Inhalte (abzüglich der persönlichen Daten in deinem Profil) unter einer [CC0 &ldquo;No rights reserved&rdquo;](ttps://creativecommons.org/share-your-work/public-domain/cc0/){target=_blank} Lizenz freizugeben. Diese erlaubt es allen, die mit dir in Lagern zusammenarbeiten, deine Inhalte frei weiterzuverwenden, zu kopieren, anzupassen und zu veröffentlichen, ohne eine Quelle anzugeben. Grund dafür ist die übliche Praxis, altes Lagerprogramm in neuen Lagern in angepasster Form wiederzuverwenden. Diese Lizenz befreit deine Inhalte nicht von Rechten, welche andere möglicherweise an deinen Inhalten haben, insbesondere [Persönlichkeitsrechten](https://de.wikipedia.org/wiki/Pers%C3%B6nlichkeitsrecht_(Schweiz)){target=_blank}. Du bist also weiterhin verantwortlich dafür, dass deine Inhalte niemanden verletzen und dass der [Verhaltenskodex](/de/verhaltenskodex) eingehalten wird.
 
 #### Korrektur- oder Löschungsverfahren
 Jede Person kann das Korrigieren oder Verbergen von Inhalten beantragen, die nicht den vorliegenden Nutzungsbedingungen entsprechen. Der betreffende Inhalt kann via das [Kontaktformular](/de/kontakt) gemeldet werden. Das _eCamp Core Team_ oder von ihm berechtigte Inhalts-Verantwortliche werden den Antrag bearbeiten und behalten sich das Recht vor, die benötigten Überprüfungen oder Abklärungen vor dem Korrigieren oder Verbergen eines Inhalts durchzuführen.
@@ -91,7 +91,7 @@ Jede Person kann das Korrigieren oder Verbergen von Inhalten beantragen, die nic
 
 Das _eCamp Core Team_ sorgt dafür, dass die Applikation regelmässig auf einem ausreichend aktuellen technischen Stand gehalten wird, um Sicherheitslücken so gut wie möglich zu vermeiden.
 
-Es ist verboten, Schadsoftware in irgendeiner Form auf _eCamp_ zu speichern oder via _eCamp_ zu verbreiten. Stelle auch sicher, dass verlinkte Webseiten nicht kompromittiert sind, sprich dass nicht z.B. durch Schadsoftware ein unberechtigtes Eindringen in ein Computersystem möglich ist.
+Es ist verboten, Schadsoftware in irgendeiner Form auf _eCamp_ zu speichern oder via _eCamp_ zu verbreiten. Stelle auch sicher, dass verlinkte Webseiten nicht kompromittiert sind, sprich, dass nicht z.B. durch Schadsoftware ein unberechtigtes Eindringen in ein Computersystem möglich ist.
 
 Bei Identifikation von Nutzenden, welche sich nicht an die Nutzungsbedingungen halten oder Inhalten, welche den Nutzungsbedingungen widersprechen, bist du verpflichtet, dies dem _eCamp Core Team_ zu melden, zum Beispiel via [Kontaktformular](/de/kontakt).
 
@@ -121,7 +121,7 @@ Die Bearbeitung von Personendaten, die im Zusammenhang mit dem Betrieb der Appli
 
 ### Erhebung von Daten
 
-_eCamp_ lebt von Nutzendeninhalten erstellt durch Nutzende mit einem Nutzenden-Konto, Details siehe Kapitel Begriffe.
+_eCamp_ lebt von Nutzendeninhalten, erstellt durch Nutzende mit einem Nutzenden-Konto, Details siehe Kapitel Begriffe.
 
 Deine personenbezogenen Daten erheben wir bei dir direkt oder im Zusammenhang mit der Benutzung der Webseite (z.B. IP-Adresse, MAC-Adresse des Smartphones oder Computers, Angaben zu deinem Gerät und Einstellungen, Cookies, Datum und Zeit des Besuches, abgerufene Seiten und Inhalte, benutzte Funktionen, verweisende Webseiten). Wenn du dich via einen externen Login-Service wie Google oder hitobito (siehe Kapitel Begriffe) registrierst oder einloggst, beziehen wir nach deiner expliziten Einwilligung auch Daten von diesen Services. In deinem Nutzenden-Konto speichern wir nur diejenigen Daten permanent, welche für die Applikation zwingend nötig sind.
 
@@ -147,7 +147,7 @@ Wir geben deine personenbezogenen Daten nur weiter, wenn eine der folgenden Vora
 * wenn wir daran ein berechtigtes Interesse haben und deine gegenteiligen Interessen nicht überwiegen;
 * wenn eine andere gesetzliche Erlaubnis vorliegt.
 
-Einige der genutzten Dienste gehören zu Unternehmen im Ausland. Daher kann es im Rahmen der Auftragsverarbeitung auch zu Übermittlung deiner personenbezogenen Daten an diese Unternehmen im Ausland kommen. Diese Unternehmen sind im gleichen Umfang zum Datenschutz verpflichtet, wie wir selber. Entspricht das Datenschutzniveau in dem Land in dem Daten übertragen werden nicht demjenigen der Schweiz oder der Europäischen Union, so stellen wir sicher, dass der gleiche Schutz wie in der Schweiz bzw. der Europäischen Union garantiert wird.
+Einige der genutzten Dienste gehören zu Unternehmen im Ausland. Daher kann es im Rahmen der Auftragsverarbeitung auch zu Übermittlung deiner personenbezogenen Daten an diese Unternehmen im Ausland kommen. Diese Unternehmen sind im gleichen Umfang zum Datenschutz verpflichtet, wie wir selber. Entspricht das Datenschutzniveau in dem Land, in dem Daten übertragen werden, nicht demjenigen der Schweiz oder der Europäischen Union, so stellen wir sicher, dass der gleiche Schutz wie in der Schweiz bzw. der Europäischen Union garantiert wird.
 
 Kommt es zu einer Datenübermittlung an ein Unternehmen in den USA, stellen wir sicher, dass dieses Unternehmen gemäss dem Swiss- bzw. EU-US-Privacy Shield Abkommen zertifiziert ist und damit sichergestellt wird, dass das Datenschutzniveau der Schweiz bzw. EU eingehalten wird. Fehlt eine Zertifizierung, holen wir die notwendigen Garantien vertraglich ein.
 
@@ -184,16 +184,16 @@ Wir verwenden ausschliesslich sogenannte “Session-Cookies”. Diese werden bei
 
 Wir unterscheiden zwei Stufen von Nutzenden:
 
-1. Ohne Registrierung: du kannst frei und anonym auf die rein informative Startseite [https://ecamp3.ch](/de/) zugreifen und dich auf ihr bewegen.
-2. Um die eigentlichen Lagerplanungs-Funktionen unserer Applikation zu nutzen, ist eine Registrierung erforderlich. Dazu muss ein Nutzenden-Konto erstellt werden mit einem zweiteiligen Namen, einer gültigen E-Mail-Adresse sowie einem Passwort. Die Registrierung beinhaltet einen Double-Opt-In, sprich während der Registrierung musst du zwingend die Nutzungsbedingungen und Datenschutzerklärung akzeptieren, und du erhältst nach Ausfüllen des Registrierungsformulars zwecks Verifizierung eine Bestätigungs-E-Mail. Erst danach wird dein Nutzenden-Konto aktiviert. Von da an kannst du dein Nutzenden-Profil ergänzen oder auch das Passwort bei Bedarf ändern.
+1. Ohne Registrierung: Du kannst frei und anonym auf die rein informative Startseite [https://ecamp3.ch](/de/) zugreifen und dich auf ihr bewegen.
+2. Um die eigentlichen Lagerplanungs-Funktionen unserer Applikation zu nutzen, ist eine Registrierung erforderlich. Dazu muss ein Nutzenden-Konto erstellt werden mit einem zweiteiligen Namen, einer gültigen E-Mail-Adresse sowie einem Passwort. Die Registrierung beinhaltet einen Double-Opt-In, sprich während der Registrierung musst du zwingend die Nutzungsbedingungen und Datenschutzerklärung akzeptieren und du erhältst nach Ausfüllen des Registrierungsformulars zwecks Verifizierung eine Bestätigungs-E-Mail. Erst danach wird dein Nutzenden-Konto aktiviert. Von da an kannst du dein Nutzenden-Profil ergänzen oder auch das Passwort bei Bedarf ändern.
 
 #### Einsicht in deine Daten
 
-Sämtliche persönlichen Daten die wir über dich dauerhaft speichern kannst du jederzeit in deinem Nutzenden-Profil einsehen.
+Sämtliche persönlichen Daten, die wir über dich dauerhaft speichern, kannst du jederzeit in deinem Nutzenden-Profil einsehen.
 
 #### Löschen deines Nutzenden-Kontos
 
-Möchtest du dein Konto nicht mehr weiterführen, so kannst du uns [kontaktieren](/de/kontakt) um eine Löschung zu beantragen. Dadurch werden alle von dir gespeicherten persönliche Daten (nicht die Nutzendeninhalte) unwiderruflich gelöscht. Möchtest du _eCamp_ wieder nutzen, so musst du dich neu registrieren. Alle Nutzendeninhalte bleiben zwecks Transparenz, Nachvollziehbarkeit und Weiterverwendung in zukünftigen Lagern bestehen, werden jedoch einem anonymen Nutzenden-Konto zugewiesen.
+Möchtest du dein Konto nicht mehr weiterführen, so kannst du uns [kontaktieren](/de/kontakt) um eine Löschung zu beantragen. Dadurch werden alle von dir gespeicherten persönlichen Daten (nicht die Nutzendeninhalte) unwiderruflich gelöscht. Möchtest du _eCamp_ wieder nutzen, so musst du dich neu registrieren. Alle Nutzendeninhalte bleiben zwecks Transparenz, Nachvollziehbarkeit und Weiterverwendung in zukünftigen Lagern bestehen, werden jedoch einem anonymen Nutzenden-Konto zugewiesen.
 
 #### Kontaktaufnahme via Kontaktformular
 
@@ -226,4 +226,4 @@ Sollte eine Bestimmung der vorliegenden Nutzungsbestimmungen ungültig oder undu
 
 Bei Fragen zu den Nutzungsbedingungen oder datenschutzrechtlichen Anliegen kannst du uns gerne kontaktieren.
 
-<small>Diese Nutzungsbedingungen und Datenschutzerklärung basieren auf den entsprechenden Texten der Plattform <a href="https://dialogluzern.ch/" target="_blank">Dialog Luzern</a>, und sind durch eine <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">&ldquo;CC BY-SA 4.0&rdquo;</a> Lizenz geschützt.</small>
+<small>Diese Nutzungsbedingungen und Datenschutzerklärung basieren auf den entsprechenden Texten der Plattform <a href="https://dialogluzern.ch/" target="_blank">Dialog Luzern</a> und sind durch eine <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">&ldquo;CC BY-SA 4.0&rdquo;</a> Lizenz geschützt.</small>
