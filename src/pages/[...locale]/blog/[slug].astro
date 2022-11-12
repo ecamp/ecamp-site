@@ -10,7 +10,7 @@ import { findImage } from "~/utils/images";
 
 export async function getStaticPaths() {
   const posts = await getContent('posts');
-  return BLOG.locales.map(locale => posts.filter(post => post.params.locale == locale));
+  return BLOG.locales.flatMap(locale => posts.filter(post => post.params.locale == locale));
 }
 
 const {contents,i18nLinks} = Astro.props;

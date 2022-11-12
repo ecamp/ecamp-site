@@ -26,8 +26,20 @@ module.exports = {
       fontFamily: {
         sans: ["'Inter'", ...defaultTheme.fontFamily.sans],
       },
+      fontWeight: {
+        medium: '450'
+      },
       screen: {
         "3xl": "1600px",
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              fontWeight: '450'
+            },
+          },
+        },
       },
     },
   },

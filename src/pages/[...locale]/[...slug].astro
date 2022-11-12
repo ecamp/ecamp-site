@@ -6,7 +6,6 @@ import SinglePost from "~/components/blog/SinglePost.astro";
 
 import { getContent } from "~/utils/content";
 import { findImage } from "~/utils/images";
-import HighlightedPosts from "~/components/blog/highlights/HighlightedPosts.astro";
 
 export async function getStaticPaths() {
   return await getContent("pages");

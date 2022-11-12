@@ -11,7 +11,7 @@ import { getCanonical, getPermalink } from "~/utils/permalinks";
 export async function getStaticPaths({ paginate }) {
   const posts = await getContent("posts");
 
-  return BLOG.locales.map((locale) =>
+  return BLOG.locales.flatMap((locale) =>
     paginate(
       posts.filter(({ params }) => params.locale == locale),
       {
