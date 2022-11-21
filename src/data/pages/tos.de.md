@@ -43,7 +43,7 @@ Eingehende E-Mails an @ecamp3.ch-Mailadressen werden via den Service [ImprovMX](
 _eCamp_ bietet die Möglichkeit zur vereinfachten Registrierung bzw. Login via die OAuth-Schnittstellen von verschiedenen externen Services an. Darunter sind die Mitgliederverwaltungslösungen der Pfadibewegung Schweiz (MiData) und des Cevi Schweiz (cevi.db). Diese Mitgliederverwaltungslösungen basieren beide auf der Open Source Software [hitobito](https://hitobito.com/){target=_blank} und werden von der Schweizer Firma [Puzzle ITC](https://puzzle.ch/){target=_blank} betrieben.
 
 ### reCAPTCHA
-Zur Verhinderung von Spam wird für gewisse Operationen, darunter die Registrierung von Nutzendenkonten, der Service [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} von Google verwendet.
+Zur Verhinderung von Spam wird für gewisse Operationen, darunter die Registrierung von Nutzendenkonten und Passwort-Resets, der Service [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} von Google verwendet.
 
 ### Sentry
 Allfällig auftretende Fehler in der Applikation werden zur Analyse und Behebung durch das _eCamp Core Team_ automatisch an den Service [Sentry.io](https://sentry.io/){target=_blank} der US-amerikanischen Firma Sentry gesendet. Das _eCamp Core Team_ kann diese Informationen dann an einem Ort gesammelt ansehen und zur Fehlerbehebung verwenden.
