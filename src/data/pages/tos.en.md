@@ -43,7 +43,7 @@ Incoming e-mails to @ecamp3.ch e-mail addresses are received via the [ImprovMX](
 _eCamp_ offers the possibility of simplified registration and login via the OAuth interfaces of various external services. Among them are the membership management solutions of the Swiss Scouts and Guides Movement (MiData) and YMCA Switzerland (cevi.db). These membership management solutions are both based on the open source software [hitobito](https://hitobito.com/){target=_blank} and are operated by the Swiss company [Puzzle ITC](https://puzzle.ch/){target=_blank}.
 
 ### reCAPTCHA
-To prevent spam, Google's [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} service is used for certain operations, including user account registration.
+To prevent spam, Google's [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} service is used for certain operations, including user account registration and password resetting.
 
 ### Sentry
 Any errors that occur in the application are automatically sent to the [Sentry.io](https://sentry.io/){target=_blank} service provided by the US company Sentry. The _eCamp Core Team_ can then view this information collected in one place and use it for troubleshooting.
