@@ -85,7 +85,7 @@ This applies in particular and without limitation in the following cases:
 By using this application, you confirm that you have the necessary (copyright) rights to all content which you enter on the application. In particular, you may not submit any content that infringes any registered trademarks or patents.
 
 #### Intellectual property
-By using this app, you agree to release all content you create or submit (minus the personal information in your profile) under a [CC0 &ldquo;No rights reserved&rdquo;](ttps://creativecommons.org/share-your-work/public-domain/cc0/){target=_blank} license.
+By using this app, you agree to release all content you create or submit (minus the personal information in your profile) under a [CC0 &ldquo;No rights reserved&rdquo;](https://creativecommons.org/share-your-work/public-domain/cc0/){target=_blank} license.
 This allows anyone who collaborates with you in camps to freely reuse, copy, adapt and publish your content without citing a source. The reason for this is the common practice of reusing old camp program in new camps in an adapted form. This license does not release your content from any rights that others may have in your content, including but not limited to [Persönlichkeitsrechte](https://de.wikipedia.org/wiki/Pers%C3%B6nlichkeitsrecht_(Schweiz)){target=_blank}. You are therefore still responsible for ensuring that your content does not offend anyone and that the [Code of Conduct](/en/code-of-conduct) is adhered to.
 
 #### Correction or deletion procedure
@@ -93,9 +93,9 @@ Any person may request the correction or hiding of content that does not comply 
 
 ### Security
 
-The _eCamp Core Team_ ensures that the application is regularly kept at a sufficiently up-to-date technical level to avoid security vulnerabilities as much as possible.
+The _eCamp Core Team_ works, as far as the voluntary commitment allows, to keep the application regularly on a sufficiently up-to-date technical level to avoid security vulnerabilities. Due to the limited time of our volunteers and the large amount of content coming directly from the users, there is no guarantee that _eCamp_ is 100% secure at any given time.
 
-It is forbidden to store malware in any form on _eCamp_ or to distribute it via _eCamp_. Also make sure that linked websites are not compromised, i.e. that no unauthorized intrusion into a computer system is possible, e.g. by malware.
+It is forbidden to store malware in any form on _eCamp_ or to distribute it via _eCamp_. Users must also ensure that linked websites are not compromised, i.e. that no unauthorized intrusion into a computer system is possible, e.g. through malware.
 
 If you identify users who do not comply with the Terms of Use or content that contradicts the Terms of Use, you are obliged to report this to the _eCamp Core Team_, for example via [contact form](/en/contact).
 
