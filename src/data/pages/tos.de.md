@@ -22,7 +22,7 @@ Nutzende sind natürliche Personen wie du, welche die Planungsfeatures von _eCam
 Ein Nutzenden-Konto erlaubt es, Lager zu erstellen und an Lagern mitzuarbeiten. Zur Erstellung eines Nutzenden-Kontos werden ein Name, eine gültige E-Mail-Adresse und ein Passwort benötigt, oder alternativ ein Account auf einem unterstützten OAuth Service (siehe Begriff weiter unten). Dein Name und deine E-Mail-Adresse sind für alle anderen Nutzenden einsehbar, welche mit dir an Lagern zusammenarbeiten.
 
 ### Unterstützte OAuth Services
-_eCamp_ bietet die Möglichkeit zur vereinfachten Registrierung bzw. Login via die OAuth-Schnittstellen von verschiedenen externen Services an, darunter die MiData der Pfadibewegung Schweiz, die cevi.db des CEVI Schweiz (siehe Begriffe unten) und via einen Google-Account. Bei Registrierung oder Login via einen dieser Services wird anstelle eines Passworts deine externe Account-Identität in _eCamp_ gespeichert, zusätzlich zu deinem Namen und deiner E-Mail-Adresse.
+_eCamp_ bietet die Möglichkeit zur vereinfachten Registrierung und Login via die OAuth-Schnittstellen von verschiedenen externen Services an, darunter die MiData der Pfadibewegung Schweiz, die cevi.db des CEVI Schweiz, die jubla.db der Jungwacht Blauring Schweiz (siehe Begriffe unten) und via einen Google-Account. Bei Registrierung oder Login via einen dieser Services wird anstelle eines Passworts deine externe Account-Identität in _eCamp_ gespeichert, zusätzlich zu deinem Namen und deiner E-Mail-Adresse.
 
 ### Nutzendeninhalt
 Nutzende erfassen bei der Lagerplanung Inhalte auf _eCamp_. Der Nutzendeninhalt umfasst die Daten, welche durch deine Nutzung der Applikation erstellt werden (Programmplanung, Materiallisten, Sicherheitskonzepte, …).
@@ -42,8 +42,8 @@ Ausgehende E-Mails aus _eCamp_ werden via die US-amerikanische Firma [SendGrid](
 ### ImprovMX
 Eingehende E-Mails an @ecamp3.ch-Mailadressen werden via den Service [ImprovMX](https://improvmx.com/){target=_blank} der französischen Firma Reflectiv SAS sowie via den Service [GMail](https://mail.google.com/){target=_blank} von Google empfangen.
 
-### hitobito / MiData / cevi.db
-Die Mitgliederverwaltungslösungen der Pfadibewegung Schweiz (MiData) und des Cevi Schweiz (cevi.db) basieren beide auf der Open Source Software [hitobito](https://hitobito.com/){target=_blank} und werden von der Schweizer Firma [Puzzle ITC](https://puzzle.ch/){target=_blank} betrieben.
+### hitobito / MiData / cevi.db / jubla.db
+Die Mitgliederverwaltungslösungen der Pfadibewegung Schweiz (MiData), des Cevi Schweiz (cevi.db) und der Jungwacht Blauring Schweiz (jubla.db) basieren alle auf der Open Source Software [hitobito](https://hitobito.com/){target=_blank} und werden von der Schweizer Firma [Puzzle ITC](https://puzzle.ch/){target=_blank} betrieben.
 
 ### reCAPTCHA
 Zur Verhinderung von Spam wird für gewisse Operationen, darunter die Registrierung von Nutzendenkonten und Passwort-Resets, der Service [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} von Google verwendet.
@@ -137,8 +137,8 @@ Folgende Dritte können oder sind im Rahmen der Erbringungen involviert (siehe K
 * Hosting-Plattform-Betreiberin DigitalOcean
 * Spamschutz und DNS-Server Cloudflare
 * E-Mail-Services Sendgrid und ImprovMX / Reflectiv SAS
-* Google, via reCAPTCHA, wenn du das _eCamp Core Team_ via Mail oder Kontaktformular kontaktierst, und bei allfälligem Login via Google
-* hitobito / Puzzle ITC bei allfälligem Login via MiData oder cevi.db
+* Google, via reCAPTCHA, wenn du das _eCamp Core Team_ via E-Mail oder Kontaktformular kontaktierst, und bei allfälliger Registrierung oder Login via Google-Account
+* hitobito / Puzzle ITC bei allfälliger Registrierung oder Login via MiData, cevi.db oder jubla.db
 * Sentry, bei allfällig auftretenden Fehlern in der Software
 
 Wir geben deine personenbezogenen Daten nur weiter, wenn eine der folgenden Voraussetzungen erfüllt ist:

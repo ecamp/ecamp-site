@@ -22,7 +22,7 @@ Users are natural persons like you, who want to use the planning features of _eC
 A user account allows you to create and collaborate on camps. To create a user account you need a name, a valid email address and a password, or alternatively an account on a supported OAuth service (see term below). Your name and email address are visible to all other users who collaborate with you on camps.
 
 ### Supported OAuth services
-_eCamp_ offers the possibility of simplified registration or login via the OAuth interfaces of various external services, including MiData of the Swiss Scouts and Guides Movement, cevi.db of YMCA Switzerland (see terms below) and via a Google account. When registering or logging in via one of these services, your external account identity is stored in _eCamp_ instead of a password, along with your name and email address.
+_eCamp_ offers the possibility of simplified registration and login via the OAuth interfaces of various external services, including MiData of the Swiss Scouts and Guides Movement, cevi.db of YMCA Switzerland, jubla.db of Jungwacht Blauring (see terms below) and via a Google account. When registering or logging in via one of these services, your external account identity is stored in _eCamp_ instead of a password, along with your name and email address.
 
 ### User content
 Users enter content on _eCamp_ during camp planning. The user content includes the data created by your use of the application (program planning, material lists, safety concepts, …).
@@ -42,8 +42,8 @@ Outgoing emails from _eCamp_ are sent via the US company [SendGrid](https://send
 ### ImprovMX
 Incoming e-mails to @ecamp3.ch e-mail addresses are received via the [ImprovMX](https://improvmx.com/){target=_blank} service of the French company Reflectiv SAS and via the [GMail](https://mail.google.com/){target=_blank} service of Google.
 
-### hitobito / MiData / cevi.db
-The membership management solutions of the Swiss Scouts and Guides Movement (MiData) and YMCA Switzerland (cevi.db) are both based on the open source software [hitobito](https://hitobito.com/){target=_blank} and are operated by the Swiss company [Puzzle ITC](https://puzzle.ch/){target=_blank}.
+### hitobito / MiData / cevi.db / jubla.db
+The membership management solutions of the Swiss Scouts and Guides Movement (MiData), YMCA Switzerland (cevi.db) and Jungwacht Blauring (jubla.db) are all based on the open source software [hitobito](https://hitobito.com/){target=_blank} and are operated by the Swiss company [Puzzle ITC](https://puzzle.ch/){target=_blank}.
 
 ### reCAPTCHA
 To prevent spam, Google's [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} service is used for certain operations, including user account registration and password resetting.
@@ -138,8 +138,8 @@ The following third parties can be or are involved in the context of the service
 * Hosting platform operator DigitalOcean
 * Spam protection and DNS server Cloudflare
 * Mail services Sendgrid and ImprovMX / Reflectiv SAS
-* Google, via reCAPTCHA, if you contact the _eCamp Core Team_ via mail or contact form, and if you log in via Google
-* hitobito / Puzzle ITC, if you log in via MiData or cevi.db
+* Google, via reCAPTCHA, if you contact the _eCamp Core Team_ via email or contact form, and if you register or log in via a Google account
+* hitobito / Puzzle ITC, if you register or log in via MiData, cevi.db or jubla.db
 * Sentry, in case of errors in the software
 
 We will only share your personal information if one of the following conditions is met:
