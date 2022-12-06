@@ -20,7 +20,7 @@ const { content, image } = Astro.props;
         }
       </p>
       <h1
-        class="px-4 sm:px-6 max-w-3xl mx-auto text-center text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-8 font-heading"
+        class="px-4 sm:px-6 max-w-3xl mx-auto text-center text-4xl md:text-5xl font-bold leading-tighter tracking-tight mb-8 font-heading"
       >
         {content.frontmatter.title}
       </h1>
@@ -38,11 +38,11 @@ const { content, image } = Astro.props;
       }
     </header>
     <div
-      class="container mx-auto px-8 sm:px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary-600 dark:prose-a:text-primary-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
+      class="container mx-auto px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:font-bold prose-a:text-primary-600 dark:prose-a:text-primary-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
     >
       {content.isMdx ? <content.body /> : <Fragment set:html={content.body} />}
     </div>
-    <div class="container mx-auto px-8 sm:px-6 max-w-3xl mt-8">
+    <div class="container mx-auto px-6 max-w-3xl mt-8">
       <PostTags tags={content.frontmatter.tags} />
     </div>
   </article>

@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'Inter';
-  font-weight: 100 900;
+  font-weight: 100 650;
   font-display: swap;
-  font-style: oblique 0deg 10deg;
   src: url("/Inter.var.woff2") format("woff2");
 }
 
@@ -20,7 +19,7 @@
   }
 
   .btn.secondary {
-    @apply text-white bg-primary-600 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 font-semibold;
+    @apply text-white bg-primary-600 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800;
   }
 }
 
@@ -30,4 +29,12 @@
 
 [astro-icon].icon-bold > * {
   stroke-width: 2;
+}
+
+html {
+  font-weight: 350;
+}
+
+.prose :is(:where(a):not(:where([class~="not-prose"] *))) {
+  word-break: break-word;
 }

@@ -24,7 +24,8 @@
     "limax": "^v2.1.0",
     "prettier": "^2.7.1",
     "reading-time": "^1.5.0",
-    "subfont": "^6.9.0"
+    "subfont": "^6.12.2",
+    "svgo": "^3.0.1"
   },
   "engines": {
     "node": ">=14"

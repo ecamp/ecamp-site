@@ -9,6 +9,8 @@ export const get = () => ({
 /* /en/:splat 302 Language=en
 /* /de/:splat 302 Language=de
 
+/*/tos /en/tos 302
+
 / /de/
 `
 });

@@ -6,6 +6,7 @@ import sitemap from "@astrojs/sitemap";
 import image from "@astrojs/image";
 import { SITE } from "./src/config.mjs";
 import mdx from "@astrojs/mdx";
+import { remarkAttrs } from "./src/remark/attrs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -38,6 +39,10 @@ export default defineConfig({
     // }),
     image(),
   ],
+  markdown: {
+    remarkPlugins: [remarkAttrs],
+    extendDefaultPlugins: true,
+  },
   vite: {
     resolve: {
       alias: {
