@@ -19,7 +19,10 @@ _eCamp_ ist der Name der öffentlichen Instanz von _ecamp3_, welche wir betreibe
 Nutzende sind natürliche Personen wie du, welche die Planungsfeatures von _eCamp_ nutzen und Inhalte auf _eCamp_ führen möchten. Wer _eCamp_ nutzen und Inhalte erfassen möchte, benötigt hierzu zwingend ein Nutzenden-Konto.
 
 ### Nutzenden-Konto
-Ein Nutzenden-Konto erlaubt es, Lager zu erstellen und an Lagern mitzuarbeiten. Zur Erstellung eines Nutzenden-Kontos werden im Minimum ein zweiteiliger Name, eine E-Mail-Adresse und ein Passwort benötigt. Diese Informationen sind für alle anderen Nutzenden verfügbar, welche mit dir an Lagern zusammenarbeiten.
+Ein Nutzenden-Konto erlaubt es, Lager zu erstellen und an Lagern mitzuarbeiten. Zur Erstellung eines Nutzenden-Kontos werden ein Name, eine gültige E-Mail-Adresse und ein Passwort benötigt, oder alternativ ein Account auf einem unterstützten OAuth Service (siehe Begriff weiter unten). Dein Name und deine E-Mail-Adresse sind für alle anderen Nutzenden einsehbar, welche mit dir an Lagern zusammenarbeiten.
+
+### Unterstützte OAuth Services
+_eCamp_ bietet die Möglichkeit zur vereinfachten Registrierung bzw. Login via die OAuth-Schnittstellen von verschiedenen externen Services an, darunter die MiData der Pfadibewegung Schweiz, die cevi.db des CEVI Schweiz (siehe Begriffe unten) und via einen Google-Account. Bei Registrierung oder Login via einen dieser Services wird anstelle eines Passworts deine externe Account-Identität in _eCamp_ gespeichert, zusätzlich zu deinem Namen und deiner E-Mail-Adresse.
 
 ### Nutzendeninhalt
 Nutzende erfassen bei der Lagerplanung Inhalte auf _eCamp_. Der Nutzendeninhalt umfasst die Daten, welche durch deine Nutzung der Applikation erstellt werden (Programmplanung, Materiallisten, Sicherheitskonzepte, …).
@@ -40,7 +43,7 @@ Ausgehende E-Mails aus _eCamp_ werden via die US-amerikanische Firma [SendGrid](
 Eingehende E-Mails an @ecamp3.ch-Mailadressen werden via den Service [ImprovMX](https://improvmx.com/){target=_blank} der französischen Firma Reflectiv SAS sowie via den Service [GMail](https://mail.google.com/){target=_blank} von Google empfangen.
 
 ### hitobito / MiData / cevi.db
-_eCamp_ bietet die Möglichkeit zur vereinfachten Registrierung bzw. Login via die OAuth-Schnittstellen von verschiedenen externen Services an. Darunter sind die Mitgliederverwaltungslösungen der Pfadibewegung Schweiz (MiData) und des Cevi Schweiz (cevi.db). Diese Mitgliederverwaltungslösungen basieren beide auf der Open Source Software [hitobito](https://hitobito.com/){target=_blank} und werden von der Schweizer Firma [Puzzle ITC](https://puzzle.ch/){target=_blank} betrieben.
+Die Mitgliederverwaltungslösungen der Pfadibewegung Schweiz (MiData) und des Cevi Schweiz (cevi.db) basieren beide auf der Open Source Software [hitobito](https://hitobito.com/){target=_blank} und werden von der Schweizer Firma [Puzzle ITC](https://puzzle.ch/){target=_blank} betrieben.
 
 ### reCAPTCHA
 Zur Verhinderung von Spam wird für gewisse Operationen, darunter die Registrierung von Nutzendenkonten und Passwort-Resets, der Service [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} von Google verwendet.
@@ -99,7 +102,7 @@ Bei Identifikation von Nutzenden, welche sich nicht an die Nutzungsbedingungen h
 
 Die Entwicklung wie auch der Betrieb von _eCamp_ basiert auf ehrenamtlicher Arbeit des _eCamp Core Teams_ sowie der Community. Daher läuft der Betrieb der Applikation unter &ldquo;best effort&rdquo;. Es gibt keinerlei Garantien zu Verfügbarkeit der Applikation oder zeitnaher oder wunschgemässer Umsetzung von Fehlerbehebungen und Änderungen.
 
-Das _eCamp Core Team_ behält sich das Recht vor, jederzeit neue Software-Updates auf der Applikation auszurollen. Die Applikation kann sich deshalb ohne vorgängige Ankündigung verändern und dabei bestehende Funktionalität verändert oder entfernt werden. In diesem Zusammenhang kann es zu kurzzeitigen Unterbrüchen kommen, während denen _eCamp_ nicht zur Verfügung steht. 
+Das _eCamp Core Team_ behält sich das Recht vor, jederzeit neue Software-Updates auf der Applikation auszurollen. Die Applikation kann sich deshalb ohne vorgängige Ankündigung verändern und dabei bestehende Funktionalität verändert oder entfernt werden. In diesem Zusammenhang kann es zu kurzzeitigen Unterbrüchen kommen, während denen _eCamp_ nicht zur Verfügung steht.
 
 Wir bitten dich, Fehler und Verbesserungsvorschläge dem _eCamp Core Team_ zu melden. So kann die Applikation _eCamp_ laufend verbessert werden.
 
@@ -185,7 +188,7 @@ Wir verwenden ausschliesslich sogenannte “Session-Cookies”. Diese werden bei
 Wir unterscheiden zwei Stufen von Nutzenden:
 
 1. Ohne Registrierung: Du kannst frei und anonym auf die rein informative Startseite [https://ecamp3.ch](/de/) zugreifen und dich auf ihr bewegen.
-2. Um die eigentlichen Lagerplanungs-Funktionen unserer Applikation zu nutzen, ist eine Registrierung erforderlich. Dazu muss ein Nutzenden-Konto erstellt werden mit einem zweiteiligen Namen, einer gültigen E-Mail-Adresse sowie einem Passwort. Die Registrierung beinhaltet einen Double-Opt-In, sprich während der Registrierung musst du zwingend die Nutzungsbedingungen und Datenschutzerklärung akzeptieren und du erhältst nach Ausfüllen des Registrierungsformulars zwecks Verifizierung eine Bestätigungs-E-Mail. Erst danach wird dein Nutzenden-Konto aktiviert. Von da an kannst du dein Nutzenden-Profil ergänzen oder auch das Passwort bei Bedarf ändern.
+2. Um die eigentlichen Lagerplanungs-Funktionen unserer Applikation zu nutzen, ist eine Registrierung erforderlich. Dazu muss ein Nutzenden-Konto erstellt werden mit einem Namen, einer gültigen E-Mail-Adresse und einem Passwort, oder mit einem Account auf einem unterstützten OAuth Service. Während der Registrierung musst du zwingend die Nutzungsbedingungen und Datenschutzerklärung akzeptieren. Falls du einen Account mit Passwort erstellst, erhältst du nach Ausfüllen des Registrierungsformulars zwecks Verifizierung eine Bestätigungs-E-Mail. Erst danach wird dein Nutzenden-Konto aktiviert. Von da an kannst du dein Nutzenden-Profil ergänzen oder auch dein Passwort bei Bedarf ändern.
 
 #### Einsicht in deine Daten
 

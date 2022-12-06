@@ -19,7 +19,10 @@ _eCamp_ is the name of the public instance of _ecamp3_ which we operate, and is 
 Users are natural persons like you, who want to use the planning features of _eCamp_ and manage content on _eCamp_. If you want to use _eCamp_ and enter content, you need a user account.
 
 ### User account
-A user account allows you to create camps and collaborate on camps. To create a user account, you need at least a two-part name, an email address and a password. This information is available to all other users who collaborate with you on camps.
+A user account allows you to create and collaborate on camps. To create a user account you need a name, a valid email address and a password, or alternatively an account on a supported OAuth service (see term below). Your name and email address are visible to all other users who collaborate with you on camps.
+
+### Supported OAuth services
+_eCamp_ offers the possibility of simplified registration or login via the OAuth interfaces of various external services, including MiData of the Swiss Scouts and Guides Movement, cevi.db of YMCA Switzerland (see terms below) and via a Google account. When registering or logging in via one of these services, your external account identity is stored in _eCamp_ instead of a password, along with your name and email address.
 
 ### User content
 Users enter content on _eCamp_ during camp planning. The user content includes the data created by your use of the application (program planning, material lists, safety concepts, …).
@@ -40,7 +43,7 @@ Outgoing emails from _eCamp_ are sent via the US company [SendGrid](https://send
 Incoming e-mails to @ecamp3.ch e-mail addresses are received via the [ImprovMX](https://improvmx.com/){target=_blank} service of the French company Reflectiv SAS and via the [GMail](https://mail.google.com/){target=_blank} service of Google.
 
 ### hitobito / MiData / cevi.db
-_eCamp_ offers the possibility of simplified registration and login via the OAuth interfaces of various external services. Among them are the membership management solutions of the Swiss Scouts and Guides Movement (MiData) and YMCA Switzerland (cevi.db). These membership management solutions are both based on the open source software [hitobito](https://hitobito.com/){target=_blank} and are operated by the Swiss company [Puzzle ITC](https://puzzle.ch/){target=_blank}.
+The membership management solutions of the Swiss Scouts and Guides Movement (MiData) and YMCA Switzerland (cevi.db) are both based on the open source software [hitobito](https://hitobito.com/){target=_blank} and are operated by the Swiss company [Puzzle ITC](https://puzzle.ch/){target=_blank}.
 
 ### reCAPTCHA
 To prevent spam, Google's [reCAPTCHA](https://www.google.com/recaptcha/about/){target=_blank} service is used for certain operations, including user account registration and password resetting.
@@ -98,9 +101,9 @@ If you identify users who do not comply with the Terms of Use or content that co
 
 ### Development and operation
 
-The development as well as the operation of _eCamp_ is based on voluntary work of the _eCamp Core Team_ and the community. Therefore, the operation of the application runs under &ldquo;best effort&rdquo;. There are no guarantees for availability or timely or desired implementation of changes.
+The development as well as the operation of _eCamp_ is based on voluntary work of the _eCamp Core Team_ and the community. Therefore, the operation of the application runs under &ldquo;best effort&rdquo;. There are no guarantees for availability of the application or timely or desired implementation of bug fixes or changes.
 
-The _eCamp Core Team_ reserves the right to roll out new software updates to the application at any time. The application may therefore change without prior notice and there may be brief interruptions during which _eCamp_ is not available.
+The _eCamp Core Team_ reserves the right to roll out new software updates to the application at any time. The application may therefore change without prior notice and existing functionality may be modified or removed. In this context, there may be brief interruptions during which _eCamp_ is not available.
 
 We ask you to report bugs and suggestions for improvement to the _eCamp Core Team_. This way the _eCamp_ application can be improved continuously.
 
@@ -186,7 +189,7 @@ We exclusively use so-called "session cookies". These are automatically deleted 
 We distinguish two levels of users:
 
 1. without registration: you can freely and anonymously access and move around the purely informative home page [https://ecamp3.ch](/en/).
-2. to use the actual camp planning functions of our application, registration is required. This requires creating a user account with a two-part name, a valid email address, and a password. The registration includes a double opt-in, i.e. during the registration you have to accept the Terms of Use and Privacy Policy, and after filling out the registration form you will receive a confirmation e-mail for verification. Only then will your user account be activated. From then on, you can add to your user profile or change your password if necessary.
+2. to use the actual camp planning functions of our application, registration is required. This requires creating a user account with a name, a valid email address and a password, or with an account on a supported OAuth service. During registration, you must accept the Terms of Use and Privacy Policy. If you create an account with a password, after filling out the registration form you will receive a confirmation email for verification purposes. Only then will your user account be activated. From then on you can add to your user profile or change your password if necessary.
 
 #### Viewing your data
 
