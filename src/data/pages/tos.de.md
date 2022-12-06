@@ -97,9 +97,9 @@ Bei Identifikation von Nutzenden, welche sich nicht an die Nutzungsbedingungen h
 
 ### Entwicklung und Betrieb
 
-Die Entwicklung wie auch der Betrieb von _eCamp_ basiert auf ehrenamtlicher Arbeit des _eCamp Core Teams_ sowie der Community. Daher läuft der Betrieb der Applikation unter &ldquo;best effort&rdquo;. Es gibt keinerlei Garantien zu Verfügbarkeit oder zeitnaher oder wunschgemässer Umsetzung von Änderungen.
+Die Entwicklung wie auch der Betrieb von _eCamp_ basiert auf ehrenamtlicher Arbeit des _eCamp Core Teams_ sowie der Community. Daher läuft der Betrieb der Applikation unter &ldquo;best effort&rdquo;. Es gibt keinerlei Garantien zu Verfügbarkeit der Applikation oder zeitnaher oder wunschgemässer Umsetzung von Fehlerbehebungen und Änderungen.
 
-Das _eCamp Core Team_ behält sich das Recht vor, jederzeit neue Software-Updates auf der Applikation auszurollen. Die Applikation kann sich deshalb ohne vorgängige Ankündigung verändern und es kann zu kurzzeitigen Unterbrüchen kommen, während denen _eCamp_ nicht zu Verfügung steht.
+Das _eCamp Core Team_ behält sich das Recht vor, jederzeit neue Software-Updates auf der Applikation auszurollen. Die Applikation kann sich deshalb ohne vorgängige Ankündigung verändern und dabei bestehende Funktionalität verändert oder entfernt werden. In diesem Zusammenhang kann es zu kurzzeitigen Unterbrüchen kommen, während denen _eCamp_ nicht zur Verfügung steht. 
 
 Wir bitten dich, Fehler und Verbesserungsvorschläge dem _eCamp Core Team_ zu melden. So kann die Applikation _eCamp_ laufend verbessert werden.
 
