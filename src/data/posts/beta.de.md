@@ -1,7 +1,7 @@
 ---
 title: Beta-Version
 slug: beta-version
-pubDate: 2023-02-24
+pubDate: 2023-02-25
 description: Erhalte einen exklusiven Einblick in die neueste Version von eCamp mit der Beta-Version von eCamp v3.
 image: '~/assets/images/beta-thumbnail.jpg'
 ---
