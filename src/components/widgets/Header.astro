@@ -13,7 +13,7 @@ const { locale: currentLocale } = Astro.params;
 const menuitems = [
   { label: "Team", id: "team", onlymobile: false },
   { label: "Blog", id: "blog", onlymobile: false },
-  { label: "Login", link: "https://app.ecamp3.ch", onlymobile: false },
+  { label: "Login", link: "https://app.ecamp3.ch", onlymobile: true, target: '_blank' },
   { label: "Github", link: "https://github.com/ecamp/ecamp3", onlymobile: true },
   { label: "Contact", id: "contact", onlymobile: true },
 ];
@@ -44,7 +44,7 @@ const menuitems = [
         class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base"
       >
         {
-          menuitems.map(({ label, id, link, onlymobile }) => (
+          menuitems.map(({ label, id, link, onlymobile, target = null }) => (
             <li class={onlymobile && "md:hidden"}>
               <a
                 class:list={[
@@ -53,6 +53,7 @@ const menuitems = [
                     ? "font-semibold"
                     : "font-normal",
                 ]}
+                target={target}
                 href={link ?? getLink(id, currentLocale)}
               >
                 {label}
@@ -63,6 +64,13 @@ const menuitems = [
       </ul>
       <div class="md:self-center hidden md:flex items-center mb-4 md:mb-0 ml-2">
         <div class="hidden items-center md:flex">
+          <a
+          class="leading-[1.25rem] text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-base p-2.5 inline-flex items-center"
+          href="https://app.ecamp3.ch"
+          target='_blank'
+          >
+          Login
+          </a>
           <a
             href={getLink("contact", currentLocale)}
             class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
