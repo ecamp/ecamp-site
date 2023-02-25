@@ -33,9 +33,7 @@ const {title, description,primary,secondary} = Astro.props;
       <div>
         <a
           class="btn primary text-lg"
-          href="https://app-alpha.ecamp3.ch"
-          target="_blank"
-          rel="noopener">{primary}</a
+          href={'/' + Astro.params.locale + '/blog/beta-version'}>{primary}</a
         >
       </div>
       <div>

@@ -9,7 +9,7 @@ const { id, frontmatter } = Astro.props;
 const image = await findImage(frontmatter.image);
 ---
 
-<article class="mb-6 transition">
+<article class="mb-6 transition max-w-xl">
   {
     image && (
       <a

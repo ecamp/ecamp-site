@@ -326,9 +326,9 @@ const loadContent = async function () {
       };
     })
     .sort(({ props:a }, { props:b }) =>
-      a.frontmatter?.pubDate && b.frontmatter?.pubDate
-        ? new Date(b.frontmatter.pubDate).valueOf() -
-          new Date(a.frontmatter.pubDate).valueOf()
+      a.contents.frontmatter?.pubDate && b.contents.frontmatter?.pubDate
+        ? new Date(b.contents.frontmatter.pubDate).getTime() -
+          new Date(a.contents.frontmatter.pubDate).getTime()
         : 0
     );
 };
