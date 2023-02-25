@@ -5,9 +5,9 @@ import { getContent } from "~/utils/content";
 
 const { title, description } = Astro.props;
 
-const posts = (await getContent("posts")).filter(
+const posts = [(await getContent("posts")).filter(
   (post) => post.params.locale == Astro.params.locale
-);
+)[0]];
 ---
 
 <section class="px-4 py-16 mx-auto max-w-6xl lg:py-20">
