@@ -93,7 +93,7 @@ Jede Person kann das Korrigieren oder Verbergen von Inhalten beantragen, die nic
 
 ### Sicherheit
 
-Das _eCamp Core Team_ arbeitet, soweit es das ehrenamtliche Engagement erlaubt, daran dass die Applikation regelmässig auf einem ausreichend aktuellen technischen Stand gehalten wird, um Sicherheitslücken zu vermeiden. Es besteht, aufgrund der limitierten Zeit unserer freiwilligen Helfenden und des grossen Anteils an Inhalte die direkt von den Nutzenden kommen, keinerlei Garantie dass _eCamp_ zu einem gegebenen Zeitpunkt zu 100% sicher ist.
+Das _eCamp Core Team_ arbeitet, soweit es das ehrenamtliche Engagement erlaubt, daran dass die Applikation regelmässig auf einem ausreichend aktuellen technischen Stand gehalten wird, um Sicherheitslücken zu vermeiden. Es besteht, aufgrund der limitierten Zeit unserer freiwilligen Helfenden und des grossen Anteils an Inhalten die direkt von den Nutzenden kommen, keinerlei Garantie dass _eCamp_ zu einem gegebenen Zeitpunkt zu 100% sicher ist.
 
 Es ist verboten, Schadsoftware in irgendeiner Form auf _eCamp_ zu speichern oder via _eCamp_ zu verbreiten. Die Nutzenden haben auch sicherzustellen, dass verlinkte Webseiten nicht kompromittiert sind, sprich, dass nicht z.B. durch Schadsoftware ein unberechtigtes Eindringen in ein Computersystem möglich ist.
 
