@@ -1,12 +1,12 @@
 ---
-title: Terms of Use and Privacy Policy
+title: Terms of Service and Privacy Policy
 slug: tos
 ---
 
 Data protection is an important topic for us, and we process your data only in accordance with the legal regulations. In these terms of service, we describe how we handle data and which rights you possess in that process.
 
-## Acceptance of the terms of use
-By accessing and using this application, you agree to be bound by these Terms of Use. If you do not agree with the Terms of Use, you should not access _eCamp_ or use its content and features.
+## Acceptance of the Terms of Service
+By accessing and using this application, you agree to be bound by these Terms of Service. If you do not agree with the Terms of Service, you should not access _eCamp_ or use its content and features.
 
 ## Terms
 ### _ecamp3_, _eCamp_ and &ldquo;the application&rdquo;
@@ -59,7 +59,7 @@ There are various open source licenses with different characteristics and regula
 ### GNU Affero General Public License v3.0
 The source code of _ecamp3_ is published and protected under a license called [&ldquo;GNU Affero General Public License v3.0&rdquo;](https://choosealicense.com/licenses/agpl-3.0/){target=_blank}. This license defines the rights and obligations in the use of the software. However, this only applies to the source code: The user content on _eCamp_ is not under this license.
 
-## Terms of Use
+## Terms of Service
 ### Ground rules
 The application _eCamp_ is a web application which should facilitate the cooperation in the planning of camps and courses. The content on this application comes from the users themselves. As a user you are obliged to behave conscientiously and in accordance with this goal.
 
@@ -67,7 +67,7 @@ All users are responsible for the correct use of the application and for the leg
 
 Our [Code of Conduct](/en/code-of-conduct) applies throughout the application.
 
-The _eCamp Core Team_ reserves the right to remove from the application any content that contradicts the Terms of Use or the Code of Conduct. However, this is done only with the intention of preserving the basic purpose of the _eCamp_ application. The _eCamp Core Team_ also reserves the right to temporarily suspend the activities of a user of the application by:
+The _eCamp Core Team_ reserves the right to remove from the application any content that contradicts the Terms of Service or the Code of Conduct. However, this is done only with the intention of preserving the basic purpose of the _eCamp_ application. The _eCamp Core Team_ also reserves the right to temporarily suspend the activities of a user of the application by:
 
 * making the user content invisible,
 * deactivating the user's account
@@ -76,7 +76,7 @@ The _eCamp Core Team_ reserves the right to remove from the application any cont
 This applies in particular and without limitation in the following cases:
 
 * if there is a violation of applicable law,
-* if there is a violation of these Terms of Use or
+* if there is a violation of these Terms of Service or
 * if the _eCamp Core Team_ is of the opinion that the activity of the user is harmful to others or to the application or its operation.
 
 ### User content
@@ -89,7 +89,7 @@ By using this app, you agree to release all content you create or submit (minus 
 This allows anyone who collaborates with you in camps to freely reuse, copy, adapt and publish your content without citing a source. The reason for this is the common practice of reusing old camp program in new camps in an adapted form. This license does not release your content from any rights that others may have in your content, including but not limited to [Persönlichkeitsrechte](https://de.wikipedia.org/wiki/Pers%C3%B6nlichkeitsrecht_(Schweiz)){target=_blank}. You are therefore still responsible for ensuring that your content does not offend anyone and that the [Code of Conduct](/en/code-of-conduct) is adhered to.
 
 #### Correction or deletion procedure
-Any person may request the correction or hiding of content that does not comply with these Terms of Use. The content in question can be reported via the [contact form](/en/contact). The _eCamp Core Team_ or its authorized content owners will process the request and reserve the right to conduct any necessary review or clarification prior to correcting or hiding any content.
+Any person may request the correction or hiding of content that does not comply with these Terms of Service. The content in question can be reported via the [contact form](/en/contact). The _eCamp Core Team_ or its authorized content owners will process the request and reserve the right to conduct any necessary review or clarification prior to correcting or hiding any content.
 
 ### Security
 
@@ -97,7 +97,7 @@ The _eCamp Core Team_ works, as far as the voluntary commitment allows, to keep 
 
 It is forbidden to store malware in any form on _eCamp_ or to distribute it via _eCamp_. Users must also ensure that linked websites are not compromised, i.e. that no unauthorized intrusion into a computer system is possible, e.g. through malware.
 
-If you identify users who do not comply with the Terms of Use or content that contradicts the Terms of Use, you are obliged to report this to the _eCamp Core Team_, for example via [contact form](/en/contact).
+If you identify users who do not comply with the Terms of Service or content that contradicts the Terms of Service, you are obliged to report this to the _eCamp Core Team_, for example via [contact form](/en/contact).
 
 ### Development and operation
 
@@ -147,7 +147,7 @@ We will only share your personal information if one of the following conditions 
 * your consent has been given;
 * there is a legal obligation;
 * if this is necessary for the functionality of the features you use;
-* if this is necessary for the enforcement of our rights, in particular the enforcement of claims arising from the Terms of Use;
+* if this is necessary for the enforcement of our rights, in particular the enforcement of claims arising from the Terms of Service;
 * if we have a legitimate interest in doing so and your contrary interests do not outweigh our interests;
 * if any other legal permission exists.
 
@@ -189,7 +189,7 @@ We exclusively use so-called "session cookies". These are automatically deleted 
 We distinguish two levels of users:
 
 1. without registration: you can freely and anonymously access and move around the purely informative home page [https://ecamp3.ch](/en/).
-2. to use the actual camp planning functions of our application, registration is required. This requires creating a user account with a name, a valid email address and a password, or with an account on a supported OAuth service. During registration, you must accept the Terms of Use and Privacy Policy. If you create an account with a password, after filling out the registration form you will receive a confirmation email for verification purposes. Only then will your user account be activated. From then on you can add to your user profile or change your password if necessary.
+2. to use the actual camp planning functions of our application, registration is required. This requires creating a user account with a name, a valid email address and a password, or with an account on a supported OAuth service. During registration, you must accept the Terms of Service and Privacy Policy. If you create an account with a password, after filling out the registration form you will receive a confirmation email for verification purposes. Only then will your user account be activated. From then on you can add to your user profile or change your password if necessary.
 
 #### Viewing your data
 
@@ -218,16 +218,16 @@ We would like to point out that e-mails can be read or changed unauthorized and 
 ## Final regulations
 ### Choice of law and place of jurisdiction
 
-These Terms of Use and their interpretation shall be governed in their entirety by Swiss law. The exclusive place of jurisdiction is Zurich.
+These Terms of Service and their interpretation shall be governed in their entirety by Swiss law. The exclusive place of jurisdiction is Zurich.
 
 ### Changes to these terms
 
-These Terms of Use may be modified by the _eCamp Core Team_ at any time without prior notice. Any changes will be effective at the time of their publication. Furthermore, the _eCamp Core Team_ reserves the right to restrict or deny access to the application in whole or in part without prior notice and without giving reasons.
+These Terms of Service may be modified by the _eCamp Core Team_ at any time without prior notice. Any changes will be effective at the time of their publication. Furthermore, the _eCamp Core Team_ reserves the right to restrict or deny access to the application in whole or in part without prior notice and without giving reasons.
 
 ### Severability clause
 
-If any provision of these Terms of Use is or becomes invalid or unenforceable, the invalid or unenforceable provision shall be replaced by a valid, enforceable provision that most closely matches the intent of the original provision. This shall not affect the validity of the remaining provisions.
+If any provision of these Terms of Service is or becomes invalid or unenforceable, the invalid or unenforceable provision shall be replaced by a valid, enforceable provision that most closely matches the intent of the original provision. This shall not affect the validity of the remaining provisions.
 
-If you have any questions about the Terms of Use or privacy concerns, please feel free to contact us.
+If you have any questions about the Terms of Service or privacy concerns, please feel free to contact us.
 
-<small>These Terms of Use and Privacy Policy are based on the corresponding texts of the <a href="https://dialogluzern.ch/" target="_blank">Dialog Luzern</a> platform, and are protected by a <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">&ldquo;CC BY-SA 4.0&rdquo;</a> license.</small>
+<small>These Terms of Service and Privacy Policy are based on the corresponding texts of the <a href="https://dialogluzern.ch/" target="_blank">Dialog Luzern</a> platform, and are protected by a <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">&ldquo;CC BY-SA 4.0&rdquo;</a> license.</small>
