@@ -10,7 +10,7 @@ Since the closed beta release, a lot has happened on eCamp v3 with over 140 acce
 
 In terms of development, the following features and bug fixes are now available on eCamp v3 in time for the Pentecost camps:
 
-- It is now possible to print all the required information for camps and courses, as required by J+S and BSV, on the rough program. New fields have been added to the camp settings.
+- It is now possible to print all the required information for camps and courses, as required by J+S and BSV, on the program overview (the calendar-like view). New fields have been added to the camp settings.
 - The three-column program, the centerpiece of each activity, has been redesigned for mobile.
 - A notice has been added that the terms of use also apply when logging in via an external provider.
 - Machine translations have been created in French and Italian as a starting point.
