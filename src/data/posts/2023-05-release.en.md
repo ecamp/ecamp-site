@@ -16,8 +16,8 @@ Many thanks to our beta testers for the valuable feedback.
 - When printing with Layout #2, the set language is used for translation.
 
 We have also received contributions from the community again:
-- If you change the name in the profile, then it is immediately exchanged in all places.
-- Various forms can now no longer be submitted with invalid content.
+- If you change the name in the profile, then it is immediately exchanged in all places. Thanks [@DeNicola](https://github.com/DeNic0la)!
+- Various forms can now no longer be submitted with invalid content. Thanks for this as well [@DeNicola](https://github.com/DeNic0la)!
 
 We are very happy that talented developers take action right away and implement the
 improvements themselves.
