@@ -51,6 +51,9 @@ Zur Verhinderung von Spam wird für gewisse Operationen, darunter die Registrier
 ### Sentry
 Allfällig auftretende Fehler in der Applikation werden zur Analyse und Behebung durch das _eCamp Core Team_ automatisch an den Service [Sentry.io](https://sentry.io/){target=_blank} der US-amerikanischen Firma Sentry gesendet. Das _eCamp Core Team_ kann diese Informationen dann an einem Ort gesammelt ansehen und zur Fehlerbehebung verwenden.
 
+### AWS S3
+Wir speichern regelmässig verschlüsselte Backups der Inhalte auf _eCamp_ auf dem Service AWS S3 von Amazon. TODO Datencenter Land?
+
 ### Open Source Software
 Open Source Software bezeichnet Software, deren Programmcode unter einer Open Source Lizenz steht, infolgedessen veröffentlicht wird und frei weiterbearbeitbar und -verteilbar ist. Dahinter steckt der Community-Gedanke: Open Source Software kann Menschen auf der ganzen Welt helfen, und umgekehrt können Menschen auf der ganzen Welt zur Verbesserung von Open Source Software beitragen und daran mitarbeiten.
 
@@ -141,6 +144,7 @@ Folgende Dritte können oder sind im Rahmen der Erbringungen involviert (siehe K
 * Google, via reCAPTCHA, wenn du das _eCamp Core Team_ via E-Mail oder Kontaktformular kontaktierst, und bei allfälliger Registrierung oder Login via Google-Account
 * hitobito / Puzzle ITC bei allfälliger Registrierung oder Login via MiData, cevi.db oder jubla.db
 * Sentry, bei allfällig auftretenden Fehlern in der Software
+* Amazon, in Form von verschlüsselten Datenbank-Backups
 
 Wir geben deine personenbezogenen Daten nur weiter, wenn eine der folgenden Voraussetzungen erfüllt ist:
 
@@ -177,6 +181,12 @@ Beim Aufrufen unserer Webseite erhebt und speichert DigitalOcean (Details siehe 
 Diese Daten können keiner bestimmten Person zugeordnet werden und es findet keine Zusammenführung dieser Daten mit anderen Datenquellen statt. Die Speicherung der Logfiles erfolgt, um die Funktionsfähigkeit der Webseite zu garantieren und zur Sicherstellung der Sicherheit unserer informationstechnischen Systeme. Die Speicherung der Logfiles ist für den Betrieb der Webseite zwingend notwendig, du hast daher keine Möglichkeit dagegen Widerspruch zu erheben.
 
 Server-Log-Files werden maximal 5 Tage aufbewahrt.
+
+#### Backups
+
+Für eine Dauer von 7 Tagen bewahrt die Hosting-Firma DigitalOcean automatisch Backups der eCamp-Inhalte auf.
+
+Zusätzlich speichern wir längerfristige Backups auf einem AWS S3 Bucket von Amazon. Diese Backups werden nur in verschlüsselter Form an Amazon übertragen und dort gespeichert. Dies dient der Absicherung gegen Datencenter-Ausfälle bei DigitalOcean.
 
 #### Verwendung von Cookies
 
