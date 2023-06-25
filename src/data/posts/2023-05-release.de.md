@@ -16,8 +16,8 @@ Vielen Dank an unsere Beta-Testenden für das wertvolle Feedback.
 - Beim Druck-Layout #2 wird jetzt korrekt die eingestellte Sprache vom Profil für die Übersetzung verwendet.
 
 Auch haben wir wieder Contributions aus der Community bekommen:
-- Wenn man im Profil den Namen ändert, dann wird das gleich an allen Orten ausgetauscht. Merci [@DeNicola](https://github.com/DeNic0la)!
-- Verschiedene Formulare können jetzt nicht mehr mit ungültigem Inhalt abgeschickt werden. Merci auch dafür [@DeNicola](https://github.com/DeNic0la)!
+- Wenn man im Profil den Namen ändert, dann wird das gleich an allen Orten ausgetauscht. Merci [@DeNic0la](https://github.com/DeNic0la)!
+- Verschiedene Formulare können jetzt nicht mehr mit ungültigem Inhalt abgeschickt werden. Merci auch dafür [@DeNic0la](https://github.com/DeNic0la)!
 
 Es freut uns sehr, dass talentierte Entwickler das Heft gleich in die Hand nehmen und die
 Verbesserungen selber implementieren.

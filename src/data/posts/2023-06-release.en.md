@@ -11,7 +11,7 @@ Many summer camps are already being planned with eCamp v3. We're pleased to repo
 Several frequently requested features have been implemented in the meantime. Here are some highlights:
 
 - The **block planning progress** is back! Unlike in eCamp2, you can no longer assign a percentage to a block, but instead assign a status. In each camp, you can define which statuses are available for selection, such as "in progress," "ready for coach," "accepted by coach," or any other status needed for your camp.
-- PDF printing features have been optimized for two-week camps. Layout #1 can now print larger camps than before. Layout #2 splits the Picasso into multiple pages and intelligently hides time at night to optimize the use of page space.
+- PDF printing features have been optimized for two-week camps. Layout #1 can now print larger camps than before. Layout #2 splits the picasso into multiple pages and intelligently hides time at night to optimize the use of page space.
 - The team page and invitation page have been completely redesigned, and the permissions of each role are now more clearly described.
 - When dragging, moving, or extending blocks in the rough program, the time limits of the block are now displayed.
 - The clock and calendar windows for entering times and dates now only open when the button next to the text field is clicked. This change makes it easier to fill in the text field using the keyboard.
