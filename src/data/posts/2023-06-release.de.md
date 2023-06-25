@@ -1,7 +1,7 @@
 ---
 title: Neue Features für die Sommerlager
 slug: 2023-06-release
-pubDate: 2023-06-24
+pubDate: 2023-06-25
 description: Die neuesten gewünschten Verbesserungen für die Sommerlager sind da.
 image: '~/assets/images/sola23.jpg'
 ---

@@ -1,7 +1,7 @@
 ---
 title: New features for the summer camps
 slug: 2023-06-release
-pubDate: 2023-06-24
+pubDate: 2023-06-25
 description: The newest improvements for the summer camps have arrived.
 image: '~/assets/images/sola23.jpg'
 ---
