@@ -18,7 +18,7 @@ Einige oft gewünschte Funktionen konnten mittlerweile umgesetzt werden. Hier ei
 - Auf der Detailansicht einer Aktivität gibt es nun einen Zurück-Button.
 - Nach dem Erstellen einer neuen Blockkategorie wirst du nun direkt dazu aufgefordert, das Layout für die Kategorie zu definieren.
 - Für Gäste werden die Inhalte der Blöcke nun von Anfang an als schreibgeschützt angezeigt.
-- Bugfix beim Drucken werden nun zuverlässiger erfasst, um Probleme mit den Druckfunktionen in Zukunft gezielter angehen zu können.
+- Fehlermeldungen beim Drucken werden nun zuverlässiger erfasst, um Probleme mit den Druckfunktionen in Zukunft gezielter angehen zu können.
 - Bugfix im Druck-Layout #1: Das Grobprogramm bleibt nun wieder innerhalb der Seitengrenzen, und das Design wurde verbessert.
 - Bugfix im Druck-Layout #2: Verschachtelte Aufzählungen können nun gedruckt werden.
 - Performance-Verbesserungen für verschiedene Ansichten wurden vorgenommen.
