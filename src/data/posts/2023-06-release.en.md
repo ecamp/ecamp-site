@@ -12,12 +12,16 @@ Some often requested features could be implemented in the meantime. Here are som
 
 - The **block planning progress** is back! Unlike in eCamp2, you can no longer assign a percentage to a block, but instead a status. In each camp you can define which statuses are available for selection, for example "in progress", "ready for coach", "accepted by coach" or whatever you need for your camp.
 - PDF printing features have been optimized for two-week camps. Layout #1 can now print larger camps than before. Layout #2 now splits the picasso into multiple pages, and intelligently hides time at night to make the best use of page space.
-- The team page design has been completely redesigned, and the permissions of each role are now more clearly described.
+- The team page and invitation page have been completely redesigned, and the permissions of each role are now more clearly described.
 - When dragging, moving or extending blocks in the rough program, the time limits of the block are now displayed.
+- The clock and calendar windows for entering times and dates are now only opened when clicking the button next to the text field. This is to make it easier to fill in the text field with the keyboard.
+- On the detail view of an activity, there is now a back button.
+- After creating a new activity category, you are now prompted to define the layout for the category.
 - For guest users, block contents are now displayed as uneditable from the start.
 - Print error messages are now collected more reliably so that we can address issues with the print feature more specifically in the future.
 - Bugfix in print layout #1: The picasso now stays within the page boundaries again.
 - Bugfix in print layout #2: Nested bulleted lists can now be printed.
+- Performance improvements for various pages
 
 Also this month we got contributions from the community:
 - The 404 page that pops up when you visit a wrong URL has been redesigned. Thanks [@DeNicola](https://github.com/DeNic0la)!

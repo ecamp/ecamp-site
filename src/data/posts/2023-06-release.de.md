@@ -12,12 +12,16 @@ Einige oft gewünschte Features konnten inzwischen umgesetzt werden. Hier ein kl
 
 - Der **Block-Planungs-Fortschritt** ist zurück! Anders als bei eCamp2 kann man einem Block nicht mehr eine Prozentzahl zuweisen, sondern einen Status. In jedem Lager kann man definieren, welche Status zur Auswahl stehen, zum Beispiel "in Bearbeitung", "bereit für Coach", "von Coach akzeptiert" oder was auch immer ihr für euer Lager braucht.
 - Die PDF-Druck-Features wurden für zweiwöchige Lager optimiert. Layout #1 kann jetzt grössere Lager als zuvor drucken. In Layout #2 wird nun das Grobprogramm auf mehrere Seiten aufgeteilt, und die Zeit in der Nacht wird intelligent ausgeblendet, um den Platz auf der Seite möglichst optimal auszunutzen.
-- Das Design der Team-Seite wurde komplett überarbeitet, und die Berechtigungen der einzelnen Rollen sind nun klarer beschrieben.
+- Das Design der Team-Seite und der Einladungs-Seite wurde komplett überarbeitet, und die Berechtigungen der einzelnen Rollen sind nun klarer beschrieben.
 - Beim Aufziehen, Verschieben oder Verlängern von Blöcken im Grobprogramm werden neu die zeitlichen Grenzen des Blocks angezeigt.
-- Für Gast-Benutzer werden die Block-Inhalte jetzt von Anfang an als nicht bearbeitbar angezeigt.
+- Die Uhr bzw. das Kalender-Fenster für die Eingabe von Zeit bzw. Datum werden jetzt nur noch geöffnet wenn man auf den Knopf klickt, damit man das Eingabefeld einfacher mit der Tastatur bedienen kann.
+- Auf der Detailansicht einer Aktivität hat es jetzt einen Zurück-Button.
+- Nach dem Erstellen einer neuen Block-Kategorie wird man neu direkt aufgefordert, das Layout der Kategorie zu definieren.
+- Für Gast-Nutzende werden die Block-Inhalte jetzt von Anfang an als nicht bearbeitbar angezeigt.
 - Fehlermeldungen beim Drucken werden nun zuverlässiger gesammelt, damit wir die Probleme mit den Druck-Features in Zukunft noch gezielter angehen können.
 - Bugfix im Druck-Layout #1: Das Grobprogramm bleibt nun wieder innerhalb der Seitengrenzen.
 - Bugfix im Druck-Layout #2: Verschachtelte Aufzählungen können nun gedruckt werden.
+- Performance-Verbesserungen für verschiedene Ansichten
 
 Auch diesen Monat haben wir wieder Contributions aus der Community bekommen:
 - Die 404-Seite, welche auftaucht wenn man eine falsche URL besucht, wurde neu designt. Merci [@DeNicola](https://github.com/DeNic0la)!
