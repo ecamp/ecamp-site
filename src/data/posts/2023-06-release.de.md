@@ -3,30 +3,27 @@ title: Neue Features für die Sommerlager
 slug: 2023-06-release
 pubDate: 2023-06-24
 description: Die neuesten gewünschten Verbesserungen für die Sommerlager sind da.
-image: '~/assets/images/betar3.png'
+image: '~/assets/images/sola23.jpg'
 ---
 
-Bereits sind sehr viele Sommerlager mit eCamp v3 in Planung. Gleichzeitig bekommen wir mehr und mehr wertvolle Rückmeldungen. Das freut uns sehr!
+Bereits sind viele Sommerlager mit eCamp v3 in Planung. Gleichzeitig erhalten wir immer mehr wertvolles Feedback, was uns sehr freut!
 
-Einige oft gewünschte Features konnten inzwischen umgesetzt werden. Hier ein kleiner Überblick:
+Einige oft gewünschte Funktionen konnten mittlerweile umgesetzt werden. Hier ein kleiner Überblick:
 
-- Der **Block-Planungs-Fortschritt** ist zurück! Anders als bei eCamp2 kann man einem Block nicht mehr eine Prozentzahl zuweisen, sondern einen Status. In jedem Lager kann man definieren, welche Status zur Auswahl stehen, zum Beispiel "in Bearbeitung", "bereit für Coach", "von Coach akzeptiert" oder was auch immer ihr für euer Lager braucht.
-- Die PDF-Druck-Features wurden für zweiwöchige Lager optimiert. Layout #1 kann jetzt grössere Lager als zuvor drucken. In Layout #2 wird nun das Grobprogramm auf mehrere Seiten aufgeteilt, und die Zeit in der Nacht wird intelligent ausgeblendet, um den Platz auf der Seite möglichst optimal auszunutzen.
-- Das Design der Team-Seite und der Einladungs-Seite wurde komplett überarbeitet, und die Berechtigungen der einzelnen Rollen sind nun klarer beschrieben.
-- Beim Aufziehen, Verschieben oder Verlängern von Blöcken im Grobprogramm werden neu die zeitlichen Grenzen des Blocks angezeigt.
-- Die Uhr bzw. das Kalender-Fenster für die Eingabe von Zeit bzw. Datum werden jetzt nur noch geöffnet wenn man auf den Knopf klickt, damit man das Eingabefeld einfacher mit der Tastatur bedienen kann.
-- Auf der Detailansicht einer Aktivität hat es jetzt einen Zurück-Button.
-- Nach dem Erstellen einer neuen Block-Kategorie wird man neu direkt aufgefordert, das Layout der Kategorie zu definieren.
-- Für Gast-Nutzende werden die Block-Inhalte jetzt von Anfang an als nicht bearbeitbar angezeigt.
-- Fehlermeldungen beim Drucken werden nun zuverlässiger gesammelt, damit wir die Probleme mit den Druck-Features in Zukunft noch gezielter angehen können.
-- Bugfix im Druck-Layout #1: Das Grobprogramm bleibt nun wieder innerhalb der Seitengrenzen.
-- Bugfix im Druck-Layout #2: Verschachtelte Aufzählungen können nun gedruckt werden.
-- Performance-Verbesserungen für verschiedene Ansichten
-
-Auch diesen Monat haben wir wieder Contributions aus der Community bekommen:
-- Die 404-Seite, welche auftaucht wenn man eine falsche URL besucht, wurde neu designt. Merci [@DeNicola](https://github.com/DeNic0la)!
-
-Als nächstes arbeiten wir unter anderem noch an Verbesserungen am PDF-Design, und diskutieren Möglichkeiten wie man Blöcke innerhalb des Lagers und über Lager hinweg kopieren könnte. Auch das wurde bereits mehrfach von Beta-Testenden gewünscht.
+- Der **Block-Planungs-Fortschritt** ist zurück! Im Unterschied zu eCamp2 kann man einem Block nun nicht mehr einen Prozentzahl, sondern einen Status zuweisen. In jedem Lager kann man definieren, welche Status zur Auswahl stehen, zum Beispiel "in Bearbeitung", "bereit für Coach", "von Coach akzeptiert" oder was auch immer ihr für euer Lager benötigt.
+- Die Funktionen zum PDF-Druck wurden für zweiwöchige Lager optimiert. Layout #1 kann nun grössere Lager als zuvor drucken. Layout #2 teilt das Grobprogramm jetzt auf mehrere Seiten auf, und die Zeit in der Nacht wird intelligent ausgeblendet, um den Platz auf der Seite optimal zu nutzen.
+- Das Design der Teamseite und der Einladungsseite wurde vollständig überarbeitet, und die Berechtigungen der einzelnen Rollen sind nun klarer beschrieben.
+- Beim Aufziehen, Verschieben oder Verlängern von Blöcken im Grobprogramm werden nun die zeitlichen Grenzen des Blocks angezeigt.
+- Die Uhr bzw. das Kalenderfenster für die Eingabe von Zeit bzw. Datum öffnen sich jetzt nur noch, wenn man auf den Button neben dem Eingabefeld klickt. Das erleichtert die Bedienung des Eingabefelds mit der Tastatur.
+- Auf der Detailansicht einer Aktivität gibt es nun einen Zurück-Button.
+- Nach dem Erstellen einer neuen Blockkategorie wirst du nun direkt dazu aufgefordert, das Layout für die Kategorie zu definieren.
+- Für Gäste werden die Inhalte der Blöcke nun von Anfang an als schreibgeschützt angezeigt.
+- Fehlermeldungen beim Drucken werden nun zuverlässiger erfasst, um Probleme mit den Druckfunktionen in Zukunft gezielter angehen zu können.
+- Fehlerbehebung im Druck-Layout #1: Das Grobprogramm bleibt nun wieder innerhalb der Seitengrenzen, und das Design wurde verbessert.
+- Fehlerbehebung im Druck-Layout #2: Verschachtelte Aufzählungen können nun gedruckt werden.
+- Leistungsverbesserungen für verschiedene Ansichten wurden vorgenommen.
+ 
+Als nächstes konzentrieren wir uns unter anderem auf die Verbesserung des PDF-Designs und diskutieren Möglichkeiten, wie Blöcke innerhalb und zwischen den Lagern kopiert werden können. Auch das wurde bereits mehrfach von Beta-Testern gewünscht.
 
 Für Lager nach dem Sommer könnt ihr euch weiterhin mittels [Formular](https://forms.office.com/e/TRKsfnazf5) bewerben. Wir freuen uns auf euer Feedback!
 
