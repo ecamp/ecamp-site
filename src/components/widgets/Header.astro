@@ -3,11 +3,11 @@ import { Icon } from "astro-iconify";
 import Logo from "~/components/atoms/Logo.astro";
 import ToggleMenu from "../core/ToggleMenu.astro";
 
-import { getLink } from "~/utils/content";
 import { trimSlash } from "~/utils/permalinks";
 import LanguageSwitcher from "../atoms/LanguageSwitcher.astro";
+import {getLink} from "~/permalink";
 
-const { i18nLinks } = Astro.props;
+const { document } = Astro.props;
 const { locale: currentLocale } = Astro.params;
 
 const menuitems = [
@@ -31,7 +31,7 @@ const menuitems = [
         <Logo />
       </a>
       <div class="flex items-center md:hidden gap-1.5">
-        <LanguageSwitcher i18nLinks={i18nLinks} />
+        <LanguageSwitcher document={document} />
         <ToggleMenu />
       </div>
     </div>
@@ -85,7 +85,7 @@ const menuitems = [
           >
             <Icon name="tabler:brand-github" class="w-5 h-5" />
           </a>
-          <LanguageSwitcher i18nLinks={i18nLinks} />
+          <LanguageSwitcher document={document} />
         </div>
       </div>
     </nav>

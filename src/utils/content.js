@@ -1,4 +1,4 @@
-import { BASE_PATHNAME,createPath } from "./permalinks";
+import { BASE_PATHNAME,createPath } from "../utils/permalinks";
 
 export const slugMap = new Map();
 

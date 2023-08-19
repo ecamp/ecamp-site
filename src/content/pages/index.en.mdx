@@ -1,0 +1,190 @@
+---
+title: Project site of eCamp v3
+variant: page
+tags:
+  - astro
+  - tailwind css
+  - front-end
+---
+
+import HeroBanner from "../../components/widgets/HeroBanner.astro";
+import FeatureCards from "../../components/widgets/FeatureCards.astro";
+import Steps from "../../components/widgets/Steps.astro";
+import Stats from "../../components/widgets/Stats.astro";
+import ProseSection from "../../components/widgets/ProseSection.astro";
+import HighlightedPosts from "../../components/blog/highlights/HighlightedPosts.astro";
+import FaqItem from "../../components/widgets/faq/Item.astro";
+import FaqSection from "../../components/widgets/faq/Wrapper.astro";
+
+<HeroBanner
+  title="eCamp"
+  description="Digital camp planning for everyone"
+  primary="Try the Beta"
+  secondary="Contribute"
+/>
+
+<ProseSection>
+  <p>
+    Are you looking for a simple and digital way to plan your camp? Then
+    eCamp is just the thing for you! With this practical tool you can plan all
+    the activities for your camp and create a detailed plan that you can print
+    out and take with you wherever you go.
+  </p>
+  <p>
+    eCamp is a web-based app for camp and course planning. The application is
+    specialised for camps and courses of youth associations and for Y+S offers
+    in the sport of camp sports/trekking. However, it is open to all interested
+    parties, whether youth associations, school camps or other sports.
+  </p>
+</ProseSection>
+
+<FeatureCards
+  title="New Features"
+  items={[
+    {
+      title: "Simple Login ",
+      icon: "flat-color-icons:key",
+      description:
+        "If only there were no passwords! No problem, we support all the usual logins: Pfadi MiData, CeviDB and Google.",
+    },
+    {
+      title: "Responsive",
+      icon: "flat-color-icons:multiple-devices",
+      description:
+        "Now eCamp can also be used on mobile devices. Perfect for during the camp.",
+    },
+    {
+      title: "Autosave",
+      icon: "flat-color-icons:ok",
+      description: "Many input fields save automatically. So nice.",
+    },
+    {
+      title: "Printing",
+      icon: "flat-color-icons:print",
+      description:
+        "PDF / printing process are optimized. No more blank pages and overflowing texts.",
+    },
+    {
+      title: "Multilingual",
+      icon: "flat-color-icons:globe",
+      description:
+        "The application is initially available in German, French and English. More languages are possible.",
+    },
+    {
+      title: "Customizable",
+      icon: "flat-color-icons:settings",
+      description:
+        "Create templates for different types of blocks, with block sequence, red thread, safety concept, etc.",
+    },
+    {
+      title: "Improved Material",
+      icon: "flat-color-icons:support",
+      description: "Assign your material to the activity or camp section.",
+    },
+    {
+      title: "Team",
+      icon: "flat-color-icons:conference-call",
+      description: "Team management has been improved and simplified.",
+    },
+    {
+      title: "So much love",
+      icon: "flat-color-icons:like",
+      description:
+        "Developed by a small group of enthusiastic Scouts and supported by the Swiss Guide and Scouts Movement.",
+    },
+  ]}
+/>
+
+<Stats
+  items={[
+    {
+      stat: `${new Date().getFullYear() - 2018} Years`,
+      description: "Development",
+    },
+    { stat: "6", description: "Core Members" },
+    { stat: "76", description: "Core Meetings" },
+    { stat: "8318", description: "Commits" },
+  ]}
+/>
+
+<Steps
+  title="Roadmap"
+  description="You can see the <a class='underline' href='https://github.com/ecamp/ecamp3/milestone/7'>current status</a> on GitHub."
+  steps={[
+    {
+      title: "Development",
+      version: "3._",
+      variant: "check",
+      body: `The initial development phase is done. All features for the <b>MVP: Camp</b> are available (feature-complete).`,
+    },
+    {
+      title: "Alpha",
+      version: "3.α",
+      variant: "check",
+      body: `This version serves as a temporary test version, so it still contains some bugs and complicated user interfaces. The data entered on this version will be deleted after this phase.`,
+    },
+    {
+      title: "Closed beta",
+      version: "3.β",
+      variant: "inprogress",
+      body: `Isolated bugs. As of this version, however, the database is no longer reset.
+        Can be used for real but not time-critical camp planning.
+        The limited number of beta testers must expect maintenance interruptions.`,
+    },
+    {
+      title: "MVP: Camp",
+      version: "3.0",
+      variant: "todo",
+      body: `From this version onwards, eCamp v3 will be free to use for everyone.
+      All essential features of eCamp v2 are available for camp planning. Course planning will not yet be implemented for this version.`,
+    },
+    {
+      title: "MVP: Course",
+      version: "3.1",
+      variant: "todo",
+      body: "After <b>MVP: Camp</b> we will focus on the features of course planning.",
+    },
+    {
+      title: "New Features",
+      version: "3.X",
+      variant: "todo",
+      body: `Only after the launch of <b>MVP: Course</b> will we devote ourselves to the development of additional features that are not included in eCamp v2.
+       For the time being, we will therefore not accept feature requests.`,
+    },
+  ]}
+/>
+
+<HighlightedPosts title="Blog">
+  Find out what we do all day long....
+</HighlightedPosts>
+
+<FaqSection title="Questions & Answers">
+  <FaqItem question="How secure is my data at eCamp?">
+    In addition to the development, the core team also maintains a freely usable
+    instance under this page (login). The server is operated as a best-effort. For
+    the operation of the server we use modern cloud solutions.
+    This includes regular backups and server updates. Nevertheless we cannot
+    guarantee uninterrupted availability.
+  </FaqItem>
+  <FaqItem question="What will happen to eCamp v2?">
+    The original eCamp version 2 can be used at
+    https://ecamp.pfadiluzern.ch until further notice. However, the code is
+    getting old and difficult to maintain. For a long time there has been no further
+    development for eCamp v2 except for critical bug fixes. No data
+    is migrated from v2 to v3.
+  </FaqItem>
+  <FaqItem question="I have a question about eCamp v2">
+    For questions/support about eCamp v2 please use the support function in
+    eCamp v2 directly. No questions about eCamp v2 are answered on
+    this page.
+  </FaqItem>
+  <FaqItem question="Who is behind eCamp?">
+    eCamp is developed by a core team of volunteers. The source code is published as
+    open source. Community participation is actively encouraged.
+  </FaqItem>
+  <FaqItem question="Does anybody support you financially?">
+    Operating costs are funded by the [Swiss Guide and Scout Movement](https://pfadi.swiss/).
+    This landing page is powered by the open source plan of [Netlify](https://www.netlify.com/)
+    and our application translations are managed by [lokalise](https://lokalise.com/).
+  </FaqItem>
+</FaqSection>

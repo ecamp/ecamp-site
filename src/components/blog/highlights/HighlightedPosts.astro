@@ -1,20 +1,27 @@
 ---
 import HighlightsItem from "~/components/blog/highlights/Item.astro";
+import { postsCollection } from "../../../content";
+import GithubSlugger from 'github-slugger'
 
-import { getContent } from "~/utils/content";
+const slugger = new GithubSlugger()
 
 const { title, description } = Astro.props;
 
-const posts = [(await getContent("posts")).filter(
-  (post) => post.params.locale == Astro.params.locale
-)[0]];
+const posts = [
+  postsCollection.filter(
+    (post) => post.params.locale == Astro.params.locale
+  )[0],
+];
+
+const headingId = slugger.slug(title);
 ---
 
 <section class="px-4 py-16 mx-auto max-w-6xl lg:py-20">
   <div class="flex flex-col mb-6 md:mb-8">
     {
       title && (
-        <h2 class="max-w-lg mx-auto text-center mb-2 text-4xl sm:text-5xl font-bold sm:leading-none lg:mb-5 group font-heading">
+        <h2 id={headingId} class="max-w-lg mx-auto text-center mb-2 text-4xl sm:text-5xl font-bold sm:leading-none lg:mb-5 group font-heading">
+          <a href={"#" + headingId} class="anchor" aria-hidden="true"><span>🔗</span></a>
           {title}
         </h2>
       )
@@ -29,6 +36,10 @@ const posts = [(await getContent("posts")).filter(
   <div
     class="flex flex-wrap gap-6 row-gap-5 -mb-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center"
   >
-    {posts.map(({ props }) => <HighlightsItem {...props.contents} id={props.id} />)}
+    {
+      posts.map(({ props }) => (
+        <HighlightsItem {...props} />
+      ))
+    }
   </div>
 </section>

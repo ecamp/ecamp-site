@@ -1,55 +1,47 @@
 ---
 import PostTags from "~/components/atoms/Tags.astro";
 
-import { getI18nPermalink, getLink } from "~/utils/content";
-import { findImage } from "~/utils/images";
 import { getFormattedDate } from "~/utils/utils";
 import Picture from "../core/Picture.astro";
+import {getLink} from "~/permalink";
 
-const { contents, id } = Astro.props;
+const { data, document } = Astro.props;
 
-const image = await findImage(contents.frontmatter.image);
 ---
 
 <article
   class="max-w-md mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8"
 >
-  <a class="relative block group" href={getLink(id, Astro.params.locale)}>
-    <div
-      class="relative h-0 pb-[56.25%] md:pb-[75%] overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg"
-    >
-      <Picture
-        src={image}
-        class="absolute inset-0 w-full h-full object-cover mb-6 rounded shadow-lg"
-        widths={[400, 768]}
-        sizes="(max-width: 767px) 400px, 768px"
-        alt={contents.frontmatter.description}
-        aspectRatio={1}
-      />
-    </div>
+  <a class="relative block group" href={getLink(document.id, Astro.params.locale, 'posts')}>
+    <Picture
+      src={data.image}
+      config={[{ sourceType: 'width', formats: ['avif','webp'], widths: [296, 344, 400, 448], sizes:"(min-width:768px) 344px, calc(min(100vw - 64px, 448px))", retina: true }]}
+      class="w-full h-full object-cover mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700 aspect-video"
+      alt={data.description}
+    />
   </a>
   <div>
     <header>
       <h2 class="text-3xl sm:text-4xl font-bold leading-snug mb-2 font-heading">
         <a
           class="hover:text-primary-600 hover:underline underline-offset-4 decoration-1 transition ease-in duration-200"
-          href={getLink(id,Astro.params.locale)}
+          href={getLink(document.id, Astro.params.locale, 'posts')}
         >
-          {contents.frontmatter.title}
+          {data.title}
         </a>
       </h2>
     </header>
     <p class="text-lg sm:text-xl flex-grow">
-      {contents.frontmatter.excerpt || contents.frontmatter.description}
+      {data.excerpt || data.description}
     </p>
     <footer class="mt-4">
       <div>
         <span class="text-gray-500 dark:text-slate-400">
-          <time datetime={contents.frontmatter.pubDate}>{getFormattedDate(contents.frontmatter.pubDate)}</time>
+          <time datetime={data.pubDate}>{getFormattedDate(data.pubDate, Astro.params.locale)}</time>
         </span>
       </div>
       <div class="mt-4">
-        <PostTags tags={contents.frontmatter.tags} />
+        <PostTags tags={data.tags} />
       </div>
     </footer>
   </div>

@@ -1,27 +1,23 @@
 ---
 import Picture from "~/components/core/Picture.astro";
 
-import { getLink } from "~/utils/content";
-import { findImage } from "~/utils/images";
+import {getLink} from "../../../utils/content";
 
-const { id, frontmatter } = Astro.props;
-
-const image = await findImage(frontmatter.image);
+const { id, data } = Astro.props;
 ---
 
 <article class="mb-6 transition max-w-xl">
   {
-    image && (
+    data.image && (
       <a
         href={getLink(id, Astro.params.locale)}
         class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
       >
         <Picture
-          src={image}
+          src={data.image}
           class="object-cover w-full h-64 mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
-          widths={[400,768]}
-          alt=""
-          aspectRatio="16:9"
+          config={[{ sourceType: 'width', formats: ['avif','webp'], widths: [343, 443, 547, 670], sizes:"(min-width:578px) 547px, (min-width: 1536px) 670px, calc(100vw - 32px)", retina: true }]}
+          alt={data.image.alt}
         />
       </a>
     )
@@ -31,10 +27,10 @@ const image = await findImage(frontmatter.image);
       href={getLink(id, Astro.params.locale)}
       class="hover:text-primary-600 hover:underline underline-offset-4 decoration-1 transition ease-in duration-200"
     >
-      {frontmatter.title}
+      {data.title}
     </a>
   </h3>
   <p class="text-gray-700 dark:text-gray-400">
-    {frontmatter.excerpt || frontmatter.description}
+    {data.excerpt || data.description}
   </p>
 </article>
