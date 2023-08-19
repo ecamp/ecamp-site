@@ -11,9 +11,9 @@
  */
 import type { FeedOptions, Item } from "feed";
 import { Feed } from "feed";
-import { getPermalink } from "~/utils/permalinks";
 import { postsCollection } from "~/content";
 import { SITE } from "~/config.mjs";
+import { getPermalink, getCanonical } from "~/permalink";
 
 const year = +new Date().getFullYear();
 
@@ -64,7 +64,7 @@ export const get = async ({ params }) => {
         return {
           title: props.data.title,
           date: new Date(props.data.pubDate),
-          link: SITE.origin + getPermalink(params.path, "blog", params.locale),
+          link: getCanonical(getPermalink(params.path, "blog", params.locale)).toString(),
           description: props.data.description,
         };
       }),
@@ -77,5 +77,5 @@ export const get = async ({ params }) => {
   posts.forEach((item: Item) => feed.addItem(item));
   // Check output directory exists
 
-  return { body: params.slug == 'feed' ? feed.atom1() : feed.rss2() };
+  return { body: params.slug == "feed" ? feed.atom1() : feed.rss2() };
 };

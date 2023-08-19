@@ -1,5 +1,6 @@
-import { BASE_PATHNAME, createPath } from "~/utils/permalinks";
+import {BASE_PATHNAME, BLOG_BASE, CATEGORY_BASE, cleanSlug, createPath, TAG_BASE} from "~/utils/permalinks";
 import { i18nLinks } from "~/content";
+import {BLOG, SITE} from "~/config.mjs";
 
 export interface i18nLink {
   [key: string]: {
@@ -30,3 +31,35 @@ export function getI18nPermalink(i18nLinks, locale, fallbackLocale = "en") {
 export function getLink(id, locale, type: "pages" | "posts" = "pages") {
   return getI18nPermalink(getI18nLinksById(type, id), locale);
 }
+
+
+export const getPermalink = (slug = "", type = "page", locale = "de") => {
+  const _slug = cleanSlug(slug);
+
+  switch (type) {
+    case "category":
+      return createPath(BASE_PATHNAME, locale, CATEGORY_BASE, _slug);
+
+    case "tag":
+      return createPath(BASE_PATHNAME, locale, TAG_BASE, _slug);
+
+    case "post":
+      return createPath(
+          BASE_PATHNAME,
+          locale,
+          BLOG.postsWithoutBlogSlug ? "" : BLOG_BASE,
+          _slug
+      );
+
+    case "page":
+    default:
+      return createPath(BASE_PATHNAME, locale, _slug);
+  }
+};
+
+export const getHomePermalink = () => {
+  const permalink = getPermalink();
+  return permalink !== "/" ? permalink + "/" : permalink;
+};
+
+export const getCanonical = (path = "") => new URL(path, SITE.origin);

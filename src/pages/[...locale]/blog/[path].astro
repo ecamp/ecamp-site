@@ -4,9 +4,8 @@ import { SITE, BLOG } from "~/config.mjs";
 import Layout from "~/layouts/PageLayout.astro";
 import SinglePost from "~/components/blog/SinglePost.astro";
 
-import { getCanonical } from "~/utils/permalinks";
-import {i18nLinks, postsCollection} from "../../../content";
-import { getI18nPermalink } from "../../../utils/content";
+import { getI18nPermalink,getCanonical } from "~/permalink";
+import {i18nLinks, postsCollection} from "~/content";
 
 export async function getStaticPaths() {
   return BLOG.locales.flatMap((locale) =>
