@@ -89,6 +89,7 @@ export async function getPicture({
     string,
     { format: string; width: number; quality?: string }
   > = new Map();
+
   config.forEach((conf) => {
     conf.formats.forEach((format) => {
       if (conf.sourceType === "resolution") {

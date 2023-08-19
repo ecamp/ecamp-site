@@ -3,6 +3,7 @@ import { fileURLToPath } from "url";
 import { defineConfig, sharpImageService } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
+import compress from "astro-compress";
 import { SITE } from "./src/config.mjs";
 import mdx from "@astrojs/mdx";
 import remarkAttributes from "remark-attributes";
@@ -54,7 +55,8 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
-    sitemap(), // partytown({
+    sitemap(),
+    compress({Image: false}), // partytown({
     //   config: { forward: ["dataLayer.push"] },
     // }),
   ],

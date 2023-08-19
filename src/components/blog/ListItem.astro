@@ -5,7 +5,7 @@ import { getFormattedDate } from "~/utils/utils";
 import Picture from "../core/Picture.astro";
 import {getLink} from "~/permalink";
 
-const { data, document } = Astro.props;
+const { data, document, first } = Astro.props;
 
 ---
 
@@ -18,6 +18,8 @@ const { data, document } = Astro.props;
       config={[{ sourceType: 'width', formats: ['avif','webp'], widths: [296, 344, 400, 448], sizes:"(min-width:768px) 344px, calc(min(100vw - 64px, 448px))", retina: true }]}
       class="w-full h-full object-cover mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700 aspect-video"
       alt={data.description}
+      fetchpriority={first ? 'high' : 'auto'}
+      loading={first ? 'eager' : 'lazy'}
     />
   </a>
   <div>
