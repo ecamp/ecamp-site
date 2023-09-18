@@ -1,5 +1,8 @@
 ---
 import { Icon } from "astro-iconify";
+import GithubSlugger from 'github-slugger'
+
+const slugger = new GithubSlugger()
 
 interface Props {
   overline?: string;
@@ -13,6 +16,7 @@ interface Props {
 }
 
 const { items, overline, title, lead } = Astro.props;
+const headingId = slugger.slug(title);
 ---
 
 <section class="relative">
@@ -30,10 +34,11 @@ const { items, overline, title, lead } = Astro.props;
               {overline}
             </p>
           )
-        } 
+        }
         {
           title && (
-            <h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tight mb-4 font-heading">
+            <h2 id={headingId} class="inline-block text-4xl md:text-5xl font-bold leading-tighter tracking-tight mb-4 font-heading">
+              <a href={"#" + headingId} class="anchor" aria-hidden="true"><span>🔗</span></a>
               {title}
             </h2>
           )

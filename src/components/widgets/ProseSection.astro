@@ -1,15 +1,20 @@
 ---
+import GithubSlugger from 'github-slugger'
+
+const slugger = new GithubSlugger()
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
+const headingId = slugger.slug(title);
 ---
 
 <section class="py-8 mx-auto">
   {
     title && (
-      <h2 class="px-4 sm:px-6 max-w-3xl mx-auto text-center text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-8 font-heading">
+      <h2 id={headingId} class="px-4 sm:px-6 max-w-3xl mx-auto text-center text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-8 font-heading">
+        <a href={"#" + headingId} class="anchor" aria-hidden="true"><span>🔗</span></a>
         {title}
       </h2>
     )

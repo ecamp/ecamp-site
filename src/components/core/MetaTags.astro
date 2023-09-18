@@ -1,9 +1,8 @@
 ---
-import { getImage } from "@astrojs/image";
-import { getRelativeUrlByFilePath } from "~/utils/directories";
+import { getImage } from "astro:assets";
 
 import GoogleAnalytics from "~/components/core/GoogleAnalytics.astro";
-import defaultImageSrc from "~/assets/images/default.png";
+import defaultImageSrc from "~/assets/images/social.png";
 
 import { SITE } from "~/config.mjs";
 import ExtraMetaTags from "../atoms/ExtraMetaTags.astro";
@@ -17,7 +16,7 @@ const { src: defaultImage } = await getImage({
 const {
   title = SITE.name,
   description = "",
-  image: _image = defaultImage,
+  image = defaultImage,
   canonical,
   noindex = false,
   nofollow = false
@@ -27,13 +26,6 @@ const {
   locale
 } = Astro.params
 const language = locale?.toString() || 'en'
-
-const image =
-  typeof _image === "string"
-    ? new URL(_image, Astro.site)
-    : _image && typeof _image["src"] !== "undefined"
-    ? new URL(getRelativeUrlByFilePath(_image.src), Astro.site)
-    : null;
 ---
 
 <meta charset="UTF-8" />

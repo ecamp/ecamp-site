@@ -1,20 +1,18 @@
 ---
 import { SITE } from '~/config.mjs';
-import { getI18nPermalink } from '~/utils/content';
+import {getI18nPermalink} from "~/permalink";
+import {DocumentInfo,i18nLinks} from "../../content";
 
-type Props = {
-  i18nLinks: {
-    [key:string]: string
-  };
-};
+interface Props {
+    document: DocumentInfo;
+}
 
-const { i18nLinks } = Astro.props;
+const { document} = Astro.props;
 const { locale: currentLocale } = Astro.params;
-
 const otherI18nLinks =
   i18nLinks &&
   Object.fromEntries(
-    Object.entries(i18nLinks).filter(([locale]) => locale !== currentLocale)
+    Object.entries(i18nLinks[document.type][document.id]).filter(([locale]) => locale !== currentLocale)
   );
 
 const otherLocale = SITE.locales.filter((lang) => lang !== currentLocale)[0];

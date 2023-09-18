@@ -1,0 +1,29 @@
+---
+import { SITE } from "~/config.mjs";
+import { pagesCollection } from "../../content";
+
+import Layout from "~/layouts/PageLayout.astro";
+import SinglePost from "~/components/blog/SinglePost.astro";
+
+export async function getStaticPaths() {
+  return pagesCollection;
+}
+
+const { data, render, document, type } = Astro.props;
+const { Content } = await render();
+const meta = {
+  title: `${data.title} — ${SITE.name}`,
+  description: data.description,
+  image: data.image,
+}
+---
+
+<Layout meta={meta} document={document}>
+  {
+      data.variant === 'page'
+          ? <Content />
+          : <SinglePost data={data} content={Content}>
+              <Content />
+            </SinglePost>
+  }
+</Layout>

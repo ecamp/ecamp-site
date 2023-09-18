@@ -1,47 +1,55 @@
 ---
-import { getLink } from "~/utils/content";
+import {getLink} from "~/permalink";
+import Picture from "../core/Picture.astro";
+const {title, description, primary, secondary} = Astro.props;
+import banner from '~/assets/images/080720_lotos_7896_banner.jpg';
 
-const {title, description,primary,secondary} = Astro.props;
 ---
 
 <style>
-  .herobanner {
-    background-image: url(~/assets/images/080720_lotos_7896_small.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .herobanner--text {
-    background: linear-gradient(to right, black, transparent);
-  }
+    .herobanner--text {
+        background: linear-gradient(to right, black, transparent);
+    }
 </style>
 
 <section
-  class="relative herobanner grid md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_2fr] xl:grid-cols-2"
+	class="relative herobanner grid md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_2fr] xl:grid-cols-2 relative overflow-hidden"
 >
-  <div
-    class="herobanner--text text-white px-6 sm:px-12 py-12 md:p-20 lg:p-24 max-w-3xl"
-  >
-    <h1
-      class="text-5xl md:text-[3.50rem] font-bold leading-tighter mb-4 font-heading"
-    >
-      {title}
-    </h1>
-    <p class="text-xl xs:text-2xl font-light mb-8 leading-relaxed">
-      {description}
-    </p>
-    <div class="max-w-none flex flex-wrap gap-4">
-      <div>
-        <a
-          class="btn primary text-lg"
-          href={'/' + Astro.params.locale + '/blog/beta-version'}>{primary}</a
-        >
-      </div>
-      <div>
-        <a
-          class="btn secondary text-lg"
-          href={getLink('contribution', Astro.params.locale)}>{secondary}</a
-        >
-      </div>
-    </div>
-  </div>
+	<div>
+		<Picture
+			src={banner}
+			config={[{
+        sourceType: 'width',
+        formats: ['avif', 'webp'],
+        widths: [375, 475, 600, 768, 920, 1024, 1200, 1440, 1920],
+        sizes: "100vw",
+        retina: true,
+    }]} fetchpriority="high" loading="eager" alt="Sunrise" class="object-cover object-center absolute inset-0 h-full w-full"/>
+		<div
+			class="herobanner--text relative z-10 text-white px-6 sm:px-12 py-12 md:p-20 lg:p-24 max-w-3xl"
+		>
+			<h1
+				class="text-5xl md:text-[3.50rem] font-bold leading-tighter mb-4 font-heading"
+			>
+          {title}
+			</h1>
+			<p class="text-xl xs:text-2xl font-light mb-8 leading-relaxed">
+          {description}
+			</p>
+			<div class="max-w-none flex flex-wrap gap-4">
+				<div>
+					<a
+						class="btn primary text-lg"
+						href={'/' + Astro.params.locale + '/blog/beta-version'}>{primary}</a
+					>
+				</div>
+				<div>
+					<a
+						class="btn secondary text-lg"
+						href={getLink('contribution', Astro.params.locale)}>{secondary}</a
+					>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

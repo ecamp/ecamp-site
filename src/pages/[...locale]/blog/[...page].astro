@@ -1,41 +1,41 @@
 ---
-import { SITE, BLOG } from "~/config.mjs";
+import {SITE, BLOG} from "~/config.mjs";
 
 import Layout from "~/layouts/BlogLayout.astro";
 import BlogList from "~/components/blog/List.astro";
 import Pagination from "~/components/atoms/Pagination.astro";
 
-import { getContent } from "~/utils/content";
-import { getCanonical, getPermalink } from "~/utils/permalinks";
+import {getCanonical, getPermalink} from "~/permalink";
+import {postsCollection} from "../../../content";
 
-export async function getStaticPaths({ paginate }) {
-  const posts = await getContent("posts");
+export async function getStaticPaths({paginate}) {
 
-  return BLOG.locales.flatMap((locale) =>
-    paginate(
-      posts.filter(({ params }) => params.locale == locale),
-      {
-        params: { locale },
-        pageSize: BLOG.postsPerPage,
-      }
-    )
-  );
+    return BLOG.locales.flatMap((locale) =>
+        paginate(
+				postsCollection.filter(({params}) => params.locale == locale),
+            {
+                params: {locale},
+				props: {document: {type: 'pages', locale, path: 'blog', id: 'blog'}},
+                pageSize: BLOG.postsPerPage,
+            }
+        )
+    );
 }
 
-const { page } = Astro.props;
+const {page, document} = Astro.props;
+debugger
 const currentPage = page.currentPage ?? 1;
-
 const meta = {
-  title: `Blog ${currentPage > 1 ? `— Page ${currentPage} ` : ""}— ${
-    SITE.name
-  }`,
-  description: SITE.description,
-  canonical: getCanonical(getPermalink(page.url.current)),
+    title: `Blog ${currentPage > 1 ? `— Page ${currentPage} ` : ""}— ${
+        SITE.name
+    }`,
+    description: SITE.description,
+    canonical: getCanonical(getPermalink(page.url.current)),
 };
 ---
 
-<Layout meta={meta} i18nLinks={{}}>
-  <Fragment slot="title">Blog</Fragment>
-  <BlogList posts={page.data} />
-  <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+<Layout meta={meta} document={document}>
+	<Fragment slot="title">Blog</Fragment>
+	<BlogList posts={page.data}/>
+	<Pagination prevUrl={page.url.prev} nextUrl={page.url.next}/>
 </Layout>

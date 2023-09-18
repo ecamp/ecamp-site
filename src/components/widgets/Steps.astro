@@ -1,93 +1,99 @@
 ---
-import { Icon } from "astro-iconify";
+import {Icon} from "astro-iconify";
 import Picture from "~/components/core/Picture.astro";
+import image from '~/assets/images/guille-pozzi-sbcIAn4Mn14-unsplash.jpg'
+
+import GithubSlugger from 'github-slugger'
+
+const slugger = new GithubSlugger()
 
 interface Props {
-  steps: {
-    variant: "todo" | "check";
-    title: string;
-    version: string;
-    body: string;
-  }[];
-  title?: string;
-  description?: string;
+    steps: {
+        variant: "todo" | "check";
+        title: string;
+        version: string;
+        body: string;
+    }[];
+    title?: string;
+    description?: string;
 }
 
-const { steps, title, description } = Astro.props as Props;
+const {steps, title, description} = Astro.props as Props;
+const headingId = slugger.slug(title)
 ---
-
 <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl">
-  {
-    title && (
-      <h2 class="mb-8 text-4xl lg:text-5xl font-bold font-heading">{title}</h2>
-    )
-  }
-  {
-    description && (
-      <p class="mb-8">
-        <Fragment set:html={description} />
-      </p>
-    )
-  }
-  <div
-    class="grid gap-6 row-gap-10 md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_2fr] xl:grid-cols-2"
-  >
-    <div class="md:pr-16">
-      {
-        steps.map((step, index) => (
-          <div class="flex gap-x-4">
-            <div class="flex flex-col items-center">
-              <div>
-                <div class="flex items-center justify-center w-10 h-10 rounded-full border-primary-500 border-2">
-                  {step.variant == "todo" ? (
-                    <Icon
-                      name="tabler:arrow-down"
-                      class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold"
-                    />
-                  ) : step.variant == "check" ? (
-                    <Icon
-                      name="tabler:check"
-                      class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold"
-                    />
-                  ) : (
-                    <Icon
-                      name="line-md:coffee-twotone-loop"
-                      optimize={false}
-                      class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold"
-                    />
-                  )}
-                </div>
-              </div>
-              {index < steps.length - 1 && (
-                <div class="w-px h-full bg-gray-300 dark:bg-slate-500" />
-              )}
-            </div>
-            <div class="pt-1 pb-8">
-              <p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300 tabular-nums">
-                <Fragment set:html={step.version} />
-              </p>
-            </div>
-            <div class="pt-1 pb-8">
-              <p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">
-                <Fragment set:html={step.title} />
-              </p>
-              <p>
-                <Fragment set:html={step.body} />
-              </p>
-            </div>
-          </div>
-        ))
-      }
-    </div>
-    <div class="relative">
-      <Picture
-        class="inset-0 object-cover object-center w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700 max-h-96 md:max-h-max"
-        src={import("~/assets/images/guille-pozzi-sbcIAn4Mn14-unsplash.jpg")}
-        widths={[400, 768]}
-        sizes="(max-width: 768px) 100vw, 432px"
-        alt="Astronaut"
-        aspectRatio="1333:2000"
-      />
-    </div>
-  </div>
+	{title && (
+		<h2 id={headingId} class="mb-8 text-4xl lg:text-5xl font-bold font-heading">
+			<a href={"#" + headingId} class="anchor" aria-hidden="true"><span>🔗</span></a>{title}
+		</h2>
+	)}
+	{description && (
+		<p class="mb-8">
+			<Fragment set:html={description} />
+		</p>
+	)}
+	<div class="grid gap-6 row-gap-10 md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_2fr] xl:grid-cols-2">
+		<div class="md:pr-16">
+			{steps.map((step, index) => (
+				<div class="flex gap-x-4">
+					<div class="flex flex-col items-center">
+						<div>
+							<div class="flex items-center justify-center w-10 h-10 rounded-full border-primary-500 border-2">
+								{step.variant == "todo" ? (
+									<Icon
+										name="tabler:arrow-down"
+										class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold"
+									/>
+								) : step.variant == "check" ? (
+									<Icon
+										name="tabler:check"
+										class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold"
+									/>
+								) : (
+									<Icon
+										name="line-md:coffee-twotone-loop"
+										optimize={false}
+										class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold"
+									/>
+								)}
+							</div>
+						</div>
+						{index < steps.length - 1 && (
+							<div class="w-px h-full bg-gray-300 dark:bg-slate-500" />
+						)}
+					</div>
+					<div class="pt-1 pb-8">
+						<p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300 tabular-nums">
+							<Fragment set:html={step.version} />
+						</p>
+					</div>
+					<div class="pt-1 pb-8">
+						<p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">
+							<Fragment set:html={step.title} />
+						</p>
+						<p>
+							<Fragment set:html={step.body} />
+						</p>
+					</div>
+				</div>
+			))}
+		</div>
+		<div class="relative">
+			<Picture
+				class="inset-0 object-cover object-center w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700 max-h-96 md:max-h-max"
+				src={image}
+				config={[
+					{
+						sourceType: "width",
+						formats: ["avif", "webp", "jpg"],
+						widths: [327, 427, 532, 665],
+						sizes:
+							"(min-width: 768px) calc((100vw - 72px)/3), (min-width: 1024px) calc(((100vw - 72px)/5)*2),(min-width: 1152px) 426px,(min-width: 1280px) 532px,(min-width: 1536px) 665px, calc(100vw - 48px)",
+						retina: true,
+					},
+				]}
+				alt="night"
+			/>
+		</div>
+	</div>
 </section>

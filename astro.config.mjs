@@ -1,12 +1,15 @@
 import path from "path";
 import { fileURLToPath } from "url";
-import { defineConfig } from "astro/config";
+import { defineConfig, sharpImageService } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
-import image from "@astrojs/image";
+import compress from "astro-compress";
 import { SITE } from "./src/config.mjs";
 import mdx from "@astrojs/mdx";
-import { remarkAttrs } from "./src/remark/attrs";
+import remarkAttributes from "remark-attributes";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import { fromHtmlIsomorphic } from "hast-util-from-html-isomorphic";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -16,6 +19,9 @@ export default defineConfig({
   site: SITE.origin,
   base: SITE.basePathname,
   output: "static",
+  image: {
+    service: sharpImageService(),
+  },
   integrations: [
     {
       name: "netlify-redirects",
@@ -28,19 +34,41 @@ export default defineConfig({
         },
       },
     },
-    mdx(),
+    mdx({
+      remarkPlugins: [[remarkAttributes,{ mdx: true }]],
+      rehypePlugins: [
+        rehypeSlug,
+        [
+          rehypeAutolinkHeadings,
+          {
+            properties: { ariaHidden: "true", class: "anchor" },
+            content: fromHtmlIsomorphic("<span>🔗</span>"),
+          },
+        ],
+      ],
+    }),
     tailwind({
       config: {
         applyBaseStyles: false,
       },
     }),
-    sitemap(), // partytown({
+    sitemap(),
+    compress({Image: false}), // partytown({
     //   config: { forward: ["dataLayer.push"] },
     // }),
-    image(),
   ],
   markdown: {
-    remarkPlugins: [remarkAttrs],
+    remarkPlugins: [remarkAttributes],
+    rehypePlugins: [
+      rehypeSlug,
+      [
+        rehypeAutolinkHeadings,
+        {
+          properties: { ariaHidden: "true", class: "anchor" },
+          content: fromHtmlIsomorphic("<span>🔗</span>"),
+        },
+      ],
+    ],
     extendDefaultPlugins: true,
   },
   vite: {
