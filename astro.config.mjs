@@ -19,9 +19,6 @@ export default defineConfig({
   site: SITE.origin,
   base: SITE.basePathname,
   output: "static",
-  experimental: {
-    assets: true,
-  },
   image: {
     service: sharpImageService(),
   },
