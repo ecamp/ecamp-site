@@ -52,7 +52,7 @@ To prevent spam, Google's [reCAPTCHA](https://www.google.com/recaptcha/about/){t
 Any errors that occur in the application are automatically sent to the [Sentry.io](https://sentry.io/){target=_blank} service provided by the US company Sentry. The _eCamp Core Team_ can then view this information collected in one place and use it for troubleshooting.
 
 ### AWS S3
-We regularly store encrypted backups of the content on _eCamp_ on Amazon's AWS S3 service. TODO data center country?
+We regularly store encrypted backups of the content on _eCamp_ on Amazon's AWS S3 service, in a data center in Paris.
 
 ### Open source software
 Open source software refers to software whose source code is published under an open source license and can therefore be freely edited and distributed. Behind this is the open-source model: open source software can help people all over the world, and conversely, people all over the world can contribute to the improvement of open source software by working together on it.
@@ -186,7 +186,7 @@ Server log files are stored for a maximum of 5 days.
 
 For a period of 7 days, the hosting company DigitalOcean automatically keeps backups of eCamp content.
 
-In addition, we store longer-term backups on an AWS S3 bucket from Amazon. These backups are only transmitted and stored on Amazon in encrypted form. This serves as a safeguard against data center failures at DigitalOcean.
+In addition, we store longer-term backups for up to a year on an AWS S3 bucket from Amazon. These backups are only transmitted and stored on Amazon in encrypted form in a data center in Paris. This serves as a safeguard against data center failures at DigitalOcean.
 
 #### Use of cookies
 
