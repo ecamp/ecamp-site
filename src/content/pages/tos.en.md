@@ -51,6 +51,9 @@ To prevent spam, Google's [reCAPTCHA](https://www.google.com/recaptcha/about/){t
 ### Sentry
 Any errors that occur in the application are automatically sent to the [Sentry.io](https://sentry.io/){target=_blank} service provided by the US company Sentry. The _eCamp Core Team_ can then view this information collected in one place and use it for troubleshooting.
 
+### AWS S3
+We regularly store encrypted backups of the content on _eCamp_ on Amazon's AWS S3 service, in a data center in Paris.
+
 ### Open source software
 Open source software refers to software whose source code is published under an open source license and can therefore be freely edited and distributed. Behind this is the open-source model: open source software can help people all over the world, and conversely, people all over the world can contribute to the improvement of open source software by working together on it.
 
@@ -141,6 +144,7 @@ The following third parties can be or are involved in the context of the service
 * Google, via reCAPTCHA, if you contact the _eCamp Core Team_ via email or contact form, and if you register or log in via a Google account
 * hitobito / Puzzle ITC, if you register or log in via MiData, cevi.db or jubla.db
 * Sentry, in case of errors in the software
+* Amazon, in the form of encrypted database backups
 
 We will only share your personal information if one of the following conditions is met:
 
@@ -177,6 +181,12 @@ When you access our website, DigitalOcean (for details see chapter Terms) automa
 This data cannot be assigned to a specific person and there is no merging of this data with other data sources. The log files are stored in order to guarantee the functionality of the website and to ensure the security of our information technology systems. The storage of log files is absolutely necessary for the operation of the website, you therefore have no possibility to object to this.
 
 Server log files are stored for a maximum of 5 days.
+
+#### Backups
+
+For a period of 7 days, the hosting company DigitalOcean automatically keeps backups of eCamp content.
+
+In addition, we store longer-term backups for up to a year on an AWS S3 bucket from Amazon. These backups are only transmitted and stored on Amazon in encrypted form in a data center in Paris. This serves as a safeguard against data center failures at DigitalOcean.
 
 #### Use of cookies
 
