@@ -54,6 +54,9 @@ Any errors that occur in the application are automatically sent to the [Sentry.i
 ### AWS S3
 We regularly store encrypted backups of the content on _eCamp_ on Amazon's AWS S3 service, in a data center in Paris.
 
+### Netlify
+We use the services of the US company [Netlify](https://www.netlify.com/){target=_blank} for hosting our landing page [https://ecamp3.ch](https://ecamp3.ch) and all of its subpages (except the actual application at [https://app.ecamp3.ch](https://app.ecamp3.ch){target=_blank}). In order to improve the user experience of the landing page, we use the analytics tools of Netlify.
+
 ### Open source software
 Open source software refers to software whose source code is published under an open source license and can therefore be freely edited and distributed. Behind this is the open-source model: open source software can help people all over the world, and conversely, people all over the world can contribute to the improvement of open source software by working together on it.
 
@@ -193,6 +196,11 @@ In addition, we store longer-term backups for up to a year on an AWS S3 bucket f
 Our website uses cookies. Cookies are text files that are placed on your device's operating system by your browser when you visit our website. Cookies do not harm your computer and do not contain viruses.
 
 We exclusively use so-called "session cookies". These are automatically deleted upon logout or after 12 hours. They are also absolutely necessary for the login function, so you have no way to object to them. However, the cookies are stored on your computer. You therefore have full control and can delete them completely or restrict the transfer by changing the settings in your browser. If you deactivate cookies for _eCamp_, you will no longer be able to log in and thus no longer be able to use the application.
+
+#### Landing page [https://ecamp3.ch](https://ecamp3.ch)
+
+In order to continuously improve our landing page [https://ecamp3.ch](https://ecamp3.ch) and its subpages, we use the analytics tools of Netlify. Netlify collects only minimal anonymized data about your visit, and does not use cookies. By continuing to use this website, you agree to Netlify's analytics tool.
+No Netlify analytics are collected when using the actual application [https://app.ecamp3.ch](https://app.ecamp3.ch) and its subpages.
 
 #### Registration of a user account
 

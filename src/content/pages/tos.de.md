@@ -54,6 +54,9 @@ Allfällig auftretende Fehler in der Applikation werden zur Analyse und Behebung
 ### AWS S3
 Wir speichern regelmässig verschlüsselte Backups der Inhalte auf _eCamp_ auf dem Service AWS S3 von Amazon, in einem Datencenter in Paris.
 
+### Netlify
+Wir verwenden den US-Dienst [Netlify](https://www.netlify.com/){target=_blank} für das Hosting unserer Einstiegsseite [https://ecamp3.ch](https://ecamp3.ch) und aller Unterseiten (abgesehen von der eigentlichen Applikation unter [https://app.ecamp3.ch](https://app.ecamp3.ch){target=_blank}). Um die Nutzendenfreundlichkeit der Einstiegsseite zu verbessern, verwenden wir die Analytics-Tools von Netlify.
+
 ### Open Source Software
 Open Source Software bezeichnet Software, deren Programmcode unter einer Open Source Lizenz steht, infolgedessen veröffentlicht wird und frei weiterbearbeitbar und -verteilbar ist. Dahinter steckt der Community-Gedanke: Open Source Software kann Menschen auf der ganzen Welt helfen, und umgekehrt können Menschen auf der ganzen Welt zur Verbesserung von Open Source Software beitragen und daran mitarbeiten.
 
@@ -193,6 +196,11 @@ Zusätzlich speichern wir längerfristige Backups für bis zu ein Jahr auf einem
 Unsere Webseite verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die mit Hilfe des Browsers auf dem Betriebssystem deines Gerätes abgelegt werden, wenn du unsere Webseite aufrufst. Cookies richten auf deinem Rechner keinen Schaden an und enthalten keine Viren.
 
 Wir verwenden ausschliesslich sogenannte “Session-Cookies”. Diese werden bei einem Logout oder nach 12 Stunden automatisch gelöscht. Sie sind ausserdem zwingend notwendig für die Login-Funktion, du hast daher keine Möglichkeit dagegen Widerspruch zu erheben. Die Cookies werden aber auf deinem Rechner gespeichert. Du hast daher die volle Kontrolle und kannst diese vollständig löschen oder durch Änderung der Einstellungen in deinem Browser die Übertragung einschränken. Falls du Cookies für _eCamp_ deaktivierst, wirst du dich nicht mehr einloggen können und somit die Applikation nicht mehr nutzen können.
+
+#### Einstiegsseite [https://ecamp3.ch](https://ecamp3.ch)
+
+Damit wir unsere Einstiegsseite [https://ecamp3.ch](https://ecamp3.ch) und ihre Unterseiten laufend verbessern können, setzen wir die Analytics-Tools von Netlify ein. Netlify sammelt dabei nur minimale anonymisierte Daten über deinen Besuch, und setzt auch keine Cookies ein. Durch die weitere Nutzung dieser Website erklärst du dich mit dem Analytics-Tool von Netlify einverstanden.
+Bei der Verwendung der eigentlichen Applikation [https://app.ecamp3.ch](https://app.ecamp3.ch) und ihrer Unterseiten werden keine Netlify-Analytics gesammelt.
 
 #### Registrierung eines Nutzenden-Kontos
 
