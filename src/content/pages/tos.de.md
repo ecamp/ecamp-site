@@ -199,7 +199,7 @@ Wir verwenden ausschliesslich sogenannte “Session-Cookies”. Diese werden bei
 
 #### Einstiegsseite [https://ecamp3.ch](https://ecamp3.ch)
 
-Damit wir unsere Einstiegsseite [https://ecamp3.ch](https://ecamp3.ch) und ihre Unterseiten laufend verbessern können, setzen wir die Analytics-Tools von Netlify ein. Netlify sammelt dabei nur minimale anonymisierte Daten über deinen Besuch, und setzt auch keine Cookies ein. Durch die weitere Nutzung dieser Website erklärst du dich mit dem Analytics-Tool von Netlify einverstanden.
+Damit wir unsere Einstiegsseite [https://ecamp3.ch](https://ecamp3.ch) und ihre Unterseiten laufend verbessern können, setzen wir die Analytics-Tools von Netlify ein. Netlify sammelt dabei nur minimale, anonymisierte Daten über deinen Besuch, und setzt auch keine Cookies ein. Durch die weitere Nutzung dieser Website erklärst du dich mit dem Analytics-Tool von Netlify einverstanden.
 Bei der Verwendung der eigentlichen Applikation [https://app.ecamp3.ch](https://app.ecamp3.ch) und ihrer Unterseiten werden keine Netlify-Analytics gesammelt.
 
 #### Registrierung eines Nutzenden-Kontos

@@ -199,7 +199,7 @@ We exclusively use so-called "session cookies". These are automatically deleted 
 
 #### Landing page [https://ecamp3.ch](https://ecamp3.ch)
 
-In order to continuously improve our landing page [https://ecamp3.ch](https://ecamp3.ch) and its subpages, we use the analytics tools of Netlify. Netlify collects only minimal anonymized data about your visit, and does not use cookies. By continuing to use this website, you agree to Netlify's analytics tool.
+In order to continuously improve our landing page [https://ecamp3.ch](https://ecamp3.ch) and its subpages, we use the analytics tools of Netlify. Netlify collects only minimal and anonymized data about your visit, and does not use cookies. By continuing to use this website, you agree to Netlify's analytics tool.
 No Netlify analytics are collected when using the actual application [https://app.ecamp3.ch](https://app.ecamp3.ch) and its subpages.
 
 #### Registration of a user account
