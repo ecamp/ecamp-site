@@ -1,0 +1,48 @@
+---
+title: Häufig gestellte Fragen
+path: faq
+description: eCamp ist eine webbasierte App für Lager- und Kursplanung. Die Anwendung ist spezialisiert für Lager und Kurse von Jugendverbänden und für J+S-Angebote in der Sportart Lagersport/Trekking. Die Benutzung steht aber allen Interessierten offen, egal ob Jugendverband, Schullager oder andere Sportarten.
+variant: page
+---
+
+import FaqItem from "../../components/widgets/faq/Item.astro";
+import FaqSection from "../../components/widgets/faq/Wrapper.astro";
+
+<FaqSection title="Fragen & Antworten">
+    <FaqItem question="Wie sicher sind meine Daten bei eCamp?">
+        Nebst der Entwicklung betreut das Kernteam ausserdem eine frei benutzbare
+        Instanz. Der Server wird als Best-Effort betrieben. Für den Betrieb des Servers verwenden wir moderne Cloudlösungen.
+        Dies beinhaltet regelmässige Backups und Serverupdates. Nichtsdestotrotz
+        können wir keine ununterbrochene Verfügbarkeit gewährleisten.
+    </FaqItem>
+    <FaqItem question="Was passiert mit eCamp v2?">
+        Die ursprüngliche eCamp-Version 2 kann bis auf Weiteres unter
+        https://ecamp.pfadiluzern.ch benutzt werden. Der Code ist aber in die Jahre
+        gekommen und schwer wartbar. Seit längerer Zeit findet keine
+        Weiterentwicklung für eCamp v2 statt ausser kritischer Bugfixes. Es werden
+        keine Daten von v2 zu v3 migriert.
+    </FaqItem>
+    <FaqItem question="Ich habe eine Frage zu eCamp v2">
+        Für Fragen/Support zu eCamp v2 benutze bitte direkt die Supportfunktion in
+        eCamp v2. Auf dieser Seite werden keine Fragen zu eCamp v2 beantwortet.
+    </FaqItem>
+    <FaqItem question="Wer steht hinter eCamp?">
+        eCamp wird von einem [ehrenamtlichen Kernteam](/de/team) entwickelt. Der Sourcecode ist
+        als Open Source veröffentlicht. Mitarbeit der Community ist aktiv erwünscht.
+    </FaqItem>
+    <FaqItem question="Kann ich Aufgaben/Todos im eCamp erfassen?">
+        Nein. Wir haben uns entschieden, die Aufgabenlisten nicht mehr zu unterstützen, da sie in der
+        Vergangenheit kaum benutzt wurden und bessere Alternativen verfügbar sind. Wenn du die eCamp v2 Aufgabenliste benutzt
+        hast, kannst du als teilweisen Ersatz den [Kalender-Generator im Hering](https://scout-ch.github.io/hering/#/calendar) verwenden.
+    </FaqItem>
+    <FaqItem question="Ich vermisse die Funktion…">
+        Wir werden in Zukunft nicht mehr alle Funktionen von eCamp v2 in eCamp v3 implementieren. Was wir aktuell
+        geplant haben: Spezielle Tagesverantwortungen, Linklisten um externe Dokumente und Bilder zu verlinken,
+        Blöcke kopieren und Blockstatus im Grobprogramm anzeigen.
+    </FaqItem>
+    <FaqItem question="Unterstützt euch jemand finanziell?">
+        Die Betriebskosten werden von der [Pfadibewegung Schweiz](https://pfadi.swiss/) finanziert.
+        Diese Landingpage läuft auf dem Open Source Plan von [Netlify](https://www.netlify.com/) und
+        unsere Applikationsübersetzungen werden von [lokalise](https://lokalise.com/) verwaltet.
+    </FaqItem>
+</FaqSection>

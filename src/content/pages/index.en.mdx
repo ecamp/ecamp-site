@@ -20,7 +20,7 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
 <HeroBanner
   title="eCamp"
   description="Digital camp planning for everyone"
-  primary="Try the Beta"
+  primary="To eCamp"
   secondary="Contribute"
 />
 
@@ -69,18 +69,18 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
       title: "Multilingual",
       icon: "flat-color-icons:globe",
       description:
-        "The application is initially available in German, French and English. More languages are possible.",
+        "The application is initially available in German, French, English & Italian. More languages are possible.",
     },
     {
       title: "Customizable",
       icon: "flat-color-icons:settings",
       description:
-        "Create templates for different types of blocks, with block sequence, red thread, safety concept, etc.",
+        "Create templates for different types of blocks, with storyboard, story context, safety concept, etc.",
     },
     {
       title: "Improved Material",
       icon: "flat-color-icons:support",
-      description: "Assign your material to the activity or camp section.",
+      description: "Assign your material to the activity or camp period.",
     },
     {
       title: "Team",
@@ -103,14 +103,13 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
       description: "Development",
     },
     { stat: "6", description: "Core Members" },
-    { stat: "77", description: "Core Meetings" },
+    { stat: "78", description: "Core Meetings" },
     { stat: "8515", description: "Commits" },
   ]}
 />
 
 <Steps
   title="Roadmap"
-  description="You can see the <a class='underline' href='https://github.com/ecamp/ecamp3/milestone/7'>current status</a> on GitHub."
   steps={[
     {
       title: "Development",
@@ -127,23 +126,23 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
     {
       title: "Closed beta",
       version: "3.β",
-      variant: "inprogress",
-      body: `Isolated bugs. As of this version, however, the database is no longer reset.
-        Can be used for real but not time-critical camp planning.
-        The limited number of beta testers must expect maintenance interruptions.`,
+      variant: "check",
+      body: `Isolated bugs. As of this version, however, the database was no longer reset.
+        Could be used for real but not time-critical camp planning.
+        The limited number of beta testers had to expect maintenance interruptions.`,
     },
     {
       title: "MVP: Camp",
       version: "3.0",
-      variant: "todo",
-      body: `From this version onwards, eCamp v3 will be free to use for everyone.
-      All essential features of eCamp v2 are available for camp planning. Course planning will not yet be implemented for this version.`,
+      variant: "check",
+      body: `From this version onwards, eCamp v3 is free to use for everyone.
+      All essential features of eCamp v2 are available for camp planning. Course planning is not yet implemented for this version.`,
     },
     {
       title: "MVP: Course",
       version: "3.1",
-      variant: "todo",
-      body: "After <b>MVP: Camp</b> we will focus on the features of course planning.",
+      variant: "inprogress",
+      body: "After <b>MVP: Camp</b> we are focusing on the features of course planning.",
     },
     {
       title: "New Features",
@@ -159,11 +158,10 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
   Find out what we do all day long....
 </HighlightedPosts>
 
-<FaqSection title="Questions & Answers">
+<FaqSection title="Questions & Answers" buttonText="More Questions & Answers" currentLocale="en">
   <FaqItem question="How secure is my data at eCamp?">
     In addition to the development, the core team also maintains a freely usable
-    instance under this page (login). The server is operated as a best-effort. For
-    the operation of the server we use modern cloud solutions.
+    instance. The server is operated as a best-effort. For the operation of the server we use modern cloud solutions.
     This includes regular backups and server updates. Nevertheless we cannot
     guarantee uninterrupted availability.
   </FaqItem>
@@ -178,10 +176,6 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
     For questions/support about eCamp v2 please use the support function in
     eCamp v2 directly. No questions about eCamp v2 are answered on
     this page.
-  </FaqItem>
-  <FaqItem question="Who is behind eCamp?">
-    eCamp is developed by a core team of volunteers. The source code is published as
-    open source. Community participation is actively encouraged.
   </FaqItem>
   <FaqItem question="Does anybody support you financially?">
     Operating costs are funded by the [Swiss Guide and Scout Movement](https://pfadi.swiss/).
