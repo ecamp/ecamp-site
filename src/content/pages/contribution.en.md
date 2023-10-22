@@ -22,8 +22,8 @@ Thanks for helping! There are a few ways to get started.
 - Visit our test environment at [https://dev.ecamp3.ch](https://dev.ecamp3.ch). If you discover a bug, [open a new issue for it](https://github.com/ecamp/ecamp3/issues/new).
 - To run the project locally on your computer, follow one of the installation guides:
   - [Installation with Docker on Linux](https://github.com/ecamp/ecamp3/wiki/Development-install-on-linux){target=_blank}
-  - [Installation with Docker on Windows + WSL2](https://github.com/ecamp/ecamp3/wiki/Development-installation-on-Windows){target=_blank} (English only)
-  - [Set up VS Code as your code editor](https://github.com/ecamp/ecamp3/wiki/Development-installation-on-Windows#setting-up-the-ide){target=_blank} (English only)
+  - [Installation with Docker on Windows + WSL2](https://github.com/ecamp/ecamp3/wiki/Development-installation-on-Windows){target=_blank}
+  - [Set up VS Code as your code editor](https://github.com/ecamp/ecamp3/wiki/Development-installation-on-Windows#setting-up-the-ide){target=_blank}
 - If you encounter issues during setup or have questions, don't worry, you're not alone. Check the [discussions](https://github.com/ecamp/ecamp3/discussions){target=_blank} to see if your problem has already been addressed and solved. If not, open a [new discussion](https://github.com/ecamp/ecamp3/discussions/new){target=_blank}.
 - Before you start coding, read our [contributing guidelines](https://github.com/ecamp/ecamp3/blob/devel/CONTRIBUTING.md){target=_blank}.
 - Familiarize yourself with the [documentation in the Wiki](https://github.com/ecamp/ecamp3/wiki){target=_blank}.
