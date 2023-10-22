@@ -11,8 +11,9 @@ const { document } = Astro.props;
 const { locale: currentLocale } = Astro.params;
 
 const menuitems = [
-  { label: "Team", id: "team", onlymobile: false },
   { label: "Blog", id: "blog", onlymobile: false },
+  { label: "FAQ", id: "faq", onlymobile: false },
+  { label: "Team", id: "team", onlymobile: false },
   { label: "Login", link: "https://app.ecamp3.ch", onlymobile: true, target: '_blank' },
   { label: "Github", link: "https://github.com/ecamp/ecamp3", onlymobile: true },
   { label: "Contact", id: "contact", onlymobile: true },

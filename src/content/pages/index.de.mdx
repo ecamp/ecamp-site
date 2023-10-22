@@ -16,7 +16,7 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
 <HeroBanner
   title="eCamp"
   description="Digitale Lagerplanung für alle"
-  primary="Zu eCamp V3"
+  primary="Zu eCamp v3"
   secondary="Mithelfen"
 />
 
@@ -43,7 +43,7 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
       title: "Einfaches Login ",
       icon: "flat-color-icons:key",
       description:
-        "Wenn da nur nicht das Passwort wäre! Kein Problem, wir haben alle gängigen Logins: Pfadi MiData, CeviDB und Google.",
+        "Wenn da nur nicht das Passwort wäre! Kein Problem, wir haben alle Logins: Pfadi MiData, CeviDB und Google.",
     },
     {
       title: "Responsive",
@@ -66,13 +66,13 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
       title: "Mehrsprachig",
       icon: "flat-color-icons:globe",
       description:
-        "Die Applikation ist initial in Deutsch, Französisch und Englisch verfügbar. Weitere Sprachen sind möglich.",
+        "Die Applikation ist verfügbar in Deutsch, Französisch, Englisch & Italienisch. Weitere Sprachen sind möglich.",
     },
     {
       title: "Anpassbar",
       icon: "flat-color-icons:settings",
       description:
-        "Erstelle Vorlagen für verschiedene Blocktypen, mit Blockablauf, Rotem Faden, Sicherheitskonzept, etc.",
+        "Erstelle Vorlagen für verschiedene Blocktypen, mit Blockablauf, Roten Faden, Sicherheitskonzept, etc.",
     },
     {
       title: "Verbessertes Material",
@@ -83,7 +83,7 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
     {
       title: "Team",
       icon: "flat-color-icons:conference-call",
-      description: "Das Teammanagement wurde verbessert und vereinfacht.",
+      description: "Die Benutzerverwaltung wurde verbessert und vereinfacht.",
     },
     {
       title: "Ganz viel Liebe",
@@ -101,14 +101,13 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
       description: "Entwicklung",
     },
     { stat: "6", description: "Core Members" },
-    { stat: "77", description: "Core Meetings" },
+    { stat: "78", description: "Core Meetings" },
     { stat: "8904", description: "Commits" },
   ]}
 />
 
 <Steps
   title="Roadmap"
-  description="Der <a class='underline' href='https://github.com/ecamp/ecamp3/milestone/7'>aktuelle Stand</a> kann auf GitHub angeschaut werden."
   steps={[
     {
       title: "Development",
@@ -120,28 +119,28 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
       title: "Alpha",
       version: "3.α",
       variant: "check",
-      body: `Diese Version dient als temporäre Testversion, kann somit auch noch einige Fehler und komplizierte Benutzeroberflächen enthalten. Nach dieser Phase werden die eingegebenen Daten wieder gelöscht.`,
+      body: `Diese Version diente als temporäre Testversion, konnte somit auch noch einige Fehler und komplizierte Benutzeroberflächen enthalten. Nach dieser Phase wurden die eingegebenen Daten wieder gelöscht.`,
     },
     {
       title: "Closed beta",
       version: "3.β",
       variant: "check",
-      body: `Vereinzelte Bugs. Ab dieser Version werden aber die Daten erhalten und die Datenbank nicht mehr zurückgesetzt.
-       Kann für echte aber nicht zeitkritische Lagerplanung verwendet werden.
-        Die beschränkte Anzahl an Betatestenden müssen mit Wartungsunterbrüchen rechnen.`,
+      body: `Vereinzelte Bugs. Ab dieser Version wurden aber die Daten erhalten und die Datenbank nicht mehr zurückgesetzt.
+       Konnte bereits für echte aber nicht zeitkritische Lagerplanung verwendet werden.
+        Die beschränkte Anzahl an Betatestenden mussten mit Wartungsunterbrüchen rechnen.`,
     },
     {
       title: "MVP: Lager",
       version: "3.0",
-      variant: "inprogress",
-      body: `Ab dieser Version wird eCamp v3 für alle frei verwendbar sein. Alle wesentlichen Features von eCamp v2 sind für die Lagerplanung vorhanden.
-       Die Kursplanung wird für diese Version noch nicht implementiert werden.`,
+      variant: "check",
+      body: `Ab dieser Version ist eCamp v3 für alle frei verwendbar. Alle wesentlichen Features von eCamp v2 sind für die Lagerplanung vorhanden.
+       Die Kursplanung ist für diese Version noch nicht implementiert.`,
     },
     {
       title: "MVP: Kurs",
       version: "3.1",
-      variant: "todo",
-      body: "Nach <b>MVP: Lager</b> werden wir den Fokus auf die Features der Kursplanung legen.",
+      variant: "inprogress",
+      body: "Nach <b>MVP: Lager</b> haben wir nun den Fokus auf die Features der Kursplanung gelegt.",
     },
     {
       title: "Neue Funktionen",
@@ -157,11 +156,10 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
   Finde heraus was wir den ganzen Tag so machen...
 </HighlightedPosts>
 
-<FaqSection title="Fragen & Antworten">
+<FaqSection title="Fragen & Antworten" buttonText="Mehr Fragen & Antworten" currentLocale="de">
   <FaqItem question="Wie sicher sind meine Daten bei eCamp?">
     Nebst der Entwicklung betreut das Kernteam ausserdem eine frei benutzbare
-    Instanz under dieser Seite (Login). Der Server wird als Best-Effort
-    betrieben. Für den Betrieb des Servers verwenden wir moderne Cloudlösungen.
+    Instanz. Der Server wird als Best-Effort betrieben. Für den Betrieb des Servers verwenden wir moderne Cloudlösungen.
     Dies beinhaltet regelmässige Backups und Serverupdates. Nichtsdestotrotz
     können wir keine ununterbrochene Verfügbarkeit gewährleisten.
   </FaqItem>
@@ -175,10 +173,6 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
   <FaqItem question="Ich habe eine Frage zu eCamp v2">
     Für Fragen/Support zu eCamp v2 benutze bitte direkt die Supportfunktion in
     eCamp v2. Auf dieser Seite werden keine Fragen zu eCamp v2 beantwortet.
-  </FaqItem>
-  <FaqItem question="Wer steht hinter eCamp?">
-    eCamp wird von einem ehrenamtlichen Kernteam entwickelt. Der Sourcecode ist
-    als Open Source veröffentlicht. Mitarbeit der Community ist aktiv erwünscht.
   </FaqItem>
   <FaqItem question="Unterstützt euch jemand finanziell?">
     Die Betriebskosten werden von der [Pfadibewegung Schweiz](https://pfadi.swiss/) finanziert.
