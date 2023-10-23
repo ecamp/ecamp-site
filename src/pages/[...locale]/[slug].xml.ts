@@ -64,7 +64,7 @@ export const get = async ({ params }) => {
         return {
           title: props.data.title,
           date: new Date(props.data.pubDate),
-          link: getCanonical(getPermalink(params.path, "blog", params.locale)).toString(),
+          link: getCanonical(getPermalink(params.path, "post", params.locale)).toString(),
           description: props.data.description,
         };
       }),
