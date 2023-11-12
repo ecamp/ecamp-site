@@ -24,7 +24,7 @@ Danke dass du mithelfen möchtest! Es gibt ein paar verschiedene Arten wie du be
   - [Installation mit Docker auf Linux](https://github.com/ecamp/ecamp3/wiki/Development-install-on-linux#Deutsch){target=_blank}
   - [Installation mit Docker auf Windows + WSL2](https://github.com/ecamp/ecamp3/wiki/Development-installation-on-Windows){target=_blank} (nur Englisch)
   - [VS Code als Code-Editor einrichten](https://github.com/ecamp/ecamp3/wiki/Development-installation-on-Windows#setting-up-the-ide){target=_blank} (nur Englisch)
-- Falls du Probleme beim Einrichten oder Verständnisfragen hast - keine Sorge, du bist nicht allein. Schau bei den [Discussions](https://github.com/ecamp/ecamp3/discussions){target=_blank} nach ob das Problem bekannt und gelöst ist. Falls nein, eröffne eine [neue Discussion](https://github.com/ecamp/ecamp3/discussions/new){target=_blank}.
+- Falls du Probleme beim Einrichten oder Verständnisfragen hast - keine Sorge, du bist nicht allein. Auf unserem [Community Discord Server](https://discord.gg/tdwtRytV6P){target=_blank} unterstützen wir dich sehr gerne.
 - Bevor du mit programmieren loslegen kannst, lies unsere [contributing guidelines](https://github.com/ecamp/ecamp3/blob/devel/CONTRIBUTING.md){target=_blank}
 - Studier die [Dokumentation im Wiki](https://github.com/ecamp/ecamp3/wiki){target=_blank}
 - Such dir ein [einsteigertaugliches Issue](https://github.com/ecamp/ecamp3/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22){target=_blank} aus und probiere es zu lösen
