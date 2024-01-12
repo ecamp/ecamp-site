@@ -57,7 +57,7 @@ In den Textfeldern ist es nun möglich, **Listen einzufügen** [#4191](https://g
 
 <div>
 
-## Weitere Verbesserungen:
+## Weitere Verbesserungen
 
 ### Benutzererfahrung:
 **Bessere Erklärungen** für das Erstellen von Lagern und das Bearbeiten von Kategorien [#4162](https://github.com/ecamp/ecamp3/pull/4162){.issuelink} [#4362](https://github.com/ecamp/ecamp3/pull/4362){.issuelink} [#4213](https://github.com/ecamp/ecamp3/pull/4213){.issuelink}<br>
@@ -69,17 +69,20 @@ In der Detailansicht einer Aktivität ist es jetzt möglich, in der Seitenleiste
 
 ### Drucken:
 Ein Fehler in den gedruckten PDFs beim Export des Picasso aus einer **fremden Zeitzone** wurde behoben [#4329](https://github.com/ecamp/ecamp3/pull/4329){.issuelink}<br>
-**Layout #1** hat im PDF keinen gedrehten Picasso mehr [#4347](https://github.com/ecamp/ecamp3/pull/4347){.issuelink} und ist jetzt korrekt übersetzt [#4003](https://github.com/ecamp/ecamp3/pull/4003){.issuelink}
+**Layout #1** hat im PDF jetzt die gewünschte Seitenausrichtung der Grobprogrammübersicht [#4347](https://github.com/ecamp/ecamp3/pull/4347){.issuelink} und ist korrekt übersetzt [#4003](https://github.com/ecamp/ecamp3/pull/4003){.issuelink}
 
 </div>
 </div>
 
 ## Community Beiträge
-Wir freuen uns sehr über die verschiedenen Beiträge aus der Community. Vielen Dank!
+Wir freuen uns sehr über die verschiedenen Beiträge aus der Community.<br>
+Vielen Dank!
 
-- **Rumantsch wurde als Sprache hinzugefügt**; mit einigen ersten Übersetzungen von [@eruedin](https://github.com/eruedin) und Martin Cantieni [#4027](https://github.com/ecamp/ecamp3/pull/4027){.issuelink}
-- **Verbesserte Dokumentation**: wie man beitragen kann, wurde von [@DeNic0la](https://github.com/DeNic0la) aktualisiert [#4204](https://github.com/ecamp/ecamp3/pull/4204){.issuelink}
-- **Unnötiger Periodenmaterialfilter** wurde von [@MarcoAllenspach](https://github.com/MarcoAllenspach) aus dem Aktivitätenmaterial entfernt [#4366](https://github.com/ecamp/ecamp3/pull/4366){.issuelink}
+**Rumantsch wurde als Sprache hinzugefügt**; mit einigen ersten Übersetzungen von [@eruedin](https://github.com/eruedin) und Martin Cantieni [#4027](https://github.com/ecamp/ecamp3/pull/4027){.issuelink}
+
+**Verbesserte Dokumentation**: wie man beitragen kann, wurde von [@DeNic0la](https://github.com/DeNic0la) aktualisiert [#4204](https://github.com/ecamp/ecamp3/pull/4204){.issuelink}
+
+**Unnötiger Periodenmaterialfilter** wurde von [@MarcoAllenspach](https://github.com/MarcoAllenspach) aus dem Aktivitätenmaterial entfernt [#4366](https://github.com/ecamp/ecamp3/pull/4366){.issuelink}
 
 Wir können es kaum erwarten, noch mehr Nutzende und Lager in unserer Community willkommen zu heissen!
 

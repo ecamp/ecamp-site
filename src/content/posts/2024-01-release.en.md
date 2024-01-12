@@ -54,9 +54,9 @@ It's now possible to **insert lists** in text fields [#4191](https://github.com/
 
 <div>
 
-## Further Improvements:
+## Further Improvements
 ### User Experience:
-**Better explanations** for creating camps and editing categories [#4162](https://github.com/ecamp/ecamp3/pull/4162){.issuelink} [#4362](https://github.com/ecamp/ecamp3/pull/4362){.issuelink} [#4213](https://github.com/ecamp/ecamp3/pull/4213){.issuelink}<br>
+**Better explanations** for creating camps and editing categories<br> [#4162](https://github.com/ecamp/ecamp3/pull/4162){.issuelink} [#4362](https://github.com/ecamp/ecamp3/pull/4362){.issuelink} [#4213](https://github.com/ecamp/ecamp3/pull/4213){.issuelink}<br>
 In the detailed view of an activity, it's now possible to **switch days in the sidebar**. [#4202](https://github.com/ecamp/ecamp3/pull/4202){.issuelink}
 
 ### Design:
@@ -65,13 +65,14 @@ In the detailed view of an activity, it's now possible to **switch days in the s
 
 ### Printing:
 A bug in the printed PDFs when exporting Picasso from a **foreign timezone** has been fixed  [#4329](https://github.com/ecamp/ecamp3/pull/4329){.issuelink}<br>
-**Layout #1** no longer has a rotated Picasso in the PDF [#4347](https://github.com/ecamp/ecamp3/pull/4347){.issuelink} and is now correctly translated [#4003](https://github.com/ecamp/ecamp3/pull/4003){.issuelink}
+**Layout #1:** Picasso now has the requested page orientation in the PDF [#4347](https://github.com/ecamp/ecamp3/pull/4347){.issuelink} and is now correctly translated [#4003](https://github.com/ecamp/ecamp3/pull/4003){.issuelink}
 
 </div>
 </div>
 
 ## Community Contributions
-We are happy to have received several contributions from the community. Thank you very much!
+We are happy to have received several contributions from the community.<br>
+Thank you very much!
 
 **Rumantsch has been added as a language:**<br>
 Initial translations have been done by [@eruedin](https://github.com/eruedin) and Martin Cantieni [#4027](https://github.com/ecamp/ecamp3/pull/4027){.issuelink}

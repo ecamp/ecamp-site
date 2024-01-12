@@ -83,6 +83,7 @@ a.anchor::before {
 
 .simple-columns {
   display: grid;
+  @apply rounded;
   @apply lg:grid-cols-2 py-8 px-6 -mx-6 lg:p-12 lg:gap-12;
   
   @screen lg {
