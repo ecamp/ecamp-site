@@ -81,6 +81,6 @@ Wir freuen uns sehr über die verschiedenen Beiträge aus der Community. Vielen 
 - **Verbesserte Dokumentation**: wie man beitragen kann, wurde von [@DeNic0la](https://github.com/DeNic0la) aktualisiert [#4204](https://github.com/ecamp/ecamp3/pull/4204){.issuelink}
 - **Unnötiger Periodenmaterialfilter** wurde von [@MarcoAllenspach](https://github.com/MarcoAllenspach) aus dem Aktivitätenmaterial entfernt [#4366](https://github.com/ecamp/ecamp3/pull/4366){.issuelink}
 
-Wir können es kaum erwarten, noch mehr Benutzer und Lager in unserer Community willkommen zu heissen!
+Wir können es kaum erwarten, noch mehr Nutzende und Lager in unserer Community willkommen zu heissen!
 
 <a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Zur App gehen</a>
