@@ -59,7 +59,7 @@ In den Textfeldern ist es nun möglich, **Listen einzufügen** [#4191](https://g
 
 ## Weitere Verbesserungen
 
-### Benutzererfahrung:
+### User Experience:
 **Bessere Erklärungen** für das Erstellen von Lagern und das Bearbeiten von Kategorien [#4162](https://github.com/ecamp/ecamp3/pull/4162){.issuelink} [#4362](https://github.com/ecamp/ecamp3/pull/4362){.issuelink} [#4213](https://github.com/ecamp/ecamp3/pull/4213){.issuelink}<br>
 In der Detailansicht einer Aktivität ist es jetzt möglich, in der Seitenleiste zu einem anderen **Tag zu wechseln**. [#4202](https://github.com/ecamp/ecamp3/pull/4202){.issuelink}
 
