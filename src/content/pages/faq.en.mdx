@@ -16,11 +16,10 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
         guarantee uninterrupted availability.
     </FaqItem>
     <FaqItem question="What will happen to eCamp v2?">
-        The original eCamp version 2 can be used at
-        https://ecamp.pfadiluzern.ch until further notice. However, the code is
-        getting old and difficult to maintain. For a long time there has been no further
-        development for eCamp v2 except for critical bug fixes. No data
-        is migrated from v2 to v3.
+        The original eCamp v2 can be used at https://ecamp.pfadiluzern.ch until further notice.
+        However, the code is getting old and difficult to maintain. That's why we only fix critical bugs at most.<br/>
+        No data is migrated from v2 to v3. After we've also implemented the course functionality in eCamp v3,
+        we will probably put eCamp v2 into a read-only mode and make it no longer editable.
     </FaqItem>
     <FaqItem question="I have a question about eCamp v2">
         For questions/support about eCamp v2 please use the support function in
@@ -38,13 +37,25 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
         you can now use the [Calendar Generator in Hering](https://scout-ch.github.io/hering/#/calendar).
     </FaqItem>
     <FaqItem question="I miss the feature…">
-        We will not be implementing all the features from eCamp v2 in eCamp v3 in the future.
-        What we currently have planned: Special daily responsibilities, link lists to link external documents and images,
-        copying blocks, and displaying block status in the overview program.
+        We will not be implementing all the features from eCamp v2 in eCamp v3 in the future.<br/>
+        What we currently have planned: Special daily responsibilities, material checkbox,
+        and displaying block status in the overview program.
     </FaqItem>
     <FaqItem question="Does anybody support you financially?">
         Operating costs are funded by the [Swiss Guide and Scout Movement](https://pfadi.swiss/).
         This landing page is powered by the open source plan of [Netlify](https://www.netlify.com/)
         and our application translations are managed by [lokalise](https://lokalise.com/).
+    </FaqItem>
+    <FaqItem question="Are past camps also visible on eCamp v3?">
+        Only camps created on eCamp v3 are visible on eCamp v3.
+        Past camps from eCamp v2 are not visible, but can still be viewed on eCamp v2.
+    </FaqItem>
+    <FaqItem question="How can I add images, files or tables?">
+        **Images/Files**: Currently it is not possible to upload files directly to eCamp v3.
+        It would take us precious time and money and would never come close to the features of Google Drive etc.
+        You can however upload images/files to an external service like Google Drive or Dropbox and then add a link to it.
+
+        **Tables**: Currently it is not possible to insert tables directly into eCamp v3.
+        This feature is currently blocked by the PDF export #2.
     </FaqItem>
 </FaqSection>

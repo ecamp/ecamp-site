@@ -16,11 +16,10 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
         können wir keine ununterbrochene Verfügbarkeit gewährleisten.
     </FaqItem>
     <FaqItem question="Was passiert mit eCamp v2?">
-        Die ursprüngliche eCamp-Version 2 kann bis auf Weiteres unter
-        https://ecamp.pfadiluzern.ch benutzt werden. Der Code ist aber in die Jahre
-        gekommen und schwer wartbar. Seit längerer Zeit findet keine
-        Weiterentwicklung für eCamp v2 statt ausser kritischer Bugfixes. Es werden
-        keine Daten von v2 zu v3 migriert.
+        Die ursprüngliche eCamp-Version 2 kann bis auf Weiteres unter https://ecamp.pfadiluzern.ch benutzt werden.
+        Der Code ist aber schwer wartbar und darum lösen wir höchsten noch kritische Fehler.<br/>
+        Es werden keine Daten von v2 zu v3 migriert. Nachdem wir die Kursefunktionalität in Version 3
+        implementiert haben, werden wir v2 voraussichtlich nur noch lesbar aber nicht bearbeitbar machen.
     </FaqItem>
     <FaqItem question="Ich habe eine Frage zu eCamp v2">
         Für Fragen/Support zu eCamp v2 benutze bitte direkt die Supportfunktion in
@@ -37,12 +36,23 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
     </FaqItem>
     <FaqItem question="Ich vermisse die Funktion…">
         Wir werden in Zukunft nicht mehr alle Funktionen von eCamp v2 in eCamp v3 implementieren. Was wir aktuell
-        geplant haben: Spezielle Tagesverantwortungen, Linklisten um externe Dokumente und Bilder zu verlinken,
-        Blöcke kopieren und Blockstatus im Grobprogramm anzeigen.
+        geplant haben: Spezielle Tagesverantwortungen, Materiallisten Check und Blockstatus im Grobprogramm anzeigen.
     </FaqItem>
     <FaqItem question="Unterstützt euch jemand finanziell?">
         Die Betriebskosten werden von der [Pfadibewegung Schweiz](https://pfadi.swiss/) finanziert.
         Diese Landingpage läuft auf dem Open Source Plan von [Netlify](https://www.netlify.com/) und
         unsere Applikationsübersetzungen werden von [lokalise](https://lokalise.com/) verwaltet.
+    </FaqItem>
+    <FaqItem question="Sind vergangene Lager auch sichtbar auf eCamp v3?">
+        Auf eCamp v3 sind nur Lager sichtbar, die auf eCamp v3 erstellt wurden.
+        Vergangene Lager von eCamp v2 sind nicht sichtbar, können aber weiterhin auf eCamp v2 eingesehen werden.
+    </FaqItem>
+    <FaqItem question="Wie kann ich Bilder/Dateien oder Tabellen einfügen?">
+        **Bilder/Dateien**: Aktuell ist es nicht möglich, Dateien direkt in eCamp v3 hochzuladen.
+        Es würde viel Zeit und Geld benötigen und trotzdem niemals an die Features von Google Drive etc. herankommen.
+        Du kannst Bilder/Dateien aber auf einem externen Dienst wie Google Drive oder Dropbox hochladen und dann direkt darauf verlinken.
+
+        **Tabellen**: Aktuell ist es nicht möglich, Tabellen direkt in eCamp v3 einzufügen.
+        Bei dieser Funktion sind wir aktuell durch das Druck-Layout #2 blockiert.
     </FaqItem>
 </FaqSection>
