@@ -80,3 +80,24 @@ a.anchor::before {
 :where(h1,h2,h3,h4,h5):hover a.anchor {
   opacity: 1;
 }
+
+.simple-columns {
+  display: grid;
+  @apply rounded;
+  @apply lg:grid-cols-2 py-8 px-6 -mx-6 lg:mx-[max(-500px,calc(((100vw_-_52rem)_/_2)_*_-1))] lg:p-12 lg:gap-12;
+  align-items: center;
+}
+
+.simple-columns :is(p:has(img), img) {
+  margin: 0;
+  @apply lg:mx-auto;
+}
+
+a.issuelink {
+  @apply bg-slate-900/10 dark:bg-slate-50/10 hover:bg-primary-600 hover:text-white font-semibold;
+  @apply px-3 py-2 rounded-full;
+  @apply transition hover:shadow-lg;
+  text-decoration: none;
+  font-size: small;
+  vertical-align: 4px;
+}
