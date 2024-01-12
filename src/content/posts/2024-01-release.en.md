@@ -42,9 +42,9 @@ To preview on large screens as it will appear when printed, you can limit the wi
 <div>
 
 ## Formatting
-It's now possible to **insert lists** in text fields [#4191](https://github.com/ecamp/ecamp3/pull/4191){.issuelink}
+It's now possible to **insert lists** in text fields. [#4191](https://github.com/ecamp/ecamp3/pull/4191){.issuelink}
 
-**Links in the activity content** are now displayed in the browser<br/> and can be opened with <kbd>Ctrl</kbd>, <kbd>Cmd</kbd>, or double-click [#4397](https://github.com/ecamp/ecamp3/pull/4397){.issuelink}
+**Links in the activity content** are now displayed in the browser<br/> and can be opened with <kbd>Ctrl</kbd>, <kbd>Cmd</kbd>, or double-click. [#4397](https://github.com/ecamp/ecamp3/pull/4397){.issuelink}
 
 </div>
 </div>
@@ -56,16 +56,16 @@ It's now possible to **insert lists** in text fields [#4191](https://github.com/
 
 ## Further Improvements
 ### User Experience:
-**Better explanations** for creating camps and editing categories<br> [#4162](https://github.com/ecamp/ecamp3/pull/4162){.issuelink} [#4362](https://github.com/ecamp/ecamp3/pull/4362){.issuelink} [#4213](https://github.com/ecamp/ecamp3/pull/4213){.issuelink}<br>
+**Better explanations** for creating camps and editing categories.<br> [#4162](https://github.com/ecamp/ecamp3/pull/4162){.issuelink} [#4362](https://github.com/ecamp/ecamp3/pull/4362){.issuelink} [#4213](https://github.com/ecamp/ecamp3/pull/4213){.issuelink}<br>
 In the detailed view of an activity, it's now possible to **switch days in the sidebar**. [#4202](https://github.com/ecamp/ecamp3/pull/4202){.issuelink}
 
 ### Design:
-**Improved layout** of categories and activities and a clearer LA theme area [#4303](https://github.com/ecamp/ecamp3/pull/4303){.issuelink} [#4264](https://github.com/ecamp/ecamp3/pull/4264){.issuelink}<br>
+**Improved layout** of categories and activities and a clearer LA theme area. [#4303](https://github.com/ecamp/ecamp3/pull/4303){.issuelink} [#4264](https://github.com/ecamp/ecamp3/pull/4264){.issuelink}<br>
 **Day Responsibles** are now also displayed on the camp's homepage. [#4029](https://github.com/ecamp/ecamp3/pull/4029){.issuelink}
 
 ### Printing:
-A bug in the printed PDFs when exporting Picasso from a **foreign timezone** has been fixed  [#4329](https://github.com/ecamp/ecamp3/pull/4329){.issuelink}<br>
-**Layout #1:** Picasso now has the requested page orientation in the PDF [#4347](https://github.com/ecamp/ecamp3/pull/4347){.issuelink} and is now correctly translated [#4003](https://github.com/ecamp/ecamp3/pull/4003){.issuelink}
+A bug in the printed PDFs when exporting the picasso from a **foreign timezone** has been fixed.  [#4329](https://github.com/ecamp/ecamp3/pull/4329){.issuelink}<br>
+**Layout #1:** The picasso now has the requested page orientation in the PDF [#4347](https://github.com/ecamp/ecamp3/pull/4347){.issuelink} and is now correctly translated. [#4003](https://github.com/ecamp/ecamp3/pull/4003){.issuelink}
 
 </div>
 </div>
@@ -75,11 +75,11 @@ We are happy to have received several contributions from the community.<br>
 Thank you very much!
 
 **Rumantsch has been added as a language:**<br>
-Initial translations have been done by [@eruedin](https://github.com/eruedin) and Martin Cantieni [#4027](https://github.com/ecamp/ecamp3/pull/4027){.issuelink}
+Initial translations have been done by [@eruedin](https://github.com/eruedin) and Martin Cantieni. [#4027](https://github.com/ecamp/ecamp3/pull/4027){.issuelink}
 
-**Improved documentation:**<br> how to contribute has been updated by [@DeNic0la](https://github.com/DeNic0la) [#4204](https://github.com/ecamp/ecamp3/pull/4204){.issuelink}
+**Improved documentation:**<br> How to contribute has been updated by [@DeNic0la](https://github.com/DeNic0la). [#4204](https://github.com/ecamp/ecamp3/pull/4204){.issuelink}
 
-**Unnecessary period material filter** was removed from the activity material by [@MarcoAllenspach](https://github.com/MarcoAllenspach) [#4366](https://github.com/ecamp/ecamp3/pull/4366){.issuelink}
+**Unnecessary period material filter** was removed from the activity material by [@MarcoAllenspach](https://github.com/MarcoAllenspach). [#4366](https://github.com/ecamp/ecamp3/pull/4366){.issuelink}
 
 We can't wait to welcome even more users and camps to our community!
 
