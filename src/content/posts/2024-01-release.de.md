@@ -75,6 +75,7 @@ Ein Fehler in den gedruckten PDFs beim Export des Picasso aus einer **fremden Ze
 </div>
 
 ## Community Beiträge
+Wir freuen uns sehr über die verschiedenen Beiträge aus der Community. Vielen Dank!
 
 - **Rumantsch wurde als Sprache hinzugefügt**; mit einigen ersten Übersetzungen von [@eruedin](https://github.com/eruedin) und Martin Cantieni [#4027](https://github.com/ecamp/ecamp3/pull/4027){.issuelink}
 - **Verbesserte Dokumentation**: wie man beitragen kann, wurde von [@DeNic0la](https://github.com/DeNic0la) aktualisiert [#4204](https://github.com/ecamp/ecamp3/pull/4204){.issuelink}

@@ -71,6 +71,8 @@ A bug in the printed PDFs when exporting Picasso from a **foreign timezone** has
 </div>
 
 ## Community Contributions
+We are happy to have received several contributions from the community. Thank you very much!
+
 **Rumantsch has been added as a language:**<br>
 Initial translations have been done by [@eruedin](https://github.com/eruedin) and Martin Cantieni [#4027](https://github.com/ecamp/ecamp3/pull/4027){.issuelink}
 
