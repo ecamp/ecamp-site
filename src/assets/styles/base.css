@@ -84,12 +84,7 @@ a.anchor::before {
 .simple-columns {
   display: grid;
   @apply rounded;
-  @apply lg:grid-cols-2 py-8 px-6 -mx-6 lg:p-12 lg:gap-12;
-  
-  @screen lg {
-    margin-left: max(-500px, calc(((100vw - 52rem) / 2) * -1))!important;
-    margin-right: max(-500px, calc(((100vw - 52rem) / 2) * -1))!important;
-  }
+  @apply lg:grid-cols-2 py-8 px-6 -mx-6 lg:mx-[max(-500px,calc(((100vw_-_52rem)_/_2)_*_-1))] lg:p-12 lg:gap-12;
   align-items: center;
 }
 
