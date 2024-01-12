@@ -10,7 +10,7 @@ Many camps have already been carried out in the last year, and over 200 camps ha
 
 In the meantime, several frequently requested features have been implemented. Here are some highlights:
 
-<div class="simple-columns bg-slate-100">
+<div class="simple-columns bg-slate-100 dark:bg-slate-800">
 
 ![Copy and paste activity](~/assets/images/paste-activity.webp)
 
@@ -35,7 +35,7 @@ To preview on large screens as it will appear when printed, you can limit the wi
 
 </div>
 </div>
-<div class="simple-columns bg-slate-100">
+<div class="simple-columns bg-slate-100 dark:bg-slate-800">
 
 ![UI to format text](~/assets/images/formattierung.png)
 

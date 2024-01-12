@@ -10,7 +10,7 @@ Schon viele Lager wurden im letzten Jahr durchgeführt und es sind bereits über
 
 In der Zwischenzeit wurden mehrere häufig angefragte Funktionen implementiert. Hier sind einige Highlights:
 
-<div class="simple-columns bg-slate-100">
+<div class="simple-columns bg-slate-100 dark:bg-slate-800">
 
 ![Block kopieren](~/assets/images/paste-activity.webp)
 
@@ -37,7 +37,7 @@ Um eine Vorschau auf grossen Bildschirmen so zu sehen, wie sie später gedruckt 
 </div>
 </div>
 
-<div class="simple-columns bg-slate-100">
+<div class="simple-columns bg-slate-100 dark:bg-slate-800">
 
 ![GUI um die Formatierung zu verändern](~/assets/images/formattierung.png)
 
