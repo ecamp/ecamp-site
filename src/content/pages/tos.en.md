@@ -115,7 +115,7 @@ We ask you to report bugs and suggestions for improvement to the _eCamp Core Tea
 
 ### Free use of the application
 
-The use of _eCamp_ is offered free of charge by the _eCamp Core Team_, with the kind support of [Swiss Guide and Scout Movement](https://scout.swiss/){target=_blank} and [lokalise](https://lokalise.com/){target=_blank}.
+The use of _eCamp_ is offered free of charge by the _eCamp Core Team_, with the kind support of [Swiss Guide and Scout Movement](https://scout.swiss/){target=_blank} and [Crowdin](https://crowdin.com/){target=_blank}.
 
 ### Liability disclaimer
 All information provided and made available to the respective user on this application including media as well as the underlying software are provided "as is" and "subject to availability". The _eCamp Core Team_ hereby disclaims any liability for defects, warranties or representations to the extent permitted by law. This applies in particular to warranties of merchantability, fitness for a particular purpose, or non-infringement of third party rights. The _eCamp Core Team_ does not warrant that _eCamp_ will meet your requirements or that it will be uninterrupted, secure, error-free or complete; of course, we do our best to keep the application safe and reliable.

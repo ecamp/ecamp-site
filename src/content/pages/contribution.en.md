@@ -10,8 +10,8 @@ The following commonly requested improvements over eCamp v2 are already implemen
 - Improved saving features - where possible, data are auto-saved on the fly.
 - Usability on mobile phones - the design is mobile-first.
 - Login via MiData account of the Swiss Guide and Scouts Movement is possible
-- Switching the user interface language, powered by [Lokalise](https://lokalise.com)
-- Formatting texts (bold, italic, etc.)
+- Switching the user interface language
+- Formatting texts (bold, italic, bullet lists etc.)
 
 eCamp v3 is made up of a backend based on the PHP framework API Platform (Symfony), which offers an API, as well as a Vue.js frontend and some other smaller services.
 
@@ -19,7 +19,8 @@ eCamp v3 is made up of a backend based on the PHP framework API Platform (Symfon
 
 Thanks for helping! There are a few ways to get started.
 
-- Visit our test environment at [https://dev.ecamp3.ch](https://dev.ecamp3.ch). If you discover a bug, [open a new issue for it](https://github.com/ecamp/ecamp3/issues/new).
+- Visit our test environment at [https://dev.ecamp3.ch](https://dev.ecamp3.ch){target=_blank}. If you discover a bug, [open a new issue for it](https://github.com/ecamp/ecamp3/issues/new){target=_blank}.
+- To help us translate eCamp v3 into other languages, visit our [translation tool](https://translate.ecamp3.ch){target=_blank}.
 - To run the project locally on your computer, follow one of the installation guides:
   - [Installation with Docker on Linux](https://github.com/ecamp/ecamp3/wiki/Development-install-on-linux){target=_blank}
   - [Installation with Docker on Windows + WSL2](https://github.com/ecamp/ecamp3/wiki/Development-installation-on-Windows){target=_blank}

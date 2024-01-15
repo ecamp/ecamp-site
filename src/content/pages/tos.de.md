@@ -115,7 +115,7 @@ Wir bitten dich, Fehler und Verbesserungsvorschläge dem _eCamp Core Team_ zu me
 
 ### Kostenlose Nutzung der Applikation
 
-Die Nutzung von _eCamp_ wird kostenlos vom _eCamp Core Team_ angeboten, mit freundlicher Unterstützung der [Pfadibewegung Schweiz](https://pfadi.swiss/){target=_blank} sowie [lokalise](https://lokalise.com/){target=_blank}.
+Die Nutzung von _eCamp_ wird kostenlos vom _eCamp Core Team_ angeboten, mit freundlicher Unterstützung der [Pfadibewegung Schweiz](https://pfadi.swiss/){target=_blank} sowie [Crowdin](https://crowdin.com/){target=_blank}.
 
 ### Haftungsausschluss
 Sämtliche dem jeweiligen Nutzenden auf dieser Applikation bereitgestellten und zur Verfügung gestellten Informationen inkl. Medien, wie auch die zugrundeliegende Software werden „wie dargestellt“ und „nach Verfügbarkeit“ bereitgestellt. Das _eCamp Core Team_ lehnt hiermit jegliche Mängelhaftung, Gewährleistung oder Zusicherungen soweit ab, als dies gesetzlich zulässig ist. Dies gilt im Speziellen für die Zusicherung der allgemeinen Gebrauchstauglichkeit, der Eignung für einen bestimmten Zweck oder der Nichtverletzung von Rechten Dritter. Das _eCamp Core Team_ gewährleistet nicht, dass _eCamp_ deinen Anforderungen entspricht und unterbrechungsfrei, sicher, fehlerfrei oder vollständig ist; selbstverständlich geben wir unser Bestes, die Applikation sicher und zuverlässig zu betreiben.
