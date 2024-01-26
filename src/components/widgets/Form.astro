@@ -44,10 +44,22 @@ const {name, email, subject, message, submit, success, id} = Astro.props;
       </label>
       <input
         type="text"
-        name="subject"
+        name="subject-input"
         id="subject"
         class="w-full rounded-md border border-primary-100 dark:border-slate-700 bg-white dark:bg-slate-800 py-3 px-6 text-base font-medium text-primary-900 dark:text-slate-200 outline-none focus:border-primary-300 focus:shadow-md"
       />
+      <input
+        type="hidden"
+        name="subject"
+        id="subject-with-prefix"
+        value="[eCamp v3]"
+        data-remove-prefix
+      />
+      <script>
+        document.getElementById('subject').addEventListener('input', (e) => {
+          document.getElementById('subject-with-prefix').value = '[eCamp v3] ' + event.target.value
+        })
+      </script>
     </div>
     <div class="mb-5">
       <label
