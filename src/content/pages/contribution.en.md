@@ -3,7 +3,7 @@ title: Contribute
 path: contribute
 ---
 
-eCamp3 is the re-development of eCamp with the goal of reimplementing the functionality of eCamp v2 using modern technologies and an extensible [architecture](https://github.com/ecamp/ecamp3/wiki/architecture){target=_blank}. Currently, an MVP (minimum viable product) is in operation. Next, we will focus on course planning, and further extensions will follow later.
+eCamp v3 is the re-development of eCamp with the goal of reimplementing the functionality of eCamp v2 using modern technologies and an extensible [architecture](https://github.com/ecamp/ecamp3/wiki/architecture){target=_blank}. Currently, an MVP (minimum viable product) is in operation. Next, we will focus on course planning, and further extensions will follow later.
 
 The following commonly requested improvements over eCamp v2 are already implemented:
 

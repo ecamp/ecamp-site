@@ -3,7 +3,7 @@ title: Mithelfen
 path: mithelfen
 ---
 
-eCamp3 ist die Neu-Entwicklung von eCamp. Das Ziel ist es, die Funktionalität von eCamp v2 mit moderneren Technologien und einer erweiterbaren [Architektur](https://github.com/ecamp/ecamp3/wiki/architecture){target=_blank} neu zu implementieren. Aktuell läuft eine MVP (minimum viable product, minimale nützliche Version). Als Nächstes fokussieren wir uns auf die Kursplanung und später werden dann noch weitere Erweiterungen folgen.
+eCamp v3 ist die Neu-Entwicklung von eCamp. Das Ziel ist es, die Funktionalität von eCamp v2 mit moderneren Technologien und einer erweiterbaren [Architektur](https://github.com/ecamp/ecamp3/wiki/architecture){target=_blank} neu zu implementieren. Aktuell läuft eine MVP (minimum viable product, minimale nützliche Version). Als Nächstes fokussieren wir uns auf die Kursplanung und später werden dann noch weitere Erweiterungen folgen.
 
 Folgende Verbesserungen, die bei eCamp v2 oft gewünscht wurden, sind bereits implementiert:
 
