@@ -13,7 +13,7 @@ In der Zwischenzeit haben wir diverse kleinere Features und Bugfixes implementie
 
 <div class="simple-columns">
 
-![Hilfelinks](~/assets/images/activate-login.png)
+![Meldung zum Konto aktivieren](~/assets/images/activate-login.png)
 
 Falls man kein Aktivierungs-E-Mail bekommen hat, kann man nun auch via [Passwort-Reset](https://app.ecamp3.ch/reset-password) oder durch einen Login via MiData, jubla.db, CeviDB oder Google seinen Account aktivieren. [#4670](https://github.com/ecamp/ecamp3/issues/4670){.issuelink}
 
@@ -23,7 +23,7 @@ Falls man kein Aktivierungs-E-Mail bekommen hat, kann man nun auch via [Passwort
 - Die zuletzt verwendeten Druck-Einstellungen, die Sperrung / Entsperrung von Grobprogramm und Geschichte-Übersicht sowie die Einstellung für breite Bildschirme wird jetzt gespeichert, sodass man sie nicht immer wieder neu einrichten muss. [#4559](https://github.com/ecamp/ecamp3/pull/4559){.issuelink}
 - In einzeiligen Textfeldern wird beim Autosave ein Leerschlag am Ende nicht mehr weggekürzt, wenn man beim Eintippen kurz innehält um zu überlegen. [#3875](https://github.com/ecamp/ecamp3/issues/3875){.issuelink} [#4712](https://github.com/ecamp/ecamp3/issues/4712){.issuelink}
 - Lager rutschen jetzt erst nach dem letzten Lagertag in die Sparte "Vergangene Lager", nicht schon am letzten Lagertag. [#4711](https://github.com/ecamp/ecamp3/issues/4711){.issuelink}
-- Der Planungs-Fortschritt einer Aktivität kann jetzt auch wieder ganz entfernt werden [#4535](https://github.com/ecamp/ecamp3/issues/4535){.issuelink}
+- Der Planungs-Fortschritt einer Aktivität kann jetzt auch wieder ganz entfernt werden. [#4535](https://github.com/ecamp/ecamp3/issues/4535){.issuelink}
 - Der Titel von Teilinhalten einer Aktivität kann jetzt auch im Layout-Modus bearbeitet werden. [#4560](https://github.com/ecamp/ecamp3/pull/4560){.issuelink}
 - Performance-Verbesserungen und bessere Stabilität für viele gleichzeitige Nutzende.
 
