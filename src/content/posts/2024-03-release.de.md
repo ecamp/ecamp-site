@@ -20,7 +20,7 @@ Falls man kein Aktivierungs-E-Mail bekommen hat, kann man nun auch via [Passwort
 </div>
 
 - Es gibt jetzt direkt in der App Links zur FAQ-Hilfeseite und zu den neuesten Blogposts wo wir jeweils auflisten, was sich an eCamp v3 in letzter Zeit verändert hat. [#4618](https://github.com/ecamp/ecamp3/pull/4618){.issuelink}
-- Die zuletzt verwendeten Druck-Einstellungen, die Sperrung / Entsperrung von Grobprogramm und Geschichte-Übersicht sowie die Einstellung für breite Bildschirme wird jetzt gespeichert, sodass man sie nicht immer wieder neu einrichten muss. [#4559](https://github.com/ecamp/ecamp3/pull/4559){.issuelink}
+- Die zuletzt verwendeten Druck-Einstellungen, Sperrzustand des Grobprogramms und Geschichte-Übersicht sowie die Einstellung für breite Bildschirme wird jetzt so gespeichert, sodass man sie auf einem Gerät nicht immer wieder neu einrichten muss. [#4559](https://github.com/ecamp/ecamp3/pull/4559){.issuelink}
 - In einzeiligen Textfeldern wird beim Autosave ein Leerschlag am Ende nicht mehr weggekürzt, wenn man beim Eintippen kurz innehält um zu überlegen. [#3875](https://github.com/ecamp/ecamp3/issues/3875){.issuelink} [#4712](https://github.com/ecamp/ecamp3/issues/4712){.issuelink}
 - Lager rutschen jetzt erst nach dem letzten Lagertag in die Sparte "Vergangene Lager", nicht schon am letzten Lagertag. [#4711](https://github.com/ecamp/ecamp3/issues/4711){.issuelink}
 - Der Planungs-Fortschritt einer Aktivität kann jetzt auch wieder ganz entfernt werden. [#4535](https://github.com/ecamp/ecamp3/issues/4535){.issuelink}

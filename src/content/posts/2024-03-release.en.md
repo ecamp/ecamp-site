@@ -19,7 +19,7 @@ If you have not received an activation email, you can now also activate your acc
 </div>
 
 - There are now links directly in the app to our FAQ help page and to the most recent blog posts, where we describe what's changed at eCamp v3 recently. [#4618](https://github.com/ecamp/ecamp3/pull/4618){.issuelink}
-- The last used print settings, the lock status of Picasso and story overview, and the setting for wide displays are now saved. This way you don't have to set these settings up over and over again. [#4559](https://github.com/ecamp/ecamp3/pull/4559){.issuelink}
+- The last used print settings, the lock status of Picasso and story overview, and the setting for wide displays are now saved. This way you don't have to set these settings up on the same device over and over again. [#4559](https://github.com/ecamp/ecamp3/pull/4559){.issuelink}
 - In single-line text fields, auto-saving will no longer cut away a trailing space when you stop and think about what to type next. [#3875](https://github.com/ecamp/ecamp3/issues/3875){.issuelink} [#4712](https://github.com/ecamp/ecamp3/issues/4712){.issuelink}
 - Camps now aren't moved to the past camps until the day after the last day of the camp. Previously, they would move there already on the last day of the camp. [#4711](https://github.com/ecamp/ecamp3/issues/4711){.issuelink}
 - The planning progress of an activity can now be removed from an activity. [#4535](https://github.com/ecamp/ecamp3/issues/4535){.issuelink}
