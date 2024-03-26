@@ -24,7 +24,7 @@ Falls man kein Aktivierungs-E-Mail bekommen hat, kann man nun auch via [Passwort
 - In einzeiligen Textfeldern wird beim Autosave ein Leerschlag am Ende nicht mehr weggekürzt, wenn man beim Eintippen kurz innehält um zu überlegen. [#3875](https://github.com/ecamp/ecamp3/issues/3875){.issuelink} [#4712](https://github.com/ecamp/ecamp3/issues/4712){.issuelink}
 - Lager rutschen jetzt erst nach dem letzten Lagertag in die Sparte "Vergangene Lager", nicht schon am letzten Lagertag. [#4711](https://github.com/ecamp/ecamp3/issues/4711){.issuelink}
 - Der Planungs-Fortschritt einer Aktivität kann jetzt auch wieder ganz entfernt werden. [#4535](https://github.com/ecamp/ecamp3/issues/4535){.issuelink}
-- Der Titel von Teilinhalten einer Aktivität kann jetzt auch im Layout-Modus bearbeitet werden. [#4560](https://github.com/ecamp/ecamp3/pull/4560){.issuelink}
+- Der Titel der Inhaltsblöcke einer Aktivität kann jetzt auch im Layout-Modus bearbeitet werden. [#4560](https://github.com/ecamp/ecamp3/pull/4560){.issuelink}
 - Performance-Verbesserungen und bessere Stabilität für viele gleichzeitige Nutzende.
 
 Wir arbeiten weiterhin an vielen kleinen Verbesserungen, und freuen uns immer über euer Feedback. Parallel dazu klären wir derzeit, welche Features für Kurse am sinnvollsten sind.

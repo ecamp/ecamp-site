@@ -23,7 +23,7 @@ If you have not received an activation email, you can now also activate your acc
 - In single-line text fields, auto-saving will no longer cut away a trailing space when you stop and think about what to type next. [#3875](https://github.com/ecamp/ecamp3/issues/3875){.issuelink} [#4712](https://github.com/ecamp/ecamp3/issues/4712){.issuelink}
 - Camps now aren't moved to the past camps until the day after the last day of the camp. Previously, they would move there already on the last day of the camp. [#4711](https://github.com/ecamp/ecamp3/issues/4711){.issuelink}
 - The planning progress of an activity can now be removed from an activity. [#4535](https://github.com/ecamp/ecamp3/issues/4535){.issuelink}
-- The titles of the pieces of an activity can now also be edited in layout mode. [#4560](https://github.com/ecamp/ecamp3/pull/4560){.issuelink}
+- Titles of activity content blocks can now also be edited in layout mode. [#4560](https://github.com/ecamp/ecamp3/pull/4560){.issuelink}
 - Performance improvements and better stability for many concurrent users.
 
 We continue to work on many small improvements, and we are always happy to get your feedback. While doing this, we are currently discussing which features make the most sense to implement for courses.
