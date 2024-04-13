@@ -47,7 +47,7 @@ Die Block-Nummerierung kann nun für einzelne Block-Kategorien auch ausgeschalte
 
 ## Weitere Verbesserungen
 
-- Beim Anlegen von neuen Aktivitäten wird nicht mehr "Neue Aktivität" vorgeschlagen. So wird man nicht mehr ermutigt, nichtssagende Aktivitätentitel zu vergeben. Dafür ist aber beim Öffnen des Dialogs direkt der Inhalt des Titel-Felds selektiert, und man kann den Aktivitätstitel ohne weiteren Klick eintippen. [#4826](https://github.com/ecamp/ecamp3/pull/4826){.issuelink}
+- Beim Anlegen von neuen Aktivitäten wird als Titel nicht mehr "Neue Aktivität" vorgeschlagen. So wird man nicht mehr ermutigt, nichtssagende Aktivitätentitel zu vergeben. Dafür ist aber beim Öffnen des Dialogs direkt der Inhalt des Titel-Felds selektiert, und man kann den Aktivitätstitel ohne weiteren Klick eintippen. [#4826](https://github.com/ecamp/ecamp3/pull/4826){.issuelink}
 - Im Druck-Layout #1 wird die Höhe des Grobprogramms neu flexibel angepasst, wenn im Footer viele Informationen stehen. [#4817](https://github.com/ecamp/ecamp3/pull/4817){.issuelink}
 - Im Druck-Layout #2 zeigt das Grobprogramm nun Monats-Zahlen statt Monatsnamen an, um auch in Herbstlagern im September den verfügbaren Platz nicht zu sprengen. [#4820](https://github.com/ecamp/ecamp3/pull/4820){.issuelink}
 - Diverse Verbesserungen an den Übersetzungen aus der Community wurden eingefügt. Vielen Dank [@aszakacs](https://github.com/aszakacs){target=_blank} und auch allen Personen, welche Übersetzungen auf [https://translate.ecamp3.ch](https://translate.ecamp3.ch){target=_blank} beigesteuert haben! [#4869](https://github.com/ecamp/ecamp3/pull/4869){.issuelink} [#4837](https://github.com/ecamp/ecamp3/pull/4837){.issuelink}
