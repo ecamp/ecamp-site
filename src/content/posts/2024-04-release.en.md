@@ -15,7 +15,7 @@ Barely three weeks have passed since the last update of eCamp v3, and already we
 
 <div>
 
-Invitations to camps can now also be accepted directly on the eCamp v3 application. For this to work, your camp leaders need to invite the exact email address belonging to your user account. [#4865](https://github.com/ecamp/ecamp3/issues/4865){.issuelink}
+Invitations to camps can now also be accepted directly in eCamp v3, given the invitation was sent to the email address of your user account. [#4865](https://github.com/ecamp/ecamp3/issues/4865){.issuelink}
 
 </div>
 

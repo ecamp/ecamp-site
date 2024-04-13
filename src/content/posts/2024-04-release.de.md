@@ -15,7 +15,7 @@ Bereits drei Wochen nach der letzten Aktualisierung schalten wir schon wieder ei
 
 <div>
 
-Lagereinladungen können neu auch direkt auf der eCamp v3 Webseite akzeptiert werden, vorausgesetzt es wurde die E-Mailadresse eingeladen, welche zu deinem Account gehört. [#4865](https://github.com/ecamp/ecamp3/issues/4865){.issuelink} [#4932](https://github.com/ecamp/ecamp3/issues/4932){.issuelink}
+Lagereinladungen können neu auch direkt in eCamp v3 akzeptiert werden, vorausgesetzt die Einladung wurde an die E-Mailadresse deines Accounts geschickt. [#4865](https://github.com/ecamp/ecamp3/issues/4865){.issuelink} [#4932](https://github.com/ecamp/ecamp3/issues/4932){.issuelink}
 
 </div>
 
