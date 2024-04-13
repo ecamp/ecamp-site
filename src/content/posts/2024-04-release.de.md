@@ -11,7 +11,7 @@ Bereits drei Wochen nach der letzten Aktualisierung schalten wir schon wieder ei
 
 <div class="simple-columns bg-slate-100 dark:bg-slate-800">
 
-![Einladungen im UI akzeptieren](~/assets/images/colors.jpg)
+![Einladungen im UI akzeptieren](~/assets/images/personal-invitations-de.png)
 
 <div>
 
@@ -23,7 +23,7 @@ Lagereinladungen können neu auch direkt auf der eCamp v3 Webseite akzeptiert we
 
 <div class="simple-columns">
 
-![Block-Kategorien kopieren](~/assets/images/default.png)
+![Block-Kategorien kopieren](~/assets/images/copy-category-de.png)
 
 <div>
 
@@ -35,7 +35,7 @@ Block-Kategorien können nun auch kopiert und eingefügt werden. Dies ist auch v
 
 <div class="simple-columns bg-slate-100 dark:bg-slate-800">
 
-![Blöcke ohne Nummerierung](~/assets/images/astronaut.jpg)
+![Blöcke ohne Nummerierung](~/assets/images/empty-numbering-de.png)
 
 <div>
 

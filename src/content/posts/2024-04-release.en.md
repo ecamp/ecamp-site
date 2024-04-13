@@ -11,7 +11,7 @@ Barely three weeks have passed since the last update of eCamp v3, and already we
 
 <div class="simple-columns bg-slate-100 dark:bg-slate-800">
 
-![Accept invitations in the UI](~/assets/images/colors.jpg)
+![Accept invitations in the UI](~/assets/images/personal-invitations-en.png)
 
 <div>
 
@@ -23,7 +23,7 @@ Invitations to camps can now also be accepted directly on the eCamp v3 applicati
 
 <div class="simple-columns">
 
-![Copy categories](~/assets/images/default.png)
+![Copy categories](~/assets/images/copy-category-en.png)
 
 <div>
 
@@ -35,7 +35,7 @@ Categories can now also be copied and pasted, even across camps. It's even possi
 
 <div class="simple-columns bg-slate-100 dark:bg-slate-800">
 
-![Activities without numbering](~/assets/images/astronaut.jpg)
+![Activities without numbering](~/assets/images/empty-numbering-en.png)
 
 <div>
 
