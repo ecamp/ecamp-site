@@ -2,7 +2,7 @@
 title: April-Release
 path: 2024-04-release
 pubDate: 2024-04-14
-description: Einladungen direkt akzeptieren, Block-Kategorien kopieren und mehr
+description: Einladungen direkt akzeptieren, Grobprogramm filtern, Block-Kategorien kopieren und mehr
 image: '~/assets/images/080720_lotos_7896_small.jpg'
 ---
 

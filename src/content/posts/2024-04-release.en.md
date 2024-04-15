@@ -2,7 +2,7 @@
 title: April release
 path: 2024-04-release
 pubDate: 2024-04-14
-description: Accept invitations directly in the app, copy categories, and more
+description: Accept invitations directly in the app, filters on the picasso, copy categories, and more
 image: '~/assets/images/080720_lotos_7896_small.jpg'
 ---
 
