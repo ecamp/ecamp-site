@@ -3,9 +3,10 @@ title: April release
 path: 2024-04-release
 pubDate: 2024-04-14
 description: Accept invitations directly in the app, filters on the picasso, copy categories, and more
-image: '~/assets/images/080720_lotos_7896_small.jpg'
+image: '~/assets/images/april-2024-release.png'
 ---
 
+In the meantime, we have passed two milestones. We now have over 10,000 registered accounts and this summer over 1000 camps on eCamp v3.
 Barely three weeks have passed since the last update of eCamp v3, and already we bring you the next one. This time, the following features are included:
 
 
@@ -23,13 +24,13 @@ Invitations to camps can now also be accepted directly in eCamp v3, given the in
 
 <div class="simple-columns">
 
-![Filter activities on picasso](~/assets/images/picasso-filter-en.png)
-
 <div>
 
 Activities on the picasso can now be filtered by the same criteria as on the camp's home page. This can be useful to visualize the planning progress of all activities, or to visually check the amount of LS and LA on each day of a J+S camp. [#3886](https://github.com/ecamp/ecamp3/issues/3886){.issuelink}
 
 </div>
+
+![Filter activities on picasso](~/assets/images/picasso-filter-en.png)
 
 </div>
 
@@ -56,4 +57,4 @@ Categories can now also be copied and pasted, even across camps. It's even possi
 
 In the coming days, we will start implementing the first course-specific features. We are looking forward to hopefully show you these features soon.
 
-<a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Zur App</a>
+<a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Go to App</a>
