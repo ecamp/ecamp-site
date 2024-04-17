@@ -6,7 +6,7 @@ description: Einladungen direkt akzeptieren, Grobprogramm filtern, Block-Kategor
 image: '~/assets/images/april-2024-release.png'
 ---
 
-Mittlerweile haben wir zwei Meilensteine geknackt. Wir haben nun über 10'000 registrierte Accounts und diesen Sommer sind über 1'000 Lager auf eCamp v3 geplant. Bereits drei Wochen nach der letzten Aktualisierung schalten wir schon wieder ein Update auf eCamp v3 auf. Diesmal sind folgende Features dabei:
+Mittlerweile haben wir zwei Meilensteine geknackt. Wir haben nun über 10'000 registrierte Accounts und über 1'000 Lager diesen Sommer werden auf eCamp v3 geplant. Und bereits drei Wochen nach der letzten Aktualisierung schalten wir schon wieder ein Update auf eCamp v3 auf. Diesmal sind folgende Features dabei:
 
 
 <div class="simple-columns bg-slate-100 dark:bg-slate-800">

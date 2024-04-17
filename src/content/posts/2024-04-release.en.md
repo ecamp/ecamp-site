@@ -6,8 +6,8 @@ description: Accept invitations directly in the app, filters on the picasso, cop
 image: '~/assets/images/april-2024-release.png'
 ---
 
-In the meantime, we have passed two milestones. We now have over 10,000 registered accounts and this summer over 1000 camps on eCamp v3.
-Barely three weeks have passed since the last update of eCamp v3, and already we bring you the next one. This time, the following features are included:
+In the meantime, we have passed two milestones. We now have over 10,000 registered accounts and over 1000 camps this summer are planned using eCamp v3.
+On the development side, barely three weeks have passed since the last update of eCamp v3, and already we bring you the next one. This time, the following features are included:
 
 
 <div class="simple-columns bg-slate-100 dark:bg-slate-800">
