@@ -183,7 +183,7 @@ Beim Aufrufen unserer Webseite erhebt und speichert DigitalOcean (Details siehe 
 
 Diese Daten können keiner bestimmten Person zugeordnet werden und es findet keine Zusammenführung dieser Daten mit anderen Datenquellen statt. Die Speicherung der Logfiles erfolgt, um die Funktionsfähigkeit der Webseite zu garantieren und zur Sicherstellung der Sicherheit unserer informationstechnischen Systeme. Die Speicherung der Logfiles ist für den Betrieb der Webseite zwingend notwendig, du hast daher keine Möglichkeit dagegen Widerspruch zu erheben.
 
-Server-Log-Files werden maximal 5 Tage aufbewahrt.
+Server-Log-Files werden maximal 30 Tage aufbewahrt.
 
 #### Backups
 

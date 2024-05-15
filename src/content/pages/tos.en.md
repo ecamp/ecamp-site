@@ -183,7 +183,7 @@ When you access our website, DigitalOcean (for details see chapter Terms) automa
 
 This data cannot be assigned to a specific person and there is no merging of this data with other data sources. The log files are stored in order to guarantee the functionality of the website and to ensure the security of our information technology systems. The storage of log files is absolutely necessary for the operation of the website, you therefore have no possibility to object to this.
 
-Server log files are stored for a maximum of 5 days.
+Server log files are stored for a maximum of 30 days.
 
 #### Backups
 
