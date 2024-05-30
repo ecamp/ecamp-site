@@ -2,12 +2,14 @@ export const get = () => ({
     body: `
 /coc /en/code-of-conduct 302 Language=en
 /coc /de/verhaltenskodex 302 Language=de
+/coc /de/verhaltenskodex 301
 
 /closed-beta /en/blog/beta-version 302 Language=en
 /closed-beta /de/blog/beta-version 302 Language=de
 
 /blog /en/blog 302 Language=en
 /blog /de/blog 302 Language=de
+/blog /de/blog 301
 
 /blog/* /en/:splat 302 Language=en
 /blog/* /de/:splat 302 Language=de
@@ -16,6 +18,8 @@ export const get = () => ({
 
 /* /en/:splat 302 Language=en
 /* /de/:splat 302 Language=de
+
+/faq /de/faq
 
 / /de/
 `
