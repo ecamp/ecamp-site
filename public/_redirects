@@ -1,5 +1,3 @@
-export const get = () => ({
-    body: `
 /coc /en/code-of-conduct 302 Language=en
 /coc /de/verhaltenskodex 302 Language=de
 /coc /de/verhaltenskodex 301
@@ -20,7 +18,3 @@ export const get = () => ({
 /* /de/:splat 302 Language=de
 
 /faq /de/faq
-
-/ /de/
-`
-});
