@@ -14,6 +14,7 @@ import { Feed } from "feed";
 import { postsCollection } from "~/content";
 import { SITE } from "~/config.mjs";
 import { getPermalink, getCanonical } from "~/permalink";
+import type {APIRoute} from "astro";
 
 const year = +new Date().getFullYear();
 
@@ -30,7 +31,7 @@ export function getStaticPaths() {
   ];
 }
 
-export const get = async ({ params }) => {
+export const GET: APIRoute = async ({ params }) => {
   /*
    * Main Feed Options
    */
@@ -77,5 +78,5 @@ export const get = async ({ params }) => {
   posts.forEach((item: Item) => feed.addItem(item));
   // Check output directory exists
 
-  return { body: params.slug == "feed" ? feed.atom1() : feed.rss2() };
+  return new Response(params.slug == "feed" ? feed.atom1() : feed.rss2())
 };
