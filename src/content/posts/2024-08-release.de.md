@@ -14,7 +14,7 @@ Die grosse Welle von Sommerlagern dieses Jahr ist geschafft! Am Rekordtag, dem 1
 
 <div>
 
-Neu kann man die Farbe und die Initialen der Leute, die im Lager mitarbeiten, anpassen. Es sind zwei Buchstaben oder ein Emoji möglich. Die Anpassung gilt jeweils nur in diesem Lager. [#5281](https://github.com/ecamp/ecamp3/pull/5281){.issuelink}
+Neu kann man die Farbe und die Initialen der Leute, die im Lager mitarbeiten, anpassen. Es sind zwei Buchstaben oder ein Emoji möglich. Die Anpassung gilt jeweils nur in diesem Lager, aber man kann auch im Profil für sich selber Standard-Einstellungen machen. [#5281](https://github.com/ecamp/ecamp3/pull/5281){.issuelink} [#5411](https://github.com/ecamp/ecamp3/pull/5411){.issuelink}
 
 </div>
 
@@ -51,9 +51,11 @@ Wenn man offline ist, dann wird dies neu unten auf der Seite angezeigt. [#5026](
 - Der am meisten aufgetretene Bug beim Hinzufügen von Material mit Anzahl wurde behoben. [#5017](https://github.com/ecamp/ecamp3/pull/5017){.issuelink}
 - Wenn man einen langen SBB-Link ins Programm einfügt, dann geht die Nutzendenoberfläche jetzt nicht mehr kaputt. [#5446](https://github.com/ecamp/ecamp3/issues/5446){.issuelink}
 - Beim Login via MiData, Cevi.DB, JublaDB oder Google hat man neu 15 statt nur 5 Minuten Zeit um sich einzuloggen (falls man z.B. dort das Passwort zurücksetzen muss). [#5382](https://github.com/ecamp/ecamp3/pull/5382){.issuelink}
+- Falls das Aktivierungs-E-Mail nie angekommen ist, kann man sich jetzt ein neues Mail auslösen. [#5287](https://github.com/ecamp/ecamp3/pull/5287){.issuelink}
 - Beim Hinzufügen von mehreren Durchführungszeitpunkten auf einer Aktivität werden nun wenn möglich etwas sinnvollere Zeitpunkte vorgeschlagen (gleiche Tageszeit am jeweils nächsten Tag). [#5131](https://github.com/ecamp/ecamp3/pull/5131){.issuelink}
 - Wenn man auf der Detailansicht einer Aktivität auf den Titel klickt und gleich wieder ENTER drückt, dann tritt jetzt kein Fehler mehr auf. [#4610](https://github.com/ecamp/ecamp3/pull/4610){.issuelink}
 - Auf der Lager-Startseite kann man neu auf den Namen eines Lagerabschnitts klicken, um zum Grobprogramm zu kommen. [#5064](https://github.com/ecamp/ecamp3/issues/5064){.issuelink}
+- Die Lagerabschnitte, Blockverantwortungen und Materiallisten werden jetzt an mehr Orten sinnvoll sortiert. [#5535](https://github.com/ecamp/ecamp3/pull/5535){.issuelink} [#5539](https://github.com/ecamp/ecamp3/pull/5539){.issuelink}
 - Fehler, die beim Druck-Layout #1 entstehen, werden jetzt wieder zuverlässig ans eCamp Core Team gemeldet. [#5278](https://github.com/ecamp/ecamp3/pull/5278){.issuelink}
 - Auf ausreichend grossen Bildschirmen werden die Eingabefelder für PLZ und Ort auf einer Zeile angezeigt. [#5458](https://github.com/ecamp/ecamp3/pull/5458){.issuelink}
 - Das Grobprogramm verwendet nach der Entfernung der Fusszeile auf Desktop wieder die volle verfügbare Höhe. [#5112](https://github.com/ecamp/ecamp3/pull/5112){.issuelink}
