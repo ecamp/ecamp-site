@@ -14,7 +14,7 @@ The big wave of summer camps this year is over! On the record day, July 13, over
 
 <div>
 
-You can now customize the color and initials of the people who work in the camp. Two letters or one emoji are possible. [#5281](https://github.com/ecamp/ecamp3/pull/5281){.issuelink}
+You can now customize the color and initials of the people who collaborate in the camp. Two letters or one emoji are possible. [#5281](https://github.com/ecamp/ecamp3/pull/5281){.issuelink}
 
 </div>
 
@@ -24,7 +24,7 @@ You can now customize the color and initials of the people who work in the camp.
 
 <div>
 
-As a first simple step towards [course features](https://github.com/ecamp/ecamp3/issues/4936), there are now specific text fields for learning goals and learning topics that can be incorporated into activities. It is planned that in future it will be possible to export the contents of these text fields, together with other information, as course summary. [#4990](https://github.com/ecamp/ecamp3/pull/4990){.issuelink}
+As a first simple step towards [course features](https://github.com/ecamp/ecamp3/issues/4936), there are now specific text fields for learning goals and learning topics that can be incorporated into activities. It is planned that in the future it will be possible to export the contents of these text fields, together with other information, as course summary. [#4990](https://github.com/ecamp/ecamp3/pull/4990){.issuelink}
 
 </div>
 
@@ -44,7 +44,7 @@ If you are offline, this is now indicated at the bottom of the page. [#5026](htt
 
 </div>
 
-## Bugfixes und kleinere Verbesserungen
+## Bugfixes and small improvements
 
 - The most common bug when adding material with quantity has been fixed. [#5017](https://github.com/ecamp/ecamp3/pull/5017){.issuelink}
 - If you insert a long SBB/CFF/FFS link into the program, the user interface no longer breaks. [#5446](https://github.com/ecamp/ecamp3/issues/5446){.issuelink}
