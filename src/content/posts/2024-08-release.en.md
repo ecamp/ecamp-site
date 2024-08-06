@@ -14,7 +14,7 @@ The big wave of summer camps this year is over! On the record day, July 13, over
 
 <div>
 
-You can now customize the color and initials of the people who collaborate in the camp. Two letters or one emoji are possible. [#5281](https://github.com/ecamp/ecamp3/pull/5281){.issuelink}
+You can now customize the color and initials of the people who collaborate in the camp. Two letters or one emoji are possible. This customizations can be done on a per-camp basis. [#5281](https://github.com/ecamp/ecamp3/pull/5281){.issuelink}
 
 </div>
 
@@ -24,7 +24,10 @@ You can now customize the color and initials of the people who collaborate in th
 
 <div>
 
-As a first simple step towards [course features](https://github.com/ecamp/ecamp3/issues/4936), there are now specific text fields for learning goals and learning topics that can be incorporated into activities. It is planned that in the future it will be possible to export the contents of these text fields, together with other information, as course summary. [#4990](https://github.com/ecamp/ecamp3/pull/4990){.issuelink}
+
+As a first simple step towards course features, there are now specific text fields for learning goals and learning topics that can be incorporated into activities. [#4990](https://github.com/ecamp/ecamp3/pull/4990){.issuelink}
+
+It is [planned](https://github.com/ecamp/ecamp3/issues/4936) that in the future it will be possible to export the contents of these text fields, together with other information, as course summary.
 
 </div>
 
@@ -51,10 +54,10 @@ If you are offline, this is now indicated at the bottom of the page. [#5026](htt
 - When logging in via MiData, Cevi.DB, JublaDB or Google, you now have 15 instead of just 5 minutes to log in (if you need to reset your password there, for example). [#5382](https://github.com/ecamp/ecamp3/pull/5382){.issuelink}
 - When adding several execution times to an activity, more sensible times are now suggested if possible (same time of day on the next day). [#5131](https://github.com/ecamp/ecamp3/pull/5131){.issuelink}
 - If you click on the title of an activity in the detailed view and then press ENTER, an error no longer occurs. [#4610](https://github.com/ecamp/ecamp3/pull/4610){.issuelink}
-- On the camp start page, you can now click on the name of a camp section to go to the picasso. [#5064](https://github.com/ecamp/ecamp3/issues/5064){.issuelink}
+- On the camp start page, you can now click on the name of a camp period to go to the picasso. [#5064](https://github.com/ecamp/ecamp3/issues/5064){.issuelink}
 - Errors that occur in print layout #1 are now reliably reported to the eCamp Core Team again. [#5278](https://github.com/ecamp/ecamp3/pull/5278){.issuelink}
 - On sufficiently large screens, the input fields for zip code and city are displayed on one line. [#5458](https://github.com/ecamp/ecamp3/pull/5458){.issuelink}
-- The rough program uses the full available height again after removing the footer on the desktop. [#5112](https://github.com/ecamp/ecamp3/pull/5112){.issuelink}
+- The picasso uses the full available height again after removing the footer on the desktop. [#5112](https://github.com/ecamp/ecamp3/pull/5112){.issuelink}
 - The same Y+S logo is now used in both print layouts. [#5288](https://github.com/ecamp/ecamp3/pull/5288){.issuelink}
 - The cursor when pointing to links in the program has been improved. [#5285](https://github.com/ecamp/ecamp3/pull/5285){.issuelink}
 
@@ -63,6 +66,6 @@ If you are offline, this is now indicated at the bottom of the page. [#5026](htt
 - An improvement for stability against internal API changes in eCamp v3 has been implemented. Merci also for that [@bb1950328](https://github.com/bb1950328)! [#5168](https://github.com/ecamp/ecamp3/pull/5168){.issuelink}
 - The note that at least someone with administration rights must remain in the camp is now only displayed if it is relevant. Merci [@MarcoAllenspach](https://github.com/MarcoAllenspach)! [#4405](https://github.com/ecamp/ecamp3/pull/4405){.issuelink}
 
-We are currently working on the course features and performance improvements - and of course we are constantly working on bug fixes that are sent to us via [contact form](https://www.ecamp3.ch/de/kontakt/).
+We are currently working on the course features and performance and stability improvements - and of course we are constantly working on bug fixes that are sent to us via [contact form](https://www.ecamp3.ch/de/kontakt/).
 
 <a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Zur App</a>

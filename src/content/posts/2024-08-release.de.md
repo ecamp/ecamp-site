@@ -14,7 +14,7 @@ Die grosse Welle von Sommerlagern dieses Jahr ist geschafft! Am Rekordtag, dem 1
 
 <div>
 
-Neu kann man die Farbe und die Initialen der Leute, die im Lager mitarbeiten, anpassen. Es sind zwei Buchstaben oder ein Emoji möglich. [#5281](https://github.com/ecamp/ecamp3/pull/5281){.issuelink}
+Neu kann man die Farbe und die Initialen der Leute, die im Lager mitarbeiten, anpassen. Es sind zwei Buchstaben oder ein Emoji möglich. Die Anpassung gilt jeweils nur in diesem Lager. [#5281](https://github.com/ecamp/ecamp3/pull/5281){.issuelink}
 
 </div>
 
@@ -24,7 +24,9 @@ Neu kann man die Farbe und die Initialen der Leute, die im Lager mitarbeiten, an
 
 <div>
 
-Als ersten einfachen Schritt in Richtung [Kurs-Features](https://github.com/ecamp/ecamp3/issues/4936) gibt es nun spezifische Textfelder für Blockziele und Blockinhalte, welche man in Aktivitäten einbauen kann. Geplant ist, dass man in Zukunft die Inhalte dieser Textfelder, zusammen mit noch weiteren Informationen, als Blockübersicht exportieren kann. [#4990](https://github.com/ecamp/ecamp3/pull/4990){.issuelink}
+Als ersten einfachen Schritt in Richtung Kurs-Features gibt es nun spezifische Textfelder für Blockziele und Blockinhalte, welche man in Aktivitäten einbauen kann. [#4990](https://github.com/ecamp/ecamp3/pull/4990){.issuelink}
+
+[Geplant](https://github.com/ecamp/ecamp3/issues/4936) ist, dass man in Zukunft die Inhalte dieser Textfelder, zusammen mit noch weiteren Informationen, als Blockübersicht exportieren kann.
 
 </div>
 
@@ -63,6 +65,6 @@ Wenn man offline ist, dann wird dies neu unten auf der Seite angezeigt. [#5026](
 - Eine Verbesserung für die Stabilität gegenüber internen API-Änderungen in eCamp v3 wurde umgesetzt. Merci auch dafür [@bb1950328](https://github.com/bb1950328)! [#5168](https://github.com/ecamp/ecamp3/pull/5168){.issuelink}
 - Der Hinweis, dass mindestens jemand mit Administrationsrechten im Lager bleiben muss, wird jetzt nur noch angezeigt wenn er relevant ist. Merci [@MarcoAllenspach](https://github.com/MarcoAllenspach)! [#4405](https://github.com/ecamp/ecamp3/pull/4405){.issuelink}
 
-Aktuell arbeiten wir an den Kurs-Features und an Performance-Verbesserungen - und natürlich laufend an Bugfixes die via [Kontaktformular](https://www.ecamp3.ch/de/kontakt/) an uns herangetragen werden.
+Aktuell arbeiten wir an den Kurs-Features und an Performance- und Stabilitäts-Verbesserungen - und natürlich laufend an Bugfixes die via [Kontaktformular](https://www.ecamp3.ch/de/kontakt/) an uns herangetragen werden.
 
 <a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Zur App</a>
