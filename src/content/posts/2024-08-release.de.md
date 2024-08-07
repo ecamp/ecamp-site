@@ -6,7 +6,7 @@ description: Avatare und erste Kurs-Features
 image: '~/assets/images/sola24.jpg'
 ---
 
-Die grosse Welle von Sommerlagern dieses Jahr ist geschafft! Am Rekordtag, dem 13. Juli, waren über 700 Lager gleichzeitig am laufen, welche auf eCamp v3 geplant wurden. Wir danken für euer Vertrauen und freuen uns immer wieder über euer Feedback. Hinter den Kulissen haben wir an einigen Features und Bugfixes gearbeitet.
+Die grosse Welle von Sommerlagern dieses Jahr ist geschafft! Am Rekordtag, dem 13. Juli, waren über 700 Lager gleichzeitig am Laufen, welche auf eCamp&nbsp;v3 geplant wurden. Wir danken euch für euer Vertrauen und freuen uns immer wieder über euer Feedback. Hinter den Kulissen haben wir an einigen Features und Bugfixes gearbeitet.
 
 <div class="simple-columns bg-slate-100 dark:bg-slate-800">
 
@@ -58,14 +58,14 @@ Wenn man offline ist, dann wird dies neu unten auf der Seite angezeigt. [#5026](
 - Die Lagerabschnitte, Blockverantwortungen und Materiallisten werden jetzt an mehr Orten sinnvoll sortiert. [#5535](https://github.com/ecamp/ecamp3/pull/5535){.issuelink} [#5539](https://github.com/ecamp/ecamp3/pull/5539){.issuelink}
 - Fehler, die beim Druck-Layout #1 entstehen, werden jetzt wieder zuverlässig ans eCamp Core Team gemeldet. [#5278](https://github.com/ecamp/ecamp3/pull/5278){.issuelink}
 - Auf ausreichend grossen Bildschirmen werden die Eingabefelder für PLZ und Ort auf einer Zeile angezeigt. [#5458](https://github.com/ecamp/ecamp3/pull/5458){.issuelink}
-- Das Grobprogramm verwendet nach der Entfernung der Fusszeile auf Desktop wieder die volle verfügbare Höhe. [#5112](https://github.com/ecamp/ecamp3/pull/5112){.issuelink}
+- Das Grobprogramm verwendet nach der Entfernung der Fusszeile auf grösseren Bildschirmen wieder die volle verfügbare Höhe. [#5112](https://github.com/ecamp/ecamp3/pull/5112){.issuelink}
 - Es wird nun in beiden Druck-Layouts dasselbe J+S-Logo verwendet. [#5288](https://github.com/ecamp/ecamp3/pull/5288){.issuelink}
 - Der Cursor beim Zeigen auf Links im Programm wurde verbessert. [#5285](https://github.com/ecamp/ecamp3/pull/5285){.issuelink}
 
 ## Verbesserungen aus der Community
 - In einigen LA-Themenbereichen wurden fehlerhafte Zeilenumbrüche entfernt. Merci [@bb1950328](https://github.com/bb1950328)! [#5167](https://github.com/ecamp/ecamp3/pull/5167){.issuelink}
 - Eine Verbesserung für die Stabilität gegenüber internen API-Änderungen in eCamp v3 wurde umgesetzt. Merci auch dafür [@bb1950328](https://github.com/bb1950328)! [#5168](https://github.com/ecamp/ecamp3/pull/5168){.issuelink}
-- Der Hinweis, dass mindestens jemand mit Administrationsrechten im Lager bleiben muss, wird jetzt nur noch angezeigt wenn er relevant ist. Merci [@MarcoAllenspach](https://github.com/MarcoAllenspach)! [#4405](https://github.com/ecamp/ecamp3/pull/4405){.issuelink}
+- Der Hinweis, dass mindestens jemand mit Administrationsrechten im Lager bleiben muss, wird jetzt nur noch angezeigt, wenn er relevant ist. Merci [@MarcoAllenspach](https://github.com/MarcoAllenspach)! [#4405](https://github.com/ecamp/ecamp3/pull/4405){.issuelink}
 
 Aktuell arbeiten wir an den Kurs-Features und an Performance- und Stabilitäts-Verbesserungen - und natürlich laufend an Bugfixes die via [Kontaktformular](https://www.ecamp3.ch/de/kontakt/) an uns herangetragen werden.
 
