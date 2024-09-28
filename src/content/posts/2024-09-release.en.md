@@ -32,8 +32,8 @@ The time picker now also supports fuzzy time entries like on the [SBB.ch timetab
 
 ## Bugfixes and Minor Improvements
 
-- The "Safety Concept" has been renamed to "Security Considerations" to better align to the function. [#5669](https://github.com/ecamp/ecamp3/pull/5669){.issuelink}
-- Security considerations can now also be summarized, like the history entries. [#5732](https://github.com/ecamp/ecamp3/pull/5732){.issuelink}
+- The "Safety Concept" has been renamed to "Safety Considerations" to better align to the function. [#5669](https://github.com/ecamp/ecamp3/pull/5669){.issuelink}
+- Safety considerations can now also be summarized, like the history entries. [#5732](https://github.com/ecamp/ecamp3/pull/5732){.issuelink}
 - We ensure that the quantity is a positive material amount. [#5579](https://github.com/ecamp/ecamp3/pull/5579){.issuelink}
 - Various minor bug fixes [#5746](https://github.com/ecamp/ecamp3/pull/5746){.issuelink} [#5747](https://github.com/ecamp/ecamp3/pull/5747){.issuelink} [#5793](https://github.com/ecamp/ecamp3/pull/5793){.issuelink} [#6012](https://github.com/ecamp/ecamp3/pull/6012){.issuelink}
 

@@ -14,7 +14,7 @@ Die Herbstsaison steht vor der Tür. Wir haben einige Verbesserungen und neue Fu
 
 <div>
 
-Der Lagertitel wurde vereinfacht, sodass der kurze Titel automatisch generiert wird aber bei Bedarf immer noch angepasst werden kann. Ausserdem wurden die Titelseiten der beiden Druckversionen aneinander angeglichen. [#5351](https://github.com/ecamp/ecamp3/pull/5351){.issuelink}
+Der Lagertitel wurde vereinfacht, sodass der kurze Titel automatisch generiert wird, aber bei Bedarf immer noch angepasst werden kann. Ausserdem wurden die Titelseiten der beiden Druckversionen aneinander angeglichen. [#5351](https://github.com/ecamp/ecamp3/pull/5351){.issuelink}
 
 </div>
 
