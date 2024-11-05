@@ -12,13 +12,14 @@ Die Tage werden kürzer, die ersten Kurse der Frühlingssaison werden vermutlich
 
 ![Neue Checkliste erstellen](~/assets/images/2024-11/checklist-create-de.webp)
 
-</div>
 <div>
 
 Unter der Lager-/Kurs-Administration können neu Checklisten erstellt werden. Dieses Feature wurde spezifisch für das Umsetzung von J+S-Checklisten und Ausbildungszielen in Kursen entwickelt, kann aber für jegliche Art von Anforderungen, Vorgaben, o.Ä. verwendet werden.
 
 </div>
+</div>
 <div class="simple-columns">
+<div>
 
 Beim Erstellen einer neuen Checkliste kann anstatt einer leeren Checklist auch von einer Vorlage import werden. Aktuell haben wir die gültigen Checklisten für PBS Basis- und Aufbaukurse erfasst.
 
@@ -27,17 +28,17 @@ Beim Erstellen einer neuen Checkliste kann anstatt einer leeren Checklist auch v
 ![Checkliste von Vorlage erstellen](~/assets/images/2024-11/checklist-template-de.webp)
 
 </div>
-
 <div class="simple-columns">
 
 ![Checkliste in Aktivität auswählen](~/assets/images/2024-11/checklist-activity-de.webp)
 
 <div>
-
 In der Aktivität kann der Inhaltstyp "Checkliste" hinzugefügt werden, um danach Checklist-Einträge auszuwählen. Es empfiehlt sich, diesen Inhaltstyp bereits nach dem Erstellen eines Kurses zu den relevanten Kategorien (z.B. Ausbildungsblöcke) hinzuzufügen. In Kürze werden wir eine Kursvorlage erstellen, welche bereits sinnvolle Kategorien vordefiniert.
 
 </div>
+</div>
 
+<div class="simple-columns">
 <div>
 
 Beim Drucken gibt es neu die Möglichkeit eine Blockübersicht zu drucken, welche für die Kursanmeldung verwendet werden kann. Diese Blockübersicht druckt alle Aktivitäten, allerdings ohne Detailinhalt und lediglich mit dem Inhaltstyp "Checkliste" sowie den Freitextfeldern "Blockziele" und "Blockinhalte".
@@ -56,6 +57,7 @@ Beim Drucken gibt es neu die Möglichkeit eine Blockübersicht zu drucken, welch
 
 In der Hauptnavigation kann eine Übersicht angezeigt werden, um zu prüfen welche Checklisten-Einträge mit welchen Aktivitäten abgedeckt werden.
 
+</div>
 </div>
 
 <a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Zur App</a>
