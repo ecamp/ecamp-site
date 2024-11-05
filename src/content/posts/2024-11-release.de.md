@@ -3,7 +3,7 @@ title: November-Release
 path: 2024-11-release
 pubDate: 2024-11-05
 description: Kursfeature Checklisten und Ausbildungsziele
-image: "~/assets/images/fall-2024.png"
+image: "~/assets/images/20241103-_MMM4523.jpg"
 ---
 
 Die Tage werden kürzer, die ersten Kurse der Frühlingssaison werden vermutlich bereits geplant und wir releasen mit der Unterstützung von Checklisten ein elementares fehlendes Feature für die Kursplanung.
@@ -21,7 +21,7 @@ Unter der Lager-/Kurs-Administration können neu Checklisten erstellt werden. Di
 <div class="simple-columns">
 <div>
 
-Beim Erstellen einer neuen Checkliste kann anstatt einer leeren Checklist auch von einer Vorlage import werden. Aktuell haben wir die gültigen Checklisten für PBS Basis- und Aufbaukurse erfasst.
+Beim Erstellen einer neuen Checkliste kann anstatt einer leeren Checkliste auch von einer Vorlage import werden. Aktuell haben wir die gültigen Checklisten für PBS Basis- und Aufbaukurse erfasst.
 
 </div>
 
@@ -33,6 +33,7 @@ Beim Erstellen einer neuen Checkliste kann anstatt einer leeren Checklist auch v
 ![Checkliste in Aktivität auswählen](~/assets/images/2024-11/checklist-activity-de.webp)
 
 <div>
+
 In der Aktivität kann der Inhaltstyp "Checkliste" hinzugefügt werden, um danach Checklist-Einträge auszuwählen. Es empfiehlt sich, diesen Inhaltstyp bereits nach dem Erstellen eines Kurses zu den relevanten Kategorien (z.B. Ausbildungsblöcke) hinzuzufügen. In Kürze werden wir eine Kursvorlage erstellen, welche bereits sinnvolle Kategorien vordefiniert.
 
 </div>
@@ -55,7 +56,7 @@ Beim Drucken gibt es neu die Möglichkeit eine Blockübersicht zu drucken, welch
 
 <div>
 
-In der Hauptnavigation kann eine Übersicht angezeigt werden, um zu prüfen welche Checklisten-Einträge mit welchen Aktivitäten abgedeckt werden.
+In der Hauptnavigation kann eine Übersicht angezeigt werden, um zu prüfen, welche Checklisten-Einträge mit welchen Aktivitäten abgedeckt werden.
 
 </div>
 </div>
