@@ -6,7 +6,7 @@ description: Kursfeature Checklisten und Ausbildungsziele
 image: "~/assets/images/20241103-_MMM4523.jpg"
 ---
 
-Die Tage werden kürzer, die ersten Kurse der Frühlingssaison werden vermutlich bereits geplant und wir releasen mit der Unterstützung von Checklisten ein elementares fehlendes Feature für die Kursplanung.
+Die Tage werden kürzer, die ersten Kurse der Frühlingssaison werden vermutlich bereits geplant. Wir releasen mit der Unterstützung der sogenannten Checklisten - ein elementares fehlendes Feature für die Kursplanung.
 
 <div class="simple-columns">
 
@@ -14,14 +14,17 @@ Die Tage werden kürzer, die ersten Kurse der Frühlingssaison werden vermutlich
 
 <div>
 
-Unter der Lager-/Kurs-Administration können neu Checklisten erstellt werden. Dieses Feature wurde spezifisch für das Umsetzung von J+S-Checklisten und Ausbildungszielen in Kursen entwickelt, kann aber für jegliche Art von Anforderungen, Vorgaben, o.Ä. verwendet werden.
+Unter der Lager-/Kurs-Administration können neu Checklisten erstellt werden. Dieses Feature wurde spezifisch für die Umsetzung von J+S-Checklisten und Ausbildungszielen (PBS) bzw. Inhalte aus dem Stoffprogramm (Jubla) oder Themen aus den Rahmenlehrplänen (Cevi) in Kursen entwickelt. Das Feature kann aber auch für jegliche Art von Anforderungen, inhaltliche Vorgaben, o.Ä. verwendet werden.
+<small>
+Um Missverständnissen vorzubeugen, möchten wir klarstellen, dass das Feature "Checklisten" kein Ersatz für die "Aufgabenliste" aus eCamp V2 ist.
+</small>
 
 </div>
 </div>
 <div class="simple-columns">
 <div>
 
-Beim Erstellen einer neuen Checkliste kann anstatt einer leeren Checkliste auch von einer Vorlage import werden. Aktuell haben wir die gültigen Checklisten für PBS Basis- und Aufbaukurse erfasst.
+Beim Erstellen einer neuen Checkliste kann dessen Inhalt optional von einer Vorlage importiert werden. Aktuell haben wir die gültigen Checklisten für PBS Basis- und Aufbaukurse erfasst.
 
 </div>
 
@@ -34,7 +37,7 @@ Beim Erstellen einer neuen Checkliste kann anstatt einer leeren Checkliste auch 
 
 <div>
 
-In der Aktivität kann der Inhaltstyp "Checkliste" hinzugefügt werden, um danach Checklist-Einträge auszuwählen. Es empfiehlt sich, diesen Inhaltstyp bereits nach dem Erstellen eines Kurses zu den relevanten Kategorien (z.B. Ausbildungsblöcke) hinzuzufügen. In Kürze werden wir eine Kursvorlage erstellen, welche bereits sinnvolle Kategorien vordefiniert.
+In der Aktivität kann der Baustein "Checkliste" hinzugefügt werden, um danach Checklist-Einträge auszuwählen. Es empfiehlt sich, diesen Baustein bereits nach dem Erstellen eines Kurses zu den relevanten Kategorien (z.B. Ausbildungsblöcke) hinzuzufügen. In Kürze werden wir eine Kursvorlage erstellen, welche bereits sinnvolle Kategorien vordefiniert.
 
 </div>
 </div>
@@ -42,7 +45,7 @@ In der Aktivität kann der Inhaltstyp "Checkliste" hinzugefügt werden, um danac
 <div class="simple-columns">
 <div>
 
-Beim Drucken gibt es neu die Möglichkeit eine Blockübersicht zu drucken, welche für die Kursanmeldung verwendet werden kann. Diese Blockübersicht druckt alle Aktivitäten, allerdings ohne Detailinhalt und lediglich mit dem Inhaltstyp "Checkliste" sowie den Freitextfeldern "Blockziele" und "Blockinhalte".
+Beim Drucken gibt es neu die Möglichkeit eine Blockübersicht zu drucken. Diese kann für die Kursanmeldung verwendet werden. Diese Blockübersicht druckt alle Aktivitäten, lediglich mit dem Baustein "Checkliste" sowie den Freitextfeldern "Blockziele" und "Blockinhalte" - jedoch ohne Detailinhalt.
 
 </div>
 
