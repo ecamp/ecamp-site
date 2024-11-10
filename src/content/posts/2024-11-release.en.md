@@ -16,7 +16,7 @@ The days are getting shorter and the first courses of the spring season are prob
 <div>
 
 Checklists can now be created under camp/course administration. This feature was developed specifically for the implementation of Y+S checklists. However, the feature can also be used for any kind of requirements, content specifications, etc.
-
+<br />
 <small>
 To avoid any misunderstandings, we would like to clarify that the “Checklists” feature is not a replacement for the “To-do list” from eCamp V2.
 </small>
