@@ -6,7 +6,7 @@ description: Kursfeature Checklisten und Ausbildungsziele
 image: "~/assets/images/20241103-_MMM4523.jpg"
 ---
 
-Die Tage werden kürzer, die ersten Kurse der Frühlingssaison werden vermutlich bereits geplant. Wir releasen mit der Unterstützung der sogenannten Checklisten - ein elementares fehlendes Feature für die Kursplanung.
+Die Tage werden kürzer, die ersten Kurse der Frühlingssaison werden vermutlich bereits geplant. Mit der Unterstützung der sogenannten Checklisten releasen wir ein elementares fehlendes Feature für die Kursplanung.
 
 <div class="simple-columns">
 
