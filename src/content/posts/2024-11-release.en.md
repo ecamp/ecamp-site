@@ -15,10 +15,10 @@ The days are getting shorter and the first courses of the spring season are prob
 
 <div>
 
-Checklists can now be created under camp/course administration. This feature was developed specifically for the implementation of Y+S checklists. However, the feature can also be used for any kind of requirements, content specifications, etc.
-<br />
-<small>
-To avoid any misunderstandings, we would like to clarify that the “Checklists” feature is not a replacement for the “To-do list” from eCamp V2.
+**Checklists** can now be created under camp/course administration. This feature was developed specifically for the implementation of Y+S checklists. However, the feature can also be used for any kind of requirements, content specifications, etc.
+
+<small class="block text-sm bg-yellow-50 border-l border-yellow-500 text-yellow-800 px-4 py-3" role="alert">
+To avoid any misunderstandings, we would like to clarify that the “Checklists” feature is not a replacement for the “To-do list” from eCamp v2.
 </small>
 
 </div>
@@ -66,4 +66,4 @@ An overview can be displayed in the main navigation to check which checklist ent
 </div>
 </div>
 
-<a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Zur App</a>
+<a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Go to app</a>

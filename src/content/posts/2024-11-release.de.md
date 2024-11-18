@@ -14,10 +14,10 @@ Die Tage werden kürzer, die ersten Kurse der Frühlingssaison werden vermutlich
 
 <div>
 
-Unter der Lager-/Kurs-Administration können neu Checklisten erstellt werden. Dieses Feature wurde spezifisch für die Umsetzung von J+S-Checklisten und Ausbildungszielen (PBS) bzw. Inhalte aus dem Stoffprogramm (Jubla) oder Themen aus den Rahmenlehrplänen (Cevi) in Kursen entwickelt. Das Feature kann aber auch für jegliche Art von Anforderungen, inhaltliche Vorgaben, o.Ä. verwendet werden.
-<br />
-<small>
-Um Missverständnissen vorzubeugen, möchten wir klarstellen, dass das Feature "Checklisten" kein Ersatz für die "Aufgabenliste" aus eCamp V2 ist.
+Unter der Lager-/Kurs-Administration können neu **Checklisten** erstellt werden. Dieses Feature wurde spezifisch für die Umsetzung von J+S-Checklisten und Ausbildungszielen (PBS) bzw. Inhalte aus dem Stoffprogramm (Jubla) oder Themen aus den Rahmenlehrplänen (Cevi) in Kursen entwickelt. Das Feature kann aber auch für jegliche Art von Anforderungen, inhaltliche Vorgaben, o.Ä. verwendet werden.
+
+<small class="block text-sm bg-yellow-50 border-l border-yellow-500 text-yellow-800 px-4 py-3" role="alert">
+Um Missverständnissen vorzubeugen, möchten wir klarstellen, dass das Feature "Checklisten" kein Ersatz für die "Aufgabenliste" aus eCamp v2 ist.
 </small>
 
 </div>
