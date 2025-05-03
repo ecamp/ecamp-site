@@ -14,6 +14,10 @@ import playformInline from "@playform/inline";
 import netlify from "@astrojs/netlify";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+const env = import.meta.env.MODE
+
+const adapter = env === "production" ? netlify() : undefined;
+
 // https://astro.build/config
 export default defineConfig({
   // Astro uses this full URL to generate your sitemap and canonical URLs in your final build
@@ -58,6 +62,9 @@ export default defineConfig({
     ],
     extendDefaultPlugins: true,
   },
+  image: {
+    domains: ["astro.build"],
+  },
   vite: {
     resolve: {
       alias: {
@@ -65,7 +72,7 @@ export default defineConfig({
       },
     },
   },
-  adapter: netlify(),
+  adapter,
   redirects: {
     "/": "/de",
   }

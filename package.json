@@ -5,22 +5,22 @@
   "scripts": {
     "dev": "astro dev --port=3005",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build --mode testing",
     "inspect:dev": "node --inspect ./node_modules/astro/astro.js dev",
     "inspect:build": "node --inspect ./node_modules/astro/astro.js build",
-    "preview": "astro preview"
+    "preview": "astro preview --mode testing"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^3.1.0",
-    "@astrojs/netlify": "^5.2.1",
-    "@astrojs/rss": "^4.0.6",
-    "@astrojs/sitemap": "^3.1.5",
+    "@astrojs/mdx": "4.2.6",
+    "@astrojs/netlify": "6.3.2",
+    "@astrojs/rss": "4.0.11",
+    "@astrojs/sitemap": "3.3.1",
     "@astrojs/tailwind": "^5.1.0",
     "@playform/compress": "^0.0.12",
     "@playform/inline": "^0.0.7",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.13",
-    "astro": "^4.10.1",
+    "astro": "5.7.10",
     "astro-iconify": "^1.2.0",
     "feed": "^4.2.2",
     "github-slugger": "^2.0.0",
@@ -29,11 +29,11 @@
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.1.0",
     "remark-attributes": "^0.3.0",
-    "sharp": "^0.33.4",
+    "sharp": "^0.34.1",
     "svgo": "^3.0.2",
     "tailwindcss": "^3.3.3"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   }
 }

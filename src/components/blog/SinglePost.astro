@@ -1,5 +1,5 @@
 ---
-import Picture from "~/components/core/Picture.astro";
+import {Picture} from "astro:assets";
 import PostTags from "~/components/atoms/Tags.astro";
 
 import { getFormattedDate } from "~/utils/utils";
@@ -27,9 +27,11 @@ const { data, document } = Astro.props;
         data.image && (
           <Picture
             src={data.image}
-            config={[{ sourceType: 'width', formats: ['avif','webp'], widths: [375, 475, 600, 768, 1024], sizes:"(min-width: 1536px) 1024px, min(100vw,768px)", retina: true }]}
+            formats={['avif', 'webp']}
+            widths={[375, 475, 600, 768, 1024, 1200, 1440, 1920]}
+            sizes="(min-width: 1536px) 1024px, min(100vw,768px)"
             class="max-w-fullw w-full md:max-w-screen-md 2xl:md:max-w-screen-lg mx-auto mt-4 mb-6 md:rounded-md bg-gray-400 dark:bg-slate-700 aspect-video"
-            alt={data.description}
+            alt={data.description ?? data.title}
           />
         )
       }

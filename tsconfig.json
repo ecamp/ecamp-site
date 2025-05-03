@@ -5,7 +5,7 @@
     "target": "esnext",
     "module": "esnext",
     "strictNullChecks": true,
-    "types": ["astro/client-image"],
+    "types": ["astro/client"],
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],

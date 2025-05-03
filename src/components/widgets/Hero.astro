@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-iconify";
-import Picture from "~/components/core/Picture.astro";
+import { Picture } from "astro:assets";
 
 const {} = Astro.props;
 ---
@@ -50,9 +50,10 @@ const {} = Astro.props;
             src={import("~/assets/images/hero.jpg")}
             class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full"
             widths={[400, 768]}
-            sizes=" (max-width: 767px) 400px, 768px"
+            width={768}
+            height={432}
+            sizes="(max-width: 767px) 400px, 768px"
             alt="Hero Image"
-            aspectRatio="16:9"
           />
         </div>
       </div>

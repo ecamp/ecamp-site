@@ -1,5 +1,5 @@
 ---
-import Picture from "~/components/core/Picture.astro";
+import { Picture } from "astro:assets";
 
 import {getLink} from "~/permalink";
 
@@ -16,7 +16,9 @@ const { document, data } = Astro.props;
         <Picture
           src={data.image}
           class="object-cover w-full h-64 mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
-          config={[{ sourceType: 'width', formats: ['avif','webp'], widths: [343, 443, 547, 670], sizes:"(min-width:578px) 547px, (min-width: 1536px) 670px, calc(100vw - 32px)", retina: true }]}
+          formats={['avif', 'webp']}
+          widths={[343, 443, 547, 670, 686, 886, 1094, 1340]}
+          sizes="(min-width:578px) 547px, (min-width: 1536px) 670px, calc(100vw - 32px)"
           alt={data.image.alt || data.description}
         />
       </a>

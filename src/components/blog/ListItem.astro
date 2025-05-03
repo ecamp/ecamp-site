@@ -2,7 +2,7 @@
 import PostTags from "~/components/atoms/Tags.astro";
 
 import { getFormattedDate } from "~/utils/utils";
-import Picture from "../core/Picture.astro";
+import { Picture } from "astro:assets";
 import {getLink} from "~/permalink";
 
 const { data, document, first } = Astro.props;
@@ -15,7 +15,9 @@ const { data, document, first } = Astro.props;
   <a class="relative block group" href={getLink(document.id, Astro.params.locale, 'posts')}>
     <Picture
       src={data.image}
-      config={[{ sourceType: 'width', formats: ['avif','webp'], widths: [296, 344, 400, 448], sizes:"(min-width:768px) 344px, calc(min(100vw - 64px, 448px))", retina: true }]}
+      formats={['avif', 'webp']}
+      widths={[296, 344, 400, 448, 592, 688, 800, 896]}
+      sizes="(min-width:768px) 344px, calc(min(100vw - 64px, 448px))"
       class="w-full h-full object-cover mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700 aspect-video"
       alt={data.description}
       fetchpriority={first ? 'high' : 'auto'}

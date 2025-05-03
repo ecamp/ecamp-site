@@ -1,6 +1,6 @@
 ---
 import {Icon} from "astro-iconify";
-import Picture from "~/components/core/Picture.astro";
+import { Picture } from "astro:assets";
 import image from '~/assets/images/guille-pozzi-sbcIAn4Mn14-unsplash.jpg'
 
 import GithubSlugger from 'github-slugger'
@@ -82,16 +82,9 @@ const headingId = slugger.slug(title)
 			<Picture
 				class="inset-0 object-cover object-center w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700 max-h-96 md:max-h-max"
 				src={image}
-				config={[
-					{
-						sourceType: "width",
-						formats: ["avif", "webp", "jpg"],
-						widths: [327, 427, 532, 665],
-						sizes:
-							"(min-width: 768px) calc((100vw - 72px)/3), (min-width: 1024px) calc(((100vw - 72px)/5)*2),(min-width: 1152px) 426px,(min-width: 1280px) 532px,(min-width: 1536px) 665px, calc(100vw - 48px)",
-						retina: true,
-					},
-				]}
+				formats={["avif", "webp", "jpg"]}
+				widths={[327, 427, 532, 665, 854, 1064]}
+				sizes="(min-width: 768px) calc((100vw - 72px)/3), (min-width: 1024px) calc(((100vw - 72px)/5)*2),(min-width: 1152px) 426px,(min-width: 1280px) 532px,(min-width: 1536px) 665px, calc(100vw - 48px)"
 				alt="night"
 			/>
 		</div>

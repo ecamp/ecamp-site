@@ -1,6 +1,6 @@
 ---
-import {getLink} from "~/permalink";
-import Picture from "../core/Picture.astro";
+import {getLink} from "~/permalink.ts";
+import { Picture } from 'astro:assets';
 const {title, description, primary, secondary} = Astro.props;
 import banner from '~/assets/images/080720_lotos_7896_banner.jpg';
 
@@ -8,8 +8,11 @@ import banner from '~/assets/images/080720_lotos_7896_banner.jpg';
 
 <style>
     .herobanner--text {
-        background: linear-gradient(to right, black, transparent);
+        background: linear-gradient(to right, #0f181c, #20323cd4, #2632388f, #26323840, #2632381a, #26323800);
     }
+	.herobanner--image {
+		background: radial-gradient(ellipse at 41% -66%, transparent 70%, #2a260d 104%), radial-gradient(circle at 41% 40%, white 8%, #ffffff00 19%), radial-gradient(circle at 34% 50%, white, #fffbe3 6%, #f5c7489c 12%, transparent 19%), radial-gradient(circle at 1% 65%, #1a0d04, #2c1606 26%, #602c08b3 31%, #843a075c 35%, #95420911 37%, #a5430000 38%), linear-gradient(172deg, #f2e6c6, #fff, #fef7ef, #b09c5c, #866c01);
+	}
 </style>
 
 <section
@@ -17,14 +20,12 @@ import banner from '~/assets/images/080720_lotos_7896_banner.jpg';
 >
 	<div>
 		<Picture
+			formats={['avif', 'webp']}
+			widths={[375, 475, 600, 768, 920, 1024, 1200, 1440, 1920, 2400, 2880]}
+			sizes="100vw"
 			src={banner}
-			config={[{
-        sourceType: 'width',
-        formats: ['avif', 'webp'],
-        widths: [375, 475, 600, 768, 920, 1024, 1200, 1440, 1920],
-        sizes: "100vw",
-        retina: true,
-    }]} fetchpriority="high" loading="eager" alt="Sunrise" class="object-cover object-center absolute inset-0 h-full w-full"/>
+			decoding="sync"
+			fetchpriority="high" loading="eager" alt="Sunrise" class="herobanner--image object-cover object-center absolute inset-0 h-full w-full"/>
 		<div
 			class="herobanner--text relative z-10 text-white px-6 sm:px-12 py-12 md:p-20 lg:p-24 max-w-3xl"
 		>
