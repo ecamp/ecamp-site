@@ -1,8 +1,8 @@
 ---
-import {getLink} from "~/permalink.ts";
 import { Picture } from 'astro:assets';
 const {title, description, primary, secondary} = Astro.props;
 import banner from '~/assets/images/080720_lotos_7896_banner.jpg';
+import { url } from "~/i18n";
 
 ---
 
@@ -47,7 +47,7 @@ import banner from '~/assets/images/080720_lotos_7896_banner.jpg';
 				<div>
 					<a
 						class="btn secondary text-lg"
-						href={getLink('contribution', Astro.params.locale)}>{secondary}</a
+						href={url('contribution', Astro.params.locale)}>{secondary}</a
 					>
 				</div>
 			</div>

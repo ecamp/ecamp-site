@@ -2,8 +2,6 @@
   // Note: No change needed if you use "astro/tsconfigs/strict" or "astro/tsconfigs/strictest"
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
     "strictNullChecks": true,
     "types": ["astro/client"],
     "baseUrl": ".",

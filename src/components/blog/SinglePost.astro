@@ -1,10 +1,9 @@
 ---
-import {Picture} from "astro:assets";
-import PostTags from "~/components/atoms/Tags.astro";
+import { Picture } from "astro:assets";
 
 import { getFormattedDate } from "~/utils/utils";
 
-const { data, document } = Astro.props;
+const { data } = Astro.props;
 ---
 <section class="py-8 sm:py-16 lg:py-20 mx-auto">
   <article>
@@ -40,9 +39,6 @@ const { data, document } = Astro.props;
       class="container mx-auto px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:font-bold prose-a:text-primary-600 dark:prose-a:text-primary-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
     >
       <slot />
-    </div>
-    <div class="container mx-auto px-6 max-w-3xl mt-8">
-      <PostTags tags={data.tags} />
     </div>
   </article>
 </section>

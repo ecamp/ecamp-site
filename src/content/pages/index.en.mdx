@@ -1,11 +1,7 @@
 ---
 title: Project site of eCamp v3
 description: eCamp is a web-based app for camp and course planning. The application is specialised for camps and courses of youth associations and for Y+S offers in the sport of camp sports/trekking. However, it is open to all interested parties, whether youth associations, school camps or other sports.
-variant: page
-tags:
-  - astro
-  - tailwind css
-  - front-end
+fullwidth: true
 ---
 
 import HeroBanner from "../../components/widgets/HeroBanner.astro";
@@ -96,15 +92,18 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
   ]}
 />
 
+import { memberCount, campCount, userCount } from '~/content/stats.json';
+
 <Stats
   items={[
     {
-      stat: `${new Date().getFullYear() - 2018} Years`,
+      number: new Date().getFullYear() - 2018,
+      year: true,
       description: "Development",
     },
-    { stat: "6", description: "Core Members" },
-    { stat: "92", description: "Core Meetings" },
-    { stat: "14’440", description: "Users" },
+    { number: memberCount, description: "Core Members" },
+    { number: campCount, description: "Camps" },
+    { number: userCount, description: "Users" },
   ]}
 />
 

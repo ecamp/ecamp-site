@@ -1,28 +1,21 @@
 ---
-import { SITE } from '~/config.mjs';
-import {getI18nPermalink} from "~/permalink";
-import {DocumentInfo,i18nLinks} from "../../content";
+import type { DocumentInfo } from "~/i18n/schema";
 
 interface Props {
-    document: DocumentInfo;
+  document: DocumentInfo;
 }
+const { document } = Astro.props;
 
-const { document} = Astro.props;
-const { locale: currentLocale } = Astro.params;
-const otherI18nLinks =
-  i18nLinks &&
-  Object.fromEntries(
-    Object.entries(i18nLinks[document.type][document.id]).filter(([locale]) => locale !== currentLocale)
-  );
+const otherLangs = Object.entries(document.translations).filter(
+  ([lang]) => lang !== Astro.params.locale,
+);
 
-const otherLocale = SITE.locales.filter((lang) => lang !== currentLocale)[0];
-
-const localeSwitcher = getI18nPermalink(otherI18nLinks, otherLocale);
+const [lang, url] = otherLangs[0];
 ---
 
 <a
   class="leading-[1.25rem] text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-base p-2.5 inline-flex items-center"
-  href={localeSwitcher}
+  href={url}
 >
-  {otherLocale.toUpperCase()}
+  {lang.toUpperCase()}
 </a>

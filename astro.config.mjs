@@ -25,6 +25,19 @@ export default defineConfig({
   base: SITE.basePathname,
   output: "static",
   integrations: [
+    {
+      // workaround for netlify redirects
+      name: "custom-hooks",
+      hooks: {
+        "astro:config:setup": ({ injectRoute }) => {
+          injectRoute({
+            pattern: "/_redirects",
+            entrypoint: "src/pages/_redirects.ts",
+            prerender: true,
+          })
+        }
+      },
+    },
     mdx({
       remarkPlugins: [[remarkAttributes,{ mdx: true }]],
       rehypePlugins: [
@@ -64,6 +77,13 @@ export default defineConfig({
   },
   image: {
     domains: ["astro.build"],
+  },
+  i18n: {
+    locales: ["de", "en"],
+    defaultLocale: "de",
+    routing: {
+      prefixDefaultLocale: true
+    }
   },
   vite: {
     resolve: {

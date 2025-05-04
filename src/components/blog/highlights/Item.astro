@@ -1,8 +1,6 @@
 ---
 import { Picture } from "astro:assets";
 
-import {getLink} from "~/permalink";
-
 const { document, data } = Astro.props;
 ---
 
@@ -10,7 +8,7 @@ const { document, data } = Astro.props;
   {
     data.image && (
       <a
-        href={getLink(document.id, Astro.params.locale, 'posts')}
+        href={document.translations[document.locale]}
         class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
       >
         <Picture
@@ -26,7 +24,7 @@ const { document, data } = Astro.props;
   }
   <h3 class="mb-2 text-xl font-bold leading-snug sm:text-2xl font-heading">
     <a
-      href={getLink(document.id, Astro.params.locale, 'posts')}
+      href={document.translations[document.locale]}
       class="hover:text-primary-600 hover:underline underline-offset-4 decoration-1 transition ease-in duration-200"
     >
       {data.title}

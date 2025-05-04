@@ -1,8 +1,6 @@
 ---
 import { Icon } from "astro-iconify";
-import {getLink} from "../../permalink";
-
-const {} = Astro.props;
+import { url } from "~/i18n";
 
 const footer = {
   coc: {
@@ -44,7 +42,7 @@ const socials = [
               .map(([id, i18n]) => (
                 <a
                   class="text-gray-600 hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                  href={getLink(id, Astro.params.locale)}
+                  href={url(id, Astro.params.locale)}
                 >
                   {i18n[Astro.params.locale]}
                 </a>

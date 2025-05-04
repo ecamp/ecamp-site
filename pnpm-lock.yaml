@@ -12,10 +12,12 @@ specifiers:
   '@tailwindcss/typography': ^0.5.13
   astro: 5.7.10
   astro-iconify: ^1.2.0
+  astro-loader-i18n: ^0.3.1
   feed: ^4.2.2
   github-slugger: ^2.0.0
   hast-util-from-html-isomorphic: ^2.0.0
-  prettier: ^3.0.1
+  prettier: ^3.5.3
+  prettier-plugin-astro: ^0.14.1
   rehype-autolink-headings: ^6.1.1
   rehype-slug: ^5.1.0
   remark-attributes: ^0.3.0
@@ -35,10 +37,12 @@ devDependencies:
   '@tailwindcss/typography': 0.5.16_tailwindcss@3.4.17
   astro: 5.7.10
   astro-iconify: 1.2.0
+  astro-loader-i18n: 0.3.1_astro@5.7.10
   feed: 4.2.2
   github-slugger: 2.0.0
   hast-util-from-html-isomorphic: 2.0.0
   prettier: 3.5.3
+  prettier-plugin-astro: 0.14.1
   rehype-autolink-headings: 6.1.1
   rehype-slug: 5.1.0
   remark-attributes: 0.3.2
@@ -2260,6 +2264,15 @@ packages:
     transitivePeerDependencies:
       - debug
       - supports-color
+    dev: true
+
+  /astro-loader-i18n/0.3.1_astro@5.7.10:
+    resolution: {integrity: sha512-6HDO/yALTvwZoH7oX7LQ+CZ1N3cwch2+aY39iyj/e/2/UnYLyVz+Ux2jnLmMTTtDET5qH0WPFr9qKHPuLEAPuA==}
+    peerDependencies:
+      astro: ^5.5.0
+      limax: ^4.1.0
+    dependencies:
+      astro: 5.7.10
     dev: true
 
   /astro/5.7.10:
@@ -6259,6 +6272,15 @@ packages:
       - supports-color
     dev: true
 
+  /prettier-plugin-astro/0.14.1:
+    resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
+    engines: {node: ^14.15.0 || >=16.0.0}
+    dependencies:
+      '@astrojs/compiler': 2.12.0
+      prettier: 3.5.3
+      sass-formatter: 0.7.9
+    dev: true
+
   /prettier/3.5.3:
     resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
     engines: {node: '>=14'}
@@ -6721,6 +6743,10 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
+  /s.color/0.0.15:
+    resolution: {integrity: sha512-AUNrbEUHeKY8XsYr/DYpl+qk5+aM+DChopnWOPEzn8YKzOhv4l2zH6LzZms3tOZP3wwdOyc0RmTciyi46HLIuA==}
+    dev: true
+
   /sade/1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
@@ -6743,6 +6769,12 @@ packages:
 
   /safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    dev: true
+
+  /sass-formatter/0.7.9:
+    resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
+    dependencies:
+      suf-log: 2.5.3
     dev: true
 
   /sax/1.4.1:
@@ -7110,6 +7142,12 @@ packages:
       mz: 2.7.0
       pirates: 4.0.7
       ts-interface-checker: 0.1.13
+    dev: true
+
+  /suf-log/2.5.3:
+    resolution: {integrity: sha512-KvC8OPjzdNOe+xQ4XWJV2whQA0aM1kGVczMQ8+dStAO6KfEB140JEVQ9dE76ONZ0/Ylf67ni4tILPJB41U0eow==}
+    dependencies:
+      s.color: 0.0.15
     dev: true
 
   /supports-color/7.2.0:

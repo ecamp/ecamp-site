@@ -1,6 +1,6 @@
 ---
 import GithubSlugger from 'github-slugger'
-import {getLink} from "../../../permalink";
+import { url } from "~/i18n";
 
 const { title, buttonText, currentLocale } = Astro.props;
 const slugger = new GithubSlugger()
@@ -27,5 +27,5 @@ const headingId = slugger.slug(title)
   </div>
   {
     buttonText && <div class="mx-auto text-center my-12"><a class="btn secondary"
-                                              href={getLink('faq', currentLocale)}>{buttonText}</a></div>}
+                                              href={url('faq', currentLocale)}>{buttonText}</a></div>}
 </div>

@@ -11,10 +11,11 @@
  */
 import type { FeedOptions, Item } from "feed";
 import { Feed } from "feed";
-import { postsCollection } from "~/content";
 import { SITE } from "~/config.mjs";
-import { getPermalink, getCanonical } from "~/permalink";
+import { getCanonical } from "~/utils/permalink";
 import type {APIRoute} from "astro";
+import { i18nStaticPaths } from "~/i18n";
+import { getCollection } from "astro:content";
 
 const year = +new Date().getFullYear();
 
@@ -54,9 +55,10 @@ export const GET: APIRoute = async ({ params }) => {
     },
   };
 
+
   // Map over array of blog post files
   const posts: any[] = await Promise.all(
-    postsCollection
+    i18nStaticPaths(await getCollection('posts'), "[...locale]/blog/[path]")
       .filter(({ params: postParams }) => params.locale === postParams.locale)
       .map(({ params, props }) => {
         const date = new Date(props.data.pubDate);
@@ -65,7 +67,7 @@ export const GET: APIRoute = async ({ params }) => {
         return {
           title: props.data.title,
           date: new Date(props.data.pubDate),
-          link: getCanonical(getPermalink(params.path, "post", params.locale)).toString(),
+          link: getCanonical(props.translations[params.locale ?? 'en']).toString(),
           description: props.data.description,
         };
       }),
