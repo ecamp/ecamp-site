@@ -1,12 +1,12 @@
 ---
 title: Kontaktformular
 path: kontakt
-variant: page
+fullwidth: true
 ---
 
 import ContactForm from "../../components/widgets/Form.astro";
 import ProseSection from "../../components/widgets/ProseSection.astro";
-import { getLink } from "~/permalink";
+import { url as link } from "~/i18n";
 
 <div class="px-8 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-3xl">
   <ProseSection title="Kontakt">
@@ -16,7 +16,7 @@ import { getLink } from "~/permalink";
       subject="Betreff"
       message="Nachricht"
       submit="Absenden"
-      success={getLink("contact-success", "de")}
+      success={link("contact-success", "de")}
       id={"feedback-" + "de"}
     />
   </ProseSection>

@@ -1,21 +1,19 @@
 ---
-import PostTags from "~/components/atoms/Tags.astro";
-
 import { getFormattedDate } from "~/utils/utils";
-import Picture from "../core/Picture.astro";
-import {getLink} from "~/permalink";
+import { Picture } from "astro:assets";
 
 const { data, document, first } = Astro.props;
-
 ---
 
 <article
   class="max-w-md mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8"
 >
-  <a class="relative block group" href={getLink(document.id, Astro.params.locale, 'posts')}>
+  <a class="relative block group" href={document.translations[document.locale]}>
     <Picture
       src={data.image}
-      config={[{ sourceType: 'width', formats: ['avif','webp'], widths: [296, 344, 400, 448], sizes:"(min-width:768px) 344px, calc(min(100vw - 64px, 448px))", retina: true }]}
+      formats={['avif', 'webp']}
+      widths={[296, 344, 400, 448, 592, 688, 800, 896]}
+      sizes="(min-width:768px) 344px, calc(min(100vw - 64px, 448px))"
       class="w-full h-full object-cover mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700 aspect-video"
       alt={data.description}
       fetchpriority={first ? 'high' : 'auto'}
@@ -27,7 +25,7 @@ const { data, document, first } = Astro.props;
       <h2 class="text-3xl sm:text-4xl font-bold leading-snug mb-2 font-heading">
         <a
           class="hover:text-primary-600 hover:underline underline-offset-4 decoration-1 transition ease-in duration-200"
-          href={getLink(document.id, Astro.params.locale, 'posts')}
+          href={document.translations[document.locale]}
         >
           {data.title}
         </a>
@@ -41,9 +39,6 @@ const { data, document, first } = Astro.props;
         <span class="text-gray-500 dark:text-slate-400">
           <time datetime={data.pubDate}>{getFormattedDate(data.pubDate, Astro.params.locale)}</time>
         </span>
-      </div>
-      <div class="mt-4">
-        <PostTags tags={data.tags} />
       </div>
     </footer>
   </div>

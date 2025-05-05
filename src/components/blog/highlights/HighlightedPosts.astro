@@ -1,6 +1,7 @@
 ---
 import HighlightsItem from "~/components/blog/highlights/Item.astro";
-import { postsCollection } from "../../../content";
+import { i18nStaticPaths } from "~/i18n";
+import { getCollection } from "astro:content";
 import GithubSlugger from 'github-slugger'
 
 const slugger = new GithubSlugger()
@@ -8,9 +9,15 @@ const slugger = new GithubSlugger()
 const { title, description } = Astro.props;
 
 const posts = [
-  postsCollection.filter(
-    (post) => post.params.locale == Astro.params.locale
-  )[0],
+	[
+		...i18nStaticPaths(await getCollection("posts"), "[...locale]/blog/[...path]")
+			.filter(({ params }) => params.locale == Astro.params.locale)
+			.sort(
+				({ props: propsA }, { props: propsB }) =>
+					new Date(propsB.data.pubDate).getTime() -
+					new Date(propsA.data.pubDate).getTime(),
+			),
+	][0],
 ];
 
 const headingId = slugger.slug(title);

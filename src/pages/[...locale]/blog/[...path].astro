@@ -1,33 +1,31 @@
 ---
-import {getCollection} from "astro:content";
 import {render} from "astro:content";
-import {SITE} from "~/config.mjs";
+import {SITE, BLOG} from "~/config.mjs";
 
 import Layout from "~/layouts/PageLayout.astro";
 import SinglePost from "~/components/blog/SinglePost.astro";
+
+import {getCollection} from "astro:content";
 import {i18nStaticPaths} from "~/i18n";
 
 export async function getStaticPaths() {
-    return i18nStaticPaths(await getCollection("pages"), '[...locale]/[...path]');
+	return i18nStaticPaths(
+		await getCollection("posts"),
+		"[...locale]/blog/[...path]"
+	);
 }
 
-const {data, document} = Astro.props;
-
+const { document, data} = Astro.props;
 const {Content} = await render(Astro.props);
-
 const meta = {
     title: `${data.title} — ${SITE.name}`,
     description: data.description,
     image: data.image,
-}
+};
 ---
 
 <Layout meta={meta} document={document}>
-    {
-        data.fullwidth
-            ? <Content/>
-            : <SinglePost data={data} content={Content}>
-                <Content/>
-              </SinglePost>
-    }
+	<SinglePost data={data}>
+		<Content/>
+	</SinglePost>
 </Layout>

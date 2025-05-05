@@ -3,9 +3,9 @@ import { Icon } from "astro-iconify";
 import Logo from "~/components/atoms/Logo.astro";
 import ToggleMenu from "../core/ToggleMenu.astro";
 
-import { trimSlash } from "~/utils/permalinks";
+import { trimSlash } from "~/utils/permalink";
 import LanguageSwitcher from "../atoms/LanguageSwitcher.astro";
-import {getLink} from "~/permalink";
+import { url } from "~/i18n";
 
 const { document } = Astro.props;
 const { locale: currentLocale } = Astro.params;
@@ -28,7 +28,7 @@ const menuitems = [
     class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4"
   >
     <div class="flex justify-between">
-      <a class="flex items-center" href={getLink("index", currentLocale)}>
+      <a class="flex items-center" href={url("index", currentLocale)}>
         <Logo />
       </a>
       <div class="flex items-center md:hidden gap-1.5">
@@ -46,16 +46,16 @@ const menuitems = [
       >
         {
           menuitems.map(({ label, id, link, onlymobile, target = null }) => (
-            <li class={onlymobile && "md:hidden"}>
+            <li class={onlymobile ? "md:hidden" : null}>
               <a
                 class:list={[
                   "hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out",
-                  trimSlash(Astro.url.pathname) == (link ?? trimSlash(getLink(id, currentLocale)))
+                  trimSlash(Astro.url.pathname ?? '') == (link ?? trimSlash(url(id, currentLocale)))
                     ? "font-semibold"
                     : "font-normal",
                 ]}
                 target={target}
-                href={link ?? getLink(id, currentLocale)}
+                href={link ?? url(id, currentLocale)}
               >
                 {label}
               </a>
@@ -73,7 +73,7 @@ const menuitems = [
           Login
           </a>
           <a
-            href={getLink("contact", currentLocale)}
+            href={url("contact", currentLocale)}
             class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
             aria-label="Email"
           >
