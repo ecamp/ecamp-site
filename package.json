@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "astro dev --port=3005",
     "start": "astro dev",
-    "build": "astro build --mode testing",
+    "build": "astro build",
     "inspect:dev": "node --inspect ./node_modules/astro/astro.js dev",
     "inspect:build": "node --inspect ./node_modules/astro/astro.js build",
-    "preview": "astro preview --mode testing"
+    "preview": "astro preview"
   },
   "devDependencies": {
     "@astrojs/mdx": "4.2.6",

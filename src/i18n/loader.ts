@@ -27,17 +27,12 @@ export function i18nLoader(options: GlobOptions): Loader {
   return {
     name: "i18n-loader",
     load: async (context: LoaderContext) => {
-      if (!context.config.i18n)
-        throw new Error("i18n configuration is missing in your astro config");
-
-      const { locales, defaultLocale } = context.config.i18n;
-      const localeCodes = locales.flatMap((locale) =>
-        typeof locale === "string" ? locale : locale.codes,
-      );
+      const locales = ["en", "de"];
+      const defaultLocale = "de";
 
       const parseData = context.parseData;
       const parseDataProxy: typeof parseData = (props) => {
-        const locale = parseLocale(props.id, localeCodes, defaultLocale);
+        const locale = parseLocale(props.id, locales, defaultLocale);
         const translationId =
           (context.collection === "posts" ? "blog/" : "") +
           props.id.replace(createPathIdPattern(locale), "");

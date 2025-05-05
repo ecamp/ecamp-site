@@ -11,12 +11,9 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { fromHtmlIsomorphic } from "hast-util-from-html-isomorphic";
 import playformInline from "@playform/inline";
-import netlify from "@astrojs/netlify";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const env = import.meta.env.MODE
-
-const adapter = env === "production" ? netlify() : undefined;
+const options = process.env.NODE_ENV === "development" ? { redirects: { "/": "/de" } } : {};
 
 // https://astro.build/config
 export default defineConfig({
@@ -34,12 +31,12 @@ export default defineConfig({
             pattern: "/_redirects",
             entrypoint: "src/pages/_redirects.ts",
             prerender: true,
-          })
-        }
+          });
+        },
       },
     },
     mdx({
-      remarkPlugins: [[remarkAttributes,{ mdx: true }]],
+      remarkPlugins: [[remarkAttributes, { mdx: true }]],
       rehypePlugins: [
         rehypeSlug,
         [
@@ -78,13 +75,6 @@ export default defineConfig({
   image: {
     domains: ["astro.build"],
   },
-  i18n: {
-    locales: ["de", "en"],
-    defaultLocale: "de",
-    routing: {
-      prefixDefaultLocale: true
-    }
-  },
   vite: {
     resolve: {
       alias: {
@@ -92,8 +82,5 @@ export default defineConfig({
       },
     },
   },
-  adapter,
-  redirects: {
-    "/": "/de",
-  }
+  ...options,
 });

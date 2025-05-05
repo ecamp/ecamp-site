@@ -8,12 +8,12 @@ interface Props {
   }[];
 }
 
-const numFormat = new Intl.NumberFormat(Astro.currentLocale + "-CH", {
+const numFormat = new Intl.NumberFormat(Astro.params.locale + "-CH", {
   notation: "compact",
   compactDisplay: "short",
   useGrouping: true,
 }).format;
-const yearFormat = new Intl.NumberFormat(Astro.currentLocale + "-CH", {
+const yearFormat = new Intl.NumberFormat(Astro.params.locale + "-CH", {
   style: "unit",
   unitDisplay: "long",
   unit: "year",
