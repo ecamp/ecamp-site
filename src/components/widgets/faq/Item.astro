@@ -1,18 +1,18 @@
 ---
 import { Icon } from "astro-iconify";
 
-const { question } = Astro.props;
+const { question, id } = Astro.props;
 
 ---
 
-<div itemscope itemtype="https://schema.org/Question">
-  <p class="mb-4 text-xl font-bold" itemprop="name">
+<div id={id} itemscope itemtype="https://schema.org/Question">
+  <a class="mb-4 text-xl font-bold" itemprop="name" href={"#faq-" + id}>
     <Icon
       name={Astro.props.icon ?? "tabler:arrow-down-right"}
       class="w-7 h-7 text-primary-500 inline-block icon-bold"
     />
     {question}
-  </p>
+  </a>
   <div class="text-gray-700 dark:text-gray-400 prose dark:prose-invert" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
     <slot />
   </div>

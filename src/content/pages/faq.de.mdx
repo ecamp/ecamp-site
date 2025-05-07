@@ -8,78 +8,12 @@ fullwidth: true
 import FaqItem from "../../components/widgets/faq/Item.astro";
 import FaqSection from "../../components/widgets/faq/Wrapper.astro";
 
-<FaqSection title="Fragen & Antworten">
-    <FaqItem question="Wie sicher sind meine Daten bei eCamp?">
-        Nebst der Entwicklung betreut das Kernteam ausserdem eine frei benutzbare
-        Instanz. Der Server wird als Best-Effort betrieben. Für den Betrieb des Servers verwenden wir moderne Cloudlösungen.
-        Dies beinhaltet regelmässige Backups und Serverupdates. Nichtsdestotrotz
-        können wir keine ununterbrochene Verfügbarkeit gewährleisten.
-    </FaqItem>
-    <FaqItem question="Was passiert mit eCamp v2?">
-        Die ursprüngliche eCamp-Version 2 kann bis auf Weiteres unter [ecamp.pfadiluzern.ch](https://ecamp.pfadiluzern.ch) benutzt werden.
-        Der Code ist aber schwer wartbar und darum lösen wir höchstens noch kritische Fehler.<br/>
-        Es werden keine Daten von v2 zu v3 migriert. Nachdem wir die Kursfunktionalität in Version 3
-        implementiert haben, werden wir v2 voraussichtlich nur noch lesbar, aber nicht bearbeitbar machen.
-    </FaqItem>
-    <FaqItem question="Ich habe eine Frage zu eCamp v2">
-        Für Fragen/Support zu eCamp v2 benutze bitte direkt die Supportfunktion in
-        eCamp v2. Auf dieser Seite werden keine Fragen zu eCamp v2 beantwortet.
-    </FaqItem>
-    <FaqItem question="Wer steht hinter eCamp?">
-        eCamp wird von einem [ehrenamtlichen Kernteam](/de/team) entwickelt. Der Sourcecode ist
-        als Open Source veröffentlicht. Mitarbeit der Community ist aktiv erwünscht.
-    </FaqItem>
-    <FaqItem question="Kann ich Aufgaben/Todos im eCamp erfassen?">
-        Nein. Wir haben uns entschieden, die Aufgabenlisten nicht mehr zu unterstützen, da sie in der
-        Vergangenheit kaum benutzt wurden und bessere Alternativen verfügbar sind. Wenn du die eCamp v2 Aufgabenliste benutzt
-        hast, kannst du als teilweisen Ersatz den [Kalender-Generator im Hering](https://scout-ch.github.io/hering/#/calendar) verwenden.
-    </FaqItem>
-    <FaqItem question="Ich vermisse die Funktion…">
-        Wir werden in Zukunft nicht mehr alle Funktionen von eCamp v2 in eCamp v3 implementieren. Was wir aktuell
-        geplant haben: Spezielle Tagesverantwortungen, Materiallisten Check und Tagesübersicht im PDF.
-    </FaqItem>
-    <FaqItem question="Unterstützt euch jemand finanziell?">
-        Die Betriebskosten werden von der [Pfadibewegung Schweiz](https://pfadi.swiss/) finanziert.
-        Diese Landingpage läuft auf dem Open Source Plan von [Netlify](https://www.netlify.com/) und
-        unsere Applikationsübersetzungen werden auf [Crowdin](https://crowdin.com/) verwaltet.
-    </FaqItem>
-    <FaqItem question="Sind vergangene Lager auch sichtbar auf eCamp v3?">
-        Auf eCamp v3 sind nur Lager sichtbar, die auf eCamp v3 erstellt wurden.
-        Vergangene Lager von eCamp v2 sind nicht sichtbar, können aber weiterhin auf eCamp v2 eingesehen werden.
-    </FaqItem>
-    <FaqItem question="Wie kann ich Bilder/Dateien oder Tabellen einfügen?">
-        **Bilder/Dateien**: Aktuell ist es nicht möglich, Dateien direkt in eCamp v3 hochzuladen.
-        Es würde viel Zeit und Geld benötigen und trotzdem niemals an die Features von Google Drive etc. herankommen.
-        Du kannst Bilder/Dateien aber auf einem externen Dienst wie Google Drive oder Dropbox hochladen und dann direkt darauf verlinken.
+import { faqEntries } from "../faq.ts";
 
-        **Tabellen**: Aktuell ist es nicht möglich, Tabellen direkt in eCamp v3 einzufügen.
-        Erste Experimente mit einer einfachen Form von Tabellen haben stattgefunden, wir sind aber für komplexere Fälle vom Druck-Layout #2 blockiert.
+<FaqSection title="Fragen & Antworten">
+  {(await faqEntries("de")).map(({ data, Content }) => (
+    <FaqItem question={data.title} id={data.translationId}>
+      <Content />
     </FaqItem>
-    <FaqItem question="Ich wünschte eCamp v3 könnte…">
-    Wir sind immer froh um Feedback via unser [Kontaktformular](/de/contact), auf [discord](https://discord.gg/tdwtRytV6P) oder in [GitHub Issues](https://github.com/ecamp/ecamp3/#wie-kann-ich-helfen).<br/>
-    Falls deine Idee etwas grosses ist, bitte bedenke dass eCamp v3 bereits jetzt nicht das einzige Tool ist, welches du für dein Lager verwendest, und es auch nie sein wird. Die Verwaltung von Teilnehmenden, das Budget und das Essensmenü sind Beispiele von Dingen die immer ausserhalb von eCamp v3 ablaufen werden. Darum könnte es sein, dass deine Idee besser in einem anderen oder eigenen Tool aufgehoben ist. Dieses andere Tool kann dann, wenn relevant, mit eCamp v3 oder anderen Tools verbunden werden, um die Nutzung zu erleichtern.<br/>
-    IT-Tools veralten schnell. Darum versuchen wir, die Features jedes Tools aufs Nötige zu beschränken. So ist es einfacher, ein Tool in Zukunft mal abzulösen. Diese Vorgehensweise ist auch in den [IT-Richtlinien](https://itkompass.scout.ch/#/it-guidelines/principles) der PBS empfohlen.<br/>
-    Vielleicht solltest du eCamp v3 also nicht als das Zentrum deines Lagers betrachten. Möglicherweise ist deine Dateiablage der Ort wo alle relevanten Dokumente zum Lager gesammelt werden. Oder, falls du bei der Pfadi bist, kannst du das [PBS Portal](https://portal.scout.ch/) als Einstiegspunkt und Schnellzugang zu allen eingesetzten Tools verwenden.
-</FaqItem>
-<FaqItem question="Für wen ist eCamp v3 gedacht?">
-    eCamp v3 ist für alle, die ein Lager planen wollen, sei dies Pfadi, Jubla, Cevi, andere J+S-Sportarten oder auch Schullager, Musiklager oder ganz andere Arten von Lagern. eCamp v2 wurde sogar schon zur Planung von Hochzeiten und Festivalbesuchen verwendet.<br/>
-    Aus diesem Grund versuchen wir, Wording oder Features zu vermeiden, welche spezifisch nur einer dieser Organisationen dient. Stattdessen wollen wir eCamp v3 nutzbar und hilfreich für die meisten dieser Organisationen halten.<br/>
-    Die Features von eCamp v3 sind optimiert für Leitungsteams, welche gemeinsam an einem Lager arbeiten. Die angebotenen Sprachen beschränken sich bisher auf solche, welche in der Schweiz verwendet werden. Wenn du willst, kannst du uns aber auch helfen, eCamp v3 in andere Sprachen zu übersetzen.
-</FaqItem>
-    <FaqItem question="Ich habe kein Lagereinladungs-E-Mail bekommen. Was kann ich tun?">
-        Die Person, die dich eingeladen hat, kann auf der Team-Seite auf deine Mailadresse klicken und dir erneut ein Einladungs-Mail senden lassen.
-        Aber Achtung: Nur das jeweils zuletzt versendete Einladungs-Mail ist gültig.
-        Falls nie eine Einladung bei dir ankommt und auch nicht im SPAM-Ordner landet, kann die Lagerleitung auch eine beliebige **andere Mailadresse einladen**.
-        Sie kann sogar eine eigene Mailadresse einladen und dir das **Einladungs-Mail weiterleiten**.
-        Sobald du auf irgendeinem Weg an ein gültiges Einladungs-Mail kommst, kannst du damit mit deinem Account dem Lager beitreten.
-    </FaqItem>
-    <FaqItem question="Ich habe kein Aktivierungs-E-Mail bekommen. Was kann ich tun?">
-        Du kannst dein Passwort zurücksetzen oder dich mit MiData, CeviDB, jubla.db oder Google mit einem Account einloggen, welcher auf die gleiche Mailadresse läuft wie dein eCamp v3 Account.
-        Dabei wird dein Konto auch aktiviert.
-        Wir arbeiten derzeit noch an einer Funktion, die es erlaubt auf Knopfdruck ein weiteres Aktivierungs-E-Mail auszulösen.
-    </FaqItem>
-    <FaqItem question="Meine Frage ist hier nicht beantwortet, wo kann ich meine Frage stellen?">
-        Zögere nicht, deine Frage über unser [Support-Formular](/de/kontakt) zu stellen.
-        Wir werden versuchen, deine Frage so schnell wie möglich zu beantworten.
-    </FaqItem>
+  ))}
 </FaqSection>

@@ -157,28 +157,12 @@ import { memberCount, campCount, userCount } from '~/content/stats.json';
   Find out what we do all day long....
 </HighlightedPosts>
 
+import { faqEntries } from "../faq";
+
 <FaqSection title="Questions & Answers" buttonText="More Questions & Answers" currentLocale="en">
-  <FaqItem question="How secure is my data at eCamp?">
-    In addition to the development, the core team also maintains a freely usable
-    instance. The server is operated as a best-effort. For the operation of the server we use modern cloud solutions.
-    This includes regular backups and server updates. Nevertheless we cannot
-    guarantee uninterrupted availability.
-  </FaqItem>
-  <FaqItem question="What will happen to eCamp v2?">
-    The original eCamp version 2 can be used at
-    https://ecamp.pfadiluzern.ch until further notice. However, the code is
-    getting old and difficult to maintain. For a long time there has been no further
-    development for eCamp v2 except for critical bug fixes. No data
-    is migrated from v2 to v3.
-  </FaqItem>
-  <FaqItem question="I have a question about eCamp v2">
-    For questions/support about eCamp v2 please use the support function in
-    eCamp v2 directly. No questions about eCamp v2 are answered on
-    this page.
-  </FaqItem>
-  <FaqItem question="Does anybody support you financially?">
-    Operating costs are funded by the [Swiss Guide and Scout Movement](https://pfadi.swiss/).
-    This landing page is powered by the open source plan of [Netlify](https://www.netlify.com/)
-    and our application translations are managed on [Crowdin](https://crowdin.com/).
-  </FaqItem>
+  {(await faqEntries("en")).filter(({data}) => ['secure','v2','support-v2','financial-support'].includes(data.translationId)).map(({ data, Content }) => (
+    <FaqItem question={data.title} id={data.translationId}>
+      <Content />
+    </FaqItem>
+  ))}
 </FaqSection>
