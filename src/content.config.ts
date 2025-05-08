@@ -29,8 +29,18 @@ const posts = defineCollection({
     })),
 });
 
+// 2. Define a `type` and `schema` for each collection
+const faq = defineCollection({
+    loader: i18nLoader({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/faq", generateId: ({entry}) => entry }),
+    schema: extendI18nLoaderSchema(z.object({
+        title: z.string(),
+        path: z.string().optional(),
+    })),
+});
+
 // 3. Export a single `collections` object to register your collection(s)
 export const collections = {
     pages,
     posts,
+    faq
 };
