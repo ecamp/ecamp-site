@@ -10,7 +10,6 @@ import Steps from "../../components/widgets/Steps.astro";
 import Stats from "../../components/widgets/Stats.astro";
 import ProseSection from "../../components/widgets/ProseSection.astro";
 import HighlightedPosts from "../../components/blog/highlights/HighlightedPosts.astro";
-import FaqItem from "../../components/widgets/faq/Item.astro";
 import FaqSection from "../../components/widgets/faq/Wrapper.astro";
 
 <HeroBanner
@@ -159,12 +158,8 @@ import { memberCount, campCount, userCount } from '~/content/stats.json';
   Finde heraus was wir den ganzen Tag so machen...
 </HighlightedPosts>
 
-import { faqEntries } from "../faq.ts";
-
-<FaqSection title="Fragen & Antworten" buttonText="Mehr Fragen & Antworten" currentLocale="de">
-  {(await faqEntries("de")).filter(({data}) => ['secure','v2','support-v2','financial-support'].includes(data.translationId)).map(({ data, Content }) => (
-    <FaqItem question={data.title} id={data.translationId}>
-      <Content />
-    </FaqItem>
-  ))}
-</FaqSection>
+<FaqSection
+  title="Fragen & Antworten"
+  buttonText="Mehr Fragen & Antworten"
+  items={["secure", "v2", "support-v2", "financial-support"]}
+/>

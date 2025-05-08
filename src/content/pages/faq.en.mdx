@@ -5,15 +5,6 @@ description: eCamp is a web-based app for camp and course planning. The applicat
 fullwidth: true
 ---
 
-import FaqItem from "../../components/widgets/faq/Item.astro";
 import FaqSection from "../../components/widgets/faq/Wrapper.astro";
 
-import { faqEntries } from "../faq.ts";
-
-<FaqSection title="Questions & Answers">
-  {(await faqEntries("en")).map(({ data, Content }) => (
-    <FaqItem question={data.title} id={data.translationId}>
-      <Content />
-    </FaqItem>
-  ))}
-</FaqSection>
+<FaqSection title="Questions & Answers" />

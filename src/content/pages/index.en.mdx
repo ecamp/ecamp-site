@@ -10,7 +10,6 @@ import Steps from "../../components/widgets/Steps.astro";
 import Stats from "../../components/widgets/Stats.astro";
 import ProseSection from "../../components/widgets/ProseSection.astro";
 import HighlightedPosts from "../../components/blog/highlights/HighlightedPosts.astro";
-import FaqItem from "../../components/widgets/faq/Item.astro";
 import FaqSection from "../../components/widgets/faq/Wrapper.astro";
 
 <HeroBanner
@@ -22,10 +21,10 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
 
 <ProseSection>
   <p>
-    Are you looking for a simple and digital way to plan your camp? Then
-    eCamp is just the thing for you! With this practical tool you can plan all
-    the activities for your camp and create a detailed plan that you can print
-    out and take with you wherever you go.
+    Are you looking for a simple and digital way to plan your camp? Then eCamp
+    is just the thing for you! With this practical tool you can plan all the
+    activities for your camp and create a detailed plan that you can print out
+    and take with you wherever you go.
   </p>
   <p>
     eCamp is a web-based app for camp and course planning. The application is
@@ -81,7 +80,8 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
     {
       title: "Team",
       icon: "flat-color-icons:conference-call",
-      description: "Team management has been improved and simplified to be less scout specific and more permission oriented.",
+      description:
+        "Team management has been improved and simplified to be less scout specific and more permission oriented.",
     },
     {
       title: "So much love",
@@ -92,7 +92,7 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
   ]}
 />
 
-import { memberCount, campCount, userCount } from '~/content/stats.json';
+import { memberCount, campCount, userCount } from "~/content/stats.json";
 
 <Stats
   items={[
@@ -157,12 +157,8 @@ import { memberCount, campCount, userCount } from '~/content/stats.json';
   Find out what we do all day long....
 </HighlightedPosts>
 
-import { faqEntries } from "../faq";
-
-<FaqSection title="Questions & Answers" buttonText="More Questions & Answers" currentLocale="en">
-  {(await faqEntries("en")).filter(({data}) => ['secure','v2','support-v2','financial-support'].includes(data.translationId)).map(({ data, Content }) => (
-    <FaqItem question={data.title} id={data.translationId}>
-      <Content />
-    </FaqItem>
-  ))}
-</FaqSection>
+<FaqSection
+  title="Questions & Answers"
+  buttonText="More Questions & Answers"
+  items={["secure", "v2", "support-v2", "financial-support"]}
+/>

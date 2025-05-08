@@ -5,15 +5,6 @@ description: eCamp ist eine webbasierte App für Lager- und Kursplanung. Die Anw
 fullwidth: true
 ---
 
-import FaqItem from "../../components/widgets/faq/Item.astro";
 import FaqSection from "../../components/widgets/faq/Wrapper.astro";
 
-import { faqEntries } from "../faq.ts";
-
-<FaqSection title="Fragen & Antworten">
-  {(await faqEntries("de")).map(({ data, Content }) => (
-    <FaqItem question={data.title} id={data.translationId}>
-      <Content />
-    </FaqItem>
-  ))}
-</FaqSection>
+<FaqSection title="Fragen & Antworten" />
