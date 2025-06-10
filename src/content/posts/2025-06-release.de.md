@@ -3,7 +3,7 @@ title: Juni-Release
 path: 2025-06-release
 pubDate: 2025-06-11
 description: 20'000 Leitende, Druck-Filter und Performance-Verbesserungen
-image: "~/assets/images/20241103-_MMM4523.jpg" # TODO
+image: "~/assets/images/2025-juni-release.png"
 ---
 
 Stolz dürfen wir verkünden, dass inzwischen über 20'000 Accounts auf eCamp v3 erstellt und aktiviert wurden! Über Pfingsten wurden dieses Jahr hunderte von Lagern durchgeführt, welche mit eCamp v3 geplant wurden, darunter auch einige Teile vom [Jublasurium](https://www.jublasurium.ch/), dem nationalen Pfingstlager der Jubla. Vielen Dank für euer Vertrauen und euer wertvolles Feedback!

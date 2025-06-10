@@ -3,7 +3,7 @@ title: June-Release
 path: 2025-06-release
 pubDate: 2025-06-11
 description: 20,000 accounts, print filters and performance improvements
-image: "~/assets/images/20241103-_MMM4523.jpg" # TODO
+image: "~/assets/images/2025-juni-release.png"
 ---
 
 We are proud to announce that over 20,000 accounts have now been created and activated on eCamp v3! Over Pentecost this year, hundreds of camps were held which were planned with eCamp v3, including some parts of [Jublasurium](https://www.jublasurium.ch/), the national Pentecost camp of Jubla. Thank you very much for your trust and your valuable feedback!
