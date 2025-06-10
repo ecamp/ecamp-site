@@ -5,7 +5,7 @@ const { question, id } = Astro.props;
 
 ---
 
-<div id={id} itemscope itemtype="https://schema.org/Question">
+<div id={"#faq-" + id} itemscope itemtype="https://schema.org/Question">
   <a class="mb-4 text-xl font-bold block" itemprop="name" href={"#faq-" + id}>
     <Icon
       name={Astro.props.icon ?? "tabler:arrow-down-right"}
