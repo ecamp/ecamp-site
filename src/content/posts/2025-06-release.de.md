@@ -16,7 +16,7 @@ Der grössere Andrang und die grössere Datenmenge auf eCamp v3 machte sich auch
 
 <div>
 
-Beim Drucken können die Aktivitäten-Filter neu auch angewendet werden. Dort kann neu auch nach Tag gefiltert werden. So kannst du dein Detailprogramm ganz individuell zusammenstellen, zum Beispiel mit Notiz-Seiten zwischen den einzelnen Tagen des Detailprogramms. [#7439](https://github.com/ecamp/ecamp3/pull/7439){.issuelink}
+Beim Drucken können die Aktivitäten-Filter neu auch angewendet werden. Dort kann neu auch nach Tag gefiltert werden. So kannst du dein Detailprogramm ganz individuell zusammenstellen. [#7439](https://github.com/ecamp/ecamp3/pull/7439){.issuelink}
 </div>
 </div>
 <div class="simple-columns">

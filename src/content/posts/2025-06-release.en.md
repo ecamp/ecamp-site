@@ -16,7 +16,7 @@ The greater rush and the larger amount of data on eCamp v3 was also noticeable b
 
 <div>
 
-The activity filters can now also be used when printing. You can now also filter by day. This allows you to put together your detailed program as you wish, for example with note pages between the individual days of the detailed program. [#7439](https://github.com/ecamp/ecamp3/pull/7439){.issuelink}
+The activity filters can now also be used when printing. You can now also filter by day. This allows you to put together your detailed program as you wish. [#7439](https://github.com/ecamp/ecamp3/pull/7439){.issuelink}
 </div>
 </div>
 
