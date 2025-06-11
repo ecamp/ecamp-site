@@ -12,18 +12,13 @@ Der grössere Andrang und die grössere Datenmenge auf eCamp v3 machte sich auch
 
 <div class="simple-columns">
 
-![TODO](~/assets/images/2024-11/checklist-create-de.webp)
+![Aktivitätenfilter beim Drucken](~/assets/images/2025-06/print-filter-de.png)
 
 <div>
 
-Beim Drucken können die Aktivitäten-Filter neu auch angewendet werden. Dort kann neu auch nach Tag gefiltert werden. So kannst du dein Detailprogramm ganz individuell zusammenstellen. [#7439](https://github.com/ecamp/ecamp3/pull/7439){.issuelink}
+Beim Drucken können die Aktivitäten-Filter neu auch angewendet werden. Dort kann neu auch nach Tag gefiltert werden. So kannst du dein Detailprogramm ganz individuell zusammenstellen, zum Beispiel indem du alle Essens-Blöcke herausfilterst und so Papier sparst. [#7439](https://github.com/ecamp/ecamp3/pull/7439){.issuelink}
 </div>
 </div>
-<div class="simple-columns">
-<div>
-</div>
-</div>
-
 
 ## Weitere Verbesserungen und Bugfixes
 

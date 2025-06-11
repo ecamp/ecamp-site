@@ -12,11 +12,11 @@ The greater rush and the larger amount of data on eCamp v3 was also noticeable b
 
 <div class="simple-columns">
 
-![TODO](~/assets/images/2024-11/checklist-create-de.webp)
+![Activity filters when printing](~/assets/images/2025-06/print-filter-en.png)
 
 <div>
 
-The activity filters can now also be used when printing. You can now also filter by day. This allows you to put together your detailed program as you wish. [#7439](https://github.com/ecamp/ecamp3/pull/7439){.issuelink}
+The activity filters can now also be used when printing. You can now also filter by day. This allows you to put together your detailed program as you wish, e.g. filter out all meals from the PDF to save paper. [#7439](https://github.com/ecamp/ecamp3/pull/7439){.issuelink}
 </div>
 </div>
 
@@ -33,6 +33,6 @@ The activity filters can now also be used when printing. You can now also filter
 - Bugfix: Emoji can be printed again with print layout #2 [#7404](https://github.com/ecamp/ecamp3/pull/7404){.issuelink}
 - If an invitation is sent and someone subsequently creates an account with the invited email address, the invitation will be assigned to the new account [#4953](https://github.com/ecamp/ecamp3/pull/4953){.issuelink}
 
-We are still working on performance improvements, the long-awaited [commenting feature](https://github.com/ecamp/ecamp3/issues/828) and feedback that is sent to us via [contact form](https://www.ecamp3.ch/de/kontakt/).
+We are still working on performance improvements, the long-awaited [commenting feature](https://github.com/ecamp/ecamp3/issues/828) and feedback that is sent to us via [contact form](https://www.ecamp3.ch/en/contact/).
 
 <a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Go to app</a>
