@@ -195,7 +195,7 @@ In addition, we store longer-term backups for up to a year on an AWS S3 bucket f
 
 Our website uses cookies. Cookies are text files that are placed on your device's operating system by your browser when you visit our website. Cookies do not harm your computer and do not contain viruses.
 
-We exclusively use so-called "session cookies". These are automatically deleted upon logout or after 12 hours. They are also absolutely necessary for the login function, so you have no way to object to them. However, the cookies are stored on your computer. You therefore have full control and can delete them completely or restrict the transfer by changing the settings in your browser. If you deactivate cookies for _eCamp_, you will no longer be able to log in and thus no longer be able to use the application.
+We exclusively use so-called "session cookies". These are automatically deleted upon logout. They are also absolutely necessary for the login function, so you have no way to object to them. All cookies are deleted after 12 hours, except for one which is valid for up to 1 month. This cookie is used for automatically logging you back in, even when the other cookies expired. The cookies are stored on your computer. You therefore have full control and can delete them completely or restrict the transfer by changing the settings in your browser. If you deactivate cookies for _eCamp_, you will no longer be able to log in and thus no longer be able to use the application.
 
 #### Landing page [https://ecamp3.ch](https://ecamp3.ch)
 
