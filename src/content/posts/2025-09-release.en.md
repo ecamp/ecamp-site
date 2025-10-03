@@ -6,29 +6,35 @@ description: PDF improvements, searchable checklist templates, material overview
 image: "~/assets/images/2025-juni-release.png"
 ---
 
-Over the summer we shipped many improvements and new features — with a strong focus on better PDFs, more useful checklists, and improved material overviews. We also delivered performance, security, and stability updates.
+The summer camp season is over, with over 1000 summer camps planned on eCamp v3.
 
-## Highlights
+During the holidays, we continuously worked on and developed eCamp v3. Now that we get more and more past camps on eCamp v3, it is becoming more interesting to copy old programs, adapt them, and exchange them with other people. That is why we have been working on a number of features for this purpose, among other things.
 
-- PDF: Page numbers are now supported. [#8003](https://github.com/ecamp/ecamp3/pull/8003){.issuelink}
-- PDF: Clearer, consistent file names. [#7996](https://github.com/ecamp/ecamp3/pull/7996){.issuelink}
-- PDF: Correct rendering of combined and number emojis (e.g. 🧙‍♂️, 1️⃣). [#7998](https://github.com/ecamp/ecamp3/pull/7998){.issuelink} [#8069](https://github.com/ecamp/ecamp3/pull/8069){.issuelink}
-- Material: New overview for orphan (unassigned) material items. [#8053](https://github.com/ecamp/ecamp3/pull/8053){.issuelink}
-- Checklists: Templates are now searchable. [#8066](https://github.com/ecamp/ecamp3/pull/8066){.issuelink}
-- Collaboration: Edit abbreviation and color; You can leave the camp now by yourself. [#7697](https://github.com/ecamp/ecamp3/pull/7697){.issuelink}
-- Copy camps: Copy camps you have access to. [#7528](https://github.com/ecamp/ecamp3/pull/7528){.issuelink}
+## Templates for camps and courses
+- Old camps can now be used as templates when creating a new camp. This allows you to copy an entire camp at once [#7480](https://github.com/ecamp/ecamp3/issues/7480).
+- Camps can now be shared publicly. This makes all camp data publicly accessible to anyone who knows the link to the camp. You can copy individual activities or the entire shared camp and reuse them [#7481](https://github.com/ecamp/ecamp3/issues/7481).
+- Under "Material", there is now an overview of unassigned materials, which can occur, for example, when copying an activity from another camp [#8053](https://github.com/ecamp/ecamp3/issues/8053){.issuelink}
+- There is now a large selection of templates for checklists for various PBS courses [#8066](https://github.com/ecamp/ecamp3/issues/7951){.issuelink}
 
-## Further improvements and bug fixes
+## Improvements to PDFs
+- The names of exported PDFs have been standardized [#7996](https://github.com/ecamp/ecamp3/issues/7996){.issuelink}
+- Page numbers in PDFs can now be turned on and off [#8003](https://github.com/ecamp/ecamp3/issues/8003){.issuelink}
+- Print progress is now displayed for print layout #2 [#8002](https://github.com/ecamp/ecamp3/issues/8002){.issuelink}
+- More emojis can now be printed with print layout #2 [#7998](https://github.com/ecamp/ecamp3/issues/7998){.issuelink}
+- Longer camps can now be printed in print layout #2 [#7779](https://github.com/ecamp/ecamp3/issues/7779){.issuelink}
+- Print layout #1 no longer prints blank pages at the beginning and end [#8026](https://github.com/ecamp/ecamp3/issues/8026){.issuelink}
 
-- Past camps: Reverse time ordering (newest first). [#7952](https://github.com/ecamp/ecamp3/pull/7952){.issuelink}
-- Activities: Reload schedule entries when changing the numbering style. [#8001](https://github.com/ecamp/ecamp3/pull/8001){.issuelink}
-- PDF/Print: Prevent empty pages at the beginning/end. [#8027](https://github.com/ecamp/ecamp3/pull/8027){.issuelink}
-- XLS export: Trim overly long sheet names. [#7901](https://github.com/ecamp/ecamp3/pull/7901){.issuelink}
-- Dates/times: More robust locale handling (dayjs). [#7948](https://github.com/ecamp/ecamp3/pull/7948){.issuelink}
-- Performance: Fewer DB queries for activities/categories and faster material list loading. [#7764](https://github.com/ecamp/ecamp3/pull/7764){.issuelink} [#7657](https://github.com/ecamp/ecamp3/pull/7657){.issuelink}
-- Security: Guests can no longer elevate their role to member/manager. [#7740](https://github.com/ecamp/ecamp3/pull/7740){.issuelink}
-- Many new translations. [#6921](https://github.com/ecamp/ecamp3/pull/6921){.issuelink} [#7826](https://github.com/ecamp/ecamp3/pull/7826){.issuelink}
+## Minor fixes and improvements
+- Guests can now also change their own profile color and abbreviation in each camp [#5733](https://github.com/ecamp/ecamp3/issues/5733), and leave camps independently [#7544](https://github.com/ecamp/ecamp3/issues/7544){.issuelink}
+- Bug fix: Time entry when creating new activities now works correctly again in English [#7904](https://github.com/ecamp/ecamp3/issues/7904){.issuelink}
+- Bug fix: Material lists with long names can now also be exported to Excel [#7184](https://github.com/ecamp/ecamp3/issues/7184){.issuelink}
+- Bug fix: After changing the numbering scheme of an activity, the activity numbers are recalculated [#8001](https://github.com/ecamp/ecamp3/issues/8001){.issuelink}
+- Bug fix: On mobile devices, long checklist items are now correctly truncated and the layout is no longer broken [#7774](https://github.com/ecamp/ecamp3/issues/7774).
+- In the list of past camps, the most recent camps now appear at the top [#7952](https://github.com/ecamp/ecamp3/issues/7952){.issuelink}
+- Performance [#7199](https://github.com/ecamp/ecamp3/issues/7199){.issuelink} [#7747](https://github.com/ecamp/ecamp3/issues/7747){.issuelink} [#7751](https://github.com/ecamp/ecamp3/issues/7751){.issuelink} [#7764](https://github.com/ecamp/ecamp3/issues/7764){.issuelink} [#7657](https://github.com/ecamp/ecamp3/issues/7657){.issuelink}
+- Security [#7740](https://github.com/ecamp/ecamp3/issues/7740){.issuelink}
 
-We’ll continue to work on quality, performance, and improvements that help you plan your camps. Thanks for all your feedback!
+
+We are also continuing to work on the [comment feature](https://github.com/ecamp/ecamp3/issues/828), a major technical update (Vue 3), and feedback sent to us via the [contact form](https://www.ecamp3.ch/de/kontakt/).
 
 <a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Go to app</a>
