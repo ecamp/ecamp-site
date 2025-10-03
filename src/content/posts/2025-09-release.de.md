@@ -1,9 +1,9 @@
 ---
-title: September-Release
-path: 2025-09-release
-pubDate: 2025-09-06
-description: PDF-Verbesserungen, durchsuchbare Checklisten-Vorlagen, Material-Übersicht und viele Bugfixes
-image: "~/assets/images/2025-juni-release.png"
+title: Oktober-Release
+path: 2025-10-release
+pubDate: 2025-10-04
+description: Ganze Lager kopieren und PDF-Verbesserungen
+image: "~/assets/images/2025-october-release.jpg"
 ---
 
 Die Sommerlagersaison ist vorbei, mit über 1000 Sommerlagern die auf eCamp v3 geplant wurden.

@@ -1,9 +1,9 @@
 ---
-title: September-Release
-path: 2025-09-release
-pubDate: 2025-09-06
-description: PDF improvements, searchable checklist templates, material overview and many bug fixes
-image: "~/assets/images/2025-juni-release.png"
+title: October-Release
+path: 2025-10-release
+pubDate: 2025-10-04
+description: Copying whole camps, and improvements to pdfs
+image: "~/assets/images/2025-october-release.jpg"
 ---
 
 The summer camp season is over, with over 1000 summer camps planned on eCamp v3.
