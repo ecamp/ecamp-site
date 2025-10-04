@@ -3,8 +3,8 @@
   "description": "Landingpage",
   "private": true,
   "scripts": {
-    "dev": "astro dev --port=3005",
-    "start": "astro dev",
+    "dev": "astro dev --port=3005 --host",
+    "start": "astro dev --port=3005 --host",
     "build": "astro build",
     "inspect:dev": "node --inspect ./node_modules/astro/astro.js dev",
     "inspect:build": "node --inspect ./node_modules/astro/astro.js build",
@@ -37,5 +37,6 @@
   },
   "engines": {
     "node": ">=22"
-  }
+  },
+  "packageManager": "pnpm@10.15.1"
 }
