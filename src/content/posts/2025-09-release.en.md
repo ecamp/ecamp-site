@@ -25,6 +25,7 @@ During the holidays, we continuously worked on and developed eCamp v3. Now that 
 - Print layout #1 no longer prints blank pages at the beginning and end [#8026](https://github.com/ecamp/ecamp3/issues/8026){.issuelink}
 
 ## Minor fixes and improvements
+- You now remain logged in for up to one month after the last time you had the page open [#4898](https://github.com/ecamp/ecamp3/issues/4898)
 - Guests can now also change their own profile color and abbreviation in each camp [#5733](https://github.com/ecamp/ecamp3/issues/5733), and leave camps independently [#7544](https://github.com/ecamp/ecamp3/issues/7544){.issuelink}
 - Bug fix: Time entry when creating new activities now works correctly again in English [#7904](https://github.com/ecamp/ecamp3/issues/7904){.issuelink}
 - Bug fix: Material lists with long names can now also be exported to Excel [#7184](https://github.com/ecamp/ecamp3/issues/7184){.issuelink}

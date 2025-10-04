@@ -25,6 +25,7 @@ Während den Ferien haben wir kontinuierlich an eCamp v3 geschraubt und weiteren
 - Im Druck-Layout #1 werden nun keine leeren Seiten am Anfang und Ende mehr gedruckt [#8026](https://github.com/ecamp/ecamp3/issues/8026){.issuelink}
 
 ## Kleinere Fixes und Verbesserungen
+- Neu bleibt man eingeloggt für bis zu einen Monat nach dem letzten Mal dass man die Seite offen hatte [#4898](https://github.com/ecamp/ecamp3/issues/4898){.issuelink}
 - Auch Gäste können nun eigene Profil-Farbe und Abkürzung pro Lager ändern [#5733](https://github.com/ecamp/ecamp3/issues/5733){.issuelink}, und selbständig aus Lagern austreten [#7544](https://github.com/ecamp/ecamp3/issues/7544){.issuelink}
 - Bugfix: Die Zeiteingabe beim Erstellen neuer Aktivitäten funktioniert nun auch auf Englisch wieder korrekt [#7904](https://github.com/ecamp/ecamp3/issues/7904){.issuelink}
 - Bugfix: Auch Materiallisten mit langem Namen können jetzt als Excel exportiert werden [#7184](https://github.com/ecamp/ecamp3/issues/7184){.issuelink}
