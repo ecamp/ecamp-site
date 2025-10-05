@@ -19,6 +19,7 @@ During the holidays, we continuously worked on and developed eCamp v3. Now that 
 ## Improvements to PDFs
 - The names of exported PDFs have been standardized [#7996](https://github.com/ecamp/ecamp3/issues/7996){.issuelink}
 - Page numbers in PDFs can now be turned on and off [#8003](https://github.com/ecamp/ecamp3/issues/8003){.issuelink}
+- On the bottom of the picasso, category labels are hidden if they are not used at all in the camp period [#7768](https://github.com/ecamp/ecamp3/issues/7768){.issuelink}. Thank you [@NelsStorch](https://github.com/NelsStorch)!
 - Print progress is now displayed for print layout #2 [#8002](https://github.com/ecamp/ecamp3/issues/8002){.issuelink}
 - More emojis can now be printed with print layout #2 [#7998](https://github.com/ecamp/ecamp3/issues/7998){.issuelink}
 - Longer camps can now be printed in print layout #2 [#7779](https://github.com/ecamp/ecamp3/issues/7779){.issuelink}
@@ -32,8 +33,8 @@ During the holidays, we continuously worked on and developed eCamp v3. Now that 
 - Bug fix: After changing the numbering scheme of an activity, the activity numbers are recalculated [#8001](https://github.com/ecamp/ecamp3/issues/8001){.issuelink}
 - Bug fix: On mobile devices, long checklist items are now correctly truncated and the layout is no longer broken. [#7774](https://github.com/ecamp/ecamp3/issues/7774){.issuelink}
 - In the list of past camps, the most recent camps now appear at the top [#7952](https://github.com/ecamp/ecamp3/issues/7952){.issuelink}
-- Performance [#7199](https://github.com/ecamp/ecamp3/issues/7199){.issuelink} [#7747](https://github.com/ecamp/ecamp3/issues/7747){.issuelink} [#7751](https://github.com/ecamp/ecamp3/issues/7751){.issuelink} [#7764](https://github.com/ecamp/ecamp3/issues/7764){.issuelink} [#7657](https://github.com/ecamp/ecamp3/issues/7657){.issuelink}
-- Security [#7740](https://github.com/ecamp/ecamp3/issues/7740){.issuelink}
+- Performance improvements [#7199](https://github.com/ecamp/ecamp3/issues/7199){.issuelink} [#7747](https://github.com/ecamp/ecamp3/issues/7747){.issuelink} [#7751](https://github.com/ecamp/ecamp3/issues/7751){.issuelink} [#7764](https://github.com/ecamp/ecamp3/issues/7764){.issuelink} [#7657](https://github.com/ecamp/ecamp3/issues/7657){.issuelink}
+- Security fixes [#7740](https://github.com/ecamp/ecamp3/issues/7740){.issuelink} [#8280](https://github.com/ecamp/ecamp3/issues/8280){.issuelink} [#8284](https://github.com/ecamp/ecamp3/issues/8284){.issuelink} [#8285](https://github.com/ecamp/ecamp3/issues/8285){.issuelink}
 
 
 We are also continuing to work on the [comment feature](https://github.com/ecamp/ecamp3/issues/828), a major technical update (Vue 3), and feedback sent to us via the [contact form](https://www.ecamp3.ch/de/kontakt/).
