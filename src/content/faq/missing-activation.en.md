@@ -2,6 +2,4 @@
 title: I did not receive an activation email. What can I do?
 ---
 
-You can reset your password, or log in via MiData, CeviDB, jubla.db or Google using an account with the same email address as your eCamp v3 account.
-In doing this, your account is also activated.
-We are currently working on a feature to trigger another activation email.
+You can request a new activation email [here](https://app.ecamp3.ch/resend-activation). If that doesn't work either, you can reset your password or log in with MiData, CeviDB, jubla.db, or Google using an account that uses the same email address as your eCamp v3 account. All of these actions will also activate your account.
