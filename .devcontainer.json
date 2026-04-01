@@ -1,0 +1,4 @@
+{
+  "name": "ecamp-site-dev-container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:3-22-bookworm"
+}
