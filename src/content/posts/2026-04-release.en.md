@@ -1,7 +1,7 @@
 ---
 title: April Release
 path: 2026-04-release
-pubDate: 2025-04-11
+pubDate: 2026-04-11
 description: Technical upgrade and minor new features
 image: "~/assets/images/2026-april-release.jpg"
 ---
