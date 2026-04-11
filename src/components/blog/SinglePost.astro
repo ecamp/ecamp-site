@@ -29,7 +29,7 @@ const { data } = Astro.props;
             formats={['avif', 'webp']}
             widths={[375, 475, 600, 768, 1024, 1200, 1440, 1920]}
             sizes="(min-width: 1536px) 1024px, min(100vw,768px)"
-            class="max-w-fullw w-full md:max-w-screen-md 2xl:md:max-w-screen-lg mx-auto mt-4 mb-6 md:rounded-md bg-gray-400 dark:bg-slate-700 aspect-video"
+            class="max-w-fullw w-full md:max-w-screen-md 2xl:md:max-w-screen-lg mx-auto mt-4 mb-6 md:rounded-md bg-gray-400 dark:bg-slate-700 aspect-video object-cover"
             alt={data.description ?? data.title}
           />
         )
