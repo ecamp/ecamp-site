@@ -8,6 +8,9 @@ image: '~/assets/images/2026-07-july-release.png'
 
 The July release brings several exciting improvements for printing, as well as a series of bugfixes and performance enhancements to make planning your camps even smoother.
 
+## Last chance to download your pdfs from the old eCamp v2
+The old eCamp v2 has aged so much that it will soon be turned off. Starting in September 2026, no data can be changed anymore. In spring 2027, eCamp v2 will be sunset completely. If you still have data you want to keep on the old eCamp v2, please make sure to download pdfs of your old camps soon.
+
 ## Better Printing: A3 Support & Day Overview
 We've significantly improved the printing capabilities. eCamp now supports **A3 printing**, giving you more space and flexibility when generating PDFs for your camp programs. 
 
@@ -26,5 +29,7 @@ We've also fixed an issue where bullets or numbers were sometimes lost in the ge
 - Resolved a caching issue where stale `index.html` files were served after a deployment, preventing old code from lingering in the browser. [#10088](https://github.com/ecamp/ecamp3/pull/10088){.issuelink}
 - Fixed navigation issues where the periods list and schedule entries wouldn't correctly reload when navigating between views. [#10051](https://github.com/ecamp/ecamp3/pull/10051){.issuelink} [#10052](https://github.com/ecamp/ecamp3/pull/10052){.issuelink} [#10053](https://github.com/ecamp/ecamp3/pull/10053){.issuelink}
 - Made sure personal invitations properly reload after being accepted or rejected. [#10036](https://github.com/ecamp/ecamp3/pull/10036){.issuelink}
+
+We're continuing to work on the [comment feature](https://github.com/ecamp/ecamp3/issues/828), further performance improvements, and bug fixes reported to us via the [contact form](https://www.ecamp3.ch/en/contact/).
 
 <a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Go to app</a>
