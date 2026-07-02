@@ -3,7 +3,7 @@ title: July Release
 path: 2026-07-release
 pubDate: 2026-07-02
 description: A3 printing, day overview for printing, and UI improvements
-image: '~/assets/images/pfila-thumbnail.jpeg'
+image: '~/assets/images/2026-07-july-release.png'
 ---
 
 The July release brings several exciting improvements for printing, as well as a series of bugfixes and performance enhancements to make planning your camps even smoother.

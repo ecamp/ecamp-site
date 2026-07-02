@@ -3,7 +3,7 @@ title: Juli-Release
 path: 2026-07-release
 pubDate: 2026-07-02
 description: A3-Druck, Tagesübersicht beim Drucken und UI-Verbesserungen
-image: '~/assets/images/pfila-thumbnail.jpeg'
+image: '~/assets/images/2026-07-july-release.png'
 ---
 
 Das Juli-Release bringt einige spannende Verbesserungen für die Druckfunktionen sowie eine Reihe von Fehlerbehebungen und Performance-Optimierungen, damit die Planung eurer Lager noch reibungsloser abläuft.
