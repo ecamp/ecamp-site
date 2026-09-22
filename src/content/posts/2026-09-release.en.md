@@ -25,6 +25,6 @@ We have strengthened account security and polished navigation, forms, and severa
 - Material checkboxes are disabled when an item is not assigned to a material list. [#10548](https://github.com/ecamp/ecamp3/pull/10548){.issuelink}
 - Pasting a camp URL while creating a camp works again in Firefox. [#10519](https://github.com/ecamp/ecamp3/pull/10519){.issuelink}
 - PDF generation with long emoji content works reliably in Firefox again. [#10525](https://github.com/ecamp/ecamp3/pull/10525){.issuelink} [#10739](https://github.com/ecamp/ecamp3/pull/10739){.issuelink}
-- Under the hood, API access to shared-camp data has been tightened and additional automated tests improve the reliability of navigation, login, filters, and comments. [#10773](https://github.com/ecamp/ecamp3/pull/10773){.issuelink} [#10819](https://github.com/ecamp/ecamp3/pull/10819){.issuelink}
+- Under the hood, API access to shared-camp data has been tightened and additional automated tests improve the reliability of navigation, login, and filters. [#10773](https://github.com/ecamp/ecamp3/pull/10773){.issuelink} [#10819](https://github.com/ecamp/ecamp3/pull/10819){.issuelink}
 
 <a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Go to app</a>
