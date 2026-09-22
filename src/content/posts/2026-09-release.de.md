@@ -25,6 +25,6 @@ Wir haben die Kontosicherheit erhöht und die Navigation, Formulare sowie mehrer
 - Material-Checkboxen sind deaktiviert, wenn ein Eintrag keiner Materialliste zugeordnet ist. [#10548](https://github.com/ecamp/ecamp3/pull/10548){.issuelink}
 - Das Einfügen einer Lager-URL beim Erstellen eines Lagers funktioniert in Firefox wieder. [#10519](https://github.com/ecamp/ecamp3/pull/10519){.issuelink}
 - Die PDF-Erstellung mit langen Emoji-Inhalten funktioniert in Firefox wieder zuverlässig. [#10525](https://github.com/ecamp/ecamp3/pull/10525){.issuelink} [#10739](https://github.com/ecamp/ecamp3/pull/10739){.issuelink}
-- Im Hintergrund wurde der API-Zugriff auf Daten aus geteilten Lagern weiter eingeschränkt. Zusätzliche automatisierte Tests verbessern die Zuverlässigkeit von Navigation, Login, Filtern und Kommentaren. [#10773](https://github.com/ecamp/ecamp3/pull/10773){.issuelink} [#10819](https://github.com/ecamp/ecamp3/pull/10819){.issuelink}
+- Im Hintergrund wurde der API-Zugriff auf Daten aus geteilten Lagern weiter eingeschränkt. Zusätzliche automatisierte Tests verbessern die Zuverlässigkeit von Navigation, Login und Filtern. [#10773](https://github.com/ecamp/ecamp3/pull/10773){.issuelink} [#10819](https://github.com/ecamp/ecamp3/pull/10819){.issuelink}
 
 <a class="btn secondary mr-4 mb-4" href="https://app.ecamp3.ch" target="_blank">Zur App</a>
