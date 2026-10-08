@@ -1,0 +1,210 @@
+---
+import { getCollection, render } from "astro:content";
+import GithubSlugger from "github-slugger";
+import { Icon } from "astro-iconify";
+import sorting from "~/content/faq/_defaultsorting.json";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const headingId = new GithubSlugger().slug(title);
+const labels =
+  Astro.params.locale === "en"
+    ? { search: "Search questions and answers", placeholder: "Search FAQs…", empty: "No matching questions found." }
+    : {
+        search: "Fragen und Antworten durchsuchen",
+        placeholder: "FAQs durchsuchen…",
+        empty: "Keine passenden Fragen gefunden.",
+      };
+const entries = await getCollection("faq", ({ data }) => data.locale === Astro.params.locale);
+entries.sort((a, b) => sorting.indexOf(a.data.translationId) - sorting.indexOf(b.data.translationId));
+const faqEntries = await Promise.all(
+  entries.map(async (entry) => ({
+    data: entry.data,
+    Content: (await render(entry)).Content,
+  })),
+);
+---
+
+<faq-search-section
+  class="relative block mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16 lg:py-20"
+  itemscope
+  itemtype="https://schema.org/FAQPage"
+>
+  <div class="max-w-3xl mx-auto mb-8 text-center md:mb-12">
+    <h2
+      id={headingId}
+      itemprop="name"
+      class="text-center text-4xl md:text-5xl font-bold leading-tighter tracking-tight mb-8 md:mb-16 font-heading"
+    >
+      <a href={"#" + headingId} class="anchor" aria-hidden="true" tabindex="-1"><span>🔗</span></a>
+      {title}
+    </h2>
+    <div class="mt-8 text-left" data-search-controls>
+      <label for={headingId + "-search"} class="sr-only">{labels.search}</label>
+      <div class="faq-search-field">
+        <Icon name="tabler:search" class="faq-search-icon" aria-hidden="true" />
+        <input id={headingId + "-search"} type="search" placeholder={labels.placeholder} class="faq-search-input" />
+      </div>
+    </div>
+  </div>
+  <div class="faq-list mx-auto max-w-3xl" itemprop="mainContentOfPage">
+    {
+      faqEntries.map(({ data, Content }) => (
+        <details
+          id={"faq-" + data.translationId}
+          class="group"
+          name={"faq-" + headingId}
+          data-faq-entry
+          itemprop="mainEntity"
+          itemscope
+          itemtype="https://schema.org/Question"
+        >
+          <summary class="faq-summary">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 md:text-xl" itemprop="name">
+              {data.title}
+            </h3>
+            <Icon
+              name="tabler:chevron-down"
+              class="h-6 w-6 shrink-0 text-primary-500 transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none"
+              aria-hidden="true"
+            />
+          </summary>
+          <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <div
+              class="prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:font-bold prose-a:text-primary-600 dark:prose-a:text-primary-400 max-w-none"
+              itemprop="text"
+            >
+              <Content />
+            </div>
+          </div>
+        </details>
+      ))
+    }
+    <p class="mt-6 text-gray-700 dark:text-gray-400" data-no-results role="status" hidden>{labels.empty}</p>
+  </div>
+</faq-search-section>
+
+<style>
+  faq-search-section {
+    /* Scroll compensation handles layout shifts within the accordion. */
+    overflow-anchor: none;
+  }
+
+  .faq-search-field {
+    position: relative;
+  }
+
+  .faq-search-field :global(.faq-search-icon) {
+    @apply pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400 dark:text-gray-500;
+  }
+
+  .faq-search-input {
+    @apply w-full rounded-xl border-gray-200 py-3 pl-12 pr-4 text-gray-900 placeholder:text-gray-500 dark:border-slate-700 dark:bg-slate-800 dark:text-gray-100 dark:placeholder:text-gray-400 focus:border-primary-500 focus:ring-primary-500;
+    color-scheme: light;
+  }
+
+  .faq-list details {
+    @apply -mx-4 py-2;
+  }
+
+  .faq-list details:not([hidden]) ~ details:not([hidden]) {
+    @apply border-t border-gray-200 dark:border-slate-700;
+  }
+
+  .faq-summary {
+    @apply flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg p-4 outline-offset-4 transition-colors hover:bg-gray-50 dark:hover:bg-slate-800;
+  }
+
+  .faq-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-summary h3 {
+    @apply m-0 text-lg font-semibold text-gray-900 dark:text-gray-100 md:text-xl;
+  }
+
+  .faq-summary :global(svg) {
+    @apply h-6 w-6 shrink-0 text-primary-500 transition-transform duration-200;
+  }
+
+  details[open] > .faq-summary :global(svg) {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    @apply px-4 pb-6 pt-2 sm:pr-14 text-gray-600 dark:text-gray-400;
+  }
+
+  .faq-answer > div {
+    @apply prose dark:prose-invert max-w-none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .faq-search-input {
+      color-scheme: dark;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .faq-summary,
+    .faq-summary :global(svg) {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>("faq-search-section").forEach((section) => {
+    const input = section.querySelector<HTMLInputElement>('input[type="search"]')!;
+    const empty = section.querySelector<HTMLElement>("[data-no-results]")!;
+    const entries = Array.from(section.querySelectorAll<HTMLDetailsElement>("[data-faq-entry]")).map((element) => ({
+      element,
+      text: (element.textContent ?? "").toLowerCase(),
+    }));
+
+    const update = () => {
+      const query = input.value.toLowerCase();
+      for (const { element, text } of entries) {
+        element.hidden = !text.includes(query);
+      }
+      empty.hidden = entries.some(({ element }) => !element.hidden);
+    };
+    input.addEventListener("input", update);
+
+    for (const { element } of entries) {
+      const summary = element.querySelector("summary")!;
+      summary.addEventListener("click", (event) => {
+        event.preventDefault();
+        const top = summary.getBoundingClientRect().top;
+        element.open = !element.open;
+        // Keep the tapped question in place when an answer above it collapses.
+        requestAnimationFrame(() => {
+          window.scrollBy({ top: summary.getBoundingClientRect().top - top, behavior: "instant" });
+        });
+      });
+
+      element.addEventListener("toggle", () => {
+        if (element.open) {
+          // Updating the URL directly would trigger another scroll to the answer.
+          history.replaceState(history.state, "", "#" + element.id);
+        } else if (window.location.hash === "#" + element.id && !entries.some(({ element }) => element.open)) {
+          history.replaceState(history.state, "", window.location.pathname + window.location.search);
+        }
+      });
+    }
+
+    const openLinkedAnswer = () => {
+      const entry = entries.find(({ element }) => "#" + element.id === window.location.hash);
+      if (!entry) return;
+      input.value = "";
+      update();
+      entry.element.open = true;
+      entry.element.scrollIntoView({ behavior: "instant", block: "start" });
+    };
+    window.addEventListener("hashchange", openLinkedAnswer);
+    openLinkedAnswer();
+  });
+</script>
