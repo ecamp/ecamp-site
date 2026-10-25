@@ -30,12 +30,12 @@ When creating a new checklist, its content can optionally be imported from a tem
 
 </div>
 
-![Checkliste von Vorlage erstellen](~/assets/images/2024-11/checklist-template-de.webp)
+![Create checklist from template](~/assets/images/2024-11/checklist-template-de.webp)
 
 </div>
 <div class="simple-columns">
 
-![Checkliste in Aktivität auswählen](~/assets/images/2024-11/checklist-activity-de.webp)
+![Select checklist in activity](~/assets/images/2024-11/checklist-activity-de.webp)
 
 <div>
 
@@ -51,13 +51,13 @@ When printing, there is now the option to print a block overview. This can be us
 
 </div>
 
-![Blockübersicht drucken](~/assets/images/2024-11/checklist-print-de.webp)
+![Print block overview](~/assets/images/2024-11/checklist-print-de.webp)
 
 </div>
 
 <div class="simple-columns">
 
-![Checklisten-Übersicht anzeigen](~/assets/images/2024-11/checklist-overview-de.webp)
+![Show checklist overview](~/assets/images/2024-11/checklist-overview-de.webp)
 
 <div>
 

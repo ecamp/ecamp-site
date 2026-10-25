@@ -18,14 +18,14 @@ One of the most requested features is finally here: **comments**. Everyone who c
 
 ![Comments on an activity with replies](~/assets/images/comments-en.png)
 
-We are planning further extensions for comments in the future. Maybe it will become possible to comment on activities in the program overview (Grobprogramm) or on the selected characteristics of Y+S 2027+, or maybe there will be an overview across all camps of the open comments that still concern you..? Let us know what you would like to see, and we'll keep at it.
+We are planning further extensions for comments in the future. Maybe it will become possible to comment on activities in the picasso or on the selected characteristics of Y+S 2027+, or maybe there will be an overview across all camps of the open comments that still concern you..? Let us know what you would like to see, and we'll keep at it.
 
 ## The new Y+S rules from 2027
 From 2027 onwards, new rules apply to Y+S camps. eCamp supports them starting today, so you can already start planning your camps for 2027.
 
 - There is a new **camp template for Y+S camps from 2027**. When creating a new camp, you can select this template and directly get everything you need for the new rules.
-- With the new **Y+S activity characteristics** content block, you can select which characteristics (Erscheinungsformen) are covered in each activity. The selected characteristics are also shown in the PDF. [#11102](https://github.com/ecamp/ecamp3/pull/11102){.issuelink} [#11111](https://github.com/ecamp/ecamp3/pull/11111){.issuelink} [#11122](https://github.com/ecamp/ecamp3/pull/11122){.issuelink}
-- With the new **Y+S physical activity time** content block, you can record the physical activity time (Bewegungszeit) of an activity. If an activity takes place multiple times or in multiple parts, the physical activity time can be entered separately for each occurrence. It is shown in the PDF and, if needed, also in the program overview (Grobprogramm). When printing the program overview, you can choose whether to include the physical activity time as well, for example to upload the program overview to the NDS. [#11106](https://github.com/ecamp/ecamp3/pull/11106){.issuelink} [#11124](https://github.com/ecamp/ecamp3/pull/11124){.issuelink} [#11127](https://github.com/ecamp/ecamp3/pull/11127){.issuelink}
+- With the new **Y+S activity characteristics** content block, you can select which characteristics are covered in each activity. The selected characteristics are also shown in the PDF. [#11102](https://github.com/ecamp/ecamp3/pull/11102){.issuelink} [#11111](https://github.com/ecamp/ecamp3/pull/11111){.issuelink} [#11122](https://github.com/ecamp/ecamp3/pull/11122){.issuelink}
+- With the new **Y+S physical activity time** content block, you can record the physical activity time of an activity. If an activity takes place multiple times or in multiple parts, the physical activity time can be entered separately for each occurrence. It is shown in the PDF and, if needed, also in the picasso. When printing the picasso, you can choose whether to include the physical activity time as well, for example to upload the picasso to the national sports database (BDNS). [#11106](https://github.com/ecamp/ecamp3/pull/11106){.issuelink} [#11124](https://github.com/ecamp/ecamp3/pull/11124){.issuelink} [#11127](https://github.com/ecamp/ecamp3/pull/11127){.issuelink}
 
 ![Y+S activity characteristics and Y+S physical activity time content blocks in an activity](~/assets/images/js-2027-en.png)
 

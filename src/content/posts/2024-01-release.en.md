@@ -60,7 +60,7 @@ It's now possible to **insert lists** in text fields. [#4191](https://github.com
 In the detailed view of an activity, it's now possible to **switch days in the sidebar**. [#4202](https://github.com/ecamp/ecamp3/pull/4202){.issuelink}
 
 ### Design:
-**Improved layout** of categories and activities and a clearer LA theme area. [#4303](https://github.com/ecamp/ecamp3/pull/4303){.issuelink} [#4264](https://github.com/ecamp/ecamp3/pull/4264){.issuelink}<br>
+**Improved layout** of categories and activities and a clearer camp activity (AC) thematic area. [#4303](https://github.com/ecamp/ecamp3/pull/4303){.issuelink} [#4264](https://github.com/ecamp/ecamp3/pull/4264){.issuelink}<br>
 **Day Responsibles** are now also displayed on the camp's homepage. [#4029](https://github.com/ecamp/ecamp3/pull/4029){.issuelink}
 
 ### Printing:

@@ -26,7 +26,7 @@ Invitations to camps can now also be accepted directly in eCamp v3, given the in
 
 <div>
 
-Activities on the picasso can now be filtered by the same criteria as on the camp's home page. This can be useful to visualize the planning progress of all activities, or to visually check the amount of LS and LA on each day of a J+S camp. [#3886](https://github.com/ecamp/ecamp3/issues/3886){.issuelink}
+Activities on the picasso can now be filtered by the same criteria as on the camp's home page. This can be useful to visualize the planning progress of all activities, or to visually check the amount of camp sports (SC) and camp activities (AC) on each day of a Y+S camp. [#3886](https://github.com/ecamp/ecamp3/issues/3886){.issuelink}
 
 </div>
 

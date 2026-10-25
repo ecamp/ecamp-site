@@ -64,7 +64,7 @@ If you are offline, this is now indicated at the bottom of the page. [#5026](htt
 - The cursor when pointing to links in the program has been improved. [#5285](https://github.com/ecamp/ecamp3/pull/5285){.issuelink}
 
 ## Improvements from the community
-- Incorrect line breaks have been removed in some of the German LA thematic areas. Thank you, [@bb1950328](https://github.com/bb1950328)! [#5167](https://github.com/ecamp/ecamp3/pull/5167){.issuelink}
+- Incorrect line breaks have been removed in some of the German camp activity (AC) thematic areas. Thank you, [@bb1950328](https://github.com/bb1950328)! [#5167](https://github.com/ecamp/ecamp3/pull/5167){.issuelink}
 - An improvement for stability against internal API changes in eCamp v3 has been implemented. Thank you also for that [@bb1950328](https://github.com/bb1950328)! [#5168](https://github.com/ecamp/ecamp3/pull/5168){.issuelink}
 - The note that at least someone with administration rights must remain in the camp is now only displayed if it is relevant. Thank you, [@MarcoAllenspach](https://github.com/MarcoAllenspach)! [#4405](https://github.com/ecamp/ecamp3/pull/4405){.issuelink}
 

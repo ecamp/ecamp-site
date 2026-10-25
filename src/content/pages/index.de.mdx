@@ -39,50 +39,52 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
   title="Neue Funktionen"
   items={[
     {
-      title: "Einfaches Login ",
+      title: "Einfacher Einstieg",
       icon: "flat-color-icons:key",
       description:
-        "Wenn da nur nicht das Passwort wäre! Kein Problem, wir haben alle Logins: MiData, CeviDB, JublaDB und Google.",
+        "Loggt euch mit MiData, CeviDB, JublaDB oder Google ein. eCamp ist verfügbar auf Deutsch, Französisch, Italienisch, Rumantsch und Englisch.",
     },
     {
-      title: "Responsive",
+      title: "Gemeinsam planen",
+      icon: "flat-color-icons:conference-call",
+      description:
+        "Plant euer Lager gemeinsam im Team. Ladet mehrere Personen auf einmal ein und vergebt Rechte für Administration, Mitglieder oder Gäste wie Coaches.",
+    },
+    {
+      title: "Überall dabei",
       icon: "flat-color-icons:multiple-devices",
       description:
-        "Neu kann eCamp auch auf mobilen Geräten benutzt werden. Perfekt für während dem Lager.",
+        "eCamp funktioniert auf dem Computer genauso wie auf dem Handy, perfekt für während dem Lager. Viele Eingabefelder speichern automatisch.",
     },
     {
-      title: "Autosave",
-      icon: "flat-color-icons:ok",
-      description: "Viele Eingabefelder speichern automatisch. Einfach gut.",
+      title: "J+S-Lager",
+      icon: "flat-color-icons:sports-mode",
+      description:
+        "Lagervorlagen für J+S-Lager, auch nach den neuen Regeln ab 2027 mit Erscheinungsformen und Bewegungszeit.",
+    },
+    {
+      title: "Kurse",
+      icon: "flat-color-icons:graduation-cap",
+      description:
+        "Mit Checklisten behaltet ihr den Überblick, ob alle Ausbildungsinhalte und J+S-Checklisten im Kursprogramm abgedeckt sind.",
+    },
+    {
+      title: "Kommentare",
+      icon: "flat-color-icons:comments",
+      description:
+        "Hinterlasst euch Rückmeldungen direkt bei den Aktivitäten, antwortet darauf und markiert geklärte Punkte als erledigt.",
     },
     {
       title: "Drucken",
       icon: "flat-color-icons:print",
       description:
-        "PDF / Druckprozess sind optimiert. Keine leeren Seiten und überfliessende Texte mehr.",
+        "Erstellt PDFs vom Grobprogramm, der Tagesübersicht, den einzelnen Aktivitäten und mehr, auch im A3-Format. Ohne leere Seiten und überfliessende Texte.",
     },
     {
-      title: "Mehrsprachig",
+      title: "Teilen macht Freude",
       icon: "flat-color-icons:globe",
       description:
-        "Die Applikation ist verfügbar in: Deutsch, Französisch, Italienisch, Rumantsch & Englisch. Weitere sind möglich.",
-    },
-    {
-      title: "Anpassbar",
-      icon: "flat-color-icons:settings",
-      description:
-        "Erstelle Vorlagen für verschiedene Blocktypen, mit Blockablauf, Rotem Faden, Sicherheitsüberlegungen, etc.",
-    },
-    {
-      title: "Verbessertes Material",
-      icon: "flat-color-icons:support",
-      description:
-        "Ordne dein Material der Aktivität oder dem Lagerabschnitt zu.",
-    },
-    {
-      title: "Team",
-      icon: "flat-color-icons:conference-call",
-      description: "Die Teamverwaltung wurde verbessert und vereinfacht um weniger Pfadi- und mehr Berechtigungs-orientiert zu sein.",
+        "Gebt euer Lager öffentlich frei und teilt den Link, damit andere eure Aktivitäten wiederverwenden und weiterentwickeln können.",
     },
     {
       title: "Ganz viel Liebe",
@@ -135,21 +137,20 @@ import { memberCount, campCount, userCount } from '~/content/stats.json';
       title: "MVP: Lager",
       version: "3.0",
       variant: "check",
-      body: `Ab dieser Version ist eCamp v3 für alle frei verwendbar. Alle wesentlichen Features von eCamp v2 sind für die Lagerplanung vorhanden.
-       Die Kursplanung ist für diese Version noch nicht implementiert.`,
+      body: `Ab dieser Version war eCamp v3 für alle frei verwendbar. Alle wesentlichen Features von eCamp v2 waren für die Lagerplanung vorhanden.
+       Die Kursplanung war für diese Version noch nicht implementiert.`,
     },
     {
       title: "MVP: Kurs",
       version: "3.1",
-      variant: "inprogress",
-      body: "Unser Fokus lag auf der Performance für die kommende Lagersaison und die Funktionen der Kursplanung.",
+      variant: "check",
+      body: "Ab dieser Version wurden typische J+S-Kurse und ihre üblichen Abläufe unterstützt.",
     },
     {
       title: "Neue Funktionen",
       version: "3.X",
       variant: "inprogress",
-      body: `Erst nach Launch von <b>MVP: Kurs</b> werden wir uns der Entwicklung von zusätzlichen Features widmen, welche in eCamp v2 nicht enthalten sind.
-       Bis auf Weiteres werden wir deshalb keine Feature-Requests entgegennehmen.`,
+      body: `Jetzt widmen wir uns der Entwicklung von zusätzlichen Features, welche in eCamp v2 nicht enthalten waren.`,
     },
   ]}
 />
@@ -161,5 +162,5 @@ import { memberCount, campCount, userCount } from '~/content/stats.json';
 <FaqSection
   title="Fragen & Antworten"
   buttonText="Mehr Fragen & Antworten"
-  items={["secure", "v2", "support-v2", "financial-support"]}
+  items={["secure", "v2", "js-2027", "financial-support"]}
 />

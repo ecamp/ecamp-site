@@ -38,50 +38,52 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
   title="New Features"
   items={[
     {
-      title: "Simple Login ",
+      title: "Easy start",
       icon: "flat-color-icons:key",
       description:
-        "If only there were no passwords! No problem, we support all the usual logins: MiData, CeviDB, JublaDB and Google.",
+        "Log in with MiData, CeviDB, JublaDB or Google. eCamp is available in German, French, Italian, Rumantsch and English.",
     },
     {
-      title: "Responsive",
+      title: "Plan together",
+      icon: "flat-color-icons:conference-call",
+      description:
+        "Plan your camp together as a team. Invite several people at once and assign permissions for administration, members or guests such as coaches.",
+    },
+    {
+      title: "Always with you",
       icon: "flat-color-icons:multiple-devices",
       description:
-        "Now eCamp can also be used on mobile devices. Perfect for during the camp.",
+        "eCamp works on your computer just as well as on your phone, perfect for during the camp. Many input fields save automatically.",
     },
     {
-      title: "Autosave",
-      icon: "flat-color-icons:ok",
-      description: "Many input fields save automatically. So nice.",
+      title: "Y+S camps",
+      icon: "flat-color-icons:sports-mode",
+      description:
+        "Camp templates for Y+S camps, including the new rules from 2027 with activity characteristics and physical activity time.",
+    },
+    {
+      title: "Courses",
+      icon: "flat-color-icons:graduation-cap",
+      description:
+        "Checklists help you keep track of whether your course programme covers all training contents and Y+S checklists.",
+    },
+    {
+      title: "Comments",
+      icon: "flat-color-icons:comments",
+      description:
+        "Leave feedback for each other right on the activities, reply to it and mark settled points as resolved.",
     },
     {
       title: "Printing",
       icon: "flat-color-icons:print",
       description:
-        "PDF / printing process are optimized. No more blank pages and overflowing texts.",
+        "Create PDFs of the picasso, the day overview, the individual activities and more, also in A3 format. Without blank pages or overflowing texts.",
     },
     {
-      title: "Multilingual",
+      title: "Share the love",
       icon: "flat-color-icons:globe",
       description:
-        "The application is initially available in German, French, Italian, Rumantsch & English. More are possible.",
-    },
-    {
-      title: "Customizable",
-      icon: "flat-color-icons:settings",
-      description:
-        "Create templates for different types of activities, with storyboard, story context, safety considerations, etc.",
-    },
-    {
-      title: "Improved Material",
-      icon: "flat-color-icons:support",
-      description: "Assign your material to the activity or camp period.",
-    },
-    {
-      title: "Team",
-      icon: "flat-color-icons:conference-call",
-      description:
-        "Team management has been improved and simplified to be less scout specific and more permission oriented.",
+        "Publish your camp and share the links so other people can reuse and remix your activities.",
     },
     {
       title: "So much love",
@@ -134,21 +136,20 @@ import { memberCount, campCount, userCount } from "~/content/stats.json";
       title: "MVP: Camp",
       version: "3.0",
       variant: "check",
-      body: `From this version onwards, eCamp v3 is free to use for everyone.
-      All essential features of eCamp v2 are available for camp planning. Course planning was not yet implemented for this version.`,
+      body: `From this version onwards, eCamp v3 was free to use for everyone.
+      All essential features of eCamp v2 were available for camp planning. Course planning was not yet implemented for this version.`,
     },
     {
       title: "MVP: Course",
       version: "3.1",
-      variant: "inprogress",
-      body: "We are focusing on the performance for the next camp season and the features for course planning.",
+      variant: "check",
+      body: "Starting with this version, typical Y+S courses and their usual workflows were supported.",
     },
     {
       title: "New Features",
       version: "3.X",
       variant: "inprogress",
-      body: `Only after the launch of <b>MVP: Course</b> will we devote ourselves to the development of additional features that are not included in eCamp v2.
-       For the time being, we will therefore not accept feature requests.`,
+      body: `We are now devoting ourselves to the development of additional features that were not included in eCamp v2.`,
     },
   ]}
 />
@@ -160,5 +161,5 @@ import { memberCount, campCount, userCount } from "~/content/stats.json";
 <FaqSection
   title="Questions & Answers"
   buttonText="More Questions & Answers"
-  items={["secure", "v2", "support-v2", "financial-support"]}
+  items={["secure", "v2", "js-2027", "financial-support"]}
 />
