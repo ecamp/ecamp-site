@@ -1,7 +1,6 @@
 [
   "secure",
   "v2",
-  "support-v2",
   "team",
   "tasks",
   "missing-features",
@@ -11,6 +10,7 @@
   "js-checks",
   "feature-requests",
   "js-2027",
+  "js-2027-existing-camps",
   "target-audience",
   "missing-invite",
   "missing-activation",

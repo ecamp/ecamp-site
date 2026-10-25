@@ -7,4 +7,4 @@ It would take us precious time and money and would never come close to the featu
 You can however upload images/files to an external service like Google Drive or Dropbox and then add a link to it.
 
 **Tables**: Currently it is not possible to insert tables directly into eCamp v3.
-Some experiments with simple tables have taken place, but for more complex cases we are currently blocked by the PDF export #2.
+Some experiments with simple tables have taken place, but for more complex cases we are currently still blocked by externally developed software.

@@ -38,50 +38,52 @@ import FaqSection from "../../components/widgets/faq/Wrapper.astro";
   title="New Features"
   items={[
     {
-      title: "Simple Login ",
+      title: "Easy start",
       icon: "flat-color-icons:key",
       description:
-        "If only there were no passwords! No problem, we support all the usual logins: MiData, CeviDB, JublaDB and Google.",
+        "Log in with your MiData, CeviDB, JublaDB or Google account. eCamp is available in German, French, Italian, Rumantsch and English.",
     },
     {
-      title: "Responsive",
+      title: "Plan together",
+      icon: "flat-color-icons:conference-call",
+      description:
+        "Plan your camp together as a team. Invite several people at once and assign permissions for administration, members or guests such as coaches.",
+    },
+    {
+      title: "Always with you",
       icon: "flat-color-icons:multiple-devices",
       description:
-        "Now eCamp can also be used on mobile devices. Perfect for during the camp.",
+        "eCamp works on your computer just as well as on your phone, perfect on the go. Many input fields save your changes automatically.",
     },
     {
-      title: "Autosave",
-      icon: "flat-color-icons:ok",
-      description: "Many input fields save automatically. So nice.",
+      title: "Y+S camps",
+      icon: "flat-color-icons:sports-mode",
+      description:
+        "Camp templates for Y+S camps with a compliant picasso and programme. Also for the new rules from 2027 with activity characteristics and physical activity time.",
+    },
+    {
+      title: "Courses",
+      icon: "flat-color-icons:graduation-cap",
+      description:
+        "Record learning objectives and checklists in your course programme. This way you can keep track of whether you cover all relevant training topics.",
+    },
+    {
+      title: "Comments",
+      icon: "flat-color-icons:comments",
+      description:
+        "Leave feedback for each other directly on the activities, reply to it and mark points as resolved once they have been dealt with.",
     },
     {
       title: "Printing",
       icon: "flat-color-icons:print",
       description:
-        "PDF / printing process are optimized. No more blank pages and overflowing texts.",
+        "Create PDFs of the picasso, the day overview, individual activities and more, also in A3 format. Without blank pages or overflowing texts.",
     },
     {
-      title: "Multilingual",
+      title: "Share the love",
       icon: "flat-color-icons:globe",
       description:
-        "The application is initially available in German, French, Italian, Rumantsch & English. More are possible.",
-    },
-    {
-      title: "Customizable",
-      icon: "flat-color-icons:settings",
-      description:
-        "Create templates for different types of activities, with storyboard, story context, safety considerations, etc.",
-    },
-    {
-      title: "Improved Material",
-      icon: "flat-color-icons:support",
-      description: "Assign your material to the activity or camp period.",
-    },
-    {
-      title: "Team",
-      icon: "flat-color-icons:conference-call",
-      description:
-        "Team management has been improved and simplified to be less scout specific and more permission oriented.",
+        "Make your camp publicly available and share the link so that other people can reuse your activities and develop them further.",
     },
     {
       title: "So much love",
@@ -108,47 +110,56 @@ import { memberCount, campCount, userCount } from "~/content/stats.json";
 />
 
 <Steps
-  title="Roadmap"
+  title="Project History"
   steps={[
     {
       title: "Development",
       version: "3._",
+      date: "since January 2018",
       variant: "check",
-      body: `The initial development phase is done. All features for the <b>MVP: Camp</b> are available (feature-complete).`,
+      body: "Initial development phase in the newly formed eCamp core team.",
     },
     {
       title: "Alpha",
       version: "3.α",
+      date: "October 2022",
       variant: "check",
-      body: `This version serves as a temporary test version, so it still contains some bugs and complicated user interfaces. The data entered on this version will be deleted after this phase.`,
+      body: "This temporary test version still contained some bugs and complicated user interfaces. The data entered on this version was deleted after this phase.",
     },
     {
       title: "Closed beta",
       version: "3.β",
+      date: "February 2023",
       variant: "check",
-      body: `Isolated bugs. As of this version, however, the database was no longer reset.
-        Could be used for real but not time-critical camp planning.
-        The limited number of beta testers had to expect maintenance interruptions.`,
+      body: "Isolated bugs. As of this version, however, the database was no longer reset. Could be used for real but not time-critical camp planning.",
     },
     {
       title: "MVP: Camp",
       version: "3.0",
+      date: "October 2023",
       variant: "check",
-      body: `From this version onwards, eCamp v3 is free to use for everyone.
-      All essential features of eCamp v2 are available for camp planning. Course planning was not yet implemented for this version.`,
+      body: "From this version onwards, eCamp v3 was free to use for everyone. All essential features of eCamp v2 were available for camp planning.",
     },
     {
       title: "MVP: Course",
       version: "3.1",
-      variant: "inprogress",
-      body: "We are focusing on the performance for the next camp season and the features for course planning.",
+      date: "August 2024",
+      variant: "check",
+      body: "Starting with this version, typical Y+S courses and their usual workflows were supported.",
+    },
+    {
+      title: "Comments",
+      version: "3.2",
+      date: "October 2026",
+      variant: "check",
+      body: "With this version, we have finally reimplemented (almost) all features of the old eCamp v2. 🤯",
     },
     {
       title: "New Features",
       version: "3.X",
+      date: "from 2027",
       variant: "inprogress",
-      body: `Only after the launch of <b>MVP: Course</b> will we devote ourselves to the development of additional features that are not included in eCamp v2.
-       For the time being, we will therefore not accept feature requests.`,
+      body: `We are now devoting ourselves to the development of additional features that were not included in eCamp v2.`,
     },
   ]}
 />
@@ -160,5 +171,5 @@ import { memberCount, campCount, userCount } from "~/content/stats.json";
 <FaqSection
   title="Questions & Answers"
   buttonText="More Questions & Answers"
-  items={["secure", "v2", "support-v2", "financial-support"]}
+  items={["secure", "v2", "js-2027", "financial-support"]}
 />
