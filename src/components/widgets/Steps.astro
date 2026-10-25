@@ -12,6 +12,7 @@ interface Props {
         variant: "todo" | "check";
         title: string;
         version: string;
+        date?: string;
         body: string;
     }[];
     title?: string;
@@ -70,6 +71,9 @@ const headingId = slugger.slug(title)
 					<div class="pt-1 pb-8">
 						<p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">
 							<Fragment set:html={step.title} />
+							{step.date && (
+								<span class="ml-2 text-base font-normal text-gray-500 dark:text-slate-400">{step.date}</span>
+							)}
 						</p>
 						<p>
 							<Fragment set:html={step.body} />
