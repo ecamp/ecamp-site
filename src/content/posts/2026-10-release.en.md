@@ -39,10 +39,12 @@ The new content blocks are also available in existing camps. So if you have alre
 - Changing your password now requires your **current password**. [#10214](https://github.com/ecamp/ecamp3/pull/10214){.issuelink}
 - Newly chosen passwords are checked against a list of commonly used and previously leaked passwords. Your password never leaves eCamp during this check. [#10197](https://github.com/ecamp/ecamp3/pull/10197){.issuelink}
 - We have further secured access to data of camps you are not part of. [#10773](https://github.com/ecamp/ecamp3/pull/10773){.issuelink} [#10819](https://github.com/ecamp/ecamp3/pull/10819){.issuelink}
+- Patched the recently disclosed security vulnerabilities in PHP ([PHP2Shell](https://en.wikipedia.org/wiki/PHP2Shell){target=_blank}) and [Node.js](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases){target=_blank}. [#11089](https://github.com/ecamp/ecamp3/pull/11089){.issuelink} [#11061](https://github.com/ecamp/ecamp3/pull/11061){.issuelink}
 
 ## Usability & UI Tweaks
 - The back button now returns to the overview you came from, even after switching between activities in the sidebar. Pressing Escape now cancels editing a title. [#10650](https://github.com/ecamp/ecamp3/pull/10650){.issuelink}
 - Material lists can now be renamed directly using the pen next to the title, and deleted via the menu. Thanks [@Dagolix](https://github.com/Dagolix){target=_blank}! [#10742](https://github.com/ecamp/ecamp3/pull/10742){.issuelink}
+- When adding material, you can now search for the material list and create a new list right away, without leaving the form. [#11130](https://github.com/ecamp/ecamp3/pull/11130){.issuelink}
 - The retry and cancel buttons in selection fields no longer open the dropdown at the same time. Thanks [@fabiotro](https://github.com/fabiotro){target=_blank}! [#10736](https://github.com/ecamp/ecamp3/pull/10736){.issuelink}
 - Notifications have been redesigned. When you click a notification, it stays open until you close it yourself. [#10385](https://github.com/ecamp/ecamp3/pull/10385){.issuelink} [#11101](https://github.com/ecamp/ecamp3/pull/11101){.issuelink}
 - Date ranges, for example of camp periods, are displayed more consistently and are easier to read. [#11119](https://github.com/ecamp/ecamp3/pull/11119){.issuelink}
