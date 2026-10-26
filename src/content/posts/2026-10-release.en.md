@@ -29,7 +29,7 @@ From 2027 onwards, new rules apply to Y+S camps. eCamp supports them starting to
 
 ![Y+S activity characteristics and Y+S physical activity time content blocks in an activity](~/assets/images/js-2027-en.png)
 
-The new content blocks are also available in existing camps. So if you have already created your camp for 2027 using a different template, you can add them to your activities and categories afterwards. You can find more information in our [FAQ](https://www.ecamp3.ch/en/faq/).
+The new content blocks are also available in existing camps. So if you have already created your camp for 2027 using a different template, you can add them to your activities and categories afterwards. You can find more information in our [FAQ](https://www.ecamp3.ch/en/faq/#faq-js-2027-existing-camps).
 
 ## Easier invitations
 - You can now invite **multiple people at once** to a camp, by simply entering a list of email addresses. [#9987](https://github.com/ecamp/ecamp3/pull/9987){.issuelink}

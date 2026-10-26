@@ -29,7 +29,7 @@ Ab 2027 gelten für J+S-Lager neue Regeln. eCamp unterstützt diese ab sofort, d
 
 ![Bausteine J+S Erscheinungsformen und J+S-Bewegungszeit in einer Aktivität](~/assets/images/js-2027-de.png)
 
-Die neuen Bausteine stehen auch in bestehenden Lagern zur Verfügung. Falls ihr euer Lager für 2027 bereits mit einer anderen Vorlage erstellt habt, könnt ihr sie also nachträglich in euren Aktivitäten und Block-Kategorien hinzufügen. Weitere Informationen findet ihr in unseren [FAQ](https://www.ecamp3.ch/de/faq/).
+Die neuen Bausteine stehen auch in bestehenden Lagern zur Verfügung. Falls ihr euer Lager für 2027 bereits mit einer anderen Vorlage erstellt habt, könnt ihr sie also nachträglich in euren Aktivitäten und Block-Kategorien hinzufügen. Weitere Informationen findet ihr in unseren [FAQ](https://www.ecamp3.ch/de/faq/#faq-js-2027-existing-camps).
 
 ## Einfacher Leute einladen
 - Ihr könnt neu **mehrere Personen auf einmal** in ein Lager einladen, indem ihr einfach eine Liste von E-Mail-Adressen eingebt. [#9987](https://github.com/ecamp/ecamp3/pull/9987){.issuelink}
