@@ -36,16 +36,16 @@ Die neuen Bausteine stehen auch in bestehenden Lagern zur Verfügung. Falls ihr 
 - Beim Einladen könnt ihr nach Personen suchen, mit denen ihr schon in einem anderen Lager zusammengearbeitet habt. Ihr müsst ihre E-Mail-Adresse also nicht mehr auswendig wissen. [#10199](https://github.com/ecamp/ecamp3/pull/10199){.issuelink}
 
 ## Mehr Sicherheit für euer Konto
-- Zum Ändern des Passworts ist neu das **aktuelle Passwort** erforderlich. [#10214](https://github.com/ecamp/ecamp3/pull/10214){.issuelink}
-- Neu gewählte Passwörter werden mit einer Liste häufig verwendeter und bereits geknackter Passwörter abgeglichen. Euer Passwort verlässt dabei eCamp nicht. [#10197](https://github.com/ecamp/ecamp3/pull/10197){.issuelink}
+- Zum Ändern des Passworts ist neu das **aktuelle Passwort** erforderlich (oder der Empfang eine Passwort-vergessen E-Mail wie bisher). [#10214](https://github.com/ecamp/ecamp3/pull/10214){.issuelink}
+- Neu gewählte Passwörter werden mit einer Liste häufig verwendeter und bereits geknackter Passwörter abgeglichen. Euer Passwort [verlässt](https://www.ecamp3.ch/de/tos/) dabei eCamp nicht. [#10197](https://github.com/ecamp/ecamp3/pull/10197){.issuelink}
 - Wir haben den Zugriff auf Daten von fremden Lagern zusätzlich abgesichert. [#10773](https://github.com/ecamp/ecamp3/pull/10773){.issuelink} [#10819](https://github.com/ecamp/ecamp3/pull/10819){.issuelink}
-- Die kürzlich bekannt gewordenen Sicherheitslücken in PHP ([PHP2Shell](https://en.wikipedia.org/wiki/PHP2Shell){target=_blank}) und [Node.js](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases){target=_blank} wurden behoben. [#11089](https://github.com/ecamp/ecamp3/pull/11089){.issuelink} [#11061](https://github.com/ecamp/ecamp3/pull/11061){.issuelink}
+- Die kürzlich bekannt gewordenen Sicherheitslücken in PHP ([PHP2Shell](https://en.wikipedia.org/wiki/PHP2Shell){target=_blank}) und Node.js ([Node2Shell](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases){target=_blank}) wurden behoben. [#11089](https://github.com/ecamp/ecamp3/pull/11089){.issuelink} [#11061](https://github.com/ecamp/ecamp3/pull/11061){.issuelink}
 
 ## Usability & UI-Anpassungen
 - Der Zurück-Button führt neu zur ursprünglichen Übersicht zurück, auch wenn ihr in der Seitenleiste zwischen Aktivitäten gewechselt habt. Mit Escape könnt ihr das Bearbeiten eines Titels abbrechen. [#10650](https://github.com/ecamp/ecamp3/pull/10650){.issuelink}
 - Materiallisten können neu direkt über den Stift neben dem Titel umbenannt und über das Menü gelöscht werden. Merci [@Dagolix](https://github.com/Dagolix){target=_blank}! [#10742](https://github.com/ecamp/ecamp3/pull/10742){.issuelink}
 - Beim Erfassen von Material könnt ihr die Materialliste neu durchsuchen und direkt eine neue Liste erstellen, ohne das Formular zu verlassen. [#11130](https://github.com/ecamp/ecamp3/pull/11130){.issuelink}
-- Die Buttons zum Wiederholen und Abbrechen in Auswahlfeldern öffnen nicht mehr gleichzeitig das Auswahlmenü. Merci [@fabiotro](https://github.com/fabiotro){target=_blank}! [#10736](https://github.com/ecamp/ecamp3/pull/10736){.issuelink}
+- Die Buttons zum Wiederholen und Abbrechen in Auswahlfeldern öffnen nicht mehr gleichzeitig das Auswahlmenü. Merci [@fabiotrosi](https://github.com/fabiotrosi){target=_blank}! [#10736](https://github.com/ecamp/ecamp3/pull/10736){.issuelink}
 - Benachrichtigungen wurden neu gestaltet. Wenn ihr eine Benachrichtigung anklickt, bleibt sie stehen, bis ihr sie selbst schliesst. [#10385](https://github.com/ecamp/ecamp3/pull/10385){.issuelink} [#11101](https://github.com/ecamp/ecamp3/pull/11101){.issuelink}
 - Datumsbereiche, zum Beispiel bei Lagerabschnitten, werden einheitlicher und besser lesbar dargestellt. [#11119](https://github.com/ecamp/ecamp3/pull/11119){.issuelink}
 - Beim Herunterladen der Materialliste als Excel wird nun ein Ladeindikator angezeigt. [#10055](https://github.com/ecamp/ecamp3/pull/10055){.issuelink}
@@ -53,7 +53,7 @@ Die neuen Bausteine stehen auch in bestehenden Lagern zur Verfügung. Falls ihr 
 - Nach einem Update von eCamp lädt die App fehlende Teile automatisch neu, statt eine leere Seite anzuzeigen. [#10114](https://github.com/ecamp/ecamp3/pull/10114){.issuelink}
 
 ## Bugfixes
-- Gäste sehen die Checklisten eines Lagers nun korrekt nur zum Lesen. [#10722](https://github.com/ecamp/ecamp3/pull/10722){.issuelink}
+- Gästen werden bei den Checklisten eines Lagers keine Bearbeitungsoptionen mehr angezeigt, die sie sowieso nicht bedienen dürften. [#10722](https://github.com/ecamp/ecamp3/pull/10722){.issuelink}
 - Checklisten-Einträge werden zuverlässig in der richtigen Reihenfolge angezeigt. [#11115](https://github.com/ecamp/ecamp3/pull/11115){.issuelink}
 - Nach dem Sortieren einer Liste, zum Beispiel der Status-Einträge, werden keine Einträge mehr doppelt angezeigt. [#11110](https://github.com/ecamp/ecamp3/pull/11110){.issuelink}
 - Die Anzahl Einträge in Materiallisten wird nach dem Löschen von Material wieder korrekt angezeigt und Material ohne zugeordnete Liste kann nicht mehr abgehakt werden. [#11107](https://github.com/ecamp/ecamp3/pull/11107){.issuelink} [#10548](https://github.com/ecamp/ecamp3/pull/10548){.issuelink}
