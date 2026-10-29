@@ -29,7 +29,7 @@ export const getHomePermalink = () => {
   return permalink !== "/" ? permalink + "/" : permalink;
 };
 
-export const getCanonical = (path = "") => new URL(path, SITE.origin);
+export const getCanonical = (path = "") => new URL(path, import.meta.env.SITE);
 
 const trim = (str: string, ch?: string) => {
   let start = 0,
