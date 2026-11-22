@@ -13,12 +13,17 @@ import { fromHtmlIsomorphic } from "hast-util-from-html-isomorphic";
 import playformInline from "@playform/inline";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+// Netlify deploy previews and branch deploys should use their own URL in absolute links (e.g. for link previews)
+const site = process.env.CONTEXT && process.env.CONTEXT !== "production" && process.env.DEPLOY_PRIME_URL
+  ? process.env.DEPLOY_PRIME_URL
+  : SITE.origin;
+
 const options = process.env.NODE_ENV === "development" ? { redirects: { "/": "/de" } } : {};
 
 // https://astro.build/config
 export default defineConfig({
   // Astro uses this full URL to generate your sitemap and canonical URLs in your final build
-  site: SITE.origin,
+  site,
   base: SITE.basePathname,
   output: "static",
   integrations: [

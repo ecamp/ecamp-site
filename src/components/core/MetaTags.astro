@@ -7,17 +7,14 @@ import defaultImageSrc from "~/assets/images/social.png";
 import { SITE } from "~/config.mjs";
 import ExtraMetaTags from "../atoms/ExtraMetaTags.astro";
 
-const { src: defaultImage } = await getImage({
-  src: defaultImageSrc,
-  width: 1200,
-  height: 628,
-});
-
 const {
   title = SITE.name,
   description = "",
-  image = defaultImage,
+  image: imageSrc = defaultImageSrc,
+  imageAlt = title,
   canonical,
+  type = "website",
+  publishedTime,
   noindex = false,
   nofollow = false
 } = Astro.props;
@@ -26,6 +23,20 @@ const {
   locale
 } = Astro.params
 const language = locale?.toString() || 'en'
+
+// Link previews expect an absolute URL to a jpg/png, ideally cropped to 1200x630.
+// Smaller images are not enlarged, so keep the aspect ratio within the source width.
+const imageWidth = Math.min(1200, imageSrc.width);
+const imageHeight = Math.round(imageWidth * 630 / 1200);
+const { src: imagePath } = await getImage({
+  src: imageSrc,
+  width: imageWidth,
+  height: imageHeight,
+  fit: "cover",
+  format: "jpg",
+});
+const image = new URL(imagePath, Astro.site).href;
+const url = canonical ?? Astro.url.href;
 ---
 
 <meta charset="UTF-8" />
@@ -41,22 +52,30 @@ const language = locale?.toString() || 'en'
 <!-- Google / Search Engine Tags -->
 <meta itemprop="name" content={title} />
 <meta itemprop="description" content={description} />
-{image && <meta itemprop="image" content={image} />}
+<meta itemprop="image" content={image} />
 <meta http-equiv="content-language" content={language} />
 
-<!-- Facebook Meta Tags -->
-{canonical && <meta property="og:url" content={canonical} />}
-<meta property="og:type" content="website" />
+<!-- Open Graph Meta Tags -->
+<meta property="og:url" content={url} />
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={SITE.name} />
+<meta property="og:locale" content={`${language}_CH`} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-{image && <meta property="og:image" content={image} />}
+<meta property="og:image" content={image} />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content={imageWidth} />
+<meta property="og:image:height" content={imageHeight} />
+<meta property="og:image:alt" content={imageAlt} />
+{publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
 
 <!-- Twitter Meta Tags -->
-{canonical && <meta name="twitter:url" content={canonical} />}
+<meta name="twitter:url" content={url} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-{image && <meta name="twitter:image" content={image} />}
+<meta name="twitter:image" content={image} />
+<meta name="twitter:image:alt" content={imageAlt} />
 
 <!-- Google Site Verification -->
 {SITE.googleSiteVerificationId && <meta name="google-site-verification" content={SITE.googleSiteVerificationId} />}
